@@ -1,4 +1,4 @@
-# Personal website generated with Minimal Mistakes remote theme starter
+# Portfolio website generated with Minimal Mistakes remote theme starter
 
 A personal website intended to showcase both my school projects and presonal projects
 
