@@ -5,8 +5,8 @@ categories:
   - Personal
 tags:
   - Personal
-  - Legacy
   - Python
+  - Legacy
 
 ---
 
