@@ -1,6 +1,6 @@
 ---
 title: "Python"
-date: 31-03-2021
+
 categories:
   - Personal
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Computer Aided Drafting practice"
-Date: 29-03-2021
+
 categories:
   - Engineering Academy
 tags:
