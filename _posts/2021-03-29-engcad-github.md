@@ -25,13 +25,27 @@ As part of our introduction to Engineering Academy we were introduced to Git and
 2. It allows us to easily store and retrieve our projects from any device
 3. It allows us to easily collaborate with each other
 
-Fortunately, I have experience using Github and as such am writing this post for posterity.
+**Git** Git is a free and open source(FOSS) version control software that allows for seamless branching and merging of source code.
+<cite><a href="https://git-scm.com/">git-scm.com/</a></cite>
+{: .notice--info}
+
+**GitHub** GitHub is is a website used for software development that allows for version control using Git.
+<cite><a href="https://github.com">github.com</a></cite>
+{: .notice--info}
+
+Fortunately, I have previous experience using Github and as such am writing this post for posterity.
 
 ***
 
 Workflow - Windows 10
 
 ***
+For windows 10, I will be using Github Desktop. Github desktop is a programme that allows the user to use a graphical user interface(GUI) to perform version control instead of using the command line interface(CLI)
+
+|![Github Desktop](/assets/images/2021-03-29-engcad-github/phone_holder_fin.png)|
+|![Git CLI](/assets/images/2021-03-29-engcad-github/phone_holder_fin_layout.png)|
+|<em>Github Desktop vs Git CLI</em>|
+
 
 
 
