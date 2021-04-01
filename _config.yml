@@ -58,7 +58,7 @@ plugins:
 
 author:
   name   : "Khiu Kim Hong"
-  avatar : "/assets/images/Photo.jpg"
+  avatar : "/assets/images/bios/Photo.jpg"
   bio    : "A student trying to learn by doing"
   links:
     - label: "GitHub"
