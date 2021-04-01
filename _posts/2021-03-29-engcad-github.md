@@ -10,7 +10,12 @@ tags:
 
 ---
 
-Engineering Academy, documentation, Github
+***
+
+Introductions
+
+***
+
 **Engineering Academy(EA)** Engineering Academy is a programme taken along with our diplomas that aims to further educate us on aspects of engineering through practical experiences   
 {: .notice--info}
 
@@ -22,3 +27,27 @@ As part of our introduction to Engineering Academy we were introduced to Git and
 
 Fortunately, I have experience using Github and as such am writing this post for posterity.
 
+***
+
+Workflow - Windows 10
+
+***
+
+
+
+
+***
+
+Workflow - Linux
+
+***
+Use command line
+Fedora 33, at the time of this post, is the latest version
+
+***
+
+Workflow - FreeBSD and similar
+
+***
+
+You can do it! I believe in you!
