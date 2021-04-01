@@ -3,4 +3,6 @@ permalink: /about/
 title: "About"
 ---
 
-(To be updated)
+(Work in Progress)
+
+![WIP](/assets/images/bios/WIP.png)
