@@ -18,7 +18,7 @@ tags:
 
 As part of our final submission for the EDS, our team was tasked with the filming of a demonstration of how our project worked.
 
-Due to the complexity of the project, along with inexperience of the team with filming in general, we opted to record the demonstraion in seperate segments and merging them together during editing. 
+Due to the complexity of the project, along with inexperience of the team with filming in general, we opted to record the demonstration in separate segments and merging them together during editing. 
 
 To achieve this, the team opted to use Kdenlive due to its free and open source nature. (It was also the first result we got when we searched 'FOSS video editor' at the time)
 
@@ -32,15 +32,15 @@ To achieve this, the team opted to use Kdenlive due to its free and open source 
 We first inserted all the video footage that we recorded into the software.
 ![KdenLive vid](/assets/images/2021-03-10-sp-kdenlive/kden_vid_insert.png)
 
-Due to the interference present on a number of the video clips, some of the voice over had to be re-recorded. This was acheived using audacity. 
+Due to the interference present on a number of the video clips, some of the voice over had to be re-recorded. This was achieved using audacity. 
 
 **Audacity** Audacity is a free and open audio recording and editing software.
 <cite><a href="https://www.audacityteam.org/">www.audacityteam.org</a></cite>
 {: .notice--info}
 
-Using the 'ungroup clips' and 'group clips' function in KdenLive, we replaced the original audio with the appropriate voice overs and sound effects. Furthermore, some clips were slowed down to allow better synchornisation with the audio
+Using the 'ungroup clips' and 'group clips' function in KdenLive, we replaced the original audio with the appropriate voice overs and sound effects. Furthermore, some clips were slowed down to allow better synchronisation with the audio
 ![KdenLive vid grp](/assets/images/2021-03-10-sp-kdenlive/kden_vid_groups.png)
-<em>Grouping and ungrouping video and audio clips</em>
+<em>Grouping and un-grouping video and audio clips</em>
 ![KdenLive vid grp](/assets/images/2021-03-10-sp-kdenlive/kden_vid_speed.png)
 <em>Reducing speed of video clip</em>
 
@@ -55,5 +55,5 @@ Our project also incorporated data logging via cloud using the Blynk app. Due to
 Transitions were also added to make the video flow more smoothly.
 ![KdenLive vid transition](/assets/images/2021-03-10-sp-kdenlive/kden_vid_transition.png)
 
-Lastly, the video was rendered and was subsequently submiitted to our lecturer accordingly.
+Lastly, the video was rendered and was subsequently submitted to our lecturer accordingly.
 ![KdenLive vid render](/assets/images/2021-03-10-sp-kdenlive/kden_vid_render.png)
