@@ -10,7 +10,7 @@ tags:
 
 ---
 
-**A note about the Legacy tag** Post containing the Legacy tag are projects that have been completed prior to the creation of this site. As such aspects of the documentation may be incomplete   
+**Legacy tag** Post containing the Legacy tag are projects that have been completed prior to the creation of this site. As such, aspects of the documentation may be incomplete   
 {: .notice--warning}
 
 **Engineering Design and Solutions(EDS)** Engineering Design Solutions is module where students are tasked with designing a solution for a given problem statement
