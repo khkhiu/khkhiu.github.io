@@ -25,6 +25,14 @@ tags:
 
 
 Plan
-- Revision of Fusion 360 and 3d design
-- Tshirt printing
+1. Revision of Fusion 360 and 3d design
+- Name tag
+- EX 03
+- EX 04
+- fidget spinner
+- Rook
+- M3 screw
+- laser box
+
+2. Tshirt printing
 
