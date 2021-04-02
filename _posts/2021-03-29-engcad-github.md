@@ -56,10 +56,15 @@ I am aware that Git has a GUI interface, however Git GUI only allows us to creat
 
 | <strong>Git init / clone </strong><br> Used to create or clone a repo | ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_setup.png)    |
 
-| <strong>Git commit, Git add, Git push</strong><br> Used to track changes to the local repo, before committing and pushing to GitHub | ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_commit_readme.png) <em>Tracking changes made to local repo</em>  <br> ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_push-readme.png))<em>Pushing changes to GitHub</em>    |
+| <strong>Git commit, Git push</strong><br> Used to track changes in the local repo, before committing and pushing to GitHub | ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_commit_readme.png) <em>Tracking changes made to local repo</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_push-readme.png)<em>Pushing changes to GitHub</em> |
 
 | <strong>Git fetch, Git pull </strong><br> Used to check for new changes and pulling it to local repo | ![Git init](/assets/images/2021-03-29-engcad-github/Github_fetch.png) <em>Fetching changes from GitHub</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Github_pull.png) <em>Pulling changes from GitHub</em> |
 
+There is another aspect of GitHub called branches. Branches allow for users to build and test their code in a separate branch before committing to the master branch. This allows for bugs and issues to be resolved before publishing to 'production'.
+
+
+
+| <strong>Testing branch </strong><br> A testing branch can be cloned from the master branch to do testing | ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch.png)    |
 
 
 
