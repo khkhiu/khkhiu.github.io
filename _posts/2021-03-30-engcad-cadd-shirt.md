@@ -26,10 +26,16 @@ We spent quite some time revising the use of Fusion 360 and various CADD techniq
 
 <strong>Name tag</strong>
 
-![engcad nametag](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag.png)
+![engcad nametag final](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag.png)
 <em>The final name tag design</em>
 
 The overall design was achieved using create:sketch and created:extrude. The edges were smoothed using modify:fillet.
+
+| Notes on design | Image |
+| ----------- | ----------- |
+|The key ring joint was created using a construction line and create: arc. The ring itself was made using create: 2 point circle and create: centre diameter circle. |![engcad nametag build 1](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build1.png)|
+|The overall structure was extruded and hollowed using modify: shell|![engcad nametag build 2](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build2.png)|
+|The name was them written and extruded|![engcad nametag build 3](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build3.png)|
 
 
 - EX 03
