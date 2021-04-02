@@ -43,9 +43,16 @@ The following table will go through some aspects of the design of the name tag.
 - EX 03
 - EX 05
 
-<strong>The fidget spinner shell and the Rook</strong>
-- fidget spinner
-- Rook
+<strong>The Rook and the fidget spinner shell</strong>
+
+The rook and fidget spinner are group together as both are related to 'games' for lack of a better term.
+
+| Modeling the rook | Image |
+| ----------- | ----------- |
+| Importing a canvas of a rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook1.png)>|
+| Tracing half the outline of the rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook2.png)|
+| Using create: revolve command to form the shape of the rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook3.png)|
+| A fully formed rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook_final.png)<em>In retrospect, maybe a rook was not the best piece to model</em>|
 
 <strong>The screws and bolts</strong>
 
@@ -60,9 +67,7 @@ The general structure of the bolts and screws were created using create: sketch 
 | The threads of the screw was created using create: thread| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_m3.png)<em>threads made using m3 dimensions</em>|
 | The hole of the bolt was first created using create: hole. The threads were formed using create: thread| ![engcad bolt hole](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt1.png)<em>creating a hole for threads</em> <br> ![engcad bolt thread](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt2.png)<em>trying out different thread options</em>|
 
-
-
-<strong>The translucent box</strong>
+<strong>The Translucent Box</strong>
 - laser box
 
 
