@@ -59,6 +59,9 @@ As part of the introductory session, we were also taught the basics of T-shirt p
 ![engcad shirt](/assets/images/common/shirt-machine.png)
 <em>the press machine used to press the image</em>
 
+![engcad logo](/assets/images/2021-03-29-engcad-cadd-shirt/EA_logo)
+<em>the Engineering Academy logo</em>
+
 The pressing process is simple
 
 1. Export the design as an SVG file
