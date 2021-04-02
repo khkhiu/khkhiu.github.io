@@ -21,9 +21,17 @@ tags:
 Revision of Fusion 360 and 3D CADD techniques
 
 ***
-Plan
-1. Revision of Fusion 360 and 3d design
-- Name tag
+
+We spent quite some time revising the use of Fusion 360 and various CADD techniques. I recognise that this an attempt by the staff to ensure that all students have a similar foundation in CADD know-how. With this in mind, here are the designs that we did over the course of the 2 day session.
+
+<strong>Name tag</strong>
+
+![engcad nametag](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag.png)
+<em>The final name tag design</em>
+
+The overall design was achieved using create:sketch and created:extrude. The edges were smoothed using modify:fillet.
+
+
 - EX 03
 - EX 04
 - fidget spinner
