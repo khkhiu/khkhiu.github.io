@@ -29,7 +29,10 @@ Along with Git and GitHub, we were also required to create a personal website th
 Learning
 
 ***
-I first started
+
+Despite having learnt about both HTML and CSS in my previous course, I have largely forgotten most of it(In my defence, I learnt it in 2014). As such I spend quite some time watching youtube videos and following along with the on screen examples.
+
+I mainly watched the following 2 videos. <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg"> HTML Full Course - Build a Website Tutorial </a> by <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ"> FreeCodeCamp.org </a> and <a href="https://www.youtube.com/watch?v=UB1O30fR-EE">HTML Crash Course For Absolute Beginners </a> by <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"> Traversy Media </a>.
 
 ***
 
@@ -38,8 +41,15 @@ Implementation with HTML
 ***
 
 
+
 ***
 
 Implementation with Jekyll
+
+***
+
+***
+
+Closing thoughts
 
 ***
