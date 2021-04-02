@@ -43,13 +43,17 @@ Workflow - Windows 10
 ***
 For windows 10, I will be using Github Desktop. Github desktop is a programme that allows the user to use a graphical user interface(GUI) to perform version control instead of using the command line interface(CLI)
 
+| Github Desktop| Git CLI |
+| ----------- | ----------- |
 |![Github Desktop](/assets/images/2021-03-29-engcad-github/Github_blank.png)|![Git CLI](/assets/images/2021-03-29-engcad-github/Git_CLI.png)|
-|<em>Github Desktop vs Git CLI</em>|
+
 
 I am aware that Git has a GUI interface, however Git GUI only allows us to create, clone and open repositories.
 
 |![Git GUI](/assets/images/2021-03-29-engcad-github/Git_GUI.png)|
 |<em>Git GUI</em>|
+
+The following table will go through the common functions of Git and GitHub desktop.
 
 | Git Function| GitHub Desktop |
 | ----------- | ----------- |
