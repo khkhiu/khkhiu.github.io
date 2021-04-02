@@ -47,7 +47,18 @@ The following table will go through some aspects of the design of the name tag.
 - fidget spinner
 - Rook
 
-<strong>The M3 bolt</strong>
+<strong>The screws and bolts</strong>
+
+We also practice creating screws and bolts. The rationale behind this was so that we know how to design and 3D print our own screws and bolts in the future.
+
+The general structure of the bolts and screws were created using create: sketch and create: extrude. However, there are some unique aspects of the designs that will be covered in the following table.
+
+| Notes on design | Image |
+| ----------- | ----------- |
+| The grooves of the screw was created using create: thread| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build2.png)<em>grooves made using m3 dimensions</em>|
+| The hole of the bolt was first created using create: hole. The grooves were formed using create: thread| ![engcad bolt hole](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt1.png)<em>creating a hole for grooves</em> <br> ![engcad bolt groove](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt2.png)<em>an m3 bolt is modelled</em>|
+
+
 
 <strong>The translucent box</strong>
 - laser box
