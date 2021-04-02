@@ -13,7 +13,7 @@ tags:
 ---
 
 **Engineering Academy(EA)** Engineering Academy is a programme taken along with our diplomas that aims to further educate us on aspects of engineering through practical experiences. 
-<cite><a href="https://www.sp.edu.sg/engineering-cluster/engineering-academy">SP - Engineering Academy/</a></cite>  
+<cite><a href="https://www.sp.edu.sg/engineering-cluster/engineering-academy">SP - Engineering Academy</a></cite>  
 {: .notice--info}
 
 
@@ -27,6 +27,10 @@ T-shirt printing
 
 ***
 
+
+This was the final result of the print.
+![engcad shirt](/assets/images/common/Placeholder.png)
+<em>The colour looks a little fadded, but I liked the way it turned out</em>
 
 Plan
 1. Revision of Fusion 360 and 3d design
