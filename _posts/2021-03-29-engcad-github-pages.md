@@ -42,9 +42,13 @@ Implementation with HTML
 
 After watching the videos, I started by creating a Repository in Github. I used the name 'khkhiu.github.io', set to public to create it as a github pages repo. I then pulled the repo onto my computer using GitHub Desktop  
 
-| ![create_repo](/assets/images/2021-03-29-engcad-github-pages/Create_repo.png)<em>creating the repo</em> | ![Git_init](/assets/images/2021-03-29-engcad-github-pages/Github_init.png) <em>initialising repo</em> |
+| ![create repo](/assets/images/2021-03-29-engcad-github-pages/Create_repo.png)<em>creating the repo</em> | ![Git init](/assets/images/2021-03-29-engcad-github-pages/Github_init.png) <em>initialising repo</em> |
 
-Next, 
+| ![update read me](/assets/images/2021-03-29-engcad-github-pages/Vscode-Readme.png)<em>Updating the README file</em> | ![Git_init](/assets/images/2021-03-29-engcad-github-pages/Github_1st_commit.png) <em>1st commit to git hub</em> |
+
+Next, I created the following files. An index.html file to act as a landing page, an about.html page for basic information about me, an engcad.html page for school based projects and a personal.html page for personal projects. A styles.css page was also created to manage the CSS and an 'img' folder to contain images. The file were then pushed to github.
+
+| ![local machine](/assets/images/2021-03-29-engcad-github-pages/Local_machine.png)<em>Local machine folder</em> | ![site uploaded](/assets/images/2021-03-29-engcad-github-pages/Update_github.png)<em>personal website taking shape</em> |
 
 
 ***
