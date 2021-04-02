@@ -1,5 +1,5 @@
 ---
-title: "Engineering Academy and HTML, part 2 - Jekyll"
+title: "Engineering Academy and Github Pages, part 2 - Jekyll"
 date: "29-03-2021"
 categories:
   - Engineering Academy
