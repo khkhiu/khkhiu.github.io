@@ -49,10 +49,18 @@ The rook and fidget spinner are group together as both are related to 'games' fo
 
 | Modeling the rook | Image |
 | ----------- | ----------- |
-| Importing a canvas of a rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook1.png)>|
-| Tracing half the outline of the rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook2.png)|
-| Using create: revolve command to form the shape of the rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook3.png)|
-| A fully formed rook| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook_final.png)<em>In retrospect, maybe a rook was not the best piece to model</em>|
+| Importing a canvas of a rook| ![rook canvas](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook1.png)>|
+| Tracing half the outline of the rook| ![rook tracing](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook2.png)|
+| Using create: revolve command to form the shape of the rook| ![rook revolving](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook3.png)|
+| A fully formed rook| ![rook complete](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook_final.png)<em>In retrospect, maybe a rook was not the best piece to model</em>|
+
+| Modeling the fidget spinner | Image |
+| ----------- | ----------- |
+| Sketching the core of the spinner with construction lines to guide further sketching| ![spinner core](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget1.png)>|
+| Sketching the 'arms' of the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget2.png)|
+| Using sketch: arc to draw the chassis of the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget3.png)|
+| Using create: extrude to form the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget4.png)|
+| Using modify: chamfer to smooth out the edges of the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget_final.png)<em>The dimension maybe slightly off, but the idea is there</em>|
 
 <strong>The screws and bolts</strong>
 
