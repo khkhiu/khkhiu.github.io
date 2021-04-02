@@ -16,7 +16,8 @@ Introductions
 
 ***
 
-**Engineering Academy(EA)** Engineering Academy is a programme taken along with our diplomas that aims to further educate us on aspects of engineering through practical experiences   
+**Engineering Academy(EA)** Engineering Academy is a programme taken along with our diplomas that aims to further educate us on aspects of engineering through practical experiences. 
+<cite><a href="https://www.sp.edu.sg/engineering-cluster/engineering-academy">SP - Engineering Academy/</a></cite>  
 {: .notice--info}
 
 As part of our introduction to Engineering Academy we were introduced to Git and github. There are several reasons for this introduction.
@@ -42,8 +43,7 @@ Workflow - Windows 10
 ***
 For windows 10, I will be using Github Desktop. Github desktop is a programme that allows the user to use a graphical user interface(GUI) to perform version control instead of using the command line interface(CLI)
 
-|![Github Desktop](/assets/images/2021-03-29-engcad-github/Github_blank.png)|
-|![Git CLI](/assets/images/2021-03-29-engcad-github/Git_CLI.png)|
+|![Github Desktop](/assets/images/2021-03-29-engcad-github/Github_blank.png)|![Git CLI](/assets/images/2021-03-29-engcad-github/Git_CLI.png)|
 |<em>Github Desktop vs Git CLI</em>|
 
 I am aware that Git has a GUI interface, however Git GUI only allows us to create, clone and open repositories.
@@ -51,8 +51,10 @@ I am aware that Git has a GUI interface, however Git GUI only allows us to creat
 |![Git GUI](/assets/images/2021-03-29-engcad-github/Git_GUI.png)|
 |<em>Git GUI</em>|
 
-
-
+| Git Function      | GitHub Desktop |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 
 
@@ -63,6 +65,8 @@ Workflow - Linux
 ***
 Use command line
 Fedora 33, at the time of this post, is the latest version
+
+![WIP](/assets/images/bios/WIP.png)
 
 ***
 
