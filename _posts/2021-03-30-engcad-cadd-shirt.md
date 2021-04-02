@@ -7,10 +7,24 @@ tags:
   - Engineering Academy
   - Singapore Polytechnic
   - CADD
-  - Fushion 360
+  - Fusion 360
   - T -Shirt
 
 ---
 
-Engineering Academy, Fusion 360, 3d design
-Also t-shirt printing
+**Engineering Academy(EA)** Engineering Academy is a programme taken along with our diplomas that aims to further educate us on aspects of engineering through practical experiences. 
+<cite><a href="https://www.sp.edu.sg/engineering-cluster/engineering-academy">SP - Engineering Academy/</a></cite>  
+{: .notice--info}
+
+
+
+
+
+
+
+
+
+Plan
+- Revision of Fusion 360 and 3d design
+- Tshirt printing
+
