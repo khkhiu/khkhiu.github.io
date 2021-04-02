@@ -77,7 +77,7 @@ There is another aspect of GitHub called branches. Branches allow for users to b
 Workflow - Linux
 
 ***
-Use command line
+
 
 ![WIP](/assets/images/bios/WIP.png)
 
