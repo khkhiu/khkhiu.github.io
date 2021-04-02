@@ -63,8 +63,9 @@ I am aware that Git has a GUI interface, however Git GUI only allows us to creat
 There is another aspect of GitHub called branches. Branches allow for users to build and test their code in a separate branch before committing to the master branch. This allows for bugs and issues to be resolved before publishing to 'production'.
 
 
-
-| <strong>Testing branch </strong><br> A testing branch can be cloned from the master branch to do testing | ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_create.png) <br> ![Git init](/assets/images/2021-03-29-engcad-github/Testing_Publish.png) <em>publishing testing branch</em>  |
+| Explanation| Image |
+| ----------- | ----------- |
+| <strong>Testing branch </strong><br> A testing branch can be cloned from the master branch to do testing <em>creating testing branch</em>| ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_create.png) <br> ![Git init](/assets/images/2021-03-29-engcad-github/Testing_Publish.png) <em>publishing testing branch</em>  |
 
 
 
