@@ -53,9 +53,12 @@ I am aware that Git has a GUI interface, however Git GUI only allows us to creat
 
 | Git Function| GitHub Desktop |
 | ----------- | ----------- |
+
 | <strong>Git init / clone </strong><br> Used to create or clone a repo | ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_setup.png)    |
 
 | <strong>Git commit, Git add, Git push</strong><br> Used to track changes to the local repo, before committing and pushing to GitHub | ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_commit_readme.png) <em>Tracking changes made to local repo</em>  <br> ![Git init](/assets/images/2021-03-29-engcad-github/Github_desktop_push-readme.png))<em>Pushing changes to GitHub</em>    |
+
+| <strong>Git fetch, Git pull </strong><br> Used to check for new changes and pulling it to local repo | ![Git init](/assets/images/2021-03-29-engcad-github/Github_fetch.png) <em>Fetching changes from GitHub</em> <br>  |
 
 
 
