@@ -56,10 +56,10 @@ T-shirt printing
 ***
 As part of the introductory session, we were also taught the basics of T-shirt printing. For this session, we used a heat press technique.
 
-![engcad shirt](/assets/images/common/shirt-machine.png)
+![engcad shirt](/assets/images/2021-03-29-engcad-cadd-shirt/shirt-machine.jpeg)
 <em>the press machine used to press the image</em>
 
-![engcad logo](/assets/images/2021-03-29-engcad-cadd-shirt/EA_logo)
+![engcad logo](/assets/images/2021-03-29-engcad-cadd-shirt/EA_logo.png)
 <em>the Engineering Academy logo</em>
 
 The pressing process is simple
