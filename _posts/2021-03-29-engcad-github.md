@@ -65,8 +65,10 @@ There is another aspect of GitHub called branches. Branches allow for users to b
 
 | Explanation| Image |
 | ----------- | ----------- |
-| <strong>Testing branch </strong><br> A testing branch can be cloned from the master branch to do testing | ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_create.png)<em>creating testing branch</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Testing_Publish.png) <em>publishing testing branch</em>  |
+| <strong>Testing branch </strong><br> A testing branch can be cloned from the master branch to do testing | ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_create.png)<em>creating testing branch</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_switch.png)<em>changes can be directly carried over to new branch</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Testing_Publish.png) <em>publishing testing branch</em>  |
+
 | <strong>Choosing and merging branches </strong><br> Users can select which branch to push code to and which way branch merging can be made | ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_select.png)<em>selecting branches</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_merge.png) <em>merging branches</em>  |
+
 | <strong>Pull request </strong><br> Users can create pull request to collaborate on proposed changes to the source code| ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch_pull_request.png)<em>creating a pull request</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Github_create_pull_request.png) <em>creating a pull request on github</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Github_merge_pull_request.png) <em>merging pull request on github</em> <br> ![Git init](/assets/images/2021-03-29-engcad-github/Github_merge_pull_request_confirm.png) <em>confirming merge of pull request on github</em>  |
 
 
