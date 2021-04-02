@@ -5,4 +5,4 @@ title: "About"
 
 (Work in Progress)
 
-![WIP](/assets/images/bios/WIP.png)
+![WIP](/assets/images/common/WIP.png)
