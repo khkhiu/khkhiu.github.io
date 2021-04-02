@@ -64,7 +64,7 @@ There is another aspect of GitHub called branches. Branches allow for users to b
 
 
 
-| <strong>Testing branch </strong><br> A testing branch can be cloned from the master branch to do testing | ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch.png)    |
+| <strong>Testing branch </strong><br> A testing branch can be cloned from the master branch to do testing | ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch.png) <br> ![Git init](/assets/images/2021-03-29-engcad-github/Testing_branch.png) <em>publishing testing branch</em>  |
 
 
 
