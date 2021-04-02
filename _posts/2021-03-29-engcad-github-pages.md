@@ -40,6 +40,11 @@ Implementation with HTML
 
 ***
 
+After watching the videos, I started by creating a Repository in Github. I used the name 'khkhiu.github.io', set to public to create it as a github pages repo. I then pulled the repo onto my computer using GitHub Desktop  
+
+| ![create_repo](/assets/images/2021-03-29-engcad-github-pages/Create_repo.png)<em>creating the repo</em> | ![Git_init](/assets/images/2021-03-29-engcad-github-pages/Github_init.png) <em>initialising repo</em> |
+
+Next, 
 
 
 ***
