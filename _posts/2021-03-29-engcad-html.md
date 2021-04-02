@@ -1,5 +1,5 @@
 ---
-title: "Engineering Academy and Github Pages, part 1 - HTML and CSS"
+title: "Engineering Academy and Github Pages, HTML,CSS and Jekyll"
 date: "29-03-2021"
 categories:
   - Engineering Academy
@@ -7,6 +7,7 @@ tags:
   - Engineering Academy
   - Singapore Polytechnic
   - HTML
+  - Jekyll
 
 ---
 
@@ -28,8 +29,17 @@ Along with Git and GitHub, we were also required to create a personal website th
 Learning
 
 ***
+I first started
+
+***
+
+Implementation with HTML
+
+***
 
 
+***
 
+Implementation with Jekyll
 
-For part 2, click here: <a href="https://khkhiu.github.io/engineering%20academy/engcad-jekyll/">Engineering Academy and Github Pages, part 2 - Jekyll</a>
+***
