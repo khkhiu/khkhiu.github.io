@@ -57,10 +57,10 @@ The rook and fidget spinner are group together as both are related to 'games' fo
 | Modeling the fidget spinner | Image |
 | ----------- | ----------- |
 | Sketching the core of the spinner with construction lines to guide further sketching| ![spinner core](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget1.png)>|
-| Sketching the 'arms' of the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget2.png)|
-| Using sketch: arc to draw the chassis of the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget3.png)|
-| Using create: extrude to form the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget4.png)|
-| Using modify: chamfer to smooth out the edges of the spinner| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget_final.png)<em>The dimension maybe slightly off, but the idea is there</em>|
+| Sketching the 'arms' of the spinner| ![spinner arms](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget2.png)|
+| Using sketch: arc to draw the chassis of the spinner| ![spinner body](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget3.png)|
+| Using create: extrude to form the spinner| ![spinner forming](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget4.png)|
+| Using modify: chamfer to smooth out the edges of the spinner| ![spinner complete](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget_fin.png)<em>The dimension maybe slightly off, but the idea is there</em>|
 
 <strong>The screws and bolts</strong>
 
