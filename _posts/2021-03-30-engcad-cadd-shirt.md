@@ -16,8 +16,20 @@ tags:
 <cite><a href="https://www.sp.edu.sg/engineering-cluster/engineering-academy">SP - Engineering Academy</a></cite>  
 {: .notice--info}
 
+***
 
+Revision of Fusion 360 and 3D CADD techniques
 
+***
+Plan
+1. Revision of Fusion 360 and 3d design
+- Name tag
+- EX 03
+- EX 04
+- fidget spinner
+- Rook
+- M3 screw
+- laser box
 
 
 
@@ -53,14 +65,6 @@ This was the final result of the print.
 
 After this we were supposed to add our own designs to the shirt. Personally, I prefer my shirts to have as simple a design as possible, therefore, I will just leave the shirt as is.
 
-Plan
-1. Revision of Fusion 360 and 3d design
-- Name tag
-- EX 03
-- EX 04
-- fidget spinner
-- Rook
-- M3 screw
-- laser box
+
 
 
