@@ -29,7 +29,9 @@ We spent quite some time revising the use of Fusion 360 and various CADD techniq
 ![engcad nametag final](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag.png)
 <em>The final name tag design</em>
 
-The overall design was achieved using create:sketch and created:extrude. The edges were smoothed using modify:fillet.
+The overall design was achieved using create: sketch and created: extrude. The edges were smoothed using modify: fillet.
+
+The following table will go through some aspects of the design of the name tag.
 
 | Notes on design | Image |
 | ----------- | ----------- |
