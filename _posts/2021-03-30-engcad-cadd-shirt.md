@@ -56,7 +56,7 @@ The general structure of the bolts and screws were created using create: sketch 
 | Notes on design | Image |
 | ----------- | ----------- |
 | The grooves of the screw was created using create: thread| ![engcad m3 screw](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build2.png)<em>grooves made using m3 dimensions</em>|
-| The hole of the bolt was first created using create: hole. The grooves were formed using create: thread| ![engcad bolt hole](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt1.png)<em>creating a hole for grooves</em> <br> ![engcad bolt groove](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt2.png)<em>an m3 bolt is modelled</em>|
+| The hole of the bolt was first created using create: hole. The grooves were formed using create: thread| ![engcad bolt hole](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt1.png)<em>creating a hole for grooves</em> <br> ![engcad bolt groove](/assets/images/2021-03-29-engcad-cadd-shirt/EA_bolt2.png)<em>an m3 bolt is modeled</em>|
 
 
 
