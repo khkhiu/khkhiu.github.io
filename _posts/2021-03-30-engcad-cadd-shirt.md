@@ -39,12 +39,17 @@ The following table will go through some aspects of the design of the name tag.
 |The overall structure was extruded and hollowed using modify: shell|![engcad nametag build 2](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build2.png)|
 |The name was them written and extruded|![engcad nametag build 3](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build3.png)|
 
-
+<strong>Additional practices</strong>
 - EX 03
-- EX 04
+- EX 05
+
+<strong>The fidget spinner shell and the Rook</strong>
 - fidget spinner
 - Rook
-- M3 screw
+
+<strong>The M3 bolt</strong>
+
+<strong>The translucent box</strong>
 - laser box
 
 
