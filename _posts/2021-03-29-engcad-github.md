@@ -78,7 +78,6 @@ Workflow - Linux
 
 ***
 Use command line
-Fedora 33, at the time of this post, is the latest version
 
 ![WIP](/assets/images/bios/WIP.png)
 
