@@ -23,7 +23,11 @@ Introductions
 
 Along with Git and GitHub, we were also required to create a personal website that will act as a repository for both our school projects and personal projects. To achieve this, we were to use Github pages to host our site. Github pages allows users to host a webpage directly from their Github repositories, which along with the advantages mentioned <a href="https://khkhiu.github.io/engineering%20academy/engcad-github/"> here </a>, also allows us to use jekyll(This will be important later).
 
+***
 
+Learning
+
+***
 
 
 
