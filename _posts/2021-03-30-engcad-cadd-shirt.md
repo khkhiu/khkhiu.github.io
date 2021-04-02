@@ -52,6 +52,14 @@ We were tasked with the completing exercise: 3 and exercise: 5 from the followin
 | Extruding the base structure| ![Extruding base](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-4.png)|
 | Colouring of the item| ![Ex3 colour complete](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-fin.png)<em>The colours are the closes approximation I could find</em>|
 
+| Exercise: 5 | Image |
+| ----------- | ----------- |
+| The item we needed to recreate| ![Ex5 task](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex5-task.png)|
+| Sketching and extruding the base structure| ![Base structure](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex5-1.png)|
+| Sketching and extruding the vertical structure| ![Vertical structure](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex5-2.png)|
+| Sketching and extruding the 1st ring structure| ![1st ring structure](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex5-3.png)|
+| Duplicating and hollowing the ring string structures| ![Structure complete](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex5-4.png)|
+| Colouring of the item| ![Ex5 colour complete](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex5-fin.png)<em>The colours are again, the closes approximation I could find</em>|
 
 <strong>The Rook and the fidget spinner shell</strong>
 
