@@ -10,4 +10,5 @@ tags:
 
 ---
 
-Engineering Academy, documentation, Github
+
+Continued from part 1, click here: <a href="https://khkhiu.github.io/engineering%20academy/engcad-html/">Engineering Academy and Github Pages, part 1 - HTML and CSS</a>
