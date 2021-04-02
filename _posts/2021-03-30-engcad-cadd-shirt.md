@@ -40,8 +40,18 @@ The following table will go through some aspects of the design of the name tag.
 |The name was them written and extruded|![engcad nametag build 3](/assets/images/2021-03-29-engcad-cadd-shirt/EA_nametag_build3.png)|
 
 <strong>Additional practices</strong>
-- EX 03
-- EX 05
+
+We were tasked with the completing exercise: 3 and exercise: 5 from the following location: <cite><a href="https://en.calameo.com/read/004987257fab6b0564037">Autodesk: Fusion 360 exercises</a></cite>  
+
+| Exercise: 3 | Image |
+| ----------- | ----------- |
+| The item we needed to recreate| ![Ex3 task](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-task.png)|
+| Sketching the vertical structure| ![Vertical structure](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-1.png)|
+| Extruding the vertical structure| ![Extruding vertical](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-2.png)|
+| Sketching the base structure| ![Base structure](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-3.png)|
+| Extruding the base structure| ![Extruding base](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-4.png)|
+| Colouring of the item| ![Ex3 colour complete](/assets/images/2021-03-29-engcad-cadd-shirt/EA_ex3-fin.png)<em>The colours are the closes approximation I could find</em>|
+
 
 <strong>The Rook and the fidget spinner shell</strong>
 
@@ -49,14 +59,14 @@ The rook and fidget spinner are group together as both are related to 'games' fo
 
 | Modeling the rook | Image |
 | ----------- | ----------- |
-| Importing a canvas of a rook| ![rook canvas](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook1.png)>|
+| Importing a canvas of a rook| ![rook canvas](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook1.png)|
 | Tracing half the outline of the rook| ![rook tracing](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook2.png)|
 | Using create: revolve command to form the shape of the rook| ![rook revolving](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook3.png)|
 | A fully formed rook| ![rook complete](/assets/images/2021-03-29-engcad-cadd-shirt/EA_rook_final.png)<em>In retrospect, maybe a rook was not the best piece to model</em>|
 
 | Modeling the fidget spinner | Image |
 | ----------- | ----------- |
-| Sketching the core of the spinner with construction lines to guide further sketching| ![spinner core](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget1.png)>|
+| Sketching the core of the spinner with construction lines to guide further sketching| ![spinner core](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget1.png)|
 | Sketching the 'arms' of the spinner| ![spinner arms](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget2.png)|
 | Using sketch: arc to draw the chassis of the spinner| ![spinner body](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget3.png)|
 | Using create: extrude to form the spinner| ![spinner forming](/assets/images/2021-03-29-engcad-cadd-shirt/EA_fidget4.png)|
