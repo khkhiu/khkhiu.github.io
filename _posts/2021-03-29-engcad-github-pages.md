@@ -103,7 +103,8 @@ To test out the site generation, I followed the <a href="https://jekyllrb.com/do
 <strong>Choosing a theme</strong>
 
 After successfully generating a site, I decided to look around for a theme to use. I ultimately chose the <a href="https://jekyllthemes.io/theme/minimal-mistakes">Minimal mistakes theme</a>. 
-![min mistake theme](/assets/images/2021-03-29-engcad-github-pages/Jekyll/min_mistake.png)
+
+| ![min mistake theme](/assets/images/2021-03-29-engcad-github-pages/Jekyll/min_mistake.png)<em>minimal mistakes theme</em> | ![Git init](/assets/images/2021-03-29-engcad-github-pages/Jekyll/min_mistake_make_repo.png) <em>Following instructions on GitHub page to create repo</em> |
 
 
 
