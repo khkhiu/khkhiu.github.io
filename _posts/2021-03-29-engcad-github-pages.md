@@ -48,7 +48,9 @@ After watching the videos, I started by creating a Repository in Github. I used 
 
 Next, I created the following files. An index.html file to act as a landing page, an about.html page for basic information about me, an engcad.html page for school based projects and a personal.html page for personal projects. A styles.css page was also created to manage the CSS and an 'img' folder to contain images. The file were then pushed to github.
 
-| ![local machine](/assets/images/2021-03-29-engcad-github-pages/Local_machine.png)<em>Local machine folder</em> | ![site uploaded](/assets/images/2021-03-29-engcad-github-pages/Update_github.png)<em>personal website taking shape</em> |
+| ![local machine](/assets/images/2021-03-29-engcad-github-pages/Local_machine.png)<em>Local machine folder</em> |
+| ![push to github](/assets/images/2021-03-29-engcad-github-pages/Upload_local_machine.png)<em>personal website taking shape</em> |
+| ![site uploaded](/assets/images/2021-03-29-engcad-github-pages/Update_github.png)<em>personal website taking shape</em> |
 
 I first created a top navigation bar with my desired pages. I used the example in <a href = "https://www.w3schools.com/howto/howto_js_topnav.asp"> W3 school </a> to do so. I also took the opportunity to fill each page with unique dummy text to make identification easier. Lastly, I used the 'live server' extension in VScode to simulate the website live 
 
@@ -58,6 +60,12 @@ I first created a top navigation bar with my desired pages. I used the example i
 |![live server](/assets/images/2021-03-29-engcad-github-pages/liverserver.png)|<em>live server extension</em> |
 
 Referencing <a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp">W3 school </a> again, I added  dropdown menu in the navigation bar. The rationale for the drop down menu is that I will be working on many different projects, hence a dropdown menu will allow a visitor to see what projects I have done at once. 
+
+| ![dropdown code](/assets/images/2021-03-29-engcad-github-pages/Local_machine_design2_code.png)<em>code inspired by W3</em> | ![dropdown site](/assets/images/2021-03-29-engcad-github-pages/Local_machine_design2.png) <em>Site in action</em> |
+
+I then refactored both the HTML and CSS to allow for both 'EngCad' and 'Projects' to have their individual dropdown menus. Simultaneously, the 'about' and 'index' page buttons were altered to have a unified appearance.
+
+
 
 ***
 
