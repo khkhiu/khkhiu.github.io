@@ -65,6 +65,15 @@ Referencing <a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.a
 
 I then refactored both the HTML and CSS to allow for both 'EngCad' and 'Projects' to have their individual dropdown menus. Simultaneously, the 'about' and 'index' page buttons were altered to have a unified appearance.
 
+| ![refactor HTML](/assets/images/2021-03-29-engcad-github-pages/refactored_HTML.png)<em>refactoring HTML</em> | ![refactor CSS](/assets/images/2021-03-29-engcad-github-pages/refactored_CSS.png) <em>refactoring CSS</em> |
+
+![drop down](/assets/images/2021-03-29-engcad-github-pages/Local_machine_design_drop.png) <em>Drop down design complete</em>
+
+I also used font-awesome to add GitHub and Linkedin icons.
+
+| ![awesome font](/assets/images/2021-03-29-engcad-github-pages/fa_icons.png)<em>adding awesome font</em> | ![icons](/assets/images/2021-03-29-engcad-github-pages/Local_machine_design_icons.png) <em>icons added</em> |
+
+However, despite my progress, I realised that I have spend about 3 hours on my website and I have just barely started. Hence, I decided to look into Jekyll to expedite my progress.
 
 
 ***
