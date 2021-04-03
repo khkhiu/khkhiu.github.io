@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Kim Hong's project repository
+title: MM
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -58,7 +58,7 @@ plugins:
 
 author:
   name   : "Khiu Kim Hong"
-  avatar : "/assets/images/bios/Photo.jpg"
+  avatar : "/assets/images/bio-photo.jpg"
   bio    : "A student trying to learn by doing"
   links:
     - label: "GitHub"
@@ -73,8 +73,8 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/khkhiu"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-linkedin "
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "linkedin.com/in/kim-hong-khiu-2443481bb"
 
 defaults:

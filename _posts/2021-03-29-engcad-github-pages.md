@@ -106,7 +106,17 @@ After successfully generating a site, I decided to look around for a theme to us
 
 | ![min mistake theme](/assets/images/2021-03-29-engcad-github-pages/Jekyll/min_mistake.png)<em>minimal mistakes theme</em> | ![Git init](/assets/images/2021-03-29-engcad-github-pages/Jekyll/min_mistake_make_repo.png) <em>Following instructions on GitHub page to create repo</em> |
 
+![jekyll local machine](/assets/images/2021-03-29-engcad-github-pages/Jekyll/jekyll_machine.png)<em>jekyll hosted on my local machine</em>
 
+I began by updating the config.yml file to reflect a dark theme and updating my social media accounts. I also began making file for my post.
+
+| ![update config](/assets/images/2021-03-29-engcad-github-pages/Jekyll/update_config.png)| ![Git init](/assets/images/2021-03-29-engcad-github-pages/Jekyll/update_post.png)  |
+
+Lastly, I updated the information of individual post and began to populate them with content.
+
+| ![update post](/assets/images/2021-03-29-engcad-github-pages/Jekyll/edit_post.png) |<em>using a (mostly) blank post as example</em>| 
+| ![post category](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_cat.png)  |<em>post by category</em>|
+| ![post tag](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_tag.png) | <em>post by tags</em> |
 
 ***
 
