@@ -86,6 +86,23 @@ According to <a href="https://pages.github.com/">github-pages</a> and the <a hre
 
 | ![github pages jekyll](/assets/images/2021-03-29-engcad-github-pages/Jekyll/github_jekyll.png) | ![jekyll site](/assets/images/2021-03-29-engcad-github-pages/Jekyll/jekyll_site.png) |
 
+With this in mind, I followed the <a href="https://jekyllrb.com/docs/installation/windows/">official documentation for windows</a> and installed Ruby and Jekyll.
+
+![icons](/assets/images/2021-03-29-engcad-github-pages/Jekyll/jekyll_install_success.png) <em>jekyll successfully installed</em>
+
+To test out the site generation, I followed the <a href="https://jekyllrb.com/docs/">instructions</a> to generate a site.
+
+| Command   | image |
+| ----------- | ----------- |
+| gem install jekyll bundler | ![gem install jekyll bundler](/assets/images/2021-03-29-engcad-github-pages/Jekyll/site_gen1.png) | 
+| jekyll new myblog | ![new site](/assets/images/2021-03-29-engcad-github-pages/Jekyll/site_gen2.png) | 
+| bundle exec jekyll serve | ![build site and host locally](/assets/images/2021-03-29-engcad-github-pages/Jekyll/site_gen3.png) |
+
+![site success](/assets/images/2021-03-29-engcad-github-pages/Jekyll/gen_success.png) <em> site generated successfully </em>
+
+
+
+
 
 ***
 
