@@ -50,6 +50,14 @@ Next, I created the following files. An index.html file to act as a landing page
 
 | ![local machine](/assets/images/2021-03-29-engcad-github-pages/Local_machine.png)<em>Local machine folder</em> | ![site uploaded](/assets/images/2021-03-29-engcad-github-pages/Update_github.png)<em>personal website taking shape</em> |
 
+I first created a top navigation bar with my desired pages. I used the example in <a href = "https://www.w3schools.com/howto/howto_js_topnav.asp"> W3 school </a> to do so. I also took the opportunity to fill each page with unique dummy text to make identification easier. Lastly, I used the 'live server' extension in VScode to simulate the website live 
+
+![local machine 2](/assets/images/2021-03-29-engcad-github-pages/Local_machine_design.png)<em>website on local machine running on live server</em> 
+
+
+|![live server](/assets/images/2021-03-29-engcad-github-pages/liverserver.png)|<em>live server extension</em> |
+
+Referencing <a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp">W3 school </a> again, I added  dropdown menu in the navigation bar. The rationale for the drop down menu is that I will be working on many different projects, hence a dropdown menu will allow a visitor to see what projects I have done at once. 
 
 ***
 
