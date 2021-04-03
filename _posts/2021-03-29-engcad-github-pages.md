@@ -82,6 +82,9 @@ Implementation with Jekyll
 
 ***
 
+According to <a href="https://pages.github.com/">github-pages</a> and the <a href="https://jekyllrb.com/">official site</a>, jekyll is program that will generate a site for me. Thus letting me focus on the content without having to worry about managing my site.
+
+| ![github pages jekyll](/assets/images/2021-03-29-engcad-github-pages/Jekyll/github_jekyll.png) | ![jekyll site](/assets/images/2021-03-29-engcad-github-pages/Jekyll/jekyll_site.png) |
 
 
 ***
