@@ -71,7 +71,7 @@ I also used font-awesome to add GitHub and Linkedin icons.
 
 | ![awesome font](/assets/images/2021-03-29-engcad-github-pages/HTML/fa_icons.png)<em>adding awesome font</em> | ![icons](/assets/images/2021-03-29-engcad-github-pages/HTML/Local_machine_design_icons.png) <em>icons added</em> |
 
-However, despite my progress, I realised that I have spend about 3 hours on my website and I have just barely started. Hence, I decided to look into Jekyll to expedite my progress.
+However, despite my progress, I realised that I have spend over 3 hours on my website and I have just barely scratch the surface. Hence, I decided to look into Jekyll to in hopes of expediting my progress.
 
 
 ***
@@ -114,12 +114,18 @@ I began by updating the config.yml file to reflect a dark theme and updating my 
 
 Lastly, I updated the information of individual post and began to populate them with content.
 
-| ![update post](/assets/images/2021-03-29-engcad-github-pages/Jekyll/edit_post.png) |<em>using a (mostly) blank post as example</em>| 
-| ![post category](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_cat.png)  |<em>post by category</em>|
-| ![post tag](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_tag.png) | <em>post by tags</em> |
+| <em>using a (mostly) blank post as example</em>| ![update post](/assets/images/2021-03-29-engcad-github-pages/Jekyll/edit_post.png) | 
+| <em>post by category</em>| ![post category](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_cat.png)  |
+| <em>post by tags</em> | ![post tag](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_tag.png) | 
+
 
 ***
 
-Closing thoughts
+Miscellaneous notes
 
 ***
+- Overall, I am happy with how the site turned out, despite a slow start.
+
+- The site itself, while presentable, I believe still requires customisation to make it unique.
+
+- I am still trying to figure out workflows and structure for individual post and therefore later post will be more refined compared to earlier post.
