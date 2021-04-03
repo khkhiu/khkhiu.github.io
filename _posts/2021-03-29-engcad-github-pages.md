@@ -26,19 +26,17 @@ Along with Git and GitHub, we were also required to create a personal website th
 
 ***
 
-Learning
+Implementation with HTML
 
 ***
+
+<strong>Learning</strong>
 
 Despite having learnt about both HTML and CSS in my previous course, I have largely forgotten most of it(In my defence, I learnt it in 2014). As such I spend quite some time watching youtube videos and following along with the on screen examples.
 
 I mainly watched the following 2 videos. <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg"> HTML Full Course - Build a Website Tutorial </a> by <a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ"> FreeCodeCamp.org </a> and <a href="https://www.youtube.com/watch?v=UB1O30fR-EE">HTML Crash Course For Absolute Beginners </a> by <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"> Traversy Media </a>.
 
-***
-
-Implementation with HTML
-
-***
+<strong>Building</strong>
 
 After watching the videos, I started by creating a Repository in Github. I used the name 'khkhiu.github.io', set to public to create it as a github pages repo. I then pulled the repo onto my computer using GitHub Desktop  
 
@@ -54,7 +52,7 @@ Next, I created the following files. An index.html file to act as a landing page
 
 I first created a top navigation bar with my desired pages. I used the example in <a href = "https://www.w3schools.com/howto/howto_js_topnav.asp"> W3 school </a> to do so. I also took the opportunity to fill each page with unique dummy text to make identification easier. Lastly, I used the 'live server' extension in VScode to simulate the website live 
 
-![local machine 2](/assets/images/2021-03-29-engcad-github-pages/HTML/Local_machine_design.png)<em>website on local machine running on live server</em> 
+![local machine 2](/assets/images/2021-03-29-engcad-github-pages/HTML/Local_machine_design.png)<em>website on local machine running on live server</em> |
 
 
 |![live server](/assets/images/2021-03-29-engcad-github-pages/HTML/liverserver.png)|<em>live server extension</em> |
@@ -82,13 +80,15 @@ Implementation with Jekyll
 
 ***
 
+<strong>Installation</strong>
+
 According to <a href="https://pages.github.com/">github-pages</a> and the <a href="https://jekyllrb.com/">official site</a>, jekyll is program that will generate a site for me. Thus letting me focus on the content without having to worry about managing my site.
 
 | ![github pages jekyll](/assets/images/2021-03-29-engcad-github-pages/Jekyll/github_jekyll.png) | ![jekyll site](/assets/images/2021-03-29-engcad-github-pages/Jekyll/jekyll_site.png) |
 
 With this in mind, I followed the <a href="https://jekyllrb.com/docs/installation/windows/">official documentation for windows</a> and installed Ruby and Jekyll.
 
-![icons](/assets/images/2021-03-29-engcad-github-pages/Jekyll/jekyll_install_success.png) <em>jekyll successfully installed</em>
+![icons](/assets/images/2021-03-29-engcad-github-pages/Jekyll/jekyll_install_success.png) <em>jekyll successfully installed</em>|
 
 To test out the site generation, I followed the <a href="https://jekyllrb.com/docs/">instructions</a> to generate a site.
 
@@ -98,9 +98,12 @@ To test out the site generation, I followed the <a href="https://jekyllrb.com/do
 | jekyll new myblog | ![new site](/assets/images/2021-03-29-engcad-github-pages/Jekyll/site_gen2.png) | 
 | bundle exec jekyll serve | ![build site and host locally](/assets/images/2021-03-29-engcad-github-pages/Jekyll/site_gen3.png) |
 
-![site success](/assets/images/2021-03-29-engcad-github-pages/Jekyll/gen_success.png) <em> site generated successfully </em>
+![site success](/assets/images/2021-03-29-engcad-github-pages/Jekyll/gen_success.png) <em> site generated successfully </em>|
 
+<strong>Choosing a theme</strong>
 
+After successfully generating a site, I decided to look around for a theme to use. I ultimately chose the <a href="https://jekyllthemes.io/theme/minimal-mistakes">Minimal mistakes theme</a>. 
+![min mistake theme](/assets/images/2021-03-29-engcad-github-pages/Jekyll/min_mistake.png)
 
 
 
