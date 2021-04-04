@@ -129,3 +129,5 @@ Miscellaneous notes
 - The site itself, while presentable, I believe still requires customisation to make it unique.
 
 - I am still trying to figure out workflows and structure for individual post and therefore later post will be more refined compared to earlier post.
+
+- Me using Jekyll in this manner can be seen as lazy, but I want something simple so I can start posting.
