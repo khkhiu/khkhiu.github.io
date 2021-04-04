@@ -14,8 +14,8 @@ tags:
 
 For reasons that have been lost to time, I decided to start learning python. I learnt the basics of python using the book: Python Crash Course, 2nd edition by Eric Matthes, published by No Starch Press.
 
-|![book](/assets/images/2021-03-31-personal-python-basics/pcc2e_cover.png)<em>|
-|The book I used</em>|
+|![book](/assets/images/2021-03-31-personal-python-basics/pcc2e_cover.png)|
+|<em>The book I used</em>|
 
 Unlike other post, this post will be a summary of various checkpoints instead of a walk-through(mostly because python basics is 223 pages across 11 chapter and later chapters heavily utilize concepts in earlier chapters).
 
