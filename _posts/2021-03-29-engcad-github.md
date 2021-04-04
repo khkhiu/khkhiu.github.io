@@ -73,5 +73,5 @@ There is another aspect of GitHub called branches. Branches allow for users to b
 Another collaboration tool is the issues tab on GitHub. This tab allows users to alert each other of issues in the code. It also allows to add comments and mark issues as resolved.
 
 |![Github create issue](/assets/images/2021-03-29-engcad-github/Create_issue.png)|![Github resolve issue](/assets/images/2021-03-29-engcad-github/Create_issue_resolve.png)|
-|<em>Github Desktop vs Git CLI</em>|
+|<em>Issues tab</em>|
 
