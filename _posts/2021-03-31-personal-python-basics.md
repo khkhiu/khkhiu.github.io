@@ -65,6 +65,13 @@ There are many ways to work with fx as demonstrated in the table below
 
 | <strong>Passing X number <br> of arguments</strong> <br> Use * when declaring a <br>fx to pack an<br> undeclared number of fx into a tuple | ![fx x arg](/assets/images/2021-03-31-personal-python-basics/fx_x_arg.png)<br><br>![fx x,positional arg](/assets/images/2021-03-31-personal-python-basics/fx_x_arg2.png) <br><em>Combining positional and arbitrary arguments</em><br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx_x_arg_op.png) |
 
+| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/2021-03-31-personal-python-basics/fx_y_arg.png)<br><br>![fx x key op](/assets/images/2021-03-31-personal-python-basics/fx_y_arg_op.png) |
+
+
+| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/2021-03-31-personal-python-basics/fx_y_arg.png)<br><br>![fx x key op](/assets/images/2021-03-31-personal-python-basics/fx_y_arg_op.png) |
+
+| <strong>Importing module <br> arguments</strong> <br> Use import command <br> to import fx to other files. | ![fx import from](/assets/images/2021-03-31-personal-python-basics/fx_import.png)<br><br>![fx import to](/assets/images/2021-03-31-personal-python-basics/fx_import2.png)<br><br>![fx import op](/assets/images/2021-03-31-personal-python-basics/fx_import_op.png) |
+
 
 ![WIP](/assets/images/common/WIP.png)
 
