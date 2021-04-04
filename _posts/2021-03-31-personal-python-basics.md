@@ -40,38 +40,43 @@ Functions (fx)
 
 fx are block of code that do a specific job, which are called when needed.
 
-|![simple fx](/assets/images/2021-03-31-personal-python-basics/fx_simple.png)|![simple fx output](/assets/images/2021-03-31-personal-python-basics/fx_simple_op.png)
+|![simple fx](/assets/images/2021-03-31-personal-python-basics/fx/fx_simple.png)|![simple fx output](/assets/images/2021-03-31-personal-python-basics/fx/fx_simple_op.png)
 |<em>simple hello world fx</em>|
 
 There are many ways to work with fx as demonstrated in the table below
 
 | Action    | image |
 | ----------- | ----------- |
-| <strong>Passing information to fx</strong> <br>same fx as simple hello world fx | ![info to fx](/assets/images/2021-03-31-personal-python-basics/fx_simple_info.png)<br><br>![info to fx op](/assets/images/2021-03-31-personal-python-basics/fx_simple_op.png) |
+| <strong>Passing information to fx</strong> <br>same fx as simple hello world fx | ![info to fx](/assets/images/2021-03-31-personal-python-basics/fx/fx_simple_info.png)<br><br>![info to fx op](/assets/images/2021-03-31-personal-python-basics/fx/fx_simple_op.png) |
 
-| <strong>Positional arguments <br> with multiple fx calls</strong> <br> Python matches each argument <br> in the fx call with a parameter <br> in the fx definition.| ![fx positional argument](/assets/images/2021-03-31-personal-python-basics/fx_posi.png)<br><br>![fx positional argument op](/assets/images/2021-03-31-personal-python-basics/fx_posi_op.png)      |
+| <strong>Positional arguments <br> with multiple fx calls</strong> <br> Python matches each argument <br> in the fx call with a parameter <br> in the fx definition.| ![fx positional argument](/assets/images/2021-03-31-personal-python-basics/fx/fx_posi.png)<br><br>![fx positional argument op](/assets/images/2021-03-31-personal-python-basics/fx/fx_posi_op.png)      |
 
-| <strong>Default values in fx</strong> <br> Default values can be assigned <br> when making fx.  | ![fx default val](/assets/images/2021-03-31-personal-python-basics/fx_default.png)<br><br>![fx default val op](/assets/images/2021-03-31-personal-python-basics/fx_default_op.png)      |
+| <strong>Default values in fx</strong> <br> Default values can be assigned <br> when making fx.  | ![fx default val](/assets/images/2021-03-31-personal-python-basics/fx/fx_default.png)<br><br>![fx default val op](/assets/images/2021-03-31-personal-python-basics/fx/fx_default_op.png)      |
 
-| <strong>Returning a value</strong> <br> The return command <br> takes a value from an fx and passes <br> it to the fx call  | ![fx default val](/assets/images/2021-03-31-personal-python-basics/fx_return_val.png)<br><br>![fx default val op ](/assets/images/2021-03-31-personal-python-basics/fx_return_val_op.png)<br><br>![fx return val 2](/assets/images/2021-03-31-personal-python-basics/fx_return_val2.png)<br><em>making an argument optional</em><br><br>![fx return val op 2](/assets/images/2021-03-31-personal-python-basics/fx_return_val2_op.png)  |
+| <strong>Returning a value</strong> <br> The return command <br> takes a value from an fx and passes <br> it to the fx call  | ![fx default val](/assets/images/2021-03-31-personal-python-basics/fx/fx_return_val.png)<br><br>![fx default val op ](/assets/images/2021-03-31-personal-python-basics/fx/fx_return_val_op.png)<br><br>![fx return val 2](/assets/images/2021-03-31-personal-python-basics/fx/fx_return_val2.png)<br><em>making an argument optional</em><br><br>![fx return val op 2](/assets/images/2021-03-31-personal-python-basics/fx/fx_return_val2_op.png)  |
 
-| <strong>Returning a dictionary</strong> <br> Dictionaries can be returned with FX  | ![fx return dictionary](/assets/images/2021-03-31-personal-python-basics/fx_dictionary.png)<br><br>![fx return dictionary op](/assets/images/2021-03-31-personal-python-basics/fx_dictionary_op.png)  |
+| <strong>Returning a dictionary</strong> <br> Dictionaries can be returned with FX  | ![fx return dictionary](/assets/images/2021-03-31-personal-python-basics/fx/fx_dictionary.png)<br><br>![fx return dictionary op](/assets/images/2021-03-31-personal-python-basics/fx/fx_dictionary_op.png)  |
 
-| <strong>while loop in fx</strong> <br>Using a while loop in fx then prints| ![fx while](/assets/images/2021-03-31-personal-python-basics/fx_while.png)<br><em>allows users to enter their name and formats it</em> |
+| <strong>while loop in fx</strong> <br>Using a while loop in fx then prints| ![fx while](/assets/images/2021-03-31-personal-python-basics/fx/fx_while.png)<br><em>allows users to enter their name and formats it</em> |
 
-| <strong>Passing a list</strong> <br> Defining a list then passing to fx  | ![fx past list](/assets/images/2021-03-31-personal-python-basics/fx_list.png)<br><br>![fx past list op](/assets/images/2021-03-31-personal-python-basics/fx_list_op.png)  |
+| <strong>Passing a list</strong> <br> Defining a list then passing to fx  | ![fx past list](/assets/images/2021-03-31-personal-python-basics/fx/fx_list.png)<br><br>![fx past list op](/assets/images/2021-03-31-personal-python-basics/fx/fx_list_op.png)  |
 
-| <strong>Modding a list</strong> <br> List can be modified by passing <br> arguments changes are <br> permanent unless modified again | ![fx mod list](/assets/images/2021-03-31-personal-python-basics/fx_mod_list.png)<br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx_mod_list_op.png)  |
+| <strong>Modding a list</strong> <br> List can be modified by passing <br> arguments changes are <br> permanent unless modified again | ![fx mod list](/assets/images/2021-03-31-personal-python-basics/fx/fx_mod_list.png)<br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx/fx_mod_list_op.png)  |
 
-| <strong>Passing X number <br> of arguments</strong> <br> Use * when declaring a <br>fx to pack an<br> undeclared number of fx into a tuple | ![fx x arg](/assets/images/2021-03-31-personal-python-basics/fx_x_arg.png)<br><br>![fx x,positional arg](/assets/images/2021-03-31-personal-python-basics/fx_x_arg2.png) <br><em>Combining positional and arbitrary arguments</em><br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx_x_arg_op.png) |
+| <strong>Passing X number <br> of arguments</strong> <br> Use * when declaring a <br>fx to pack an<br> undeclared number of fx into a tuple | ![fx x arg](/assets/images/2021-03-31-personal-python-basics/fx/fx_x_arg.png)<br><br>![fx x,positional arg](/assets/images/2021-03-31-personal-python-basics/fx/fx_x_arg2.png) <br><em>Combining positional and arbitrary arguments</em><br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx/fx_x_arg_op.png) |
 
-| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/2021-03-31-personal-python-basics/fx_y_arg.png)<br><br>![fx x key op](/assets/images/2021-03-31-personal-python-basics/fx_y_arg_op.png) |
+| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/2021-03-31-personal-python-basics/fx/fx_y_arg.png)<br><br>![fx x key op](/assets/images/2021-03-31-personal-python-basics/fx/fx_y_arg_op.png) |
 
 
-| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/2021-03-31-personal-python-basics/fx_y_arg.png)<br><br>![fx x key op](/assets/images/2021-03-31-personal-python-basics/fx_y_arg_op.png) |
+| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/2021-03-31-personal-python-basics/fx/fx_y_arg.png)<br><br>![fx x key op](/assets/images/2021-03-31-personal-python-basics/fx/fx_y_arg_op.png) |
 
-| <strong>Importing module <br> arguments</strong> <br> Use import command <br> to import fx to other files. | ![fx import from](/assets/images/2021-03-31-personal-python-basics/fx_import.png)<br><br>![fx import to](/assets/images/2021-03-31-personal-python-basics/fx_import2.png)<br><br>![fx import op](/assets/images/2021-03-31-personal-python-basics/fx_import_op.png) |
+| <strong>Importing module <br> arguments</strong> <br> Use import command <br> to import fx to other files. | ![fx import from](/assets/images/2021-03-31-personal-python-basics/fx/fx_import.png)<br><br>![fx import to](/assets/images/2021-03-31-personal-python-basics/fx/fx_import2.png)<br><br>![fx import op](/assets/images/2021-03-31-personal-python-basics/fx/fx_import_op.png) |
 
+***
+
+Classes
+
+***
 
 ![WIP](/assets/images/common/WIP.png)
 
