@@ -14,16 +14,24 @@ tags:
 
 For reasons that have been lost to time, I decided to start learning python. I learnt the basics of python using the book: Python Crash Course, 2nd edition by Eric Matthes, published by No Starch Press.
 
-|![engcad bolt hole](/assets/images/2021-03-31-personal-python-basics/pcc2e_cover.png)<em>|
+|![book](/assets/images/2021-03-31-personal-python-basics/pcc2e_cover.png)<em>|
 |The book I used</em>|
 
 Unlike other post, this post will be a summary of various checkpoints instead of a walk-through(mostly because it is 223 pages across 11 chapter and later chapters heavily utilize concepts in earlier chapters).
 
 ***
 
-Revision of Fusion 360 and 3D CADD techniques
+() VS [] VS {}
 
 ***
+In python , different bracket types are used for different purposes. Standard brackets () are used for tuples, solid brackets [] are used for list while curly brackets {} are used for dictionaries.Tuples are groups of items stored as a single variable that cannot be changed.  Lists, are groups of items stored as a single variable that can be changed. Dictionaries, store data in sets of key value pairs that can be changed, but keys do not allow duplicates.
+
+|![py tuple](/assets/images/2021-03-31-personal-python-basics/tuple.png)|
+|![py list](/assets/images/2021-03-31-personal-python-basics/list.png) |
+|![py dictionary](/assets/images/2021-03-31-personal-python-basics/dictionary.png)|
+|<em>tuple vs list vs dictionary</em>|
+
+
 
 ![WIP](/assets/images/common/WIP.png)
 
