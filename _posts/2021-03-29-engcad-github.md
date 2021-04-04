@@ -75,19 +75,3 @@ Another collaboration tool is the issues tab on GitHub. This tab allows users to
 |![Github create issue](/assets/images/2021-03-29-engcad-github/Create_issue.png)|![Github resolve issue](/assets/images/2021-03-29-engcad-github/Create_issue_resolve.png)|
 |<em>Github Desktop vs Git CLI</em>|
 
-***
-
-Workflow - Linux
-
-***
-
-
-![WIP](/assets/images/common/WIP.png)
-
-***
-
-Workflow - FreeBSD and similar
-
-***
-
-You can do it! I believe in you!
