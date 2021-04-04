@@ -47,7 +47,7 @@ There are many ways to work with fx as demonstrated in the table below
 
 | Action    | image |
 | ----------- | ----------- |
-| <strong>Passing information to fx</strong> | ![info to fx](/assets/images/2021-03-31-personal-python-basics/fx_simple_info.png)<br><br>![info to fx op](/assets/images/2021-03-31-personal-python-basics/fx_simple_op.png) |
+| <strong>Passing information to fx</strong> <br>same fx as simple hello world fx | ![info to fx](/assets/images/2021-03-31-personal-python-basics/fx_simple_info.png)<br><br>![info to fx op](/assets/images/2021-03-31-personal-python-basics/fx_simple_op.png) |
 
 | <strong>Positional arguments <br> with multiple fx calls</strong> <br> Python matches each argument <br> in the fx call with a parameter <br> in the fx definition.| ![fx positional argument](/assets/images/2021-03-31-personal-python-basics/fx_posi.png)<br><br>![fx positional argument op](/assets/images/2021-03-31-personal-python-basics/fx_posi_op.png)      |
 
@@ -55,7 +55,13 @@ There are many ways to work with fx as demonstrated in the table below
 
 | <strong>Returning a value</strong> <br> The return command <br> takes a value from an fx and passes <br> it to the fx call  | ![fx default val](/assets/images/2021-03-31-personal-python-basics/fx_return_val.png)<br><br>![fx default val op ](/assets/images/2021-03-31-personal-python-basics/fx_return_val_op.png)<br><br>![fx return val 2](/assets/images/2021-03-31-personal-python-basics/fx_return_val2.png)<br><em>making an argument optional</em><br><br>![fx return val op 2](/assets/images/2021-03-31-personal-python-basics/fx_return_val2_op.png)  |
 
-| <strong>Returning a dictionary</strong> <br> Dictionaries can be returned with FX  | ![fx return dictionary](/assets/images/2021-03-31-personal-python-basics/fx_dictionary.png)<br><br>![fx return dictionary op](/assets/images/2021-03-31-personal-python-basics/fx_dictionary_op.png)      |
+| <strong>Returning a dictionary</strong> <br> Dictionaries can be returned with FX  | ![fx return dictionary](/assets/images/2021-03-31-personal-python-basics/fx_dictionary.png)<br><br>![fx return dictionary op](/assets/images/2021-03-31-personal-python-basics/fx_dictionary_op.png)  |
+
+| <strong>while loop in fx</strong> <br>Using a while loop in fx then prints| ![fx while](/assets/images/2021-03-31-personal-python-basics/fx_while.png)<br><em>allows users to enter their name and formats it</em> |
+
+| <strong>Pasing a list</strong> <br> Defining a list then passing to fx  | ![fx past list](/assets/images/2021-03-31-personal-python-basics/fx_list.png)<br><br>![fx past list op](/assets/images/2021-03-31-personal-python-basics/fx_list_op.png)  |
+
+
 
 ![WIP](/assets/images/common/WIP.png)
 
