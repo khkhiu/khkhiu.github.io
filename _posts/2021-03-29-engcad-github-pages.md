@@ -118,6 +118,10 @@ Lastly, I updated the information of individual post and began to populate them 
 | <em>post by category</em>| ![post category](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_cat.png)  |
 | <em>post by tags</em> | ![post tag](/assets/images/2021-03-29-engcad-github-pages/Jekyll/post_tag.png) | 
 
+Post are created using markdown language, which is easier to work with than HTML. This is primarily due to markdown having simpler syntax and formatting options compared to HTML. Although personally, I still use some of HTML's syntax to make it easier for me to see what I am doing.
+
+|![post tag](/assets/images/2021-03-29-engcad-github-pages/Jekyll/mix_syntax.png)|
+|<em>mixing of syntax</em>|
 
 ***
 
