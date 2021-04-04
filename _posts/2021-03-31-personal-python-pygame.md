@@ -10,10 +10,5 @@ tags:
 
 ---
 
-my attempts to try and learn Python basics
 
-Using the book python crash course, 2nd edition by: Eric Matthes
-
-Building a simple space game
-
-<s>Invasion of the body snatchers</s>
+![WIP](/assets/images/common/WIP.png)
