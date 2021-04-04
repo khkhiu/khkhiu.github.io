@@ -59,8 +59,9 @@ There are many ways to work with fx as demonstrated in the table below
 
 | <strong>while loop in fx</strong> <br>Using a while loop in fx then prints| ![fx while](/assets/images/2021-03-31-personal-python-basics/fx_while.png)<br><em>allows users to enter their name and formats it</em> |
 
-| <strong>Pasing a list</strong> <br> Defining a list then passing to fx  | ![fx past list](/assets/images/2021-03-31-personal-python-basics/fx_list.png)<br><br>![fx past list op](/assets/images/2021-03-31-personal-python-basics/fx_list_op.png)  |
+| <strong>Passing a list</strong> <br> Defining a list then passing to fx  | ![fx past list](/assets/images/2021-03-31-personal-python-basics/fx_list.png)<br><br>![fx past list op](/assets/images/2021-03-31-personal-python-basics/fx_list_op.png)  |
 
+| <strong>Modding a list</strong> <br> List can be modified by passing <br> arguments changes are <br> permanent unless modified again | ![fx mod list](/assets/images/2021-03-31-personal-python-basics/fx_mod_list.png)<br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx_mod_list_op.png)  |
 
 
 ![WIP](/assets/images/common/WIP.png)
