@@ -17,11 +17,12 @@ For reasons that have been lost to time, I decided to start learning python. I l
 |![book](/assets/images/2021-03-31-personal-python-basics/pcc2e_cover.png)<em>|
 |The book I used</em>|
 
-Unlike other post, this post will be a summary of various checkpoints instead of a walk-through(mostly because it is 223 pages across 11 chapter and later chapters heavily utilize concepts in earlier chapters).
+Unlike other post, this post will be a summary of various checkpoints instead of a walk-through(mostly because python basics is 223 pages across 11 chapter and later chapters heavily utilize concepts in earlier chapters).
 
 ***
 
-() VS [] VS {}
+() VS [] VS {}<br>
+Tuple vs list vs dictionary
 
 ***
 In python , different bracket types are used for different purposes. Standard brackets () are used for tuples, solid brackets [] are used for list while curly brackets {} are used for dictionaries.Tuples are groups of items stored as a single variable that cannot be changed.  Lists, are groups of items stored as a single variable that can be changed. Dictionaries, store data in sets of key value pairs that can be changed, but keys do not allow duplicates.
@@ -31,6 +32,26 @@ In python , different bracket types are used for different purposes. Standard br
 |![py dictionary](/assets/images/2021-03-31-personal-python-basics/dictionary.png)|
 |<em>tuple vs list vs dictionary</em>|
 
+***
+
+Functions (fx)
+
+***
+
+fx are block of code that do a specific job, which are called when needed.
+
+|![simple fx](/assets/images/2021-03-31-personal-python-basics/fx_simple.png)|![simple fx output](/assets/images/2021-03-31-personal-python-basics/fx_simple_op.png)
+|<em>simple hello world fx</em>|
+
+There are many ways to work with fx as demonstrated in the table below
+
+| Action    | image |
+| ----------- | ----------- |
+| <strong>Passing information to fx</strong> | ![info to fx](/assets/images/2021-03-31-personal-python-basics/fx_simple_info.png)<br><br>![info to fx op](/assets/images/2021-03-31-personal-python-basics/fx_simple_op.png) |
+
+| <strong>Positional arguments with multiple fx calls</strong> <br> Python matches each argument in the fx call with a parameter in the fx definition.| ![fx positional argument](/assets/images/2021-03-31-personal-python-basics/fx_posi.png)<br><br>![fx positional argument op](/assets/images/2021-03-31-personal-python-basics/fx_posi_op.png)      |
+
+| <strong>Default values in fx</strong> <br> Default values can be assigned when making fx.  | ![fx default val](/assets/images/2021-03-31-personal-python-basics/fx_default.png)<br><br>![fx default val op](/assets/images/2021-03-31-personal-python-basics/fx_default_op.png)      |
 
 
 ![WIP](/assets/images/common/WIP.png)
