@@ -63,6 +63,8 @@ There are many ways to work with fx as demonstrated in the table below
 
 | <strong>Modding a list</strong> <br> List can be modified by passing <br> arguments changes are <br> permanent unless modified again | ![fx mod list](/assets/images/2021-03-31-personal-python-basics/fx_mod_list.png)<br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx_mod_list_op.png)  |
 
+| <strong>Passing X number <br> of arguments</strong> <br> Use * when declaring a <br>fx to pack an<br> undeclared number of fx into a tuple | ![fx x arg](/assets/images/2021-03-31-personal-python-basics/fx_x_arg.png)<br><br>![fx x,positional arg](/assets/images/2021-03-31-personal-python-basics/fx_x_arg2.png) <br><em>Combining positional and arbitrary arguments</em><br><br>![fx mod list op](/assets/images/2021-03-31-personal-python-basics/fx_x_arg_op.png) |
+
 
 ![WIP](/assets/images/common/WIP.png)
 
