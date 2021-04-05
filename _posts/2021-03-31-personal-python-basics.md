@@ -112,5 +112,20 @@ We can use try-except blocks to mitigate errors. Depending on the program, data 
 |![Exception json](/assets/images/2021-03-31-personal-python-basics/except/exception_json.png)|![Exception json op](/assets/images/2021-03-31-personal-python-basics/except/exception_json_op.png)|
 |<em>generating json file</em>|
 
+***
 
-For my first projects, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame/">Space shooter game in Python using Pygame, part 1 </a>
+Testing code
+
+***
+We can import the uinittest fx to verify specific aspects of a fx is operating correctly. However, achieving full coverage can be difficult, hence we only test critical functions.
+![Exception json op](/assets/images/2021-03-31-personal-python-basics/test/test.png)
+
+***
+
+Final thoughts
+
+***
+Even though I have covered the first half of the book, I still need a lot more practice to refine my abilities.
+
+
+For my first project, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame/">Space shooter game in Python using Pygame, part 1 </a>
