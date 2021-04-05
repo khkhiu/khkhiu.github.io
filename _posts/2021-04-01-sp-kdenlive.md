@@ -1,6 +1,6 @@
 ---
 title: "Video editing with KdenLive"
-date: "31-03-2021"
+date: "01-04-2021"
 categories:
   - Singapore Polytechnic
 tags:

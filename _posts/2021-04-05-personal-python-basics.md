@@ -1,6 +1,6 @@
 ---
 title: "Python Basics"
-date: "31-03-2021"
+date: "05-04-2021"
 categories:
   - Personal
 tags:
