@@ -92,7 +92,12 @@ What I have learnt is demonstrated in the table below:
 
 |<strong>Classes instances</strong><br>With modifying<br> attributes through<br> a method|![create class 2](/assets/images/2021-03-31-personal-python-basics/class/class_instance2.png)<br><em>using instances created from classes</em><br><br>![create class op 2](/assets/images/2021-03-31-personal-python-basics/class/class_instance_op2.png)<br>|
 
-|<strong>Classes inheritance</strong>|![class inherit](/assets/images/2021-03-31-personal-python-basics/class/class_inherit.png)<br><em>using specific attributes of a class to make another class</em><br><br>![class inherit op](/assets/images/2021-03-31-personal-python-basics/class/class_inherit_op.png)<br>|
+|<strong>Classes inheritance</strong><br><em>using specific<br> attributes of a class<br> to make another class</em>|![class inherit](/assets/images/2021-03-31-personal-python-basics/class/class_inherit.png)<br><br>![class inherit op](/assets/images/2021-03-31-personal-python-basics/class/class_inherit_op.png)<br><br><em>Another example</em>![class inherit child](/assets/images/2021-03-31-personal-python-basics/class/class_inherit2.png)<br><em>Child method,uses __init__ from parent method</em><br>![class inherit child op](/assets/images/2021-03-31-personal-python-basics/class/class_inherit2_child.png)<br><br>![class inherit op](/assets/images/2021-03-31-personal-python-basics/class/class_inherit2_op.png)<br>|
+
+|<strong>Instances as attributes</strong><br>using instances<br> created from classes|![class instance attribute](/assets/images/2021-03-31-personal-python-basics/class/class_inst_attr.png)<br><br><em>Child method</em>![class instance attribute child](/assets/images/2021-03-31-personal-python-basics/class/class_inst_attr_child.png)<br><br>![class instance attribute child op](/assets/images/2021-03-31-personal-python-basics/class/class_inst_attr_op.png)|
+
+
+
 
 ![WIP](/assets/images/common/WIP.png)
 
