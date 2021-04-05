@@ -88,6 +88,7 @@ What I have learnt is demonstrated in the table below:
 
 |Classes need to be explicitly define, all classes need a __init__ method to be initialised. All method in classes need a self argument, which is a reference to itself. The method will automatically pass the self argument when python calls the method.|
 
+|<strong>Classes instances</strong>|![create class](/assets/images/2021-03-31-personal-python-basics/class/class_instance.png)<br><em>using instances created from classes</em><br><br>![create class op](/assets/images/2021-03-31-personal-python-basics/class/class_instance_op.png)<br>|
 
 
 
