@@ -90,7 +90,9 @@ What I have learnt is demonstrated in the table below:
 
 |<strong>Classes instances</strong>|![create class](/assets/images/2021-03-31-personal-python-basics/class/class_instance.png)<br><em>using instances created from classes</em><br><br>![create class op](/assets/images/2021-03-31-personal-python-basics/class/class_instance_op.png)<br>|
 
+|<strong>Classes instances</strong><br>With modifying<br> attributes through<br> a method|![create class 2](/assets/images/2021-03-31-personal-python-basics/class/class_instance2.png)<br><em>using instances created from classes</em><br><br>![create class op 2](/assets/images/2021-03-31-personal-python-basics/class/class_instance_op2.png)<br>|
 
+|<strong>Classes inheritance</strong>|![class inherit](/assets/images/2021-03-31-personal-python-basics/class/class_inherit.png)<br><em>using specific attributes of a class to make another class</em><br><br>![class inherit op](/assets/images/2021-03-31-personal-python-basics/class/class_inherit_op.png)<br>|
 
 ![WIP](/assets/images/common/WIP.png)
 
