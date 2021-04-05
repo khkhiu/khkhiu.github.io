@@ -84,7 +84,7 @@ What I have learnt is demonstrated in the table below:
 
 | Action    | image |
 | ----------- | ----------- |
-|<strong>Creating classes</strong>|![create class](/assets/images/2021-03-31-personal-python-basics/class/create_class.png)<br><br>![create class op](/assets/images/2021-03-31-personal-python-basics/class/create_class_op.png)|
+|<strong>Creating classes</strong>|![create class](/assets/images/2021-03-31-personal-python-basics/class/class_create.png)<br><br>![create class op](/assets/images/2021-03-31-personal-python-basics/class/class_create_op.png)|
 
 ![WIP](/assets/images/common/WIP.png)
 
