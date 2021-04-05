@@ -26,11 +26,11 @@ To achieve this, the team opted to use Kdenlive due to its free and open source 
 <cite><a href="https://kdenlive.org/en/about/">kdenlive.org</a></cite>
 {: .notice--info}
 
-|![KdenLive empty](/assets/images/2021-03-10-sp-kdenlive/Kden_blank.png)|
+|![KdenLive empty](/assets/images/sp-kdenlive/Kden_blank.png)|
 |<em>An empty KdenLive instance</em>|
 
 We first inserted all the video footage that we recorded into the software.
-![KdenLive vid](/assets/images/2021-03-10-sp-kdenlive/kden_vid_insert.png)
+![KdenLive vid](/assets/images/sp-kdenlive/kden_vid_insert.png)
 
 Due to the interference present on a number of the video clips, some of the voice over had to be re-recorded. This was achieved using audacity. 
 
@@ -40,14 +40,14 @@ Due to the interference present on a number of the video clips, some of the voic
 
 Using the 'ungroup clips' and 'group clips' function in KdenLive, we replaced the original audio with the appropriate voice overs and sound effects. Furthermore, some clips were slowed down to allow better synchronisation with the audio
 
-|![KdenLive vid grp](/assets/images/2021-03-10-sp-kdenlive/kden_vid_groups.png)|
+|![KdenLive vid grp](/assets/images/sp-kdenlive/kden_vid_groups.png)|
 |<em>Grouping and un-grouping video and audio clips</em>|
-|![KdenLive vid grp](/assets/images/2021-03-10-sp-kdenlive/kden_vid_speed.png)|
+|![KdenLive vid grp](/assets/images/sp-kdenlive/kden_vid_speed.png)|
 |<em>Reducing speed of video clip</em>|
 
 Our project also incorporated data logging via cloud using the Blynk app. Due to the team's inexperience at the time, we were not able to record our Blynk app in action. As such, we took a screen capture and uploaded that onto KdenLive. We were then able to synchronise the voice over with duration of the image.
 
-![KdenLive pic](/assets/images/2021-03-10-sp-kdenlive/kden_pic_blynk.png)
+![KdenLive pic](/assets/images/sp-kdenlive/kden_pic_blynk.png)
 
 **Blynk** Blynk is an application that allows control of IOT technologies using a smartphone
 <cite><a href="https://play.google.com/store/apps/details?id=cc.blynk&hl=en&gl=US">Blynk - Google Play store </a>
@@ -56,8 +56,8 @@ Our project also incorporated data logging via cloud using the Blynk app. Due to
 
 Transitions were also added to make the video flow more smoothly.
 
-![KdenLive vid transition](/assets/images/2021-03-10-sp-kdenlive/kden_vid_transition.png)
+![KdenLive vid transition](/assets/images/sp-kdenlive/kden_vid_transition.png)
 
 Lastly, the video was rendered and was subsequently submitted to our lecturer accordingly.
 
-![KdenLive vid render](/assets/images/2021-03-10-sp-kdenlive/kden_vid_render.png)
+![KdenLive vid render](/assets/images/sp-kdenlive/kden_vid_render.png)
