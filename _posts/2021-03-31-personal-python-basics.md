@@ -98,6 +98,19 @@ What I have learnt is demonstrated in the table below:
 
 |<strong>Importing classes</strong> <br> Use import command <br> to import fx to other files.|![class import 1](/assets/images/2021-03-31-personal-python-basics/class/class_import1.png)<br><em>part 2</em><br>![class import 2](/assets/images/2021-03-31-personal-python-basics/class/class_import2.png)<br><br>![class import to](/assets/images/2021-03-31-personal-python-basics/class/class_import_to.png)<br><br>![class import to](/assets/images/2021-03-31-personal-python-basics/class/class_import_to_op.png)|
 
-![WIP](/assets/images/common/WIP.png)
+***
+
+Exceptions
+
+***
+We can use try-except blocks to mitigate errors. Depending on the program, data can also be written to a json file.
+
+|![Exception zero](/assets/images/2021-03-31-personal-python-basics/except/exception_zero.png)|![Exception count](/assets/images/2021-03-31-personal-python-basics/except/exception_count.png)|
+|<em>using exception</em>|
+
+
+|![Exception json](/assets/images/2021-03-31-personal-python-basics/except/exception_json.png)|![Exception json op](/assets/images/2021-03-31-personal-python-basics/except/exception_json_op.png)|
+|<em>generating json file</em>|
+
 
 For my first projects, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame/">Space shooter game in Python using Pygame, part 1 </a>
