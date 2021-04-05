@@ -86,6 +86,11 @@ What I have learnt is demonstrated in the table below:
 | ----------- | ----------- |
 |<strong>Creating classes</strong>|![create class](/assets/images/2021-03-31-personal-python-basics/class/class_create.png)<br><br>![create class op](/assets/images/2021-03-31-personal-python-basics/class/class_create_op.png)|
 
+|Classes need to be explicitly define, all classes need a __init__ method to be initialised. All method in classes need a self argument, which is a reference to itself. The method will automatically pass the self argument when python calls the method.|
+
+
+
+
 ![WIP](/assets/images/common/WIP.png)
 
 For my first projects, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame/">Space shooter game in Python using Pygame, part 1 </a>
