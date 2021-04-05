@@ -136,7 +136,7 @@ The pressing process is simple
 7. Remove the shirt and print design quickly to prevent smudging
 
 This was the final result of the print.
-![engcad shirt](/assets/images/common/Placeholder.png)
+![engcad shirt](/assets/images/2021-03-29-engcad-cadd-shirt/Engcad-shirt.png)
 <em>The colour looks a little fadded, but I liked the way it turned out</em>
 
 After this we were supposed to add our own designs to the shirt. However, I prefer my shirts to have as simple a design as possible, therefore, I will just leave the shirt as is. Furthermore, after previous experiences with graphic design, I would rather not do any graphic design (although this may change int he future).
