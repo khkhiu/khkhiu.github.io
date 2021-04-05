@@ -43,7 +43,7 @@ fx are block of code that do a specific job, which are called when needed.
 |![simple fx](/assets/images/2021-03-31-personal-python-basics/fx/fx_simple.png)|![simple fx output](/assets/images/2021-03-31-personal-python-basics/fx/fx_simple_op.png)
 |<em>simple hello world fx</em>|
 
-There are many ways to work with fx as demonstrated in the table below
+What I have learnt is demonstrated in the table below:
 
 | Action    | image |
 | ----------- | ----------- |
@@ -77,6 +77,14 @@ There are many ways to work with fx as demonstrated in the table below
 Classes
 
 ***
+
+Classes is part of the object oriented programing paradigm where classes define general operations for an entire category of objects.Creating objects from classes is called instantiation as we work with instances of a class.
+
+What I have learnt is demonstrated in the table below:
+
+| Action    | image |
+| ----------- | ----------- |
+|<strong>Creating classes</strong>|![create class](/assets/images/2021-03-31-personal-python-basics/class/create_class.png)<br><br>![create class op](/assets/images/2021-03-31-personal-python-basics/class/create_class_op.png)|
 
 ![WIP](/assets/images/common/WIP.png)
 
