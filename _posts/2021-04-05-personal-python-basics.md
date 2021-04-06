@@ -105,7 +105,8 @@ What I have learnt is demonstrated in the table below:
 ***
 We can use try-except blocks to mitigate errors. Depending on the program, data can also be written to a json file.
 
-|![Exception zero](/assets/images/personal-python-basics/except/exception_zero.png)|![Exception count](/assets/images/personal-python-basics/except/exception_count.png)|
+|![Exception zero](/assets/images/personal-python-basics/except/exception_zero.png)|
+|![Exception count](/assets/images/personal-python-basics/except/exception_count.png)|
 |<em>using exception</em>|
 
 
