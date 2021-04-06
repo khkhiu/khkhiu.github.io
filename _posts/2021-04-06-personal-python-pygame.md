@@ -23,7 +23,7 @@ Even though I am unlikely to go into game development, I am embarking on this pr
 
 ***
 
-Installing Pygame module
+<strong>Installing Pygame module</strong>
 
 ***
 Using the command, <strong>python -m pip install --user pygame<strong> , the pygame module can be installed.
@@ -32,7 +32,7 @@ Using the command, <strong>python -m pip install --user pygame<strong> , the pyg
 
 ***
 
-Creating a window that responds to user input<br>(also setting background colour)
+<strong>Creating a window that responds to user input<br>(also setting background colour)<strong>
 
 ***
 

@@ -108,7 +108,7 @@ After successfully generating a site, I decided to look around for a theme to us
 
 ![jekyll local machine](/assets/images/engcad-github-pages/Jekyll/jekyll_machine.png)<em>jekyll hosted on my local machine</em>
 
-I began by updating the config.yml file to reflect a dark theme and updating my social media accounts. I also began making file for my post.
+I began by updating the config.yml file to reflect a dark theme.I also updated my social media links and began making pages for my post.
 
 | ![update config](/assets/images/engcad-github-pages/Jekyll/update_config.png)| ![Git init](/assets/images/engcad-github-pages/Jekyll/update_post.png)  |
 
