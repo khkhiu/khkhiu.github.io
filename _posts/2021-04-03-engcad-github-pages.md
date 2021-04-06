@@ -40,9 +40,11 @@ I mainly watched the following 2 videos. <a href="https://www.youtube.com/watch?
 
 After watching the videos, I started by creating a Repository in Github. I used the name 'khkhiu.github.io', set to public to create it as a github pages repo. I then pulled the repo onto my computer using GitHub Desktop  
 
-| ![create repo](/assets/images/engcad-github-pages/HTML/Create_repo.png)<em>creating the repo</em> | ![Git init](/assets/images/engcad-github-pages/HTML/Github_init.png) <em>initialising repo</em> |
+| ![create repo](/assets/images/engcad-github-pages/HTML/Create_repo.png)<em>creating the repo</em> |
+| ![Git init](/assets/images/engcad-github-pages/HTML/Github_init.png) <em>initialising repo</em> |
 
-| ![update read me](/assets/images/engcad-github-pages/HTML/Vscode-Readme.png)<em>Updating the README file</em> | ![Git_init](/assets/images/engcad-github-pages/HTML/Github_1st_commit.png) <em>1st commit to git hub</em> |
+| ![update read me](/assets/images/engcad-github-pages/HTML/Vscode-Readme.png)<em>Updating the README file</em> | 
+| ![Git_init](/assets/images/engcad-github-pages/HTML/Github_1st_commit.png) <em>1st commit to git hub</em> |
 
 Next, I created the following files. An index.html file to act as a landing page, an about.html page for basic information about me, an engcad.html page for school based projects and a personal.html page for personal projects. A styles.css page was also created to manage the CSS and an 'img' folder to contain images. The file were then pushed to github.
 
@@ -59,17 +61,20 @@ I first created a top navigation bar with my desired pages. I used the example i
 
 Referencing <a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp">W3 school </a> again, I added  dropdown menu in the navigation bar. The rationale for the drop down menu is that I will be working on many different projects, hence a dropdown menu will allow a visitor to see what projects I have done at once. 
 
-| ![dropdown code](/assets/images/engcad-github-pages/HTML/Local_machine_design2_code.png)<em>code inspired by W3</em> | ![dropdown site](/assets/images/engcad-github-pages/HTML/Local_machine_design2.png) <em>Site in action</em> |
+| ![dropdown code](/assets/images/engcad-github-pages/HTML/Local_machine_design2_code.png)<em>code inspired by W3</em> | 
+| ![dropdown site](/assets/images/engcad-github-pages/HTML/Local_machine_design2.png) <em>Site in action</em> |
 
 I then refactored both the HTML and CSS to allow for both 'EngCad' and 'Projects' to have their individual dropdown menus. Simultaneously, the 'about' and 'index' page buttons were altered to have a unified appearance.
 
-| ![refactor HTML](/assets/images/engcad-github-pages/HTML/refactored_HTML.png)<em>refactoring HTML</em> | ![refactor CSS](/assets/images/engcad-github-pages/HTML/refactored_CSS.png) <em>refactoring CSS</em> |
+| ![refactor HTML](/assets/images/engcad-github-pages/HTML/refactored_HTML.png)<em>refactoring HTML</em> | 
+|![refactor CSS](/assets/images/engcad-github-pages/HTML/refactored_CSS.png) <em>refactoring CSS</em> |
 
 ![drop down](/assets/images/engcad-github-pages/HTML/Local_machine_design_drop.png) <em>Drop down design complete</em>
 
 I also used font-awesome to add GitHub and Linkedin icons.
 
-| ![awesome font](/assets/images/engcad-github-pages/HTML/fa_icons.png)<em>adding awesome font</em> | ![icons](/assets/images/engcad-github-pages/HTML/Local_machine_design_icons.png) <em>icons added</em> |
+| ![awesome font](/assets/images/engcad-github-pages/HTML/fa_icons.png)<em>adding awesome font</em> | 
+| ![icons](/assets/images/engcad-github-pages/HTML/Local_machine_design_icons.png) <em>icons added</em> |
 
 However, despite my progress, I realised that I have spend over 3 hours on my website and I have just barely scratch the surface. Hence, I decided to look into Jekyll to in hopes of expediting my progress.
 
