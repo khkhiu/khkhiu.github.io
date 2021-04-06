@@ -18,7 +18,7 @@ tags:
 
 ***
 
-Revision of Fusion 360 and 3D CADD techniques
+<strong>Revision of Fusion 360 and 3D CADD techniques</strong>
 
 ***
 
@@ -108,7 +108,7 @@ The translucent box was constructed with all previously described methods with a
 
 ***
 
-T-shirt printing
+<strong>T-shirt printing</strong>
 
 ***
 As part of the introductory session, we were also taught the basics of T-shirt printing. For this session, we used a heat press technique.

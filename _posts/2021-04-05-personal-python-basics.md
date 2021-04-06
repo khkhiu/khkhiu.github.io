@@ -21,8 +21,8 @@ Unlike other post, this post will be a summary of various checkpoints instead of
 
 ***
 
-() VS [] VS {}<br>
-Tuple vs list vs dictionary
+<strong>() VS [] VS {}<br>
+Tuple vs list vs dictionary</strong>
 
 ***
 In python , different bracket types are used for different purposes. Standard brackets () are used for tuples, solid brackets [] are used for list while curly brackets {} are used for dictionaries.Tuples are groups of items stored as a single variable that cannot be changed.  Lists, are groups of items stored as a single variable that can be changed. Dictionaries, store data in sets of key value pairs that can be changed, but keys do not allow duplicates.
@@ -34,7 +34,7 @@ In python , different bracket types are used for different purposes. Standard br
 
 ***
 
-Functions (fx)
+<strong>Functions (fx)</strong>
 
 ***
 
@@ -74,7 +74,7 @@ What I have learnt is demonstrated in the table below:
 
 ***
 
-Classes
+<strong>Classes</strong>
 
 ***
 
@@ -100,7 +100,7 @@ What I have learnt is demonstrated in the table below:
 
 ***
 
-Exceptions
+<strong>Exceptions</strong>
 
 ***
 We can use try-except blocks to mitigate errors. Depending on the program, data can also be written to a json file.
@@ -114,7 +114,7 @@ We can use try-except blocks to mitigate errors. Depending on the program, data 
 
 ***
 
-Testing code
+<strong>Testing code</strong>
 
 ***
 We can import the uinittest fx to verify specific aspects of a fx is operating correctly. However, achieving full coverage can be difficult, hence we only test critical functions.
@@ -122,7 +122,7 @@ We can import the uinittest fx to verify specific aspects of a fx is operating c
 
 ***
 
-Final thoughts
+<strong>Final thoughts</strong>
 
 ***
 Even though I have covered the first half of the book, I still need a lot more practice to refine my abilities.

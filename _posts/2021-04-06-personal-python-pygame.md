@@ -32,7 +32,7 @@ Using the command, <strong>python -m pip install --user pygame<strong> , the pyg
 
 ***
 
-Creating a window that responds to user input, and setting a background colour
+Creating a window that responds to user input<br>(also setting background colour)
 
 ***
 

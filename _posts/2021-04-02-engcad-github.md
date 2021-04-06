@@ -12,7 +12,7 @@ tags:
 
 ***
 
-Introductions
+<strong>Introductions</strong>
 
 ***
 
@@ -38,7 +38,7 @@ Fortunately, I have previous experience using Github and as such am writing this
 
 ***
 
-Workflow - Windows 10
+<strong>Workflow - Windows 10</strong>
 
 ***
 For windows 10, I will be using Github Desktop. Github desktop is a programme that allows the user to use a graphical user interface(GUI) to perform version control instead of using the command line interface(CLI)

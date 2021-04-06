@@ -13,7 +13,7 @@ tags:
 
 ***
 
-Introductions
+<strong>Introductions</strong>
 
 ***
 
@@ -26,7 +26,7 @@ Along with Git and GitHub, we were also required to create a personal website th
 
 ***
 
-Implementation with HTML
+<strong>Implementation with HTML</strong>
 
 ***
 
@@ -76,7 +76,7 @@ However, despite my progress, I realised that I have spend over 3 hours on my we
 
 ***
 
-Implementation with Jekyll
+<strong>Implementation with Jekyll</strong>
 
 ***
 
@@ -125,7 +125,7 @@ Post are created using markdown language, which is easier to work with than HTML
 
 ***
 
-Miscellaneous notes
+<strong>Miscellaneous notes</strong>
 
 ***
 - Overall, I am happy with how the site turned out, despite a slow start.
