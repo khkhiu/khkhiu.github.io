@@ -113,11 +113,11 @@ T-shirt printing
 ***
 As part of the introductory session, we were also taught the basics of T-shirt printing. For this session, we used a heat press technique.
 
-![engcad shirt](/assets/images/engcad-cadd-shirt/shirt-machine.jpeg)
-<em>the press machine used to press the image</em>
+|![engcad shirt](/assets/images/engcad-cadd-shirt/shirt-machine.jpeg)|
+|<em>the press machine used to press the image</em>|
 
-![engcad logo](/assets/images/engcad-cadd-shirt/EA_logo.png)
-<em>the Engineering Academy logo</em>
+|![engcad logo](/assets/images/engcad-cadd-shirt/EA_logo.png)|
+|<em>the Engineering Academy logo</em>|
 
 The pressing process is simple
 
@@ -136,8 +136,8 @@ The pressing process is simple
 7. Remove the shirt and print design quickly to prevent smudging
 
 This was the final result of the print.
-![engcad shirt](/assets/images/engcad-cadd-shirt/Engcad-shirt.jpg)
-<em>The colour looks a little fadded, but I liked the way it turned out</em>
+|![engcad shirt](/assets/images/engcad-cadd-shirt/Engcad-shirt.jpg)|
+|<em>The colour looks a little fadded, but I liked the way it turned out</em>|
 
 After this we were supposed to add our own designs to the shirt. However, I prefer my shirts to have as simple a design as possible, therefore, I will just leave the shirt as is. Furthermore, after previous experiences with graphic design, I would rather not do any graphic design (although this may change int he future).
 
