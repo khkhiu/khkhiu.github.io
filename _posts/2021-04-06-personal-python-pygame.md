@@ -45,7 +45,7 @@ First order of business, setting the background. Using the code below, I did the
 3. Exits the game if user click 'x' in the top right
 4. Run the file, when file is called directly
 
-|![main file](/assets/images/personal-python-pygame/main_file.png)|
+|![main file](/assets/images/personal-python-pygame/main_file.png)<em>main file start</em>|
 
 |![main file op](/assets/images/personal-python-pygame/main_file_op.png)<em>file output</em>|
 
@@ -56,7 +56,7 @@ First order of business, setting the background. Using the code below, I did the
 ***
 To make things easier in the long term, I moved all customisation settings to a separate settings file. This will prevent adding of settings throughout the code
 
-|![settings](/assets/images/personal-python-pygame/settings.png)|
+|![settings](/assets/images/personal-python-pygame/settings.png)<em>settings.py</em>|
 
 |![main file refactored](/assets/images/personal-python-pygame/main_file_RE.png)<em>refactored code</em>|
 
@@ -66,6 +66,10 @@ To make things easier in the long term, I moved all customisation settings to a 
 <strong>Adding ship image<strong>
 
 ***
+
+Using, LibreOffice-draw, I created a custom ship bit map file and inserted it into the screen. I used GIMP to convert the exported PDF file from LibreOffice-draw into a bit map file.
+
+|![ship](/assets/images/personal-python-pygame/Ship.bmp)<br><em>the custom ship sprite</em>|
 
 
 
