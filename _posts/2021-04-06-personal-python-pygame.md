@@ -9,7 +9,7 @@ tags:
   - Pygame
 
 ---
-**Background information** I am using the book: <a href="https://nostarch.com/pythoncrashcourse2e">Python Crash Course, 2nd Edition</a> to teach myself the basics of python. This is a follow up post <a href="https://khkhiu.github.io/personal/personal-python-basics/"> Python Basics. </a>
+**Background information** I am using the book: <a href="https://nostarch.com/pythoncrashcourse2e">Python Crash Course, 2nd Edition</a> to teach myself the basics of python. This is a follow up post: <a href="https://khkhiu.github.io/personal/personal-python-basics/"> Python Basics. </a>
 {: .notice--info}
 
 
@@ -26,7 +26,7 @@ Even though I am unlikely to go into game development, I am embarking on this pr
 Installing Pygame module
 
 ***
-Using the command,<strong>python -m pip install --user pygame<strong>, the pygame module can be installed.
+Using the command, <strong>python -m pip install --user pygame<strong> , the pygame module can be installed.
 
 ![pygame_install](/assets/images/common/Placeholder.png)
 
