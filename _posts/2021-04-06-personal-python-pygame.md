@@ -14,6 +14,13 @@ tags:
 {: .notice--info}
 
 
-Python Crash Course is split into 2 parts. The first part covers the basics of python , which can be found <a href="https://khkhiu.github.io/personal/personal-python-basics/"> here </a>
+Python Crash Course is split into 2 parts. The first part covers the basics of python , which can be found <a href="https://khkhiu.github.io/personal/personal-python-basics/"> here </a>. The second part consist of 3 projects.
+
+1. Space shooter with pygame
+2. Data Visualisation with Matplotlib and Plotly
+3. Web Applications with Django
+
+Even though I am unlikely to go into game development, I am embarking on this project because I think it will be interesting (may or may not attempt a Tetris-esk game in the future, we will see).
+
 
 ![WIP](/assets/images/common/WIP.png)
