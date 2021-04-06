@@ -31,13 +31,46 @@ Even though I am unlikely to go into game development, I am embarking on this pr
 ***
 Using the command, <strong>python -m pip install --user pygame<strong> , the pygame module can be installed.
 
-![pygame_install](/assets/images/common/Placeholder.png)
+![pygame install](/assets/images/common/Placeholder.png)
 
 ***
 
 <strong>Creating a window that responds to user input<br>(also setting background colour)<strong>
 
 ***
+
+First order of business, setting the background. Using the code below, I did the following:
+1. Imported pygame module and set the display size to 1200 by 800 pixels
+2. Set background colour to white 
+3. Exits the game if user click 'x' in the top right
+4. Run the file, when file is called directly
+
+|![main file](/assets/images/personal-python-pygame/main_file.png)|
+
+|![main file op](/assets/images/personal-python-pygame/main_file_op.png)<em>file output</em>|
+
+***
+
+<strong>Creating a 'settings' file<strong>
+
+***
+To make things easier in the long term, I moved all customisation settings to a separate settings file. This will prevent adding of settings throughout the code
+
+|![settings](/assets/images/personal-python-pygame/settings.png)|
+
+|![main file refactored](/assets/images/personal-python-pygame/main_file_RE.png)<em>refactored code</em>|
+
+
+***
+
+<strong>Adding ship image<strong>
+
+***
+
+
+
+
+
 
 
 ![WIP](/assets/images/common/WIP.png)
