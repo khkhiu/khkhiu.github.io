@@ -9,7 +9,7 @@ tags:
   - Legacy
 
 ---
-**Legacy tag** Post containing the Legacy tag are projects that have been completed prior to the creation of this site. As such, aspects of the documentation may be incomplete   
+**Legacy tag** Post containing the Legacy tag are projects that have been completed prior to the creation of this site. As such, I have attempted to recreate the events to the best of my abilities.   
 {: .notice--warning}
 
 For reasons that have been lost to time, I decided to start learning python. I learnt the basics of python using the book: Python Crash Course, 2nd edition by Eric Matthes, published by No Starch Press.
