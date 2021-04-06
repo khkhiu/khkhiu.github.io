@@ -9,8 +9,7 @@ tags:
   - Pygame
 
 ---
-**Background information** I am using the book: Python Crash Course, 2nd Edition to teach myself the basics of python. This is a follow up post <a href="https://khkhiu.github.io/personal/personal-python-basics/"> Python Basics. </a> For more information on the book, click the following link
-<cite><a href="https://nostarch.com/pythoncrashcourse2e">Python Crash Course, 2nd Edition</a></cite>
+**Background information** I am using the book: <a href="https://nostarch.com/pythoncrashcourse2e">Python Crash Course, 2nd Edition</a> to teach myself the basics of python. This is a follow up post <a href="https://khkhiu.github.io/personal/personal-python-basics/"> Python Basics. </a>
 {: .notice--info}
 
 
