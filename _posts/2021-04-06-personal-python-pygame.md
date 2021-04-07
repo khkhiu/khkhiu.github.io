@@ -132,7 +132,8 @@ Some notes regarding bullet.py. The bullet class inherits properties from pygame
 |Storing bullets in<br> group|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)|
 |<em>added code in main file to manage bullets</em>|
 
-
+|Firing bullets|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)|
+|<em>added code in main file to manage bullets</em><br><br>(/assets/images/personal-python-pygame/bullet_file_grp.png)<br><br>|
 
 <s>he he, ship goes pew pew</s>
 
