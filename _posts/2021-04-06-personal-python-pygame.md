@@ -105,8 +105,8 @@ Through the events in the following table, I implemented ship movement into the 
 
 | Action     | code |
 | ----------- | ----------- |
-| Responding to key press|![Right key press](/assets/images/personal-python-pygame/R_keypress.png)|
-| Allowing continuous movement|![Continuous movement ship](/assets/images/personal-python-pygame/con_movement_ship.png)<br><em>Updated ship code</em><br>![Continuous movement main](/assets/images/personal-python-pygame/con_movement_main.png)<br><em>Updated _check_events code</em><br>![Continuous movement call](/assets/images/personal-python-pygame/con_movement_call.png)<br><em>Updated while loop</em>|
+| Responding to key press|![Right key press](/assets/images/personal-python-pygame/R_keypress.png)<br><em>ship moves right on key press</em>|
+| Allowing continuous movement|![Continuous movement ship](/assets/images/personal-python-pygame/con_movement_ship.png)<br><em>updated ship code</em><br>![Continuous movement main](/assets/images/personal-python-pygame/con_movement_main.png)<br><em>updated _check_events code</em><br>![Continuous movement call](/assets/images/personal-python-pygame/con_movement_call.png)<br><em>updated while loop</em>|
 
 
 
