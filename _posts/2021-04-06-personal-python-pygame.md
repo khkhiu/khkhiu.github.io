@@ -111,6 +111,8 @@ Through the events in the following table, I implemented ship movement into the 
 |Adjusting ship speed|![Ship speed](/assets/images/personal-python-pygame/R_keypress.png)<br><em>ship moves right on key press</em>|
 | Changing speed ship|![Speed settings](/assets/images/personal-python-pygame/speed_setting.png)<br><em>increase speed to 1.5 pixel per loop pass</em><br>![Ship speed](/assets/images/personal-python-pygame/speed_ship.png)<br><em>adding speed setting to ship.py</em>|
 | Limiting ship range|![Ship range](/assets/images/personal-python-pygame/range_ship.png)<br><em>prevents ships from going out out of bounds in ship.py</em>|
+| Refactoring check events|![check event refactor](/assets/images/personal-python-pygame/check_event_refactor.png)<br><em>Refactoring check events in SpaceInvader.py. Also added exit on 'q' press</em>|
+
 
 
 
