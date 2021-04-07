@@ -1,6 +1,6 @@
 ---
 title: "Space shooter game in Python using Pygame, part 1"
-date: "31-03-2021"
+date: "07-04-2021"
 categories:
   - Personal
 tags:
@@ -134,6 +134,9 @@ Some notes regarding bullet.py. The bullet class inherits properties from pygame
 |Firing bullets|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)<em>added code in main file to manage bullets</em><br><br>![bullet import](/assets/images/personal-python-pygame/bullet_import.png)<br><em>importing bullet<br><br>![bullet update](/assets/images/personal-python-pygame/bullet_update.png)<br><em>bullet in main loop</em><br><br>![bullet fire](/assets/images/personal-python-pygame/bullet_input_space.png)<br><em>fire bullet with 'space'</em><br><br>![bullet fx](/assets/images/personal-python-pygame/bullet_fx.png)<br><em>bullet fx</em><br><br>![bullet on screen](/assets/images/personal-python-pygame/bullet_screen.png)<br><em>bullet appears on screen</em><br><br>![bullet output](/assets/images/personal-python-pygame/bullet_op.png)<br><em><s>he he, ship goes pew pew</s> firing bullets</em><br>|
 
 I did not implement limiting the number of bullets as stated in the book as I felt it was not needed.
+
+This concludes the part 1 of the pygame project. For part 2, where I will be implementing the aliens to shoot, click here: <a href="https://khkhiu.github.io/singapore%20polytechnic/sp-cadd-3d-A2/">Space shooter game in Python using Pygame, part 2</a>  
+
 
 
 
