@@ -129,7 +129,7 @@ Some notes regarding bullet.py. The bullet class inherits properties from pygame
 
 |Make bullet appear moving|![bullet moving](/assets/images/personal-python-pygame/bullet_file_move.png)|
 
-|Storing bullets in group|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)|
+|Storing bullets in<br> group|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)|
 |<em>added code in main file to manage bullets</em>|
 
 
