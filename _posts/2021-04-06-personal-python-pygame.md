@@ -107,7 +107,8 @@ Through the events in the following table, I implemented ship movement into the 
 | ----------- | ----------- |
 | Responding to key press|![Right key press](/assets/images/personal-python-pygame/R_keypress.png)<br><em>ship moves right on key press</em>|
 | Allowing continuous movement|![Continuous movement ship](/assets/images/personal-python-pygame/con_movement_ship_R.png)<br><em>updated ship code</em><br>![Continuous movement main](/assets/images/personal-python-pygame/con_movement_main_R.png)<br><em>updated _check_events code</em><br>![Continuous movement call](/assets/images/personal-python-pygame/con_movement_call.png)<br><em>updated while loop</em>|
-|Moving left and right|![Adding left movement](/assets/images/personal-python-pygame/con_movement_ship_RL.png)<br><em>adding moving left</em><br>![Continuous movement main](/assets/images/personal-python-pygame/con_movement_main.png)<br><em>updated _check_events code</em><br>![Continuous movement call](/assets/images/personal-python-pygame/con_movement_call.png)<br><em>updated while loop</em>|
+|Moving left and right|![Adding left movement](/assets/images/personal-python-pygame/con_movement_ship_RL.png)<br><em>adding moving left</em><br>![Continuous movement main](/assets/images/personal-python-pygame/con_movement_main_RL.png)<br><em>new _check_events code</em>|
+|Adjusting ship speed|![Ship speed](/assets/images/personal-python-pygame/R_keypress.png)<br><em>ship moves right on key press</em>|
 
 
 
