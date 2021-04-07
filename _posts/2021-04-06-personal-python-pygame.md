@@ -74,7 +74,7 @@ To make things easier in the long term, I moved all customisation settings to a 
 Using, LibreOffice-draw, I created a custom ship bit map file and inserted it into the screen. I used GIMP to convert the exported PDF file from LibreOffice-draw into a bit map file.
 
 |![ship](/assets/images/personal-python-pygame/Ship.bmp)|
-|<em>the custom ship sprite</em>|
+|<em>the custom ship sprite VS original sprite</em>|
 
 
 
