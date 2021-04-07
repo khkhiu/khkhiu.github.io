@@ -128,6 +128,8 @@ The settings create dark grey bullets that are 3 by 15 pixels. The bullet travel
 |<em>bullet.py</em>|
 Some notes regarding bullet.py. The bullet class inherits properties from pygame.sprite module. Sprites allow for grouping of related elements and acting on all of them at once. To make a bullet instance, the __init()__ uses the current instance of SpaceInvaders. The super() call is used to inherit properties from pygame.sprite. Other attributes of the bullet were also set.
 
+To make the bullet have the illusion of moving, the following code was added to the bullet.py
+|![bullet.py](/assets/images/personal-python-pygame/bullet_file_move.png)|
 
 
 <s>he he, ship goes pew pew</s>
