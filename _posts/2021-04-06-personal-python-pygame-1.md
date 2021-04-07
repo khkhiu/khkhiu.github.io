@@ -135,7 +135,7 @@ Some notes regarding bullet.py. The bullet class inherits properties from pygame
 
 I did not implement limiting the number of bullets as stated in the book as I felt it was not needed.
 
-This concludes the part 1 of the pygame project. For part 2, where I will be implementing the aliens to shoot, click here: <a href="https://khkhiu.github.io/singapore%20polytechnic/sp-cadd-3d-A2/">Space shooter game in Python using Pygame, part 2</a>  
+This concludes the part 1 of the pygame project. For part 2, where I will be implementing the aliens to shoot, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame-2/">Space shooter game in Python using Pygame, part 2</a>  
 
 
 

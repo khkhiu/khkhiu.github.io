@@ -9,7 +9,7 @@ tags:
   - Pygame
 
 ---
-For part 1 of the pygame project, where I implemented a ship that moves and shoot, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame/">Space shooter game in Python using Pygame, part 1</a>  
+For part 1 of the pygame project, where I implemented a ship that moves and shoot, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame-1/">Space shooter game in Python using Pygame, part 1</a>  
 
 
 ![WIP](/assets/images/common/WIP.png)
