@@ -129,11 +129,9 @@ Some notes regarding bullet.py. The bullet class inherits properties from pygame
 
 |Make bullet appear moving|![bullet moving](/assets/images/personal-python-pygame/bullet_file_move.png)|
 
-|Storing bullets in<br> group|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)|
-|<em>added code in main file to manage bullets</em>|
+|Storing bullets in<br> group|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)<em>added code in main file to manage bullets</em>|
 
-|Firing bullets|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)|
-|<em>added code in main file to manage bullets</em><br><br>(/assets/images/personal-python-pygame/bullet_file_grp.png)<br><br>|
+|Firing bullets|![bullet main file](/assets/images/personal-python-pygame/bullet_file_grp.png)<em>added code in main file to manage bullets</em><br><br>![bullet import](/assets/images/personal-python-pygame/bullet_import.png)<br><em>importing bullet<br><br>![bullet update](/assets/images/personal-python-pygame/bullet_update.png)<br><em>bullet in main loop</em><br><br>![bullet fire](/assets/images/personal-python-pygame/bullet_input_space.png)<br><em>fire bullet with 'space'</em><br><br>![bullet fx](/assets/images/personal-python-pygame/bullet_fx.png)<br><em>bullet fx</em><br><br>![bullet on screen](/assets/images/personal-python-pygame/bullet_screen.png)<br><em>bullet appears on screen</em><br><br>![bullet output](/assets/images/personal-python-pygame/bullet_op.png)<br><em>bullet output</em><br>|
 
 <s>he he, ship goes pew pew</s>
 
