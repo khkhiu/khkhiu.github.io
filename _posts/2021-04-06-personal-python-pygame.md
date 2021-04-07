@@ -91,6 +91,16 @@ Using the following code, I inserted the sprite into screen.
 
 ***
 
+Refactoring code involves re-structuring code to make future support easier. For this case, I will be breaking the run_game() into 2 smaller helper methods. A helper method, indicated by 1 leading underscore, does work inside a class but is not meant to be called through an instance.
+
+|![Refactored SpaceInvader class](/assets/images/personal-python-pygame/SI_refactor.png)|
+|<em>refactoring code</em>|
+
+***
+
+<strong>Controlling the ship<strong>
+
+***
 
 
 
