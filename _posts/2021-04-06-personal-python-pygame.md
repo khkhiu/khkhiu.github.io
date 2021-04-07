@@ -113,7 +113,21 @@ Through the events in the following table, I implemented ship movement into the 
 | Limiting ship range|![Ship range](/assets/images/personal-python-pygame/range_ship.png)<br><em>prevents ships from going out out of bounds in ship.py</em>|
 | Refactoring check events|![check event refactor](/assets/images/personal-python-pygame/check_event_refactor.png)<br><em>Refactoring check events in SpaceInvader.py. Also added exit on 'q' press</em>|
 
+***
+
+<strong>Shooting bullets<strong>
+
+***
+First, I updated settings.py to include bullets.
+
+|![bullet settings](/assets/images/personal-python-pygame/bullet_setting.png)|
+
+The settings create dark grey bullets that are 3 by 15 pixels. The bullet travel slightly slower than the ship.
+
+|![bullet.py](/assets/images/personal-python-pygame/bullet_file.png)|
+|<em>bullet.py</em>|
 
 
+<s>he he, ship goes pew pew</s>
 
 ![WIP](/assets/images/common/WIP.png)
