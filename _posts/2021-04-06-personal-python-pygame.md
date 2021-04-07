@@ -118,19 +118,17 @@ Through the events in the following table, I implemented ship movement into the 
 <strong>Shooting bullets<strong>
 
 ***
-First, I updated settings.py to include bullets.
 
-|![bullet settings](/assets/images/personal-python-pygame/bullet_setting.png)|
+Through the events in the following table, I implemented bullets into the game.
 
-The settings create dark grey bullets that are 3 by 15 pixels. The bullet travel slightly slower than the ship.
+|Updating settings.py to include bullets.|![bullet settings](/assets/images/personal-python-pygame/bullet_setting.png)<br><em>create 3 by 15 pixel dark grey bullets that travel slightly slower than the ship.</em>|
 
-|![bullet.py](/assets/images/personal-python-pygame/bullet_file.png)|
-|<em>bullet.py</em>|
+|Creating the bullet.py|![bullet.py](/assets/images/personal-python-pygame/bullet_file.png)|
 
 Some notes regarding bullet.py. The bullet class inherits properties from pygame.sprite module. Sprites allow for grouping of related elements and acting on all of them at once. To make a bullet instance, the __init()__ uses the current instance of SpaceInvaders. The super() call is used to inherit properties from pygame.sprite. Other attributes of the bullet were also set.
 
-To make the bullet have the illusion of moving, the following code was added to the bullet.py
-|![bullet.py](/assets/images/personal-python-pygame/bullet_file_move.png)|
+|Make bullet appear moving|![bullet moving](/assets/images/personal-python-pygame/bullet_file_move.png)|
+
 
 
 <s>he he, ship goes pew pew</s>
