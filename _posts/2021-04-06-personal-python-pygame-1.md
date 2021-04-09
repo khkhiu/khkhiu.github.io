@@ -29,7 +29,9 @@ Even though I am unlikely to go into game development, I am embarking on this pr
 ***
 Using the command, <strong>python -m pip install --user pygame<strong> , the pygame module can be installed.
 
-![pygame install](/assets/images/common/Placeholder.png)
+|![pygame install](/assets/images/personal-python-pygame/pygame_install.png)|
+|<em>Updating my pip module, because I already installed the pygame module</em>|
+
 
 ***
 
