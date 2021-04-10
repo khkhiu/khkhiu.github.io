@@ -122,7 +122,7 @@ To ensure that individual pages have the proper headings or columns, we need to 
 |![print title before](/assets/images/personal-excel-basics/print_title_after.png)|
 |<em>after print title</em>|
 
-<strong>Comments, and Printing Comments in Excel</strong>
+<strong>Comments, notes and printing both in excel</strong>
 
 Similar to programming languages, comments can be inserted into excel.
 
