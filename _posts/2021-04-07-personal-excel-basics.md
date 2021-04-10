@@ -26,4 +26,13 @@ For this brief introduction, I will be using the following video: <a href="https
 Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!<a> by the channel: <a href ="https://www.youtube.com/channel/UC-3e3hAUhDV2lwcoQGD2grg"> Simon Sez IT </a>
 
 
+
 ![WIP](/assets/images/common/WIP.png)
+
+***
+
+Misc notes
+
+***
+
+- Apparently excel supports up to 16,384 columns by 1,048,576 rows per sheet.
