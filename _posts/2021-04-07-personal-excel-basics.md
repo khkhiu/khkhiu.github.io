@@ -138,6 +138,22 @@ To print the comment, we use the same menu as the one we used to set our header 
 |![comment print output](/assets/images/personal-excel-basics/comment_print_op.png)|
 |<em>comment print preview</em>|
 
+Notes are similar in nature with comments. Except note do not have collaboration tools and require hovering over it to view it (or the user can use the top bar to navigate notes).
+
+|![insert note 1](/assets/images/personal-excel-basics/note_insert-1.png)|![insert note 2](/assets/images/personal-excel-basics/note_insert-2.png)
+|<em>methods of inserting notes</em>|
+|![insert note op](/assets/images/personal-excel-basics/note_insert_op.png)|![insert note op 2](/assets/images/personal-excel-basics/note_insert_op-2.png)
+|<em>viewing notes</em>|
+
+To print notes, we use the same menu as the one we used to set our header and footer.
+
+|![note print setup](/assets/images/personal-excel-basics/note_print.png)|
+|<em>note printing setup</em>|
+|![note print output - end](/assets/images/personal-excel-basics/note_print_op-1.png)|
+|<em>printing notes at the end of the document</em>|
+|![note print output - displayed](/assets/images/personal-excel-basics/note_print_op-2.png)|
+|<em>printing notes as displayed</em>|
+
 ***
 
 Other capabilities of Excel 2019
