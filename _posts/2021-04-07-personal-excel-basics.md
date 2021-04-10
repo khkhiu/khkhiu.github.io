@@ -184,4 +184,4 @@ As the remaining fx of have little relation with each other, I will summarise th
 - ![transpose](/assets/images/personal-excel-basics/transpose.png)<br><br>![transpose](/assets/images/personal-excel-basics/transpose_op.png)<br>
   Transpose switches the values of columns and rows
 
-![WIP](/assets/images/common/WIP.png)
+![Stop at 2:21:26](/assets/images/common/WIP.png)
