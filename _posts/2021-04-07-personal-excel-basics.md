@@ -76,6 +76,13 @@ Information of the selected range can also be found at the bottom of the Excel U
 
 ![range stats](/assets/images/personal-excel-basics/range-stat.png)
 
+<strong>Linking information from different sheets</strong>
+Using the syntax: ='sheet_name'!cell_number, values of one sheet can be called from another sheet.
+
+|![sheet call](/assets/images/personal-excel-basics/sheet.png)<br><em>Focus on cell B3</em>|![sheet call op](/assets/images/personal-excel-basics/sheet_op.png)<br><em>Cell B3 of sheet 1  called from another sheet</em>|
+
+
+
 ***
 
 Misc notes
@@ -84,5 +91,7 @@ Misc notes
 
 - Apparently Excel 2019 supports up to 16,384 columns by 1,048,576 rows per sheet.
 
+- ![cell nav](/assets/images/personal-excel-basics/cell_nav.png)<br>
+  This box can be used to jump to any cell by keying in the coordinates
 
 ![WIP](/assets/images/common/WIP.png)
