@@ -122,6 +122,21 @@ To ensure that individual pages have the proper headings or columns, we need to 
 |![print title before](/assets/images/personal-excel-basics/print_title_after.png)|
 |<em>after print title</em>|
 
+<strong>Comments, and Printing Comments in Excel</strong>
+
+Similar to programming languages, comments can be inserted into excel.
+
+|![insert comment 1](/assets/images/personal-excel-basics/comment_insert-1.png)|![insert comment 2](/assets/images/personal-excel-basics/comment_insert-2.png)
+|<em>methods of inserting comment</em>|
+|![insert comment op](/assets/images/personal-excel-basics/comment_insert_op.png)|![insert comment op 2](/assets/images/personal-excel-basics/comment_insert_op-2.png)
+|<em>working with comments</em>|
+
+To print the comment, we use the same menu as the one we used to set our header and footer.
+
+|![comment print setup](/assets/images/personal-excel-basics/comment_print.png)|
+|<em>comment printing setup</em>|
+|![comment print output](/assets/images/personal-excel-basics/comment_print_op.png)|
+|<em>comment print preview</em>|
 
 ***
 
