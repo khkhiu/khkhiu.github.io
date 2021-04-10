@@ -81,8 +81,6 @@ Using the syntax: ='sheet_name'!cell_number, values of one sheet can be called f
 
 |![sheet call](/assets/images/personal-excel-basics/sheet.png)<br><em>Focus on cell B3</em>|![sheet call op](/assets/images/personal-excel-basics/sheet_op.png)<br><em>Cell B3 of sheet 1  called from another sheet</em>|
 
-
-
 ***
 
 Misc notes
@@ -96,5 +94,14 @@ Misc notes
 
 - ![find and replace](/assets/images/personal-excel-basics/find_replace.png)<br>
   Find and replace fx, arguably more important than in Word
+
+**Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : 
+Statistics and Analytics for Engineers
+{: .notice--warning}
+
+- ![freeze](/assets/images/personal-excel-basics/freeze.png)<br>
+  Freezing panes allows us to keep the desired colum when navigating the sheet.
+
+
 
 ![WIP](/assets/images/common/WIP.png)
