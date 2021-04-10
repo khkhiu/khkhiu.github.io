@@ -83,7 +83,7 @@ Using the syntax: ='sheet_name'!cell_number, values of one sheet can be called f
 
 ***
 
-Header and footer
+Printing an Excel spread sheet
 
 ***
 Header and footers can be inserted when an excel sheet needs to be printed. There are options to change to the 'Header and Footer' view from either the top menu bar or the bottom left.
@@ -108,6 +108,15 @@ Any addition made to a header and footer of one page will automatically be copie
 |<em>Footer output, auto-generated, page 1</em>|
 |![header and footer top eg](/assets/images/personal-excel-basics/header_footer_bottom_eg_op-2.png)|
 |<em>Footer output, auto-generated, page 2</em>|
+
+To ensure that individual pages have the proper headings or columns, we need to use the 'print title' option under the 'page layout' tab.
+
+|![print title options](/assets/images/personal-excel-basics/print_title.png)|
+|<em>print title options</em>|
+|![print title before](/assets/images/personal-excel-basics/print_title_before.png)|
+|<em>before print title</em>|
+|![print title before](/assets/images/personal-excel-basics/print_title_after.png)|
+|<em>after print title</em>|
 
 
 ***
