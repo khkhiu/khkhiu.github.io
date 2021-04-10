@@ -27,5 +27,15 @@ For this segment of the project, we will be adding the aliens for our space inva
 Creating the alien
 
 ***
+**Inkscape** Inkscape is a free and open source vector graphic editing software that has support for various file formats like Scalable Vector Graphics (SVG)
+<cite><a href="https://inkscape.org/">inkscape.org/</a></cite>
+{: .notice--info}
+
+Using Inkscape(which may or may not get its own post sometime in the future), I created the following:
+
+![alien](/assets/images/personal-python-pygame-pt2/alien.png)
+
+I wanted to create a custom alien as I wanted to take this opportunity to learn more about how to use inkscape.
+
 
 ![WIP](/assets/images/common/WIP.png)
