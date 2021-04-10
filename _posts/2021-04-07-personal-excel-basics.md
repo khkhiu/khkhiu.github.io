@@ -62,12 +62,19 @@ Using the fill handle and dragging across cells, Excel will automatically fill i
 
 <strong>Ranges</strong>
 
-Ranges are groups of adjacent cells that the user wants to work with. The user define ranges by dragging and highlighting the desired cells.
+Ranges are groups of adjacent cells that the user wants to work with. The user define ranges by dragging and highlighting the desired cells. 
+
+Other methods of definition include:
+1. Clicking a cell, holding the 'shift' key and clicking another cell
+2. By using a : between 2 desired cells. For example B2:C4
+
 ![range](/assets/images/personal-excel-basics/range-1.png)
 
-It is important to note that only 'enter' and 'tab' keys are to be used when navigating ranges. Using the arrow key will de-select the range and navigate to another cell, ditto for mouse clicking.
+It is important to note that only 'enter' and 'tab' keys are to be used when navigating ranges.The white cell in the range denotes a highlighted cell. Using the arrow key will de-select the range and navigate to another cell, ditto for mouse clicking.
 
-The white cell in the range denotes a highlighted cell.
+Information of the selected range can also be found at the bottom of the Excel UI.
+
+![range stats](/assets/images/personal-excel-basics/range-stat.png)
 
 ***
 
