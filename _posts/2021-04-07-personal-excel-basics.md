@@ -94,4 +94,7 @@ Misc notes
 - ![cell nav](/assets/images/personal-excel-basics/cell_nav.png)<br>
   This box can be used to jump to any cell by keying in the coordinates
 
+- ![find and replace](/assets/images/personal-excel-basics/find_replace.png)<br>
+  Find and replace fx, arguably more important than in Word
+
 ![WIP](/assets/images/common/WIP.png)
