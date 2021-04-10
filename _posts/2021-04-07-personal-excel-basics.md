@@ -30,17 +30,17 @@ Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!<a> by the c
 Creating Basic Formulas in Excel - 29:06
 
 ***
-The first 3o minutes of the video goes through various aspects of the interface of Excel 2019, hence I will be skipping ahead.
+The first 30 minutes of the video goes through various aspects of the interface of Excel 2019, hence I will be skipping ahead.
 
-| Action     | Command |
+| Action and Command     | Image |
 | ----------- | ----------- |
-| Addition      | +         |
-| Subtraction   | -         |
-| Multiplication| *         |
-| Division      | /         |
-| Order of move | ()        |
-| Power         | ^         |
-|<em>All formula must have an '=' at the front</em>|
+| Addition<br><br>Use: <strong>+</strong>|![add](/assets/images/personal-excel-basics/add.png)<br><br>![add op](/assets/images/personal-excel-basics/add_op.png)<br><em>addition output</em>|
+| Subtraction<br><br>Use: <strong>-</strong>|![minus](/assets/images/personal-excel-basics/minus.png)<br><br>![minus op](/assets/images/personal-excel-basics/minus_op.png)<br><em>subtraction output</em>|
+| Multiplication<br><br>Use: <strong>*</strong>|![multiply](/assets/images/personal-excel-basics/multi.png)<br><br>![multiply op](/assets/images/personal-excel-basics/multi_op.png)<br><em>multiply output</em>|
+| Division<br><br>Use: <strong>/</strong>|![divide](/assets/images/personal-excel-basics/divide.png)<br><br>![divide op](/assets/images/personal-excel-basics/divide_op.png)<br><em>division output</em>|
+| Power<br><br>Use: <strong>^</strong>|![power](/assets/images/personal-excel-basics/pwr.png)<br><br>![power op](/assets/images/personal-excel-basics/pwr_op.png)<br><em>power output</em>|
+| Precedent<br><br>Use: <strong>( )</strong>|![precedent](/assets/images/personal-excel-basics/precedent.png)<br><br>![precedent op](/assets/images/personal-excel-basics/precedent_op.png)<br><em>precedent output</em>|
+|<em>All formula must have an '=' at the front</em>| |
 
 
 ![WIP](/assets/images/common/WIP.png)
