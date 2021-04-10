@@ -30,6 +30,7 @@ Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!<a> by the c
 Creating Basic Formulas in Excel - 29:06
 
 ***
+
 The first 30 minutes of the video goes through various aspects of the interface of Excel 2019, hence I will be skipping ahead.
 
 | Action and Command     | Image |
@@ -43,7 +44,12 @@ The first 30 minutes of the video goes through various aspects of the interface 
 |<em>All formula must have an '=' at the front</em>| |
 
 
-![WIP](/assets/images/common/WIP.png)
+***
+
+Relative reference in Excel - 35:56
+
+***
+
 
 ***
 
@@ -52,3 +58,6 @@ Misc notes
 ***
 
 - Apparently excel supports up to 16,384 columns by 1,048,576 rows per sheet.
+
+
+![WIP](/assets/images/common/WIP.png)
