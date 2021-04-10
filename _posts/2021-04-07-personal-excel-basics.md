@@ -43,6 +43,15 @@ The first 30 minutes of the video goes through various aspects of the interface 
 | Precedent<br><br>Use: <strong>( )</strong>|![precedent](/assets/images/personal-excel-basics/precedent.png)<br><br>![precedent op](/assets/images/personal-excel-basics/precedent_op.png)<br><em>precedent output</em>|
 |<em>All formula must have an '=' at the front</em>| |
 
+Regarding precedent, the order of operations for Excel is as follows:
+
+1. : ( )
+2. : ^
+3. : * /
+4. : + -
+
+Other wise, the formula will be executed from left to right. 
+
 Using the fill handle and dragging across cells, Excel will automatically fill in blanks will associated formulas. This is called relative reference and allows us to quickly auto-fill cells with desired formulas. However, there will be times where will do not want this to occur. How this will achieved will be covered later
 
 |![relative reference](/assets/images/personal-excel-basics/rel_ref-1.png)<br><em>relative reference</em>|![relative reference op](/assets/images/personal-excel-basics/rel_ref-2.png)<br><em>relative reference output</em>|
