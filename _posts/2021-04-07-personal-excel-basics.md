@@ -27,11 +27,13 @@ Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!<a> <a href 
 
 ***
 
-Creating Basic Formulas in Excel - 29:06
+Basic formulas and operations
 
 ***
 
 The first 30 minutes of the video goes through various aspects of the interface of Excel 2019, hence I will be skipping ahead.
+
+The use of basic formulas are outline in the table below
 
 | Action and Command     | Image |
 | ----------- | ----------- |
@@ -52,9 +54,20 @@ Regarding precedent, the order of operations for Excel is as follows:
 
 Other wise, the formula will be executed from left to right. 
 
+<strong>Relative reference</strong>
+
 Using the fill handle and dragging across cells, Excel will automatically fill in blanks will associated formulas. This is called relative reference and allows us to quickly auto-fill cells with desired formulas. However, there will be times where will do not want this to occur. How this will achieved will be covered later
 
 |![relative reference](/assets/images/personal-excel-basics/rel_ref-1.png)<br><em>relative reference</em>|![relative reference op](/assets/images/personal-excel-basics/rel_ref-2.png)<br><em>relative reference output</em>|
+
+<strong>Ranges</strong>
+
+Ranges are groups of adjacent cells that the user wants to work with. The user define ranges by dragging and highlighting the desired cells.
+![range](/assets/images/personal-excel-basics/range-1.png)
+
+It is important to note that only 'enter' and 'tab' keys are to be used when navigating ranges. Using the arrow key will de-select the range and navigate to another cell, ditto for mouse clicking.
+
+The white cell in the range denotes a highlighted cell.
 
 ***
 
