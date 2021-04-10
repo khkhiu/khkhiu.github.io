@@ -88,8 +88,26 @@ Header and footer
 ***
 Header and footers can be inserted when an excel sheet needs to be printed. There are options to change to the 'Header and Footer' view from either the top menu bar or the bottom left.
 
-![header and footer top](/assets/images/personal-excel-basics/header_footer_top.png)<br><em>Top bar, under 'insert' tab</em><br>
-![header and footer bottom](/assets/images/personal-excel-basics/header_footer_bottom.png)<br><em>Bottom left button</em>
+|![header and footer top](/assets/images/personal-excel-basics/header_footer_top.png)|
+|<em>Top bar, under 'insert' tab</em>|
+|![header and footer bottom](/assets/images/personal-excel-basics/header_footer_bottom.png)|
+|<em>Bottom left button|
+
+|![header and footer view](/assets/images/personal-excel-basics/header_footer_view.png)|
+|<em>Header and footer on display</em>|
+
+A contextual tab will appear when working with the header and footer. The tab is filled with options that one will fine useful when formatting documents. Cells can also be resized to better fit desired dimensions. The contextual tab when the user clicks away from the header and footer. Simply click on the header or footer again for the tab to re-appear.
+
+Any addition made to a header and footer of one page will automatically be copied to all pages. Using the options in the contextual tab will allow for automatic updating of elements.
+
+|![header and footer top eg](/assets/images/personal-excel-basics/header_footer_top_eg.png)|
+|<em>Header, manually typed</em>|
+|![header and footer bottom eg](/assets/images/personal-excel-basics/header_footer_bottom_eg.png)|
+|<em>Footer, inserted with contextual tap</em>|
+|![header and footer top eg](/assets/images/personal-excel-basics/header_footer_bottom_eg_op-1.png)|
+|<em>Footer output, auto-generated, page 1</em>|
+|![header and footer top eg](/assets/images/personal-excel-basics/header_footer_bottom_eg_op-2.png)|
+|<em>Footer output, auto-generated, page 2</em>|
 
 
 ***
