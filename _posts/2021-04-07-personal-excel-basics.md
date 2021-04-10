@@ -83,6 +83,17 @@ Using the syntax: ='sheet_name'!cell_number, values of one sheet can be called f
 
 ***
 
+Header and footer
+
+***
+Header and footers can be inserted when an excel sheet needs to be printed.
+
+![header and footer top](/assets/images/personal-excel-basics/header_footer_top.png)<br><em>Top bar, under 'insert' tab</em><br>
+![header and footer bottom](/assets/images/personal-excel-basics/header_footer_bottom.png)<br><em>Bottom left button</em>
+
+
+***
+
 Other capabilities of Excel 2019
 
 ***
