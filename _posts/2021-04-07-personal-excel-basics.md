@@ -86,6 +86,10 @@ Using the syntax: ='sheet_name'!cell_number, values of one sheet can be called f
 Printing an Excel spread sheet
 
 ***
+
+**Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : Statistics and Analytics for Engineers
+{: .notice--warning}
+
 Header and footers can be inserted when an excel sheet needs to be printed. There are options to change to the 'Header and Footer' view from either the top menu bar or the bottom left.
 
 |![header and footer top](/assets/images/personal-excel-basics/header_footer_top.png)|
@@ -133,9 +137,6 @@ As the remaining fx of have little relation with each other, I will summarise th
 
 - ![find and replace](/assets/images/personal-excel-basics/find_replace.png)<br>
   Find and replace fx, arguably more important than in Word
-
-**Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : Statistics and Analytics for Engineers
-{: .notice--warning}
 
 - ![freeze](/assets/images/personal-excel-basics/freeze.png)<br>
   Freezing panes allows us to keep the desired colum/row when navigating the sheet.
