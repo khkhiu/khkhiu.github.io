@@ -83,9 +83,10 @@ Using the syntax: ='sheet_name'!cell_number, values of one sheet can be called f
 
 ***
 
-Misc notes
+Other capabilities of Excel 2019
 
 ***
+As the remaining fx of have little relation with each other, I will summarise the things I have learnt in point form from here onwards. 
 
 - Apparently Excel 2019 supports up to 16,384 columns by 1,048,576 rows per sheet.
 
