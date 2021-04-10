@@ -96,13 +96,14 @@ As the remaining fx of have little relation with each other, I will summarise th
 - ![find and replace](/assets/images/personal-excel-basics/find_replace.png)<br>
   Find and replace fx, arguably more important than in Word
 
-**Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : 
-Statistics and Analytics for Engineers
+**Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : Statistics and Analytics for Engineers
 {: .notice--warning}
 
 - ![freeze](/assets/images/personal-excel-basics/freeze.png)<br>
-  Freezing panes allows us to keep the desired colum when navigating the sheet.
+  Freezing panes allows us to keep the desired colum/row when navigating the sheet.
 
+- ![split](/assets/images/personal-excel-basics/split.png)<br>
+  Splits the sheet into 2 sets of sheets, allowing viewing of 2 places at once.
 
 
 ![WIP](/assets/images/common/WIP.png)
