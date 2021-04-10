@@ -1,6 +1,6 @@
 ---
 title: "Space shooter game in Python using Pygame, part 2"
-date: "07-0a-2021"
+date: "10-04-2021"
 categories:
   - Personal
 tags:
@@ -11,5 +11,6 @@ tags:
 ---
 For part 1 of the pygame project, where I implemented a ship that moves and shoot, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame-1/">Space shooter game in Python using Pygame, part 1</a>  
 
+For this segment of the 
 
 ![WIP](/assets/images/common/WIP.png)

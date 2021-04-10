@@ -1,6 +1,6 @@
 ---
 title: "Excel Basics"
-date: "07-04-2021"
+date: "10-04-2021"
 categories:
   - Personal
 tags:
