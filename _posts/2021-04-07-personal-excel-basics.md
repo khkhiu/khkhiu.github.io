@@ -154,6 +154,12 @@ To print notes, we use the same menu as the one we used to set our header and fo
 |![note print output - displayed](/assets/images/personal-excel-basics/note_print_op-2.png)|
 |<em>printing notes as displayed</em>|
 
+Other than those mentioned above, Excel has many different options that allows the user to adjust their spread sheet for printing
+
+|![print settings](/assets/images/personal-excel-basics/print_settings.png)|
+|<em>page layout tab</em>|
+
+
 ***
 
 Other capabilities of Excel 2019
