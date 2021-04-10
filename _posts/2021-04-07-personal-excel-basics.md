@@ -23,7 +23,7 @@ Introductions
 Excel is a powerful tool that is used in almost every industry. As such. I believe it is appropriate that I learn a thing or 2 that I am almost guaranteed to be using sometime in the future. 
 
 For this brief introduction, I will be using the following video: <a href="https://www.youtube.com/watch?v=ZNGqeCcTu0Q">
-Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!<a> by the channel: <a href ="https://www.youtube.com/channel/UC-3e3hAUhDV2lwcoQGD2grg"> Simon Sez IT </a>.  
+Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!<a> <a href ="https://www.youtube.com/channel/UC-3e3hAUhDV2lwcoQGD2grg">by the channel: Simon Sez IT </a>.  
 
 ***
 
@@ -43,13 +43,9 @@ The first 30 minutes of the video goes through various aspects of the interface 
 | Precedent<br><br>Use: <strong>( )</strong>|![precedent](/assets/images/personal-excel-basics/precedent.png)<br><br>![precedent op](/assets/images/personal-excel-basics/precedent_op.png)<br><em>precedent output</em>|
 |<em>All formula must have an '=' at the front</em>| |
 
+Using the fill handle and dragging across cells, Excel will automatically fill in blanks will associated formulas. This is called relative reference and allows us to quickly auto-fill cells with desired formulas. However, there will be times where will do not want this to occur. How this will achieved will be covered later
 
-***
-
-Relative reference in Excel - 35:56
-
-***
-
+|![relative reference](/assets/images/personal-excel-basics/rel_ref-1.png)<br><em>relative reference</em>|![relative reference op](/assets/images/personal-excel-basics/rel_ref-2.png)<br><em>relative reference output</em>|
 
 ***
 
@@ -57,7 +53,7 @@ Misc notes
 
 ***
 
-- Apparently excel supports up to 16,384 columns by 1,048,576 rows per sheet.
+- Apparently Excel 2019 supports up to 16,384 columns by 1,048,576 rows per sheet.
 
 
 ![WIP](/assets/images/common/WIP.png)
