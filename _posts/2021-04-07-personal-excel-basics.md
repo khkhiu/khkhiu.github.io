@@ -103,7 +103,7 @@ Functions are words in formulas that specify its operations. Excel has a variety
 
 <strong>Top 10 functions in excel</strong>
 
-| Action and command    | image |
+| Function    | image |
 | ----------- | ----------- |
 | <strong>SUM</strong> <br>Used to add values,<br> cell references, range<br> or a mix of the 3 | ![SUM](/assets/images/personal-excel-basics/sum.png) |
 
