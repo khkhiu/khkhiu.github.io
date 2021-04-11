@@ -109,13 +109,14 @@ Functions are words in formulas that specify its operations. Excel has a variety
 
 | <strong>IF</strong> <br>Used to make logical comparison | ![IF](/assets/images/personal-excel-basics/if.png)<br><em>IF function with relative reference</em>|
 
-| <strong>LOOKUP</strong> <br>Used to find values<br> in a single row or column<br> and return a corresponding<br> value in another row or column| ![LOOKUP](/assets/images/personal-excel-basics/lookup.png)<br><em>Look up '62' from column B and return the value from column C</em>|
+| <strong>LOOKUP</strong> <br>Used to find values<br> in a single row or column<br> and return a corresponding<br> value in another row or<br> column| ![LOOKUP](/assets/images/personal-excel-basics/lookup.png)<br><em>Look up '62' from column B and return the value from column C</em>|
 
 | <strong>VLOOKUP</strong> <br>Used to find things in a table| ![LOOKUP](/assets/images/personal-excel-basics/vlookup.png)<br><em>Look up the value of B6 from column B and return the number of times 45 appears</em>|
 
 | <strong>MATCH</strong> <br> Used to search for<br> specified items in a<br> range of cells, then<br> returns the relative position of that item<br> in the range.| ![MATCH](/assets/images/personal-excel-basics/match.png)<br><em>Look up the amount of times 'IT/Eng' from column B and return the number of times it appears</em>|
 
-|CHOOSE ||
+| <strong>CHOOSE</strong> <br> An alternative to VLOOKUP and IF functions| ![CHOOSE](/assets/images/personal-excel-basics/choose.png)<br><em>Using choose and relative reference to assign colours, credit to: <a href="https://www.youtube.com/watch?v=UkEItMh2Vs4">How to use the CHOOSE function</a></em>|
+
 |DATE ||
 |DAYS ||
 |FIND, FINDB ||
