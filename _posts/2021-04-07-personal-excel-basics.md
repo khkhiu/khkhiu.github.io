@@ -83,12 +83,22 @@ Using the syntax: ='sheet_name'!cell_number, values of one sheet can be called f
 
 ***
 
-Printing an Excel spread sheet
+Formulas and Functions
+
+***
+**Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : Statistics and Analytics for Engineers
+{: .notice--warning}
+
+Functions are words in formulas that specify its operations. Excel has a variety of formulas for different use cases, all of which can be found here: <a href="https://support.microsoft.com/en-us/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb">Excel functions (by category) </a>. For this post, I will only go through some of the formulas.
+
+
+
 
 ***
 
-**Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : Statistics and Analytics for Engineers
-{: .notice--warning}
+Printing an Excel spread sheet
+
+***
 
 Header and footers can be inserted when an excel sheet needs to be printed. There are options to change to the 'Header and Footer' view from either the top menu bar or the bottom left.
 
@@ -165,7 +175,7 @@ Other than those mentioned above, Excel has many different options that allows t
 Other capabilities of Excel 2019
 
 ***
-As the remaining fx of have little relation with each other, I will summarise the things I have learnt in point form from here onwards. 
+As the remaining function of have little relation with each other, I will summarise the things I have learnt in point form from here onwards. 
 
 - Apparently Excel 2019 supports up to 16,384 columns by 1,048,576 rows per sheet.
 
@@ -173,7 +183,7 @@ As the remaining fx of have little relation with each other, I will summarise th
   This box can be used to jump to any cell by keying in the coordinates
 
 - ![find and replace](/assets/images/personal-excel-basics/find_replace.png)<br>
-  Find and replace fx, arguably more important than in Word
+  Find and replace function, arguably more important than in Word
 
 - ![freeze](/assets/images/personal-excel-basics/freeze.png)<br>
   Freezing panes allows us to keep the desired colum/row when navigating the sheet.
