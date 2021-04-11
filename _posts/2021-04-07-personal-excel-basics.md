@@ -56,9 +56,19 @@ Other wise, the formula will be executed from left to right.
 
 <strong>Relative reference</strong>
 
-Using the fill handle and dragging across cells, Excel will automatically fill in blanks will associated formulas. This is called relative reference and allows us to quickly auto-fill cells with desired formulas. However, there will be times where will do not want this to occur. How this will achieved will be covered later
+Using the fill handle and dragging across cells, Excel will automatically fill in blanks will associated formulas. This is called relative reference and allows us to quickly auto-fill cells with desired formulas. However, there will be times where will do not want this to occur. To achieve this, we use an operation called absolute values.
 
 |![relative reference](/assets/images/personal-excel-basics/rel_ref-1.png)<br><em>relative reference</em>|![relative reference op](/assets/images/personal-excel-basics/rel_ref-2.png)<br><em>relative reference output</em>|
+
+<strong>Absolute Values</strong>
+
+By inserting '$' between coordinates of the cells, we can indicate that cell as an absolute value. This allows us to use relative reference without worrying about generating inaccurate values.
+
+| Action and Command     | Image |
+| ----------- | ----------- |
+|Using relative reference without absolute values|![relative ref, no absolute val](/assets/images/personal-excel-basics/abs_val-1.png)<br><br>![relative ref, no absolute val 2](/assets/images/personal-excel-basics/abs_val-2.png)<br><em>relative value giving inaccurate results</em>|
+|Using relative reference with absolute values|![relative ref,with absolute val](/assets/images/personal-excel-basics/abs_val-3.png)|
+
 
 <strong>Ranges</strong>
 
@@ -89,10 +99,26 @@ Formulas and Functions
 **Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : Statistics and Analytics for Engineers
 {: .notice--warning}
 
-Functions are words in formulas that specify its operations. Excel has a variety of formulas for different use cases, all of which can be found here: <a href="https://support.microsoft.com/en-us/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb">Excel functions (by category) </a>. For this post, I will only go through some of the formulas.
+Functions are words in formulas that specify its operations. Excel has a variety of formulas for different use cases, all of which can be found here: <a href="https://support.microsoft.com/en-us/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb">Excel functions (by category) </a>. For this post, I will only go through the top 10 most popular functions according to Microsoft.
 
+<strong>Top 10 functions in excel</strong>
 
+| Action and command    | image |
+| ----------- | ----------- |
+| <strong>SUM</strong> <br>Used to add values,<br> cell references, range<br> or a mix of the 3 | ![SUM](/assets/images/personal-excel-basics/sum.png) |
 
+| <strong>IF</strong> <br>Used to make logical comparison | ![IF](/assets/images/personal-excel-basics/if.png)<br><em>IF function with relative reference</em>|
+
+| <strong>LOOKUP</strong> <br>Used to find values<br> in a single row or column<br> and return a corresponding<br> value in another row or column| ![LOOKUP](/assets/images/personal-excel-basics/lookup.png)<br><em>Look up '62' from column B and return the value from column C</em>|
+
+| <strong>VLOOKUP</strong> <br>Used to find things in a table| ![LOOKUP](/assets/images/personal-excel-basics/vlookup.png)<br><em>Look up the value of B6 from column B and return the number of times 45 appears</em>|
+
+|MATCH ||
+|CHOOSE ||
+|DATE ||
+|DAYS ||
+|FIND, FINDB ||
+|INDEX ||
 
 ***
 
@@ -194,4 +220,8 @@ As the remaining function of have little relation with each other, I will summar
 - ![transpose](/assets/images/personal-excel-basics/transpose.png)<br><br>![transpose](/assets/images/personal-excel-basics/transpose_op.png)<br>
   Transpose switches the values of columns and rows
 
-![Stop at 2:21:26](/assets/images/common/WIP.png)
+***
+
+Note to self
+
+***
