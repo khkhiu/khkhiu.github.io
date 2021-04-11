@@ -113,7 +113,8 @@ Functions are words in formulas that specify its operations. Excel has a variety
 
 | <strong>VLOOKUP</strong> <br>Used to find things in a table| ![LOOKUP](/assets/images/personal-excel-basics/vlookup.png)<br><em>Look up the value of B6 from column B and return the number of times 45 appears</em>|
 
-|MATCH ||
+| <strong>MATCH</strong> <br> Used to search for<br> specified items in a<br> range of cells, then<br> returns the relative position of that item<br> in the range.| ![MATCH](/assets/images/personal-excel-basics/match.png)<br><em>Look up the amount of times 'IT/Eng' from column B and return the number of times it appears</em>|
+
 |CHOOSE ||
 |DATE ||
 |DAYS ||
