@@ -89,6 +89,9 @@ Formulas and Functions
 **Notice** From this point onwards, I will be using a spreadsheet provided by SP for MS4215 : Statistics and Analytics for Engineers
 {: .notice--warning}
 
+Functions are words in formulas that specify its operations. Excel has a variety of formulas for different use cases, all of which can be found here: <a href="https://support.microsoft.com/en-us/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb">Excel functions (by category) </a>. For this post, I will only go through some of the formulas.
+
+
 
 
 ***
