@@ -107,11 +107,12 @@ Functions are words in formulas that specify its operations. Excel has a variety
 | ----------- | ----------- |
 | <strong>SUM</strong> <br>Used to add values,<br> cell references, range<br> or a mix of the 3 | ![SUM](/assets/images/personal-excel-basics/sum.png) |
 
-| <strong>IF</strong> <br>Used to make logical comparison | ![IF](/assets/images/personal-excel-basics/if.png)<em>IF function with relative reference</em>|
+| <strong>IF</strong> <br>Used to make logical comparison | ![IF](/assets/images/personal-excel-basics/if.png)<br><em>IF function with relative reference</em>|
 
-| <strong>LOOKUP</strong> <br>Used to find find values<br> in a single row or column<br> and return a corresponding<br> value in another row or column| ![LOOKUP](/assets/images/personal-excel-basics/lookup.png)<em>Look up '62' from column B and return the value from column C</em>|
+| <strong>LOOKUP</strong> <br>Used to find values<br> in a single row or column<br> and return a corresponding<br> value in another row or column| ![LOOKUP](/assets/images/personal-excel-basics/lookup.png)<br><em>Look up '62' from column B and return the value from column C</em>|
 
-|VLOOKUP ||
+| <strong>VLOOKUP</strong> <br>Used to find things in a table| ![LOOKUP](/assets/images/personal-excel-basics/vlookup.png)<br><em>Look up the value of B6 from column B and return the number of times 45 appears</em>|
+
 |MATCH ||
 |CHOOSE ||
 |DATE ||
