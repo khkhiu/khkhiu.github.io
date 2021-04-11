@@ -115,7 +115,9 @@ Functions are words in formulas that specify its operations. Excel has a variety
 
 | <strong>MATCH</strong> <br> Used to search for<br> specified items in a<br> range of cells, then<br> returns the relative position of that item<br> in the range.| ![MATCH](/assets/images/personal-excel-basics/match.png)<br><em>Look up the amount of times 'IT/Eng' from column B and return the number of times it appears</em>|
 
-| <strong>CHOOSE</strong> <br> An alternative to VLOOKUP and IF functions| ![CHOOSE](/assets/images/personal-excel-basics/choose.png)<br><em>Using choose and relative reference to assign colours, credit to: <a href="https://www.youtube.com/watch?v=UkEItMh2Vs4">How to use the CHOOSE function</a></em>|
+| <strong>CHOOSE</strong> <br> An alternative to<br> VLOOKUP and IF functions| ![CHOOSE](/assets/images/personal-excel-basics/choose.png)<br><em>Using CHOOSE and relative reference to assign colours, credit to:<a href="https://www.youtube.com/watch?v=UkEItMh2Vs4">How to use the CHOOSE function</a> </em>|
+
+| <strong>Date</strong> <br> Excel has a DATE function<br> that lets user input dates.<br> However, I prefer to use<br> the TODAY() function as<br> it is more efficient| ![DATE](/assets/images/personal-excel-basics/date-1.png)<br><em>Using TEXT and DATE function to format a and relative reference to assign colours</em><br><br>![DATE](/assets/images/personal-excel-basics/date-1.png)<br><em>Using TEXT and TODAY function to automatically generate the date</em>|
 
 |DATE ||
 |DAYS ||
