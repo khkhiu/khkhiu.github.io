@@ -121,9 +121,9 @@ Functions are words in formulas that specify its operations. Excel has a variety
 
 | <strong>DAYS</strong> <br> Returns number of days between 2 dates| ![DAYS](/assets/images/personal-excel-basics/days.png)<br><em>Finding the number of dates between 11 April 2021 and 31 December 2021</em>|
 
-|DAYS ||
-|FIND, FINDB ||
-|INDEX ||
+| <strong>FIND</strong> <br> Finds the location of a substring in a string | ![CHOOSE](/assets/images/personal-excel-basics/find_fx.png)<br><em>Finding positions. credit to:<a href="https://www.youtube.com/watch?v=NVeAPVP8zWg">How to use the FIND function in Excel</a> </em>|
+
+| <strong>INDEX</strong> <br> Used to return a value or the reference to a value from  a table or range. | ![INDEX](/assets/images/personal-excel-basics/index.png)<br><em>Index function<a href="https://www.youtube.com/watch?v=U6OMmXgAWJc">How to use the INDEX function in Excel</a> </em>|
 
 ***
 
@@ -225,8 +225,4 @@ As the remaining function of have little relation with each other, I will summar
 - ![transpose](/assets/images/personal-excel-basics/transpose.png)<br><br>![transpose](/assets/images/personal-excel-basics/transpose_op.png)<br>
   Transpose switches the values of columns and rows
 
-***
 
-Note to self
-
-***
