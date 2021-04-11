@@ -107,8 +107,10 @@ Functions are words in formulas that specify its operations. Excel has a variety
 | ----------- | ----------- |
 | <strong>SUM</strong> <br>Used to add values,<br> cell references, range<br> or a mix of the 3 | ![SUM](/assets/images/personal-excel-basics/sum.png) |
 
-|IF ||
-|LOOKUP ||
+| <strong>IF</strong> <br>Used to make logical comparison | ![IF](/assets/images/personal-excel-basics/if.png)<em>IF function with relative reference</em>|
+
+| <strong>LOOKUP</strong> <br>Used to find find values<br> in a single row or column<br> and return a corresponding<br> value in another row or column| ![LOOKUP](/assets/images/personal-excel-basics/lookup.png)<em>Look up '62' from column B and return the value from column C</em>|
+
 |VLOOKUP ||
 |MATCH ||
 |CHOOSE ||
