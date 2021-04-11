@@ -102,9 +102,11 @@ Formulas and Functions
 Functions are words in formulas that specify its operations. Excel has a variety of formulas for different use cases, all of which can be found here: <a href="https://support.microsoft.com/en-us/office/excel-functions-by-category-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb">Excel functions (by category) </a>. For this post, I will only go through the top 10 most popular functions according to Microsoft.
 
 <strong>Top 10 functions in excel</strong>
-| Action and Command     | Image |
+
+| Action and command    | image |
 | ----------- | ----------- |
-|SUM ||
+| <strong>SUM</strong> <br>Used to add values,<br> cell references, range<br> or a mix of the 3 | ![SUM](/assets/images/personal-excel-basics/sum.png) |
+
 |IF ||
 |LOOKUP ||
 |VLOOKUP ||
