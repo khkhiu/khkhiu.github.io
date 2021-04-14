@@ -38,7 +38,11 @@ With this in mind, lets carry on.
 ***
 To expedite this project(as I have more in the queue), I will not be making a custom alien, but rather be using the one provided by No Starch Press. A file: alien.py will also be created to control the alien's behaviour.
 
-|![alien](/assets/images/personal-python-pygame-pt2/alien.BMP)|
+|![alien img](/assets/images/personal-python-pygame-pt2/alien.BMP)|
 |<em>alien ship provided</em>|
+
+|![alien file](/assets/images/personal-python-pygame-pt2/alien_file-1.png)|
+|<em>alien.py</em>|
+
 
 ![WIP](/assets/images/common/WIP.png)
