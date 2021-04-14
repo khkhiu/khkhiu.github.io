@@ -51,9 +51,17 @@ To ensure that the code was working properly, I imported the alien.py file to ma
 |![alien img](/assets/images/personal-python-pygame-pt2/alien_file_init.png)|
 |<em>updating initialise method</em>|
 
-
+A method called _create_fleet() was made to hold the (eventual) fleet of aliens. In this method, one instance of Alien was made, then added to the group that will hold the fleet. The alien is the placed in the upper left of the screen. 
 
 |![alien img](/assets/images/personal-python-pygame-pt2/alien_file_fleet.png)|
 |<em>alien ship provided</em>|
+
+
+To make the alien appear, we need to call the group’s draw() method in
+_update_screen():
+|![alien img](/assets/images/personal-python-pygame-pt2/alien_update_screen.png)|
+|<em>Adding alien to _update_screen()</em>|
+
+
 
 ![WIP](/assets/images/common/WIP.png)
