@@ -46,4 +46,14 @@ To expedite this project(as I have more in the queue), I will not be making a cu
 
 To ensure that the code was working properly, I imported the alien.py file to main game file(space_invaders.py).
 
+|![alien img](/assets/images/personal-python-pygame-pt2/alien_file_import.png)|
+|<em>Importing alien</em>|
+|![alien img](/assets/images/personal-python-pygame-pt2/alien_file_init.png)|
+|<em>updating initialise method</em>|
+
+
+
+|![alien img](/assets/images/personal-python-pygame-pt2/alien_file_fleet.png)|
+|<em>alien ship provided</em>|
+
 ![WIP](/assets/images/common/WIP.png)
