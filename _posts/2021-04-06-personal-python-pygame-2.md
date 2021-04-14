@@ -57,8 +57,9 @@ A method called _create_fleet() was made to hold the (eventual) fleet of aliens.
 |<em>alien ship provided</em>|
 
 
-To make the alien appear, we need to call the group’s draw() method in
-_update_screen():
+To make the alien appear, I need to call the group’s draw() method to _update_screen(): When we call draw() on groups, Pygame draw elements of the group at positions defined by rect attributes. The draw() method
+requires a surface to draw the elements from the group. 
+
 |![alien img](/assets/images/personal-python-pygame-pt2/alien_update_screen.png)|
 |<em>Adding alien to _update_screen()</em>|
 
