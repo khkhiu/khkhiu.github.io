@@ -44,5 +44,6 @@ To expedite this project(as I have more in the queue), I will not be making a cu
 |![alien file](/assets/images/personal-python-pygame-pt2/alien_file-1.png)|
 |<em>alien.py</em>|
 
+To ensure that the code was working properly, I imported the alien.py file to main game file(space_invaders.py).
 
 ![WIP](/assets/images/common/WIP.png)
