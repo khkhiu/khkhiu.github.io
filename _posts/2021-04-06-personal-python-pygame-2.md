@@ -63,6 +63,13 @@ requires a surface to draw the elements from the group.
 |![alien img](/assets/images/personal-python-pygame-pt2/alien_update_screen.png)|
 |<em>Adding alien to _update_screen()</em>|
 
+|![alien img](/assets/images/personal-python-pygame-pt2/alien_file-1-op.png)|
+|<em>Output of above code</em>|
 
+***
+
+<strong>Building the fleet</strong>
+
+***
 
 ![WIP](/assets/images/common/WIP.png)
