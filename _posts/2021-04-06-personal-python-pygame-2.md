@@ -126,4 +126,8 @@ In this segment, we will implement the following actions:
 
 | Checking if alien has hit edge|![checking alien hit edge](/assets/images/personal-python-pygame-pt2/alien_hit_edge.png)<br><em>checking if alien hit edge in alien.py</em>|
 
+| Moving fleet down and changing direction|![actual movement](/assets/images/personal-python-pygame-pt2/fleet_move_SI.png)<br><br>![actual movement 2](/assets/images/personal-python-pygame-pt2/fleet_move_SI-2.png)<br><em>Implementing movement and edge hit detection</em>|
+
+
+
 ![WIP](/assets/images/common/WIP.png)
