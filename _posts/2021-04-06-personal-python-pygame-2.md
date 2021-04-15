@@ -150,6 +150,6 @@ In this segment, we will implement the following actions:
 |Responding to alien ship collisions|![Collision respond](/assets/images/personal-python-pygame-pt2/GameStat.png)<br><em>New file to enable responds to collisions</em><br>|
 |Limiting number of ships players have|![lives](/assets/images/personal-python-pygame-pt2/ShipLimit.png)<br>|
 
-|Adding GameStat to Space_Invader.py|![import](/assets/images/personal-python-pygame-pt2/GameStat_import.png)<br><em>Importing GameStat</em>|
+|Adding GameStat to Space_Invader.py|![import](/assets/images/personal-python-pygame-pt2/GameStat_import.png)<br><em>Importing GameStat</em><br>![score](/assets/images/personal-python-pygame-pt2/score.png)<br><em>Instance to store game stats</em>|
 
 ![WIP](/assets/images/common/WIP.png)
