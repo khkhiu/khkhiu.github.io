@@ -8,7 +8,7 @@ This site is intended as a repository for my projects during my course and my fr
 
 On a more light hearted note, observe as electrical engineering slowly transform into computer engineering / computer science (or some Frankenstein's monster, who knows).
 
-| ![Electrical engineering](/assets/images/about/EEE.png) |<i class='fas fa-arrow-right' style='font-size:48px'>| ![Electrical engineering](/assets/images/about/CE.png) |
+| ![Electrical engineering](/assets/images/about/EEE.png) |
 
 
 Other subjects may also make an appearance or 2(wink).
