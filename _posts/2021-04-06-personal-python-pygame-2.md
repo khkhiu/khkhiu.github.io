@@ -99,6 +99,7 @@ To build the fleet, I need to find the available vertical space by doing the fol
 2. subtract the ship height from the bottom of the screen
 3. subtract 2 alien heights from the bottom
 
+This will create some space above the ship, giving the player some time to start shotting at the aliens.
 
 
 ![WIP](/assets/images/common/WIP.png)
