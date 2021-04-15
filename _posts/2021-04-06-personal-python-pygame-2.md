@@ -153,4 +153,6 @@ In this segment, we will implement the following actions:
 |Adding GameStat to Space_Invader.py|![import](/assets/images/personal-python-pygame-pt2/GameStat_import.png)<br><em>Importing GameStat</em><br>![score](/assets/images/personal-python-pygame-pt2/score.png)<br><em>Instance to store game stats</em><br>![ship hit method](/assets/images/personal-python-pygame-pt2/ship_hit.png)<br><br>![ship hit method](/assets/images/personal-python-pygame-pt2/ship_hit-2.png)<br><br>![ship hit method](/assets/images/personal-python-pygame-pt2/ship_hit-3.png)<br><em>consequence of ship hit</em>|
 
 
-|Alien Reaching Bottom of screen|![alien hit bottom](/assets/images/personal-python-pygame-pt2/alien_bottom.png)<br><br>![alien hit bottom](/assets/images/personal-python-pygame-pt2/alien_bottom-2.png)<br<em>Make game respond same way as when alien hits ship</em>|
+|Alien Reaching Bottom of screen|![alien hit bottom](/assets/images/personal-python-pygame-pt2/alien_bottom.png)<br><br>![alien hit bottom](/assets/images/personal-python-pygame-pt2/alien_bottom-2.png)<em>Make game respond same way as when alien hits ship</em>|
+
+|Game over|![alien hit bottom](/assets/images/personal-python-pygame-pt2/alien_bottom.png)<br>|
