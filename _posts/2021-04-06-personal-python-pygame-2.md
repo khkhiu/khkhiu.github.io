@@ -78,6 +78,8 @@ To build a fleet, I need to determine how many alien can fit across the screen. 
 
 Screen width is stored in settings.screen_width. To ensure empty margins on both sides of the screen, I made the space available for aliens the screen width minus 2 alien widths. Spacing is also required between aliens, hence I made the spacing 1 alien width. Thus the space between an alien is 2 alien widths.
 
+To actually add aliens in the code, I first pushed each alien right one alien width from the left margin. Second, I multiply the alien width by 2 to factor the space each alien takes up and empty space to their right. This value is then multiplied by the alien's position in the row, using the alien’s x attribute to set the position of its rect. Lastly, aliens are the added to the group alien
+
 |![alien img](/assets/images/personal-python-pygame-pt2/alien_fleet_row.png)|
 |<em>Code to implement alien in a row</em>|
 
