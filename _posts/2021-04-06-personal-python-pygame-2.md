@@ -107,4 +107,17 @@ This will create some space above the ship, giving the player some time to start
 |![fleet op](/assets/images/personal-python-pygame-pt2/alien_fleet-op.png)|
 |<em>Fleet created</em>|
 
+***
+
+<strong>Making the fleet move</strong>
+
+***
+
+In this segment, we will implement the following actions:
+- The fleet move right across the screen until it hits the edge
+- The fleet moves down slightly and changes direction after hitting the edge
+- The movement continues until all aliens are shot down, hits the ship or hit the bottom of the screen
+
+
+
 ![WIP](/assets/images/common/WIP.png)
