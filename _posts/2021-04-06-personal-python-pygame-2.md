@@ -128,6 +128,16 @@ In this segment, we will implement the following actions:
 
 | Moving fleet down and changing direction|![actual movement](/assets/images/personal-python-pygame-pt2/fleet_move_SI.png)<br><br>![actual movement 2](/assets/images/personal-python-pygame-pt2/fleet_move_SI-2.png)<br><em>Implementing movement and edge hit detection</em>|
 
+***
+
+<strong>Shooting aliens and making new fleet</strong>
+
+***
+
+| Action     | code |
+| ----------- | ----------- |
+|Detecting bullet collision|![Bullet collision](/assets/images/personal-python-pygame-pt2/bullet_collide.png)<br><em>Making bullets collide with aliens</em><br>![new fleet](/assets/images/personal-python-pygame-pt2/new_fleet.png)<br><em>Generating new fleet</em>|
+
 
 
 ![WIP](/assets/images/common/WIP.png)
