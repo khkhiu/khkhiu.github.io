@@ -86,4 +86,9 @@ To actually add aliens in the code, I first pushed each alien right one alien wi
 |![alien img](/assets/images/personal-python-pygame-pt2/alien_fleet_row-OP.png)|
 |<em>Alien in a row output</em>|
 
+The method _create_fleet() was then refactored to making working with it easier.
+
+|![refactored create fleet](/assets/images/personal-python-pygame-pt2/create_fleet_refactor.png)|
+|<em>New _create_fleet() method</em>|
+
 ![WIP](/assets/images/common/WIP.png)
