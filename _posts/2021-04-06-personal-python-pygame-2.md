@@ -1,6 +1,6 @@
 ---
 title: "Space shooter game in Python using Pygame, part 2"
-date: "10-04-2021"
+date: "15-04-2021"
 categories:
   - Personal
 tags:
@@ -90,5 +90,7 @@ The method _create_fleet() was then refactored to making working with it easier.
 
 |![refactored create fleet](/assets/images/personal-python-pygame-pt2/create_fleet_refactor.png)|
 |<em>New _create_fleet() method</em>|
+
+<strong>Adding columns</strong>
 
 ![WIP](/assets/images/common/WIP.png)
