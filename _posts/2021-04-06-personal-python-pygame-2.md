@@ -119,5 +119,8 @@ In this segment, we will implement the following actions:
 - The movement continues until all aliens are shot down, hits the ship or hit the bottom of the screen
 
 
+| Action     | code |
+| ----------- | ----------- |
+| Moving aliens right|![Moving aliens right setting](/assets/images/personal-python-pygame-pt2/move_right_setting.png)<br><em>adding settings</em><br>![Moving aliens right parameter](/assets/images/personal-python-pygame-pt2/move_right_alien.png)<br><em>new parameter to access the alien's speed</em><br>![Update alien](/assets/images/personal-python-pygame-pt2/move_right_SI-1.png)<br><em>call to update position of alien</em><br>![Update alien v1](/assets/images/personal-python-pygame-pt2/move_right_SI-2.png)<br><em>Updating alien position version 1</em>|
 
 ![WIP](/assets/images/common/WIP.png)
