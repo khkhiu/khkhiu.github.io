@@ -124,4 +124,6 @@ In this segment, we will implement the following actions:
 
 | Creating setting for fleet direction|![Moving aliens down](/assets/images/personal-python-pygame-pt2/fleet_direction_setting.png)<br><em>Making aliens move down</em>|
 
+| Checking if alien has hit edge|![checking alien hit edge](/assets/images/personal-python-pygame-pt2/alien_hit_edge.png)<br><em>checking if alien hit edge in alien.py</em>|
+
 ![WIP](/assets/images/common/WIP.png)
