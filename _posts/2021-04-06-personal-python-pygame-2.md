@@ -147,7 +147,7 @@ In this segment, we will implement the following actions:
 | Action     | code |
 | ----------- | ----------- |
 |Detecting alien and ship collisions|![Alien ship collision](/assets/images/personal-python-pygame-pt2/alien_ship_collide.png)<br><em>detecting alien ship collision</em>|
-|||
+|Responding to alien ship collisions|![Collision respond](/assets/images/personal-python-pygame-pt2/GameStats.png)<br><em>New file to enable responds to collisions</em>|
 
 
 ![WIP](/assets/images/common/WIP.png)
