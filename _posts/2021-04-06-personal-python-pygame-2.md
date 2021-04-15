@@ -60,10 +60,10 @@ A method called _create_fleet() was made to hold the (eventual) fleet of aliens.
 To make the alien appear, I need to call the group’s draw() method to _update_screen(): When we call draw() on groups, Pygame draw elements of the group at positions defined by rect attributes. The draw() method
 requires a surface to draw the elements from the group. 
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_update_screen.png)|
+|![alien update screen](/assets/images/personal-python-pygame-pt2/alien_update_screen.png)|
 |<em>Adding alien to _update_screen()</em>|
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_file-1-op.png)|
+|![1 alien op](/assets/images/personal-python-pygame-pt2/alien_file-1-op.png)|
 |<em>Output of above code</em>|
 
 ***
@@ -78,7 +78,10 @@ To build a fleet, I need to determine how many alien can fit across the screen. 
 
 Screen width is stored in settings.screen_width. To ensure empty margins on both sides of the screen, I made the space available for aliens the screen width minus 2 alien widths. Spacing is also required between aliens, hence I made the spacing 1 alien width. Thus the space between an alien is 2 alien widths.
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_fleet_row-OP.png)|
+|![alien img](/assets/images/personal-python-pygame-pt2/alien_fleet_row.png)|
 |<em>Code to implement alien in a row</em>|
+
+|![alien img](/assets/images/personal-python-pygame-pt2/alien_fleet_row-OP.png)|
+|<em>Alien in a row output</em>|
 
 ![WIP](/assets/images/common/WIP.png)
