@@ -138,6 +138,16 @@ In this segment, we will implement the following actions:
 | ----------- | ----------- |
 |Detecting bullet collision|![Bullet collision](/assets/images/personal-python-pygame-pt2/bullet_collide.png)<br><em>Making bullets collide with aliens</em><br>![new fleet](/assets/images/personal-python-pygame-pt2/new_fleet.png)<br><em>Generating new fleet</em>|
 
+***
+
+<strong>Ending the game</strong>
+
+***
+
+| Action     | code |
+| ----------- | ----------- |
+|Detecting alien and ship collisions|![Alien ship collision](/assets/images/personal-python-pygame-pt2/alien_ship_collide.png)<br><em>detecting alien ship collision</em>|
+|||
 
 
 ![WIP](/assets/images/common/WIP.png)
