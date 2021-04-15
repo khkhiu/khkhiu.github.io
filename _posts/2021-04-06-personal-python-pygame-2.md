@@ -155,7 +155,8 @@ In this segment, we will implement the following actions:
 
 |Alien Reaching Bottom of screen in Space_invaders.py|![alien hit bottom](/assets/images/personal-python-pygame-pt2/alien_bottom.png)<br><br>![alien hit bottom 2](/assets/images/personal-python-pygame-pt2/alien_bottom-2.png)<br><em>Make game respond same way as when alien hits ship</em>|
 
-|Game over|![Game over](/assets/images/personal-python-pygame-pt2/GameOver.png)<br><br>![Game over 2](/assets/images/personal-python-pygame-pt2/GameOver-2.png)|
+|Game over|![Game over](/assets/images/personal-python-pygame-pt2/GameOver.png)<br><br>![Game over 2](/assets/images/personal-python-pygame-pt2/GameOver-2.png)<br><em>End game when player runs out of ship</em>|
+
 |Identifying parts of game that should run|![Game over](/assets/images/personal-python-pygame-pt2/GameRun.png)<br><em>Some parts of the game should always run, while others only when the game is active</em>|
 
 This conclude my attempts at trying to code a space invaders clone using Pygame. There is a part 3 where more functionalities are added. However, I due to time constraints, I had to rush this post to completion for completion purposes. Stay tuned for more post in other subjects and technologies. 
