@@ -72,4 +72,10 @@ requires a surface to draw the elements from the group.
 
 ***
 
+To build a fleet, I need to determine how many alien can fit across the screen. This is achieved by determining the horizontal spacing between aliens and forming a row. The vertical spacing is then determined to create the entire fleet
+
+<strong>Aliens in a row</strong>
+
+
+
 ![WIP](/assets/images/common/WIP.png)
