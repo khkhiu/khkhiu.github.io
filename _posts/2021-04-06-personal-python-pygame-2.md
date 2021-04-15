@@ -93,4 +93,12 @@ The method _create_fleet() was then refactored to making working with it easier.
 
 <strong>Adding columns</strong>
 
+To build the fleet, I need to find the available vertical space by doing the following:
+
+1. subtract the alien height from the top of the screen
+2. subtract the ship height from the bottom of the screen
+3. subtract 2 alien heights from the bottom
+
+
+
 ![WIP](/assets/images/common/WIP.png)
