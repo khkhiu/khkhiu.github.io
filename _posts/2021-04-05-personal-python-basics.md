@@ -118,7 +118,7 @@ We can use try-except blocks to mitigate errors. Depending on the program, data 
 <strong>Testing code</strong>
 
 ***
-We can import the uinittest fx to verify specific aspects of a fx is operating correctly. However, achieving full coverage can be difficult, hence we only test critical functions.
+We can import the uinittest function to verify specific aspects of a function is operating correctly. However, achieving full coverage can be difficult, hence we only test critical functions.
 ![Exception json op](/assets/images/personal-python-basics/test/test.png)
 
 ***
