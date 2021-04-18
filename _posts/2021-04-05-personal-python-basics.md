@@ -68,9 +68,9 @@ What I have learnt is demonstrated in the table below:
 | <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/personal-python-basics/fx/fx_y_arg.png)<br><br>![fx x key op](/assets/images/personal-python-basics/fx/fx_y_arg_op.png) |
 
 
-| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/personal-python-basics/fx/fx_y_arg.png)<br><br>![fx x key op](/assets/images/personal-python-basics/fx/fx_y_arg_op.png) |
+| <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to function that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/personal-python-basics/fx/fx_y_arg.png)<br><br>![fx x key op](/assets/images/personal-python-basics/fx/fx_y_arg_op.png) |
 
-| <strong>Importing module <br> arguments</strong> <br> Use import command <br> to import fx to other files. | ![fx import from](/assets/images/personal-python-basics/fx/fx_import.png)<br><br>![fx import to](/assets/images/personal-python-basics/fx/fx_import2.png)<br><br>![fx import op](/assets/images/personal-python-basics/fx/fx_import_op.png) |
+| <strong>Importing module <br> arguments</strong> <br> Use import command <br> to import function to other files. | ![fx import from](/assets/images/personal-python-basics/fx/fx_import.png)<br><br>![fx import to](/assets/images/personal-python-basics/fx/fx_import2.png)<br><br>![fx import op](/assets/images/personal-python-basics/fx/fx_import_op.png) |
 
 ***
 
@@ -96,7 +96,7 @@ What I have learnt is demonstrated in the table below:
 
 |<strong>Instances as attributes</strong><br>using instances<br> created from classes|![class instance attribute](/assets/images/personal-python-basics/class/class_inst_attr.png)<br><br><em>Child method</em>![class instance attribute child](/assets/images/personal-python-basics/class/class_inst_attr_child.png)<br><br>![class instance attribute child op](/assets/images/personal-python-basics/class/class_inst_attr_op.png)|
 
-|<strong>Importing classes</strong> <br> Use import command <br> to import fx to other files.|![class import 1](/assets/images/personal-python-basics/class/class_import1.png)<br><em>part 2</em><br>![class import 2](/assets/images/personal-python-basics/class/class_import2.png)<br><br>![class import to](/assets/images/personal-python-basics/class/class_import_to.png)<br><br>![class import to](/assets/images/personal-python-basics/class/class_import_to_op.png)|
+|<strong>Importing classes</strong> <br> Use import command <br> to import function to other files.|![class import 1](/assets/images/personal-python-basics/class/class_import1.png)<br><em>part 2</em><br>![class import 2](/assets/images/personal-python-basics/class/class_import2.png)<br><br>![class import to](/assets/images/personal-python-basics/class/class_import_to.png)<br><br>![class import to](/assets/images/personal-python-basics/class/class_import_to_op.png)|
 
 ***
 
