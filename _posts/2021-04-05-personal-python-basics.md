@@ -59,11 +59,11 @@ What I have learnt is demonstrated in the table below:
 
 | <strong>while loop in function</strong> <br>Using a while loop in function then prints| ![fx while](/assets/images/personal-python-basics/fx/fx_while.png)<br><em>allows users to enter their name and formats it</em> |
 
-| <strong>Passing a list</strong> <br> Defining a list then passing to fx  | ![fx past list](/assets/images/personal-python-basics/fx/fx_list.png)<br><br>![fx past list op](/assets/images/personal-python-basics/fx/fx_list_op.png)  |
+| <strong>Passing a list</strong> <br> Defining a list then passing to function  | ![fx past list](/assets/images/personal-python-basics/fx/fx_list.png)<br><br>![fx past list op](/assets/images/personal-python-basics/fx/fx_list_op.png)  |
 
 | <strong>Modding a list</strong> <br> List can be modified by passing <br> arguments changes are <br> permanent unless modified again | ![fx mod list](/assets/images/personal-python-basics/fx/fx_mod_list.png)<br><br>![fx mod list op](/assets/images/personal-python-basics/fx/fx_mod_list_op.png)  |
 
-| <strong>Passing X number <br> of arguments</strong> <br> Use * when declaring a <br>fx to pack an<br> undeclared number of fx into a tuple | ![fx x arg](/assets/images/personal-python-basics/fx/fx_x_arg.png)<br><br>![fx x,positional arg](/assets/images/personal-python-basics/fx/fx_x_arg2.png) <br><em>Combining positional and arbitrary arguments</em><br><br>![fx mod list op](/assets/images/personal-python-basics/fx/fx_x_arg_op.png) |
+| <strong>Passing X number <br> of arguments</strong> <br> Use * when declaring a <br>function to pack an<br> undeclared number of functions into a tuple | ![fx x arg](/assets/images/personal-python-basics/fx/fx_x_arg.png)<br><br>![fx x,positional arg](/assets/images/personal-python-basics/fx/fx_x_arg2.png) <br><em>Combining positional and arbitrary arguments</em><br><br>![fx mod list op](/assets/images/personal-python-basics/fx/fx_x_arg_op.png) |
 
 | <strong>Passing X keyword <br> arguments</strong> <br> Use ** write to fx that accepts<br> as many key-value pairs as provided | ![fx x key](/assets/images/personal-python-basics/fx/fx_y_arg.png)<br><br>![fx x key op](/assets/images/personal-python-basics/fx/fx_y_arg_op.png) |
 
