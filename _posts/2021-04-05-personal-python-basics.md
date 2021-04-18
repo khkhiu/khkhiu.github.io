@@ -47,7 +47,7 @@ What I have learnt is demonstrated in the table below:
 
 | Action    | image |
 | ----------- | ----------- |
-| <strong>Passing information to function</strong> <br>same fx as simple hello world function | ![info to fx](/assets/images/personal-python-basics/fx/fx_simple_info.png)<br><br>![info to fx op](/assets/images/personal-python-basics/fx/fx_simple_op.png) |
+| <strong>Passing information to function</strong> <br>same function as simple hello world function | ![info to fx](/assets/images/personal-python-basics/fx/fx_simple_info.png)<br><br>![info to fx op](/assets/images/personal-python-basics/fx/fx_simple_op.png) |
 
 | <strong>Positional arguments <br> with multiple function calls</strong> <br> Python matches each argument <br> in the function call with a parameter <br> in the function definition.| ![fx positional argument](/assets/images/personal-python-basics/fx/fx_posi.png)<br><br>![fx positional argument op](/assets/images/personal-python-basics/fx/fx_posi_op.png)      |
 
