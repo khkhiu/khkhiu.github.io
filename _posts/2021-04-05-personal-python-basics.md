@@ -34,20 +34,20 @@ In python , different bracket types are used for different purposes. Standard br
 
 ***
 
-<strong>Functions (fx)</strong>
+<strong>Functions</strong>
 
 ***
 
-fx are block of code that do a specific job, which are called when needed.
+Functions are block of code that do a specific job, which are called when needed.
 
 |![simple fx](/assets/images/personal-python-basics/fx/fx_simple.png)|![simple fx output](/assets/images/personal-python-basics/fx/fx_simple_op.png)
-|<em>simple hello world fx</em>|
+|<em>simple hello world function</em>|
 
 What I have learnt is demonstrated in the table below:
 
 | Action    | image |
 | ----------- | ----------- |
-| <strong>Passing information to fx</strong> <br>same fx as simple hello world fx | ![info to fx](/assets/images/personal-python-basics/fx/fx_simple_info.png)<br><br>![info to fx op](/assets/images/personal-python-basics/fx/fx_simple_op.png) |
+| <strong>Passing information to function</strong> <br>same fx as simple hello world function | ![info to fx](/assets/images/personal-python-basics/fx/fx_simple_info.png)<br><br>![info to fx op](/assets/images/personal-python-basics/fx/fx_simple_op.png) |
 
 | <strong>Positional arguments <br> with multiple fx calls</strong> <br> Python matches each argument <br> in the fx call with a parameter <br> in the fx definition.| ![fx positional argument](/assets/images/personal-python-basics/fx/fx_posi.png)<br><br>![fx positional argument op](/assets/images/personal-python-basics/fx/fx_posi_op.png)      |
 
