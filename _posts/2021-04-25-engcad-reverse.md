@@ -32,3 +32,5 @@ For our first assignment, we were tasked with dismantling an appliance and analy
 <strong>The Report</strong>
 
 ***
+![PlaceHolder](/assets/images/common/Placeholder.png)
+<em>I am not sure how SP's plagiarism check works. Hence the report will be uploaded in it's entirety at a later date</em>
