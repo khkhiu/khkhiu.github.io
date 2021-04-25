@@ -10,6 +10,8 @@ tags:
 
 ---
 
+![WIP](/assets/images/common/WIP.png)
+
 ***
 
 <strong>Introductions</strong>
