@@ -28,8 +28,17 @@ This post will focus on the module: Statistics and Analytics for Engineers(SAE) 
 <cite><a href="https://www.minitab.com/en-us/academic/">minitab.com/en-us/academic/</a></cite>
 {: .notice--info}
 
+***
 
+<strong>Basic Operations of MiniTab</strong>
 
+***
+The following table will illustrate basic operations of MiniTab.
 
+| Action    | image |
+| ----------- | ----------- |
+|<strong>Pie Charts</strong>|![pie chart create](/assets/images/sp-minitab/)<br><br>![pie chart create 2](/assets/images/sp-minitab/)<br><br>![pie chart op](/assets/images/sp-minitab/)|
+
+![PlaceHolder](/assets/images/common/Placeholder.png)
 
 ![WIP](/assets/images/common/WIP.png)
