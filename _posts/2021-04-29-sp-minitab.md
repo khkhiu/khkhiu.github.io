@@ -23,4 +23,9 @@ tags:
 <cite><a href="https://www.minitab.com/en-us/academic/">minitab.com/en-us/academic/</a></cite>
 {: .notice--info}
 
+**Statistics and Analytics for Engineers(SAE)** Statistics and Analytics for Engineers(SAE) is module that introduces student to statistic and data analytics concepts to solve problems encountered through the course of their studies. 
+{: .notice--info}
+
+
+
 ![WIP](/assets/images/common/WIP.png)
