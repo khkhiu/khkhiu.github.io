@@ -21,6 +21,8 @@ tags:
 
 This post will focus on the module: Statistics and Analytics for Engineers(SAE) and how Minitab Express is used as a tool for students to visualise data and analyse it. My initial impression of MiniTab express is that it is effectively, Microsoft Excel, but significantly simplified and laser focused on statistics. Considering SAE's intention is to introduce students to statistics, I can understand why Minitab was chosen over Excel. 
 
+<strong>All data used in this post is dummy data provided by Singapore Polytechnic(SP) for educational purposes</strong>
+
 **Statistics and Analytics for Engineers(SAE)** Statistics and Analytics for Engineers(SAE) is module that introduces student to statistic and data analytics concepts to solve problems encountered through the course of their studies. 
 {: .notice--info}
 
@@ -38,7 +40,7 @@ The following table will illustrate basic operations of MiniTab.
 | Action    | image |
 | ----------- | ----------- |
 |<strong>Importing Data</strong>|![Data Import 1](/assets/images/sp-minitab/import_data.png)<br><br>![Data Import 2](/assets/images/sp-minitab/import_data-2.png)<br><br>![Data Import op](/assets/images/sp-minitab/import_data-op.png)<em>data import complete<em>|
-|<strong>Creating Pie Charts</strong>|![Pie Chart Create 1](/assets/images/sp-minitab/import_data)<br><br>![Pie Chart Create 2](/assets/images/sp-minitab/import_data-2)<br><br>![Pie Chart op](/assets/images/sp-minitab/import_data-op)<em><em><br><br>![Pie Chart edit](/assets/images/sp-minitab/import_data-op)<em><em><br><br>![Pie Chart op 2](/assets/images/sp-minitab/import_data-op)<em><em>|
+|<strong>Creating Pie Charts</strong>|![Pie Chart Create 1](/assets/images/sp-minitab/piechart_create.png)<br><br>![Pie Chart Create 2](/assets/images/sp-minitab/piechart_create-2.png)<br><br>![Pie Chart op](/assets/images/sp-minitab/import_data-op)<em><em><br><br>![Pie Chart edit](/assets/images/sp-minitab/import_data-op)<em><em><br><br>![Pie Chart op 2](/assets/images/sp-minitab/import_data-op)<em><em>|
 
 ![PlaceHolder](/assets/images/common/Placeholder.png)
 
