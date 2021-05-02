@@ -47,7 +47,7 @@ The following table will illustrate basic operations of MiniTab.
 
 |<strong>Creating Histograms</strong>|![Histogram Create 1](/assets/images/sp-minitab/histogram_create.jpg)<br><br>![Histogram Create 2](/assets/images/sp-minitab/histogram_create-2.jpg)<br><br>![Histogram op](/assets/images/sp-minitab/histogram-op.jpg)<em>Histogram complete<em><br><br>![Histogram edit](/assets/images/sp-minitab/histogram_edit.jpg)<em>Editing histogram to make reading easier<em><br><br>![Histogram op 2](/assets/images/sp-minitab/histogram-op-2.jpg)<em>Histogram updated<em><br><br>![Histogram edit 2](/assets/images/sp-minitab/histogram_edit-2.jpg)<em>Editing histogram for more details<em>|
 
-
+|<strong>Creating Box plots</strong>|![Box plot Create 1](/assets/images/sp-minitab/histogram_create.jpg)<br><br>![Box plot Create 2](/assets/images/sp-minitab/histogram_create-2.jpg)<br><br>![Box plot op](/assets/images/sp-minitab/histogram-op.jpg)<em>Histogram complete<em><br><br>![Box plot edit](/assets/images/sp-minitab/histogram_edit.jpg)<em>Editing histogram to make reading easier<em><br><br>![Box plot op 2](/assets/images/sp-minitab/histogram-op-2.jpg)<em>Histogram updated<em>|
 
 ![PlaceHolder](/assets/images/common/Placeholder.png)
 
