@@ -19,7 +19,7 @@ tags:
 **"Rolling Release"** I will be attempting a new style of writing with this post. Instead of publishing the post at once after the completing the task, I will be updating the post as I learn.   
 {: .notice--warning}
 
-This post will focus on the module: Statistics and Analytics for Engineers(SAE) and how Minitab Express is used as a tool for students to visualise data and analyse it. 
+This post will focus on the module: Statistics and Analytics for Engineers(SAE) and how Minitab Express is used as a tool for students to visualise data and analyse it. My initial impression of MiniTab express is that it is effectively, Microsoft Excel, but significantly simplified and laser focused on statistics. Considering SAE's intention is to introduce students to statistics, I can understand why Minitab was chosen over Excel. 
 
 **Statistics and Analytics for Engineers(SAE)** Statistics and Analytics for Engineers(SAE) is module that introduces student to statistic and data analytics concepts to solve problems encountered through the course of their studies. 
 {: .notice--info}
@@ -37,7 +37,7 @@ The following table will illustrate basic operations of MiniTab.
 
 | Action    | image |
 | ----------- | ----------- |
-|<strong>Importing Data</strong>|![Data Import](/assets/images/sp-minitab/)<br><br>![pie chart create 2](/assets/images/sp-minitab/)<br><br>![pie chart op](/assets/images/sp-minitab/)|
+|<strong>Importing Data</strong>|![Data Import 1](/assets/images/sp-minitab/import_data)<br><br>![Data Import 2](/assets/images/sp-minitab/import_data-2)<br><br>![Data Import op](/assets/images/sp-minitab/import_data-op)<em>data import complete<em>|
 
 ![PlaceHolder](/assets/images/common/Placeholder.png)
 
