@@ -40,6 +40,9 @@ The following table will illustrate basic operations of MiniTab.
 | Action    | image |
 | ----------- | ----------- |
 |<strong>Importing Data</strong>|![Data Import 1](/assets/images/sp-minitab/import_data.jpg)<br><br>![Data Import 2](/assets/images/sp-minitab/import_data-2.jpg)<br><br>![Data Import op](/assets/images/sp-minitab/import_data-op.jpg)<em>data import complete<em>|
+
+|<strong>Creating Pie Charts</strong>|![Pie Chart Create 1](/assets/images/sp-minitab/piechart_create.jpg)<br><br>![Pie Chart Create 2](/assets/images/sp-minitab/piechart_create-2.jpg)<br><br>![Pie Chart op](/assets/images/sp-minitab/piechart-op.jpg)<em>Pie chart complete<em>|
+
 |<strong>Creating Pie Charts</strong>|![Pie Chart Create 1](/assets/images/sp-minitab/piechart_create.jpg)<br><br>![Pie Chart Create 2](/assets/images/sp-minitab/piechart_create-2.jpg)<br><br>![Pie Chart op](/assets/images/sp-minitab/piechart-op.jpg)<em>Pie chart complete<em>|
 
 ![PlaceHolder](/assets/images/common/Placeholder.png)
