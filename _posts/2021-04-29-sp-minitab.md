@@ -53,5 +53,6 @@ The following table will illustrate basic operations of MiniTab.
 
 |<strong>Creating scatter plot</strong>|![scatter Create 1](/assets/images/sp-minitab/scatterplot_create.jpg)<br><br>![scatter Create 2](/assets/images/sp-minitab/scatterplot_create-2.jpg)<em>Creating scatter plot<em><br><br>![scatter plot op](/assets/images/sp-minitab/scatterplot-op.jpg)<em>Scatter plot complete<em><br><br>![scatter plot edit](/assets/images/sp-minitab/scatterplot_edit.jpg)<em>Editing scatter plot to make reading easier<em><br><br>![scatter plot op 2](/assets/images/sp-minitab/scatterplot-op-2.jpg)<em>Scatter plot updated<em>|
 
+|<strong>Computing correlation coefficient</strong>|![correlation Create 1](/assets/images/sp-minitab/correlation_create.jpg)<br><br>![correlation Create 2](/assets/images/sp-minitab/correlation_create-2.jpg)<em>Creating scatter plot<em><br><br>![correlation op](/assets/images/sp-minitab/correlation-op.jpg)<em>Scatter plot complete<em>|
 
 ![WIP](/assets/images/common/WIP.png)
