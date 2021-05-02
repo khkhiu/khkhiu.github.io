@@ -51,6 +51,7 @@ The following table will illustrate basic operations of MiniTab.
 
 |<strong>Descriptive statistics</strong>|![Descriptive statistics Create 1](/assets/images/sp-minitab/des_stat_create.jpg)<br><br>![Descriptive statistics Create 2](/assets/images/sp-minitab/des_stat_create-2.jpg)<em>Creating descriptive statistics<em><br><br>![Descriptive statistics Create 3](/assets/images/sp-minitab/des_stat_create-3.jpg)<br><br>![Descriptive statistics Create 4](/assets/images/sp-minitab/des_stat_create-3.jpg)<em>Various settings for descriptive statistics<em><br><br>![Descriptive statistics Create op](/assets/images/sp-minitab/des_stat-op.jpg)<em>descriptive statistics table generated<em>|
 
-![PlaceHolder](/assets/images/common/Placeholder.png)
+|<strong>Creating scatter plot</strong>|![scatter Create 1](/assets/images/sp-minitab/scatterplot_create.jpg)<br><br>![scatter Create 2](/assets/images/sp-minitab/scatterplot_create-2.jpg)<em>Creating box plot<em><br><br>![scatter plot op](/assets/images/sp-minitab/scatterplot-op.jpg)<em>box plot complete<em><br><br>![scatter plot edit](/assets/images/sp-minitab/scatterlot_edit.jpg)<em>Editing box plot to make reading easier<em><br><br>![scatter plot op 2](/assets/images/sp-minitab/scatterplot-op-2.jpg)<em>Box plot updated<em>|
+
 
 ![WIP](/assets/images/common/WIP.png)
