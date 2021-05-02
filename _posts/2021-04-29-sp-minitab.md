@@ -45,6 +45,8 @@ The following table will illustrate basic operations of MiniTab.
 
 |<strong>Creating Bar Charts</strong>|![Bar Chart Create 1](/assets/images/sp-minitab/barchart_create.jpg)<br><br>![Bar Chart Create 2](/assets/images/sp-minitab/piechart_create-2.jpg)<br><br>![Bar Chart op](/assets/images/sp-minitab/barchart-op.jpg)<em>bar chart complete<em><br><br>![Bar Chart edit](/assets/images/sp-minitab/barchart-op.jpg)<em>Editing bar chart to make reading easier<em><br><br>![Bar Chart op 2](/assets/images/sp-minitab/barchart-op-2.jpg)<em>Bar chart updated<em>|
 
+|<strong>Creating Histograms</strong>|![Histogram Create 1](/assets/images/sp-minitab/barchart_create.jpg)<br><br>![Histogram Create 2](/assets/images/sp-minitab/piechart_create-2.jpg)<br><br>![Histogram op](/assets/images/sp-minitab/barchart-op.jpg)<em>Histogram complete<em><br><br>![Histogram edit](/assets/images/sp-minitab/barchart-op.jpg)<em>Editing histogram to make reading easier<em><br><br>![Histogram op 2](/assets/images/sp-minitab/barchart-op-2.jpg)<em>Histogram updated<em>|
+
 ![PlaceHolder](/assets/images/common/Placeholder.png)
 
 ![WIP](/assets/images/common/WIP.png)
