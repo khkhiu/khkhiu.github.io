@@ -55,6 +55,8 @@ The following table will illustrate basic operations of MiniTab.
 
 |<strong>Computing correlation coefficient</strong>|![correlation Create 1](/assets/images/sp-minitab/correlation_create.jpg)<br><br>![correlation Create 2](/assets/images/sp-minitab/correlation_create-2.jpg)<em>Creating scatter plot<em><br><br>![correlation op](/assets/images/sp-minitab/correlation-op.jpg)<em>Scatter plot complete<em>|
 
-|<strong>Unstack data</strong>|![Unstack data Create 1](/assets/images/sp-minitab/unstack_create.jpg)<br><br>![Unstack data Create 2](/assets/images/sp-minitab/unstack_create-2.jpg)<em>forming unstack columns<em><br><br>![Unstack data op](/assets/images/sp-minitab/unstack-op.jpg)<em>Unstack column generated<em>|
+|<strong>Generating unstack data</strong>|![Unstack data Create 1](/assets/images/sp-minitab/unstack_create.jpg)<br><br>![Unstack data Create 2](/assets/images/sp-minitab/unstack_create-2.jpg)<em>forming unstack columns<em><br><br>![Unstack data op](/assets/images/sp-minitab/unstack-op.jpg)<em>Unstack columns generated<em>|
+
+|<strong>Generating stack data</strong>|![stack data Create 1](/assets/images/sp-minitab/stack_create.jpg)<br><br>![stack data Create 2](/assets/images/sp-minitab/stack_create-2.jpg)<em>forming stack columns<em><br><br>![stack data op](/assets/images/sp-minitab/stack-op.jpg)<em>stack columns generated<em>|
 
 ![WIP](/assets/images/common/WIP.png)
