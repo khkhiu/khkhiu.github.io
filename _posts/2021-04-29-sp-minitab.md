@@ -84,4 +84,9 @@ The following table details the steps used to complete the task.
 | ----------- | ----------- |
 |<strong>Generating probability density value</strong>|![display probability step 1](/assets/images/sp-minitab/3A/T2-S1.jpg)<br><br>![display probability step 2](/assets/images/sp-minitab/3A/T2-S2.jpg)<em>forming stack columns<em><br><br>![display probability op](/assets/images/sp-minitab/3A/T2-OP.jpg)<em>Probability density value generated<em>|
 
+***
+
+<strong>Normal Distribution</strong>
+
+***
 ![WIP](/assets/images/common/WIP.png)
