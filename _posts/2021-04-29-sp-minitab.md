@@ -61,8 +61,14 @@ The following table will illustrate basic operations of MiniTab.
 
 ***
 
-<strong>Basic Operations of MiniTab</strong>
+<strong>Dice probability</strong>
 
 ***
+To continue learning about Minitab, we were given the following task.
+
+![Task 1](/assets/images/sp-minitab/3A/Task-1.jpg)<br><em>1st question<em>
+
+The following table details the steps used to complete the task.
+
 
 ![WIP](/assets/images/common/WIP.png)
