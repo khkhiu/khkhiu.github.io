@@ -72,5 +72,7 @@ The following table details the steps used to complete the task.
 
 | Action    | image |
 | ----------- | ----------- |
+|<strong>Generating probability density value</strong>|![probability density step 1](/assets/images/sp-minitab/3A/T1-S1.jpg)<br><br>![probability density step 2](/assets/images/sp-minitab/3A/T1-S2.jpg)<em>forming stack columns<em><br><br>![probability density op](/assets/images/sp-minitab/3A/T1-OP.jpg)<em>Probability density value generated<em>|
+
 
 ![WIP](/assets/images/common/WIP.png)
