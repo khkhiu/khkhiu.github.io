@@ -59,4 +59,10 @@ The following table will illustrate basic operations of MiniTab.
 
 |<strong>Generating stack data</strong>|![stack data Create 1](/assets/images/sp-minitab/stack_create.jpg)<br><br>![stack data Create 2](/assets/images/sp-minitab/stack_create-2.jpg)<em>forming stack columns<em><br><br>![stack data op](/assets/images/sp-minitab/stack-op.jpg)<em>stack columns generated<em>|
 
+***
+
+<strong>Basic Operations of MiniTab</strong>
+
+***
+
 ![WIP](/assets/images/common/WIP.png)
