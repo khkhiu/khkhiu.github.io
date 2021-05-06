@@ -24,7 +24,7 @@ tags:
 **Engineering Exploration and Design (EM0524)** Engineering Exploration and Design is the first module in the Engineering Academy programme. The module strengthens the foundation of knowledge that students acquired in year 1.
 {: .notice--info}
 
-For our second assignment, we were tasked with designing a cam drive that functions similar to a door knob. This post will the design process and subsequent report written.
+For our second assignment, we were tasked with designing a mechanical device that functions similar to a door knob. This post will the design process and subsequent report written.
 
 ***
 
