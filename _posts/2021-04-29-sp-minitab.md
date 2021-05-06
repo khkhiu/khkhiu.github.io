@@ -70,5 +70,7 @@ To continue learning about Minitab, we were given the following task.
 
 The following table details the steps used to complete the task.
 
+| Action    | image |
+| ----------- | ----------- |
 
 ![WIP](/assets/images/common/WIP.png)
