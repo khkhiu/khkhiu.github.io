@@ -1,5 +1,5 @@
 ---
-title: "Trilby (Working title)"
+title: "Bothriechis schlegelii (Working title)"
 date: "04-09-2021"
 categories:
   - Personal
@@ -15,5 +15,5 @@ tags:
 <strong>Coming Soon</strong>
 
 ***
-<!--Fedora-->
+<!--OpenCV from EED-->
 ![WIP](/assets/images/common/WIP.png)

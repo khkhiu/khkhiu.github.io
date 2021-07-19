@@ -15,5 +15,5 @@ tags:
 <strong>Coming Soon</strong>
 
 ***
-
+<!--AWS-->
 ![WIP](/assets/images/common/WIP.png)
