@@ -1,5 +1,5 @@
 ---
-title: "Cloudy Skies (Working title)"
+title: "Veiled Skies (Working title)"
 date: "04-09-2021"
 categories:
   - Personal
