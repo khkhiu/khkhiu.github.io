@@ -2,9 +2,8 @@
 title: "Engineering Academy, Computer Aided Drafting and T-shirt printing"
 date: "02-04-2021"
 categories:
-  - Engineering Academy
+  - Singapore Polytechnic
 tags:
-  - Engineering Academy
   - Singapore Polytechnic
   - CADD
   - Fusion 360

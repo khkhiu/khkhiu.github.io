@@ -2,9 +2,8 @@
 title: "Engineering Academy and Github Pages, HTML,CSS and Jekyll"
 date: "03-04-2021"
 categories:
-  - Engineering Academy
+  - Singapore Polytechnic
 tags:
-  - Engineering Academy
   - Singapore Polytechnic
   - HTML
   - Jekyll
