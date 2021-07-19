@@ -1,5 +1,5 @@
 ---
-title: "Gate of Glass (Working title)"
+title: "Mirrored Fence (Working title)"
 date: "04-09-2021"
 categories:
   - Personal
