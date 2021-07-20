@@ -15,6 +15,6 @@ tags:
 <strong>Coming Soon</strong>
 
 ***
-<!--C++-->
+<!--ETH-->
 
 ![WIP](/assets/images/common/WIP.png)
