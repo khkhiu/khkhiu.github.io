@@ -1,5 +1,5 @@
 ---
-title: "Space shooter game in Python using Pygame, part 1"
+title: "Space shooter game in Python using Pygame"
 date: "07-04-2021"
 categories:
   - Personal
