@@ -162,32 +162,32 @@ With this in mind, lets carry on.
 ***
 To expedite this project(as I have more in the queue), I will not be making a custom alien, but rather be using the one provided by No Starch Press. A file: alien.py will also be created to control the alien's behaviour.
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien.BMP)|
+|![alien img](/assets/images/personal-python-pygame/alien.BMP)|
 |<em>alien ship provided</em>|
 
-|![alien file](/assets/images/personal-python-pygame-pt2/alien_file-1.png)|
+|![alien file](/assets/images/personal-python-pygame/alien_file-1.png)|
 |<em>alien.py</em>|
 
 To ensure that the code was working properly, I imported the alien.py file to main game file(space_invaders.py).
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_file_import.png)|
+|![alien img](/assets/images/personal-python-pygame/alien_file_import.png)|
 |<em>Importing alien</em>|
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_file_init.png)|
+|![alien img](/assets/images/personal-python-pygame/alien_file_init.png)|
 |<em>updating initialise method in Space_invaders.py</em>|
 
 A method called _create_fleet() was made to hold the (eventual) fleet of aliens. In this method, one instance of Alien was made, then added to the group that will hold the fleet. The alien is the placed in the upper left of the screen. 
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_file_fleet.png)|
+|![alien img](/assets/images/personal-python-pygame/alien_file_fleet.png)|
 |<em>alien ship provided in Space_invaders.py</em>|
 
 
 To make the alien appear, I need to call the group’s draw() method to _update_screen(): When we call draw() on groups, Pygame draw elements of the group at positions defined by rect attributes. The draw() method
 requires a surface to draw the elements from the group. 
 
-|![alien update screen](/assets/images/personal-python-pygame-pt2/alien_update_screen.png)|
+|![alien update screen](/assets/images/personal-python-pygame/alien_update_screen.png)|
 |<em>Adding alien to _update_screen() in Space_invaders.py</em>|
 
-|![1 alien op](/assets/images/personal-python-pygame-pt2/alien_file-1-op.png)|
+|![1 alien op](/assets/images/personal-python-pygame/alien_file-1-op.png)|
 |<em>Output of above code</em>|
 
 ***
@@ -204,15 +204,15 @@ Screen width is stored in settings.screen_width. To ensure empty margins on both
 
 To actually add aliens in the code, I first pushed each alien right one alien width from the left margin. Second, I multiply the alien width by 2 to factor the space each alien takes up and empty space to their right. This value is then multiplied by the alien's position in the row, using the alien’s x attribute to set the position of its rect. Lastly, aliens are the added to the group alien
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_fleet_row.png)|
+|![alien img](/assets/images/personal-python-pygame/alien_fleet_row.png)|
 |<em>Code to implement alien in a row in Space_invaders.py</em>|
 
-|![alien img](/assets/images/personal-python-pygame-pt2/alien_fleet_row-OP.png)|
+|![alien img](/assets/images/personal-python-pygame/alien_fleet_row-OP.png)|
 |<em>Alien in a row output </em>|
 
 The method _create_fleet() was then refactored to making working with it easier.
 
-|![refactored create fleet](/assets/images/personal-python-pygame-pt2/create_fleet_refactor.png)|
+|![refactored create fleet](/assets/images/personal-python-pygame/create_fleet_refactor.png)|
 |<em>New _create_fleet() method in Space_invaders.py</em>|
 
 <strong>Adding columns</strong>
@@ -225,10 +225,10 @@ To build the fleet, I need to find the available vertical space by doing the fol
 
 This will create some space above the ship, giving the player some time to start shotting at the aliens(which will be implemented later).
 
-|![adding columns](/assets/images/personal-python-pygame-pt2/alien_fleet_file.png)|
+|![adding columns](/assets/images/personal-python-pygame/alien_fleet_file.png)|
 |<em>New coded added to Space_invaders.py</em>|
 
-|![fleet op](/assets/images/personal-python-pygame-pt2/alien_fleet-op.png)|
+|![fleet op](/assets/images/personal-python-pygame/alien_fleet-op.png)|
 |<em>Fleet created</em>|
 
 ***
@@ -244,13 +244,13 @@ In this segment, we will implement the following actions:
 
 | Action     | code |
 | ----------- | ----------- |
-| Moving aliens right|![Moving aliens right setting](/assets/images/personal-python-pygame-pt2/move_right_setting.png)<br><em>adding settings</em><br>![Moving aliens right parameter](/assets/images/personal-python-pygame-pt2/move_right_alien.png)<br><em>new parameter to access the alien's speed in Space_invaders.py</em><br>![Update alien](/assets/images/personal-python-pygame-pt2/move_right_SI-1.png)<br><em>call to update position of alien in Space_invaders.py</em><br>![Update alien v1](/assets/images/personal-python-pygame-pt2/move_right_SI-2.png)<br><em>Updating alien position version 1 in Space_invaders.py</em>|
+| Moving aliens right|![Moving aliens right setting](/assets/images/personal-python-pygame/move_right_setting.png)<br><em>adding settings</em><br>![Moving aliens right parameter](/assets/images/personal-python-pygame/move_right_alien.png)<br><em>new parameter to access the alien's speed in Space_invaders.py</em><br>![Update alien](/assets/images/personal-python-pygame/move_right_SI-1.png)<br><em>call to update position of alien in Space_invaders.py</em><br>![Update alien v1](/assets/images/personal-python-pygame/move_right_SI-2.png)<br><em>Updating alien position version 1 in Space_invaders.py</em>|
 
-| Creating setting for fleet direction|![Moving aliens down](/assets/images/personal-python-pygame-pt2/fleet_direction_setting.png)<br><em>Making aliens move down in settings.py</em>|
+| Creating setting for fleet direction|![Moving aliens down](/assets/images/personal-python-pygame/fleet_direction_setting.png)<br><em>Making aliens move down in settings.py</em>|
 
-| Checking if alien has hit edge|![checking alien hit edge](/assets/images/personal-python-pygame-pt2/alien_hit_edge.png)<br><em>checking if alien hit edge in alien.py</em>|
+| Checking if alien has hit edge|![checking alien hit edge](/assets/images/personal-python-pygame/alien_hit_edge.png)<br><em>checking if alien hit edge in alien.py</em>|
 
-| Moving fleet down and changing direction|![actual movement](/assets/images/personal-python-pygame-pt2/fleet_move_SI.png)<br><br>![actual movement 2](/assets/images/personal-python-pygame-pt2/fleet_move_SI-2.png)<br><em>Implementing movement and edge hit detection in Space_invaders.py</em>|
+| Moving fleet down and changing direction|![actual movement](/assets/images/personal-python-pygame/fleet_move_SI.png)<br><br>![actual movement 2](/assets/images/personal-python-pygame/fleet_move_SI-2.png)<br><em>Implementing movement and edge hit detection in Space_invaders.py</em>|
 
 ***
 
@@ -260,7 +260,7 @@ In this segment, we will implement the following actions:
 
 | Action     | code |
 | ----------- | ----------- |
-|Detecting bullet collision<br>in Space_invaders.py|![Bullet collision](/assets/images/personal-python-pygame-pt2/bullet_collide.png)<br><em>Making bullets collide with aliens</em><br>![new fleet](/assets/images/personal-python-pygame-pt2/new_fleet.png)<br><em>Generating new fleet</em>|
+|Detecting bullet collision<br>in Space_invaders.py|![Bullet collision](/assets/images/personal-python-pygame/bullet_collide.png)<br><em>Making bullets collide with aliens</em><br>![new fleet](/assets/images/personal-python-pygame/new_fleet.png)<br><em>Generating new fleet</em>|
 
 ***
 
@@ -270,18 +270,18 @@ In this segment, we will implement the following actions:
 
 | Action     | code |
 | ----------- | ----------- |
-|Detecting alien and ship collisions|![Alien ship collision](/assets/images/personal-python-pygame-pt2/alien_ship_collide.png)<br><em>detecting alien ship collision in Space_invaders.py</em>|
-|Responding to alien ship collisions|![Collision respond](/assets/images/personal-python-pygame-pt2/GameStat.png)<br><em>New file to enable responds to collisions</em><br>|
-|Limiting number of ships players have in setting.py|![lives](/assets/images/personal-python-pygame-pt2/ShipLimit.png)<br>|
+|Detecting alien and ship collisions|![Alien ship collision](/assets/images/personal-python-pygame/alien_ship_collide.png)<br><em>detecting alien ship collision in Space_invaders.py</em>|
+|Responding to alien ship collisions|![Collision respond](/assets/images/personal-python-pygame/GameStat.png)<br><em>New file to enable responds to collisions</em><br>|
+|Limiting number of ships players have in setting.py|![lives](/assets/images/personal-python-pygame/ShipLimit.png)<br>|
 
-|Adding GameStat to Space_invader.py|![import](/assets/images/personal-python-pygame-pt2/GameStat_import.png)<br><em>Importing GameStat</em><br>![score](/assets/images/personal-python-pygame-pt2/score.png)<br><em>Instance to store game stats</em><br>![ship hit method](/assets/images/personal-python-pygame-pt2/ship_hit.png)<br><br>![ship hit method](/assets/images/personal-python-pygame-pt2/ship_hit-2.png)<br><br>![ship hit method](/assets/images/personal-python-pygame-pt2/ship_hit-3.png)<br><em>consequence of ship hit</em>|
+|Adding GameStat to Space_invader.py|![import](/assets/images/personal-python-pygame/GameStat_import.png)<br><em>Importing GameStat</em><br>![score](/assets/images/personal-python-pygame/score.png)<br><em>Instance to store game stats</em><br>![ship hit method](/assets/images/personal-python-pygame/ship_hit.png)<br><br>![ship hit method](/assets/images/personal-python-pygame/ship_hit-2.png)<br><br>![ship hit method](/assets/images/personal-python-pygame/ship_hit-3.png)<br><em>consequence of ship hit</em>|
 
 
-|Alien Reaching Bottom of screen in Space_invaders.py|![alien hit bottom](/assets/images/personal-python-pygame-pt2/alien_bottom.png)<br><br>![alien hit bottom 2](/assets/images/personal-python-pygame-pt2/alien_bottom-2.png)<br><em>Make game respond same way as when alien hits ship</em>|
+|Alien Reaching Bottom of screen in Space_invaders.py|![alien hit bottom](/assets/images/personal-python-pygame/alien_bottom.png)<br><br>![alien hit bottom 2](/assets/images/personal-python-pygame/alien_bottom-2.png)<br><em>Make game respond same way as when alien hits ship</em>|
 
-|Game over|![Game over](/assets/images/personal-python-pygame-pt2/GameOver.png)<br><br>![Game over 2](/assets/images/personal-python-pygame-pt2/GameOver-2.png)<br><em>End game when player runs out of ship</em>|
+|Game over|![Game over](/assets/images/personal-python-pygame/GameOver.png)<br><br>![Game over 2](/assets/images/personal-python-pygame/GameOver-2.png)<br><em>End game when player runs out of ship</em>|
 
-|Identifying parts of game that should run|![Game over](/assets/images/personal-python-pygame-pt2/GameRun.png)<br><em>Some parts of the game should always run, while others only when the game is active</em>|
+|Identifying parts of game that should run|![Game over](/assets/images/personal-python-pygame/GameRun.png)<br><em>Some parts of the game should always run, while others only when the game is active</em>|
 
 This conclude my attempts at trying to code a space invaders clone using Pygame. There is a part 3 where more functionalities are added. However, due to time constraints, I had to rush this post for completion purposes. Stay tuned for more post in other subjects and technologies. 
 
