@@ -283,7 +283,7 @@ In this segment, we will implement the following actions:
 
 |Identifying parts of game that should run|![Game over](/assets/images/personal-python-pygame/GameRun.png)<br><em>Some parts of the game should always run, while others only when the game is active</em>|
 
-This conclude my attempts at trying to code a space invaders clone using Pygame. There is a part 3 where more functionalities are added. However, due to time constraints, I will be delving into that. Stay tuned for more post in other subjects and technologies. 
+This conclude my attempts at trying to code a space invaders clone using Pygame. There is a part 3 where more functionalities are added. However, due to time constraints, I will not be delving into that. Stay tuned for more post in other subjects and technologies. 
 
 The original source code can be found here: <a href="https://ehmatthes.github.io/pcc_2e/regular_index/">Python Crash Course, Second Edition</a>
 
