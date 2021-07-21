@@ -1,12 +1,13 @@
 ---
-title: "Bothriechis schlegelii (Working title)"
+title: "Simple People counter with OpenCV and Python"
 date: "04-09-2021"
 categories:
-  - Personal
+  - Singapore Polytechnic - Project
 tags:
   - Personal
-  - 
-  - 
+  - Python
+  - OpenCV
+  - Project
 
 ---
 
