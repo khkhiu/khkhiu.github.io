@@ -2,16 +2,13 @@
 title: "Video editing with KdenLive"
 date: "01-04-2021"
 categories:
-  - Singapore Polytechnic
+  - Singapore Polytechnic - Learning process
 tags:
   - Singapore Polytechnic
   - KdenLive
-  - Legacy
+  - Learning process
 
 ---
-
-**Legacy tag** Post containing the Legacy tag are projects that have been completed prior to the creation of this site. As such, I have attempted to recreate the events to the best of my abilities.   
-{: .notice--warning}
 
 **Engineering Design and Solutions(EDS)** Engineering Design Solutions is module where students are tasked with designing a solution for a given problem statement
 {: .notice--info}

@@ -2,10 +2,11 @@
 title: "Excel Basics"
 date: "10-04-2021"
 categories:
-  - Personal
+  - Personal - Learning process
 tags:
   - Personal
   - Excel
+  - Learning process
 
 ---
 **Microsoft Excel** Microsoft Excel is a spreadsheet software featuring various tools like pivot tables and a macro programming language called Visual Basic for Applications(VBA).
