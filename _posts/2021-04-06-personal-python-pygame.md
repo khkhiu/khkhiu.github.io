@@ -2,9 +2,8 @@
 title: "Space shooter game in Python using Pygame"
 date: "07-04-2021"
 categories:
-  - Personal - Learning process
+  - Learning process
 tags:
-  - Personal
   - Python
   - Pygame
   - Learning process

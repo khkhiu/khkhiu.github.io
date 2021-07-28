@@ -2,9 +2,8 @@
 title: "Excel Basics"
 date: "10-04-2021"
 categories:
-  - Personal - Learning process
+  - Learning process
 tags:
-  - Personal
   - Excel
   - Learning process
 

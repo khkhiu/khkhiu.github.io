@@ -2,9 +2,8 @@
 title: "Python Basics"
 date: "05-04-2021"
 categories:
-  - Personal - Learning process
+  - Learning process
 tags:
-  - Personal
   - Python
   - Learning process
 

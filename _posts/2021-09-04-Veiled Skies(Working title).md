@@ -2,9 +2,8 @@
 title: "Veiled Skies (Working title)"
 date: "04-09-2021"
 categories:
-  - Personal - Learning process
+  - Learning process
 tags:
-  - Personal
   - Learning process
   - 
 

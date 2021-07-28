@@ -2,9 +2,8 @@
 title: "Simple People counter with OpenCV and Python"
 date: "04-09-2021"
 categories:
-  - Singapore Polytechnic - Project
+  - Project
 tags:
-  - Personal
   - Python
   - OpenCV
   - Project
