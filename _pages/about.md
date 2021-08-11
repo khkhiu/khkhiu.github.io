@@ -8,10 +8,7 @@ This site is intended as a repository for my projects during my course and my fr
 
 <strong>NOTE: This site will NOT contain any projects done in any educational institution. The rationale is that I want to focus on my work and capabilities outside of school</strong>
 
-On a more light hearted note, observe as electrical engineering slowly transform into computer engineering / computer science (or some Frankenstein's monster, who knows).
-
 | ![Electrical engineering](/assets/images/about/EEE.png) |
-
 
 Other subjects may also make an appearance or 2(wink).
 
