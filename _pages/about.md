@@ -6,7 +6,7 @@ title: "About"
 An information technology student turned electrical engineering student, trying to learn.
 This site is intended as a repository for my projects during my course and my free time. Through my projects, I hope to showcase my skills and abilities.
 
-<strong>NOTE: This site will NOT contain any projects done in any educational institution. The rationale is that I want to focus on my work and capabilities outside of school</strong>
+<strong>NOTE: The main focus of this site will be my personal projects as I want to showcase my work outside of my educational institutions. However, some of the projects from educational institution will still make an appearance</strong>
 
 | ![Electrical engineering](/assets/images/about/EEE.png) |
 
