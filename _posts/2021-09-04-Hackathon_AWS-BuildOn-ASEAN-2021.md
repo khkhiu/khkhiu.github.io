@@ -24,13 +24,32 @@ Amazon Web Services (AWS) Build On, ASEAN is a competitive hackathon that challe
 <strong>The team</strong>
 
 ***
-The team I was in,<strong>SP_ABS_IDV</strong>consisted of the following members from Singapore Polytechnic(SP). The name was originally a placeholder name, but it grew on the team and we stuck with it.
+The team I was in,<strong>AWS_IDV_DESC</strong>consisted of the following members from Singapore Polytechnic(SP). The name is a reference to the name of my previous team. For more information on that, see here: <a href="https://khkhiu.github.io/competition/Hackathon_AWS-BuildOn-ASEAN-2020/"> AWS - BuildOn ASEAN, 2020. </a>
 
-1. LY Nathan, Diploma in Engineering with Business
-2. Phang Wei Zhang, Diploma in Engineering with Business
-3. Teo Wen Xin, Diploma in Diploma in Infocomm Security Management
-4. Khiu Kim Hong, Diploma in Electrical and Electronic Engineering
+1. Keh Zi Yang, Diploma in Electrical and Electronic Engineering
+2. Andrew Chia Wei Ren, Diploma in Electrical and Electronic Engineering
+3. Khiu Kim Hong, Diploma in Electrical and Electronic Engineering
+
+***
+
+<strong>Problem statement</strong>
+
+***
+<strong>AI for Predicting Complications in Chronic Diseases</strong> Hyperglycaemia (diabetes), Hyperlipidaemia (high cholesterol), and Hypertension (high blood
+pressure) are three of the top chronic diseases that affect Singaporeans. Some of the major
+complications for these diseases include cardiovascular disease, renal failure, and eye/foot problems.
+Understanding which patients will develop major complications can allow for early diagnosis and
+interventions to manage the complications and even prevent the development of complications.
+Challenge: To predict the time to developing complications in patients with type 2 diabetes or
+hypertension or hyperlipidaemia from the time of first diagnosis. You will be provided with a dataset
+that includes patient demographics, information on hospital visits, lab test results, medication, and
+diagnoses.
+
+
+
 
 ***
 
 ![WIP](/assets/images/common/WIP.png)
+
+***
