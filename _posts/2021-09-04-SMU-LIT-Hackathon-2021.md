@@ -31,8 +31,8 @@ Preamble: With a burgeoning middle class and rising demand for goods and service
 
 | Title     | Description |
 | ----------- | ----------- |
-|<em>Inter-jurisdictional Streamlining</em>|<strong>Expanding Regionally:</strong> In this globalized and digital age, businesses are no longer confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.<br>How best can local lawyers who seek to expand their legal practice and regional expertise gather the relevant expertise and establish regional networks? <br>(By Linklaters)|
-|<em>Asian Market</em>|<strong>Asian Region: </strong> The Asian region is experiencing phenomenal growth, but tapping into the opportunities involves navigating a network of disparate languages and cultures.<br>How can legal practitioners overcome or even leverage linguistic and cultural differences in the region?<br>(By Linklaters)|
+|<em>Inter-jurisdictional Streamlining</em>|<strong>Expanding Regionally:</strong> In this globalized and digital age, businesses are no longer confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.<br><br>How best can local lawyers who seek to expand their legal practice and regional expertise gather the relevant expertise and establish regional networks? <br>(By Linklaters)|
+|<em>Asian Market</em>|<strong>Asian Region: </strong> The Asian region is experiencing phenomenal growth, but tapping into the opportunities involves navigating a network of disparate languages and cultures.<br><br>How can legal practitioners overcome or even leverage linguistic and cultural differences in the region?<br><br>(By Linklaters)|
 
 <strong>Theme 2: Operational Pressures amidst COVID-19</strong>
 
@@ -42,7 +42,7 @@ and a longing to further leverage it in the pursuit of justice.
 
 | Title     | Description |
 | ----------- | ----------- |
-|<em>Remote Working/ Telecommuting:</em>|<strong>Psychological Risks: </strong>Telecommuting has blurred the line between work and home, and this is exacerbated by an increasingly prevalent "always-on" culture coupled with the accessibility availed by modern technology.<br>While circuit breaker and social distancing regulations have proven effective in reducing the spread of COVID-19, the measures put in place could also contribute to psychological and interpersonal risks that extend beyond the obvious health and economic repercussions of the COVID-19 pandemic. Even if an individual has the good fortune of remaining healthy and financially stable during this period, he/she could still be vulnerable to stress, anxiety and interpersonal tension and conflict.<br>With hybrid / remote working fast becoming the norm, how might we mitigate these psychological risks?<be>(By Dentons Rodyk)|
+|<em>Remote Working/ Telecommuting:</em>|<strong>Psychological Risks: </strong>Telecommuting has blurred the line between work and home, and this is exacerbated by an increasingly prevalent "always-on" culture coupled with the accessibility availed by modern technology.<br><br>While circuit breaker and social distancing regulations have proven effective in reducing the spread of COVID-19, the measures put in place could also contribute to psychological and interpersonal risks that extend beyond the obvious health and economic repercussions of the COVID-19 pandemic. Even if an individual has the good fortune of remaining healthy and financially stable during this period, he/she could still be vulnerable to stress, anxiety and interpersonal tension and conflict.<br><br>With hybrid / remote working fast becoming the norm, how might we mitigate these psychological risks?<br><br>(By Dentons Rodyk)|
 |<em></em>|<strong>Team Cohesion: </strong><br>(By Dentons Rodyk)|
 
 ![WIP](/assets/images/common/WIP.png)
