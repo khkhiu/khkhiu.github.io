@@ -69,11 +69,22 @@ After some discussion, the team opted to build an interactive chatbot using Amaz
 <strong>Implementing the solution</strong>
 
 ***
+Planning:
+1. Setting up and testing chatbot 
+2. Setting up and testing speech element 
+3. Building in AWS sumerian
+4. Testing in AWS sumerian
+
 
 ***
 
 <strong>Areas of improvement and lessons learnt</strong>
 
 ***
+Planning:
+1. Explain need of involvement of domain experts
+2. Use machine learning to improve accuracy
+3. How to actually deploy to make it accessible to the general public
+4. More knowledge on how to use AWS in general 
 
 ![WIP](/assets/images/common/WIP.png)
