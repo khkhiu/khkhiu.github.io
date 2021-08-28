@@ -79,6 +79,14 @@ KenSci is a company that developed and AI platform that uses data to improve hea
 
 The primary advantage our solution has over KenSci is that our solution focuses on prevention, whereas KenSci focuses on cure and remedy. By allow for early intervention with the growth of chronic illnesses, our solution can address the issues before it can escalate further, thereby reducing the need for cure entirely.
 
+|SWOT| Explanation |
+| ----------- | ----------- |
+|Strength(S)|1. AWS has a web interface that can be accessed from any device.<br><br>
+2. AWS can automatically scale to meet demands.<br><br>
+3. The AI only needs patient data to operate. Medical personnel do not need to actively manage it. |
+|Weakness(W)||
+|Opportunity(O)||
+|Threats(T)|
 
 ***
 
