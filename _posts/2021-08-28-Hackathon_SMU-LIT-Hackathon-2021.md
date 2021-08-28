@@ -1,5 +1,5 @@
 ---
-title: "SMU Legal Innovation & Technology (LIT) Hackathon 2021"
+title: "SMU - Legal Innovation & Technology (LIT) Hackathon, 2021"
 date: "28-08-2021"
 categories:
   - Competition

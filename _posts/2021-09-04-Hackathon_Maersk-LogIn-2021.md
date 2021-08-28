@@ -1,5 +1,5 @@
 ---
-title: "Maersk Sealand Asia Log-In Challenge 2021"
+title: "Maersk, Sealand - Asia Log-In Challenge, 2021"
 date: "04-09-2021"
 categories:
   - Competition
