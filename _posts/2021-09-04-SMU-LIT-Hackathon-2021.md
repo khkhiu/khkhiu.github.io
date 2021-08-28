@@ -23,7 +23,7 @@ In groups of three to five with at least one law student, the participants were 
 <strong>Problem statements</strong>
 
 ***
-The problem statements were split in to the following themes:
+The team that I was in,CodeBrigade, investigated the following themes:
 
 <strong>Theme 1: Rise of Asia</strong>
 
