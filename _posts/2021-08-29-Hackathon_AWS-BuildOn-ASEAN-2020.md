@@ -99,3 +99,91 @@ rely on their family members, thereby freeing resources for the family for use i
 
 The unique selling point of the solution would be the backing of DBS bank. The organisation of activities and financial literacy workshops are typically held by grassroots organisations, like Community Centres. As such events often have very limited reach, typically limited to the neighbourhood. Furthermore, due to limited resources, like funding and volunteers, events could be sporadic and far between each other.
 The involvement of DBS bank allows for several advantages over community lead efforts. Firstly, being the largest bank in Singapore, DBS is able to reach a significantly wider audience. The solution could be sold as part of an ‘Active Aging’ package to their current install base, hence being able to reach everyone who banks with them, and potentially those who do not. Secondly, the involvement from DBS can entice other organisations to collaborate. The name of ‘DBS’ carries sway in the context of Singapore. Hence, this would be attractive to other organisations as backing of DBS would guarantee a level of organisation and competency above that of a typical community centre. This would cause other organisations to be willing to organise more events, thereby giving the elderly a wider variety of events to participate in.
+
+***
+
+<strong>Deep Dive into Solution </strong>
+
+***
+|![FlowChart-General](/assets/images/Hackathon-AWS-BO-2020/FlowChart_general.png)|
+
+Description of each feature shown above
+- Database
+The database systems will need to work closely with the website and AI models. Due to the sensitive nature of the data required from our users and organisation, security would be essential. Furthermore, the databases would need to be scalable to allow for versatility in administration.
+
+- AI architecture/model 
+The team will be using an AI model to tailor recommendations to better suit the preferences of both the individual user and our partner organisations. The AI model will analyse the actions and preferences of the user, along with feedback from partner organisations to better recommend users to events for maximum satisfaction.
+
+- Website
+The website needs to be simple enough for the elderly to use easily. At the same time, it needs to be robust to facilitate the accurate displaying of events and the associated information.
+
+<strong>User Journey</strong>
+The elderly will first sign up to the service, providing personal, financial and some medical information. The data will be sent to our database, which is overseen and managed by DBS. The database will also receive external information from places like the stock market. The data in the database will then be analysed by the AI model and recommendations will be made accordingly. The recommendations will be pushed to the website, where users will be able to view and select the ones that they are interested in. The sources of the events will come from external organisations who are willing to work with us and DBS. 
+
+***
+
+<strong>Architecture of Solution </strong>
+
+***
+Our solution will make use of the following AWS services: Amazon DynamoDB, AWS Lambda, AWS SageMaker, along with Amazon Augmented AI(A2I)
+The Amazon DynamoDB was chosen due to its enterprise grade capabilities like encryption by default , along with the points highlighted above. The data from DynamoDB will be fed into SageMaker through AWS Lambda where the team can leverage its ability to quickly build and train models for the optimal outcome. A2I will be used to more easily show DBS, as well as partnered organisations the effectiveness of various models, as well as to help explain changes the team wants to make to the AI model. 
+
+|![FlowChart-AWS](/assets/images/Hackathon-AWS-BO-2020/FlowChart_AWS.png)|
+
+***
+
+<strong>Going further </strong>
+
+***
+Since our current solution consists only of a website as the access point, one possible improvement is to make an associated mobile app. Through the app, our solution will be able to provide real-time information instantly to our target audience’s mobile phone, which is not as effective as an email sent by the website. Furthermore, our target users will be able to access the information being provided more easily, after condensing the information-heavy topic of retirement plans with the help of UX designers into a mobile-friendly format.
+Another improvement for our solution could be to include the other challenge statements “Personalised Investment Ideas for Relationship Managers (RM)” and “The Virtual RM” in our solution. Our team believes that using a personal relationship manager could provide retirees information more efficiently and make the experience much more personalized, so as to put them at ease during retirement or when it approaches. For DBS, this increases customer satisfaction and retention, as well as improving its public image.
+
+The team plans on commercialising our solution both physically for elderly retirees, and digitally for future retirees. For the physical approach, posters and digital screen posters could be pushed out around the neighbourhood containing links and QR codes to our solution, as well as television advertisements. Many elderly retirees spend most of their time at home watching television. When they do leave their houses, they will usually be around their neighbourhoods at nearby parks, markets, exercising areas, etc. Therefore, advertising our solution in these areas will have the most exposure to elderly retirees. For the digital approach, we will be using tools such as Social Media Marketing, Search Engine Marketing, Interactive Display Advertising, and so on to target workers who are planning their retirement. These workers are probably in the middle age range and are more likely to be familiar with more advanced digital devices and practices. Therefore, if we advertise our solution digitally, it will be able to reach out to our second group of the target audience as well.
+
+All main features of our solution can be handled by an AWS service, which are made flexible to customers for an associated price. Therefore, as the user base and traffic increases, resources used will be scaled accordingly without major issues. In terms of business viability, in addition to selling retirement plans, revenue advertisements posted on the website and a small percentage of our partners revenue made thanks to our solution could be collected to support it.
+
+***
+
+<strong>Appendix A - References</strong>
+
+***
+[1]MUI, RACHEL. "Young People In Singapore Worry Their Parents Do Not Save Enough For Retirement – With Good Reason: Survey". The Straits Times, 2018, https://www.straitstimes.com/business/economy/singapore-youths-worry-their-parents-are-not-saving-enough-for-retirement-with-good.
+[2]Population Trends, 2019. 1st ed., Department Of Statistics, Singapore, 2019, https://www.singstat.gov.sg/-/media/files/publications/population/population2019.pdf. Accessed 1 Aug 2020.
+[3]Home Alone:Older Adults In Singapore. 1st ed., DukeNUS Medical School, 2018, https://www.duke-nus.edu.sg/docs/librariesprovider3/research-policy-brief-docs/home-alone-older-adults-in-singapore.pdf?sfvrsn=6735541d_0. Accessed 1 Aug 2020.
+[4]Agency, S., 2020. Food Farms In Singapore. [online] Sfa.gov.sg. Available at: <https://www.sfa.gov.sg/food-farming/food-farms/farming-in-singapore> [Accessed 4 August 2020].
+[5]Agency, S., 2020. The Food We Eat. [online] Sfa.gov.sg. Available at: <https://www.sfa.gov.sg/food-farming/singapore-food-supply/the-food-we-eat> [Accessed 4 August 2020].
+[6]Cdc.gov. 2020. Physical Activity And Health: A Report Of The Surgeon General | Older Adults. [online] Available at: <https://www.cdc.gov/nccdphp/sgr/olderad.htm>.
+[7]2018. The Importance Of Physical Activity Exercise Among Older People. 1st ed. [ebook] Oslo: Oslo Metropolitan University, Faculty of Health Sciences. Available at: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6304477/pdf/BMRI2018-7856823.pdf>.
+[8]Psycnet.apa.org. 2002. Effects Of Social Exclusion On Cognitive Processes: Anticipated Aloneness Reduces Intelligent Thought.. [online] Available at: <https://psycnet.apa.org/record/2002-18351-003>.
+[9]https://journals.lww.com/psychosomaticmedicine/pages/default.aspx. 2002. Loneliness And Health: Potential Mechanisms : Psychosomatic Medicine. [online] Available at: <https://journals.lww.com/psychosomaticmedicine/Abstract/2002/05000/Loneliness_and_Health__Potential_Mechanisms.5.aspx>.
+[10]Psycnet.apa.org. 2006. Loneliness As A Specific Risk Factor For Depressive Symptoms: Cross-Sectional And Longitudinal Analyses.. [online] Available at: <https://psycnet.apa.org/doiLanding?doi=10.1037%2F0882-7974.21.1.140>.
+
+***
+
+<strong>Appendix B - Prototyping Resources</strong>
+
+***
+Amazon Echo Show 8
+https://www.youtube.com/watch?v=pchrhtTnrM4
+
+Amazon Echo Show 5
+https://www.youtube.com/watch?v=xgVLiBTUCsY
+
+How to Build a Serverless Web Application with AWS Lambda, Amazon API Gateway, Amazon S3, Amazon DynamoDB, and Amazon Cognito | AWS
+https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/
+
+
+Build Your Own Face Recognition Service Using Amazon Rekognition | Amazon Web Services
+https://aws.amazon.com/blogs/machine-learning/build-your-own-face-recognition-service-using-amazon-rekognition/
+
+How Amazon’s facial recognition ambition could stunt Alexa’s development
+https://venturebeat.com/2019/05/26/how-amazons-facial-recognition-ambition-could-stunt-alexas-development/
+
+How Slalom Created Personalized, Interactive Event Experiences Using Amazon Rekognition | Amazon Web Services
+https://aws.amazon.com/blogs/apn/how-slalom-created-personalized-interactive-event-experiences-using-amazon-rekognition/
+
+Build a Recommendation Engine With Collaborative Filtering – Real Python
+https://realpython.com/build-recommendation-engine-collaborative-filtering/
+
+Call Sagemaker model endpoint from Lambda
+https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/
