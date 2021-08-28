@@ -6,6 +6,7 @@ categories:
 tags:
   - Capture the Flag(CTF)
   - Cybersecurity
+  - Learning process
 
 ---
 
