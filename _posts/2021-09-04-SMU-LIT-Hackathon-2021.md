@@ -31,6 +31,10 @@ Preamble: With a burgeoning middle class and rising demand for goods and service
 
 | Title     | Description |
 | ----------- | ----------- |
-|<strong>Inter-jurisdictional Streamlining</strong>|![add](/assets/images/personal-excel-basics/add.png)<br><br>![add op](/assets/images/personal-excel-basics/add_op.png)<br><em>addition output</em>|
+|<em>Inter-jurisdictional Streamlining</em>|<strong>Expanding Regionally:<strong> In this globalized and digital age, businesses are no longer confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.<br>
+How best can local lawyers who seek to expand their legal practice and regional
+expertise gather the relevant expertise and establish regional networks? <br>(By
+Linklaters)
+|
 
 ![WIP](/assets/images/common/WIP.png)
