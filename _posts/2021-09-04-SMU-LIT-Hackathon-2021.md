@@ -25,15 +25,16 @@ In groups of three to five with at least one law student, the participants were 
 ***
 The problem statements were split in to the following themes:
 
-| Theme    | Preamble |Problem statements|
-| ----------- | ----------- | ----------- |
-|Rise of Asia|With a burgeoning middle class and rising demand for goods and services in and from Asia, Asia is expected to continue showing strong economic growth. This also signals a parallel demand for legal market services in the region.|1. Expanding Regionally: In this globalized and digital age, businesses are no longer confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.<br>
+Theme 1: Rise of Asia
+
+Preamble: With a burgeoning middle class and rising demand for goods and services in and from Asia, Asia is expected to continue showing strong economic growth.1 This also signals a parallel demand for legal market services in the region.
+
+| Title     | Description |
+| ----------- | ----------- |
+|<em>Inter-jurisdictional Streamlining</em>|Expanding Regionally: In this globalized and digital age, businesses are no longer
+confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.
 How best can local lawyers who seek to expand their legal practice and regional
-expertise gather the relevant expertise and establish regional networks?<br> (By
+expertise gather the relevant expertise and establish regional networks? (By
 Linklaters)|
-
-|Operational Pressures amidst COVID-19|COVID-19 has been a major driving force towards the digitalisation of the legal industry. At the same time, this has led to growing concerns about technological solutions and a longing to further leverage it in the pursuit of justice.||
-||||
-
 
 ![WIP](/assets/images/common/WIP.png)
