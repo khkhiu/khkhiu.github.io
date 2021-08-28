@@ -139,13 +139,21 @@ Lastly, the solution is data driven and can easily be used to predict other issu
 
 ***
 [1] www.hpb.gov.sg. n.d. Tips to Prevent and Manage Chronic Diseases in the Workplace. [online] Available at: <https://www.hpb.gov.sg/article/tips-to-prevent-and-manage-chronic-diseases-in-the-workplace>
+
 [2] www.sgh.com.sg. 2019. Proportion of older adults with multiple chronic diseases surges. [online] Available at: <https://www.sgh.com.sg/news/tomorrows-medicine/proportion-of-older-adults-with-multiple-chronic-diseases-surges>
+
 [3] Ministry of Health Singapore, 2018. The Burden of Disease in Singapore, 1990–2017. [online] Singapore: Ministry of Health Singapore, p.45. Available at: <https://www.moh.gov.sg/docs/librariesprovider5/default-document-library/gbd_2017_singapore_reportce6bb0b3ad1a49c19ee6ebadc1273b18.pdf>
+
 [4] The Straits Time, 2020. Koh Poh Koon details key drivers of rising healthcare costs here. [online] Available at: <https://www.straitstimes.com/singapore/koh-poh-koon-details-key-drivers-of-rising-healthcare-costs-here>.
+
 [5] he American Journal of Managed Care, 2019. Identification of chronic diseases in their early stages enables prompt treatment that can slow or prevent disease development and debilitating and costly health outcomes. [online] 25(11). Available at: <https://www.ajmc.com/view/population-health-screenings-for-the-prevention-of-chronic-disease-progression>
+
 [6] Preventing Chronic Disease, 2011. Getting Serious About the Prevention of Chronic Diseases. [online] 8(4). Available at: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136976/>.
+
 [7] Kensci.com. n.d. Enterprise grade AI platform for digital health - KenSci. [online] Available at: <https://www.kensci.com/platform>.
+
 [8] 2021. MTI Maintains 2021 GDP Growth Forecast at “4.0 to 6.0 Percent” Amidst Significant Uncertainties Arising from the COVID-19 Pandemic. [online] Singapore: Ministry of Trade and Industry. Available at: https://www.singstat.gov.sg/-/media/files/news/gdp1q2021.pdf
+
 [9] Enterprisesg.gov.sg. n.d. Grants - Enterprise Singapore. [online] Available at: <https://www.enterprisesg.gov.sg/financial-assistance/grants#for-startups> 
 
 
