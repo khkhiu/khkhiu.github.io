@@ -25,19 +25,12 @@ In groups of three to five with at least one law student, the participants were 
 ***
 The problem statements were split in to the following themes:
 
-Theme 1: Rise of Asia
+<strong>Theme 1: Rise of Asia</strong>
 
 Preamble: With a burgeoning middle class and rising demand for goods and services in and from Asia, Asia is expected to continue showing strong economic growth.1 This also signals a parallel demand for legal market services in the region.
 
 | Title     | Description |
 | ----------- | ----------- |
-|<em>Inter-jurisdictional Streamlining</em>|Expanding Regionally: In this globalized and digital age, businesses are no longer
-confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.
-How best can local lawyers who seek to expand their legal practice and regional
-expertise gather the relevant expertise and establish regional networks? (By
-Linklaters)|
-|<em>Asian Market</em>|Asian Region: The Asian region is experiencing phenomenal growth, but tapping into the opportunities involves navigating a network of disparate languages and cultures.
-How can legal practitioners overcome or even leverage linguistic and cultural
-differences in the region? (By Linklaters)|
+| Addition<br><br>Use: <strong>+</strong>|![add](/assets/images/personal-excel-basics/add.png)<br><br>![add op](/assets/images/personal-excel-basics/add_op.png)<br><em>addition output</em>|
 
 ![WIP](/assets/images/common/WIP.png)
