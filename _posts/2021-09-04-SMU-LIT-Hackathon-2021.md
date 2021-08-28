@@ -36,5 +36,8 @@ confined to or defined by their home jurisdiction, and their lawyers need to kee
 How best can local lawyers who seek to expand their legal practice and regional
 expertise gather the relevant expertise and establish regional networks? (By
 Linklaters)|
+|<em>Asian Market</em>|Asian Region: The Asian region is experiencing phenomenal growth, but tapping into the opportunities involves navigating a network of disparate languages and cultures.
+How can legal practitioners overcome or even leverage linguistic and cultural
+differences in the region? (By Linklaters)|
 
 ![WIP](/assets/images/common/WIP.png)
