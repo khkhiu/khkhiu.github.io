@@ -9,7 +9,7 @@ tags:
 
 ---
 
-**Note**The AWS BuiilOn ASEAN 2020 used components that I no longer have access to and cannot recreate. As such only the design brief is included here.
+**Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design brief is included here.
 {: .notice--warning}
 
 ***
@@ -56,17 +56,17 @@ Therefore our team’s solution will provide a fulfilling life to retirees by en
 Our proposed solution will be a platform for current and future retirees which will suggest activities, hobbies, or events according to their profile, financial status, and health condition, as well as recommend appropriate retirement plans using AI technology based on those activities. This will allow them to stay physical and remain social while doing relevant activities.
 
 Example of available activities/events (non-exhaustive):
-  ●	Partner with organisations to allow retirees to contribute part-time:
-    ○	Singapore Food Agency (SFA) and their associated farms[4][5] allows for physically able retirees to help with farm output
-    ○	National Environment Agency (NEA) allows for retirees to volunteer in their recycling efforts
-  ●	Community Centre (CC) workshops/lessons to teach elderlies/retirees new skills:
-    ○	These skills can be applied in future DBS events (e.g. Carnivals), which will allow elderlies/retirees to spend their time more meaningful and possibly earn some money from these events
-    ○	This will also allow elderlies/retirees to make new friends which they can hang out with after the workshops in order to have someone to talk to every day and not feel bored at home
-    ○	Elderlies/retirees can also participate in these events with their love ones in order to spend meaningful time and to build stronger bonds with one another 
-  ●	Investment workshops/talks regarding how best to plan for your retirement, as well as opportunities such as:
-    ○	Housing investments
-    ○	Property investments
-    ○	Shares/Stock market
-    ○	Gold, etc.
+1. Partner with organisations to allow retirees to contribute part-time:
+    -Singapore Food Agency (SFA) and their associated farms[4][5] allows for physically able retirees to help with farm output
+    -National Environment Agency (NEA) allows for retirees to volunteer in their recycling efforts
+2. Community Centre (CC) workshops/lessons to teach elderlies/retirees new skills:
+    -These skills can be applied in future DBS events (e.g. Carnivals), which will allow elderlies/retirees to spend their time more meaningful and possibly earn some money from these events
+    -This will also allow elderlies/retirees to make new friends which they can hang out with after the workshops in order to have someone to talk to every day and not feel bored at home
+    -Elderlies/retirees can also participate in these events with their love ones in order to spend meaningful time and to build stronger bonds with one another 
+3. Investment workshops/talks regarding how best to plan for your retirement, as well as opportunities such as:
+    -Housing investments
+    -Property investments
+    -Shares/Stock market
+    -Gold, etc.
 
 The platform will be in the form of a web application as the content is information heavy and a mobile application might not be as effective in conveying information, whether textual or visual. Activities will most likely require administrative work requested by partners as well, which might not be suitable in a mobile format.
