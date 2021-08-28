@@ -147,13 +147,13 @@ All main features of our solution can be handled by an AWS service, which are ma
 <strong>Appendix A - References</strong>
 
 ***
-[1]MUI, RACHEL. "Young People In Singapore Worry Their Parents Do Not Save Enough For Retirement – With Good Reason: Survey". The Straits Times, 2018, <a href = https://www.straitstimes.com/business/economy/singapore-youths-worry-their-parents-are-not-saving-enough-for-retirement-with-good.>
+[1]MUI, RACHEL. "Young People In Singapore Worry Their Parents Do Not Save Enough For Retirement – With Good Reason: Survey". The Straits Times, 2018, <a href = https://www.straitstimes.com/business/economy/singapore-youths-worry-their-parents-are-not-saving-enough-for-retirement-with-good.></a>
 
-[2]Population Trends, 2019. 1st ed., Department Of Statistics, Singapore, 2019, <a href = https://www.singstat.gov.sg/-/media/files/publications/population/population2019.pdf.> 
+[2]Population Trends, 2019. 1st ed., Department Of Statistics, Singapore, 2019, <a href = https://www.singstat.gov.sg/-/media/files/publications/population/population2019.pdf.> </a>
 
-[3]Home Alone:Older Adults In Singapore. 1st ed., DukeNUS Medical School, 2018, <a href = https://www.duke-nus.edu.sg/docs/librariesprovider3/research-policy-brief-docs/home-alone-older-adults-in-singapore.pdf?sfvrsn=6735541d_0.>
+[3]Home Alone:Older Adults In Singapore. 1st ed., DukeNUS Medical School, 2018, <a href = https://www.duke-nus.edu.sg/docs/librariesprovider3/research-policy-brief-docs/home-alone-older-adults-in-singapore.pdf?sfvrsn=6735541d_0.></a>
 
-[4]Agency, S., 2020. Food Farms In Singapore. [online] Sfa.gov.sg. Available at: <a href =https://www.sfa.gov.sg/food-farming/food-farms/farming-in-singapore> 
+[4]Agency, S., 2020. Food Farms In Singapore. [online] Sfa.gov.sg. Available at: <a href =https://www.sfa.gov.sg/food-farming/food-farms/farming-in-singapore> </a>
 
 [5]Agency, S., 2020. The Food We Eat. [online] Sfa.gov.sg. Available at: <https://www.sfa.gov.sg/food-farming/singapore-food-supply/the-food-we-eat> [Accessed 4 August 2020].
 
