@@ -70,3 +70,22 @@ Example of available activities/events (non-exhaustive):
     - Gold
 
 The platform will be in the form of a web application as the content is information heavy and a mobile application might not be as effective in conveying information, whether textual or visual. Activities will most likely require administrative work requested by partners as well, which might not be suitable in a mobile format.
+
+***
+
+<strong>Impact of Solution  </strong>
+
+***
+The solution has several benefits for our target audience. 
+Firstly, physical activity. This is accomplished as the bulk of hobbies and other recreational activities can have elements of physical action. This benefits the audience by allowing them to maintain bone and muscle health, thereby reducing the risks of falling and bone fractures. The physical activity could also help with other issues such as relieving blood pressure.[6][7]
+Secondly, this allows the audience to maintain a connection to society. This not only allows the audience to be able to expand their social circles and maintain an emotional support network, but also has numerous other health benefits. Loneliness has been linked to a decline in cognitive abilities[8], as well as a noticeable uptick in blood pressure and cardiac issues.[9][10] Therefore, by providing the elderly with a social outlet, we are able to ensure better physical health as well as maintaining a friend group.
+
+Next, improved financial education and retirement planning would not only be a boon for the elderly but their families at large as well. Improved financial literacy would allow the elderly to better plan and manage their finances before and during their twilight years. This would reduce the need for them to 
+rely on their family members, thereby freeing resources for the family for use in other endeavour. Furthermore, investments over the course of several years can yield a stream of passive income for them, hence reducing the need to rely solely on their savings and CPF.
+
+|SWOT| Explanation |
+| ----------- | ----------- |
+|Strength(S)|Being backed by the DBS bank will allow our solution to have a greater reach than community-runned efforts. This is due to DBS already having a large customer base for us to tap into.<br><br>The name ‘DBS bank’ also carries prestige which may allow us to be partnered up with numerous agencies and organisations like Health Promotion Board(HPB) and Central Provident Fund(CPF) more easily.|
+|Weakness(W)|Heavy use of technology in the solution could result in the elderly having difficulty using it to its fullest potential, as the elderlies may not be familiar on how to use the website application.<br><br>Inherent instability in the stocks and commodities market could prove difficult for the elderly to understand.<br><br>Potentially long travel times, depending on the location of the activity held.|
+|Opportunity(O)||
+|Threats(T)||
