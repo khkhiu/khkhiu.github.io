@@ -31,11 +31,7 @@ Preamble: With a burgeoning middle class and rising demand for goods and service
 
 | Title     | Description |
 | ----------- | ----------- |
-|<em>Inter-jurisdictional Streamlining</em>|<strong>Expanding Regionally:</strong> In this globalized and digital age, businesses are no longer confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.<br>
-How best can local lawyers who seek to expand their legal practice and regional
-expertise gather the relevant expertise and establish regional networks? <br>(By Linklaters)|
-|<em>Asian Market</em>|<strong>Asian Region: <strong> The Asian region is experiencing phenomenal growth, but tapping into the opportunities involves navigating a network of disparate languages and cultures.<br>
-How can legal practitioners overcome or even leverage linguistic and cultural
-differences in the region?  <br>(By Linklaters)|
+|<em>Inter-jurisdictional Streamlining</em>|<strong>Expanding Regionally:</strong> In this globalized and digital age, businesses are no longer confined to or defined by their home jurisdiction, and their lawyers need to keep pace as well.<br>How best can local lawyers who seek to expand their legal practice and regional expertise gather the relevant expertise and establish regional networks? <br>(By Linklaters)|
+|<em>Asian Market</em>|<strong>Asian Region: <strong> The Asian region is experiencing phenomenal growth, but tapping into the opportunities involves navigating a network of disparate languages and cultures.<br>How can legal practitioners overcome or even leverage linguistic and cultural differences in the region?<br>(By Linklaters)|
 
 ![WIP](/assets/images/common/WIP.png)
