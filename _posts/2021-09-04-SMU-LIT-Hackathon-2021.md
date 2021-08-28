@@ -16,7 +16,7 @@ tags:
 ***
 The SMU LIT Hacakathon 2021 is organised by the SMU Legal Innovation & Technology (LIT ) club. Held from 13 to 15 August 2021 over zoom and discord, the event brings together students from all Singapore Institutes of Higher Learning to tackle legal-tech problems faced in law, business and community. 
 
-This Hackathon seeks to allow participants to appreciate the synergy between technology and the legal sphere. During this event, law firms provide a set of Problem Statements, which covers diverse topics such as automating research, legal analytics and access to justice. Participant teams will choose a single Problem Statement provided and build a prototype solution.
+In groups of three to five with at least one law student, the participants were tasked to develop technological solutions to real-world problem statements provided by industry partners. These included topics such as automating research, legal analytics and access to justice under the theme of “The Next Decade in Legal Tech in Singapore”.
 
 ***
 
