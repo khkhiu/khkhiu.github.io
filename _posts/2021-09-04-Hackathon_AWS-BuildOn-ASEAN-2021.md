@@ -82,12 +82,70 @@ The primary advantage our solution has over KenSci is that our solution focuses 
 |SWOT| Explanation |
 | ----------- | ----------- |
 |Strength(S)|1. AWS has a web interface that can be accessed from any device.<br><br>2. AWS can automatically scale to meet demands.<br><br>3. The AI only needs patient data to operate. Medical personnel do not need to actively manage it. |
-|Weakness(W)||
-|Opportunity(O)||
-|Threats(T)|
+|Weakness(W)|1. Requires large amounts of data to be accurate.<br><br>2.Working with limited data can result in inaccurate predictions.|
+|Opportunity(O)|1. An aging population that is more at risk of chronic illness will ensure that the solution will receive ample use.<br><br>2.The solution can be easily modified for other purposes like predicting and identifying those at risk of mental illnesses.|
+|Threats(T)|1. The solution can be easily replicated by other companies.|
+
+|PEST| Explanation |
+| ----------- | ----------- |
+|Political(P)|The Singapore government is looking to reduce healthcare cost and this solution can aid in that aim. [4]|
+|Economical(E)|The GDP of Singapore grew by 1.3% in Q1 with predicted growth of 4% to 6% in 2021. [8]|
+|Social(S)|The population is becoming more technologically literate. This allows for easy adoption of the solution|
+|Technological(T)|The smart nation initiative in Singapore saw a general push towards embracing new technologies which our solution falls under.|
 
 ***
 
-![WIP](/assets/images/common/WIP.png)
+<strong>Impact of Solution  </strong>
 
 ***
+
+|![FlowChart-General](/assets/images/Hackathon-AWS-BO-2021/FlowChart_general.png)|
+
+Description of features:
+1.	Data base: The data base will house patient data from MOH and associated institutions which is needed to train the AI algorithm. It will also need to be updated to add new patient data, thus requiring it to be scalable to allow for flexibility in administration.
+2.	AI model: The AI model will consider all aspects of patient profiles to make prediction for future patients. It will also need to consider the feedback of medical personnel as well as future patients to further refine its predictive model.
+
+***
+
+<strong>Architecture of Solution   </strong>
+
+***
+
+|![FlowChart-General](/assets/images/Hackathon-AWS-BO-2021/FlowChart_AWS.png)|
+
+Design notes:
+1.	Amazon S3 are used to store and archive various patient data, as well as to send and retrieve data to and from Amazon Redshift.
+2.	Amazon Redshift is used to stage data for the AI group,
+3.	Amazon HealthLake is needed as we will be working with sensitive healthcare related data. It will also be used to clean and prepare data for further analysis.
+4.	Amazon SageMaker will be used in conjunction with Deep Learning Containers to quickly train and deploy machine learning models.
+5.	Amazon Augmented AI(A2I) will be used to allow for human oversight of the sensitive data to ensure maximum possible accuracy.
+6.	Amazon QuickSight will be used to present the findings of the AI group.
+
+***
+
+<strong>Going further   </strong>
+
+***
+
+One of the key improvements to the solution is automation of data input. AWS glue can be used to better sort and prepare data for analysis, resulting in more accurate predictions. Other services, such as AWS StepFunctions, AWS Batch and Amazon Neptune could be used together to enhance data capture and transfer capabilities.
+
+To bring the solution to market, the team would need to work with MOH and institutions to get access to patient data to train machine learning models. Funding would also need to secured from organizations such as Enterprise Singapore, which provides grants for startups. [9]
+
+Lastly, the solution is data driven and can easily be used to predict other issues like mental illnesses when given the appropriate data. It is also cloud based which allows for easy deployment to various medical facilities throughout the globe. Lastly, as the solution is entirely based on AWS, we will only need to pay for the processing power used. 
+
+***
+
+<strong>References   </strong>
+
+***
+[1] www.hpb.gov.sg. n.d. Tips to Prevent and Manage Chronic Diseases in the Workplace. [online] Available at: <https://www.hpb.gov.sg/article/tips-to-prevent-and-manage-chronic-diseases-in-the-workplace>
+[2] www.sgh.com.sg. 2019. Proportion of older adults with multiple chronic diseases surges. [online] Available at: <https://www.sgh.com.sg/news/tomorrows-medicine/proportion-of-older-adults-with-multiple-chronic-diseases-surges>
+[3] Ministry of Health Singapore, 2018. The Burden of Disease in Singapore, 1990–2017. [online] Singapore: Ministry of Health Singapore, p.45. Available at: <https://www.moh.gov.sg/docs/librariesprovider5/default-document-library/gbd_2017_singapore_reportce6bb0b3ad1a49c19ee6ebadc1273b18.pdf>
+[4] The Straits Time, 2020. Koh Poh Koon details key drivers of rising healthcare costs here. [online] Available at: <https://www.straitstimes.com/singapore/koh-poh-koon-details-key-drivers-of-rising-healthcare-costs-here>.
+[5] he American Journal of Managed Care, 2019. Identification of chronic diseases in their early stages enables prompt treatment that can slow or prevent disease development and debilitating and costly health outcomes. [online] 25(11). Available at: <https://www.ajmc.com/view/population-health-screenings-for-the-prevention-of-chronic-disease-progression>
+[6] Preventing Chronic Disease, 2011. Getting Serious About the Prevention of Chronic Diseases. [online] 8(4). Available at: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136976/>.
+[7] Kensci.com. n.d. Enterprise grade AI platform for digital health - KenSci. [online] Available at: <https://www.kensci.com/platform>.
+[8] 2021. MTI Maintains 2021 GDP Growth Forecast at “4.0 to 6.0 Percent” Amidst Significant Uncertainties Arising from the COVID-19 Pandemic. [online] Singapore: Ministry of Trade and Industry. Available at: https://www.singstat.gov.sg/-/media/files/news/gdp1q2021.pdf
+[9] Enterprisesg.gov.sg. n.d. Grants - Enterprise Singapore. [online] Available at: <https://www.enterprisesg.gov.sg/financial-assistance/grants#for-startups> 
+
+
