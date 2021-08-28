@@ -9,10 +9,15 @@ tags:
 
 ---
 
+**Note**The AWS BuiilOn ASEAN 2020 used components that I no longer have access to and cannot recreate. As such only the report will be uploaded. 
+{: .notice--warning}
+
 ***
 
-<strong>Coming Soon</strong>
+<strong>Introduction</strong>
 
 ***
+
+
 
 ![WIP](/assets/images/common/WIP.png)
