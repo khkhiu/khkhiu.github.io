@@ -81,9 +81,7 @@ The primary advantage our solution has over KenSci is that our solution focuses 
 
 |SWOT| Explanation |
 | ----------- | ----------- |
-|Strength(S)|1. AWS has a web interface that can be accessed from any device.<br><br>
-2. AWS can automatically scale to meet demands.<br><br>
-3. The AI only needs patient data to operate. Medical personnel do not need to actively manage it. |
+|Strength(S)|1. AWS has a web interface that can be accessed from any device.<br><br>2. AWS can automatically scale to meet demands.<br><br>3. The AI only needs patient data to operate. Medical personnel do not need to actively manage it. |
 |Weakness(W)||
 |Opportunity(O)||
 |Threats(T)|
