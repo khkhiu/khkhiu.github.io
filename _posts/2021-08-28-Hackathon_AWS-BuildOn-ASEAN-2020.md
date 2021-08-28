@@ -1,6 +1,6 @@
 ---
 title: "AWS - BuildOn ASEAN, 2020"
-date: "29-08-2021"
+date: "28-08-2021"
 categories:
   - Competition
 tags:
@@ -176,14 +176,14 @@ CNET, 2019. Amazon Echo Show 8 review: Alexa is getting even better. [video] Ava
 
 Chard The Tech Guy, 2019. Amazon Echo Show 5: Web Browser Apps. [image] Available at: <https://www.youtube.com/watch?v=xgVLiBTUCsY> 
 
-Amazon Web Services, Inc. n.d. Getting Started with AWS | Build a Serverless Web Application with AWS Lambda, Amazon API Gateway, AWS Amplify, Amazon DynamoDB, and Amazon Cognito. [online] Available at: <https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/> 
+Amazon Web Services, Inc. n.d. Getting Started with AWS - Build a Serverless Web Application with AWS Lambda, Amazon API Gateway, AWS Amplify, Amazon DynamoDB, and Amazon Cognito. [online] Available at: <https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/> 
 
-Amazon Web Services. 2017. Build Your Own Face Recognition Service Using Amazon Rekognition | Amazon Web Services. [online] Available at: <https://aws.amazon.com/blogs/machine-learning/build-your-own-face-recognition-service-using-amazon-rekognition/> 
+Amazon Web Services. 2017. Build Your Own Face Recognition Service Using Amazon Rekognition - Amazon Web Services. [online] Available at: <https://aws.amazon.com/blogs/machine-learning/build-your-own-face-recognition-service-using-amazon-rekognition/> 
 
 Johnson, K., 2019. How Amazon’s facial recognition ambition could stunt Alexa’s development. [online] VentureBeat. Available at: <https://venturebeat.com/2019/05/26/how-amazons-facial-recognition-ambition-could-stunt-alexas-development/> 
 
-Amazon Web Services. 2019. How Slalom Created Personalized, Interactive Event Experiences Using Amazon Rekognition | Amazon Web Services. [online] Available at: <https://aws.amazon.com/blogs/apn/how-slalom-created-personalized-interactive-event-experiences-using-amazon-rekognition/>
+Amazon Web Services. 2019. How Slalom Created Personalized, Interactive Event Experiences Using Amazon Rekognition - Amazon Web Services. [online] Available at: <https://aws.amazon.com/blogs/apn/how-slalom-created-personalized-interactive-event-experiences-using-amazon-rekognition/>
 
 Realpython.com. n.d. Build a Recommendation Engine With Collaborative Filtering – Real Python. [online] Available at: <https://realpython.com/build-recommendation-engine-collaborative-filtering/> 
 
-Amazon Web Services. 2018. Call an Amazon SageMaker model endpoint using Amazon API Gateway and AWS Lambda | Amazon Web Services. [online] Available at: <https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/> 
+Amazon Web Services. 2018. Call an Amazon SageMaker model endpoint using Amazon API Gateway and AWS Lambda - Amazon Web Services. [online] Available at: <https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/> 
