@@ -31,6 +31,6 @@ Preamble: With a burgeoning middle class and rising demand for goods and service
 
 | Title     | Description |
 | ----------- | ----------- |
-| Addition<br><br>Use: <strong>+</strong>|![add](/assets/images/personal-excel-basics/add.png)<br><br>![add op](/assets/images/personal-excel-basics/add_op.png)<br><em>addition output</em>|
+|strong>Inter-jurisdictional Streamlining</strong>|![add](/assets/images/personal-excel-basics/add.png)<br><br>![add op](/assets/images/personal-excel-basics/add_op.png)<br><em>addition output</em>|
 
 ![WIP](/assets/images/common/WIP.png)
