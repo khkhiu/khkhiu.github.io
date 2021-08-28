@@ -1,6 +1,5 @@
 ---
-title: "IKEA - Southeast Asia's
-Young Designer Award., 2021"
+title: "IKEA - Southeast Asia's Young Designer Award, 2021"
 date: "04-09-2021"
 categories:
   - Competition
