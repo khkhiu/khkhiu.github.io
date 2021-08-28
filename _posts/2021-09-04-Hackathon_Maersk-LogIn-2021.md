@@ -5,7 +5,7 @@ categories:
   - Competition
 tags:
   - Hackathon
-  - IOT
+  - 
 
 ---
 
