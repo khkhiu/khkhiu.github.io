@@ -9,7 +9,7 @@ tags:
 
 ---
 
-**Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design brief is included here.
+**Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design proposal is included here.
 {: .notice--warning}
 
 ***
