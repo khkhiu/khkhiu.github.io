@@ -24,7 +24,7 @@ Amazon Web Services (AWS) Build On, ASEAN is a competitive hackathon that challe
 <strong>The team</strong>
 
 ***
-The team I was in,<strong>SP_ABS_IDV</strong>consisted of the following members from Singapore Polytechnic(SP). The name was originally a placeholder name, but it grew on the team and we stuck with it.
+The team I was in,<strong>SP_ABS_IDV</strong>consisted of the following members from Singapore Polytechnic(SP)(As of 28 August 2021). The name was originally a placeholder name, but it grew on the team and we stuck with it.
 
 1. LY Nathan, Diploma in Engineering with Business
 2. Phang Wei Zhang, Diploma in Engineering with Business

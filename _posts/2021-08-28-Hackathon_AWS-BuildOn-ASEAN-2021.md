@@ -24,7 +24,7 @@ Amazon Web Services (AWS) Build On, ASEAN is a competitive hackathon that challe
 <strong>The team</strong>
 
 ***
-The team I was in,<strong>AWS_IDV_DESC</strong>consisted of the following members from Singapore Polytechnic(SP). The name is a reference to the name of my previous team. For more information on that, see here: <a href="https://khkhiu.github.io/competition/Hackathon_AWS-BuildOn-ASEAN-2020/"> AWS - BuildOn ASEAN, 2020. </a>
+The team I was in,<strong>AWS_IDV_DESC</strong>consisted of the following members from Singapore Polytechnic(SP)(as of 28 August 2021). The name is a reference to the name of my previous team. For more information on that, see here: <a href="https://khkhiu.github.io/competition/Hackathon_AWS-BuildOn-ASEAN-2020/"> AWS - BuildOn ASEAN, 2020. </a>
 
 1. Keh Zi Yang, Diploma in Electrical and Electronic Engineering
 2. Andrew Chia Wei Ren, Diploma in Electrical and Electronic Engineering
