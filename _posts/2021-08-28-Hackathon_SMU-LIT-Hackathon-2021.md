@@ -70,7 +70,7 @@ After some discussion, the team opted to build an interactive chatbot using Amaz
 
 ***
 To be included:
-1. Setting up and testing chatbot 
+1. Setting up and testing chatbot - AWS lex
 2. Setting up and testing speech element 
 3. Building in AWS sumerian
 4. Testing in AWS sumerian
