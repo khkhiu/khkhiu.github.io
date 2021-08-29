@@ -32,7 +32,7 @@ The team I was in,<strong>AWS_IDV_DESC</strong>consisted of the following member
 
 ***
 
-<strong>Problem statement</strong>
+<strong>Problem statement(verbatim)</strong>
 
 ***
 <strong>AI for Predicting Complications in Chronic Diseases</strong> Hyperglycaemia (diabetes), Hyperlipidaemia (high cholesterol), and Hypertension (high blood

@@ -32,10 +32,10 @@ The team I was in was called:<strong>Code Brigade</strong> which consisted of th
 
 ***
 
-<strong>Problem statements</strong>
+<strong>Problem statements(extracted, verbatim)</strong>
 
 ***
-The team that I was in,CodeBrigade, investigated the following themes:
+The team investigated the following themes:
 
 <strong>Theme 1: Rise of Asia</strong>
 
