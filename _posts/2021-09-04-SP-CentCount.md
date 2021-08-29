@@ -1,5 +1,5 @@
 ---
-title: "SP centroid counter (Working title)"
+title: "SP Centroid Counter"
 date: "04-09-2021"
 categories:
   - Project
