@@ -9,8 +9,3 @@ This site is intended as a repository for my projects during my course and my fr
 <strong>NOTE: The main focus of this site will be my personal projects as I want to showcase my work outside of my educational institutions. However, some of the projects from educational institution will still make an appearance</strong>
 
 | ![Electrical engineering](/assets/images/about/EEE.png) |
-
-Other subjects may also make an appearance or 2(wink).
-
-|![wink](/assets/images/about/wink.png)|
-|<em>All art here are my attempts at drawing using libreoffice-draw (of all things) </em>|
