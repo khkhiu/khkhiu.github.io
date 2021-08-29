@@ -78,13 +78,11 @@ To be included:
 
 ***
 
-<strong>Areas of improvement and lessons learnt</strong>
+<strong>Areas of improvement</strong>
 
 ***
-To be included:
-1. Explain need of involvement of domain experts
-2. Use machine learning to improve accuracy
-3. How to actually deploy to make it accessible to the general public
-4. More knowledge on how to use AWS in general 
+The most important area of improvement is the involvement of actual psychiatrist and domain experts. This is important as no one  in the team is an expert on mental health, as such we need input from domain experts to make our chatbot effective in addressing mental health concerns.
 
-![WIP](/assets/images/common/WIP.png)
+Another are of improvement is the addition of machine learning to improve the performance of the chatbot. Machine learning can be used to learn the most effective response to any given scenario, thus making it more effective in addressing user needs.
+
+lastly, the team still needed to find an effective way to package and deliver the chatbot into hands of users.
