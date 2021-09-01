@@ -14,9 +14,13 @@ tags:
 <cite><a href="https://www.sp.edu.sg/engineering-cluster/engineering-academy">SP - Engineering Academy</a></cite>  
 {: .notice--info}
 
+**Link to github:**
+https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counter
+{: .notice--info}
+
 ***
 
-<strong>Introduction/strong>
+<strong>Introduction</strong>
 
 ***
 ![WIP](/assets/images/common/WIP.png)
