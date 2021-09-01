@@ -1,5 +1,5 @@
 ---
-title: "SP Centroid Counter"
+title: "Singapore Polytechnic - Centroid Counter"
 date: "04-09-2021"
 categories:
   - Project
