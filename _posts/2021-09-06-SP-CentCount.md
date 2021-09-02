@@ -39,13 +39,11 @@ The following are members of the team
 <strong>Solution</strong>
 
 ***
-Using OpenCV and python, the team achieved the aim using OpenCV and python.
-
 **OpenCV** OpenCV is an open source computer vision and machine learning software library.
 <cite><a href="https://opencv.org/about/">opencv.org/about/</a></cite>
 {: .notice--info}
 
-<strong>notes on the program</strong>
+Using OpenCV and python, the team achieved the aim using OpenCV and python. The way that the team achieved the aim and how the algorithm can be found within the source code in github.
 
 ***
 
