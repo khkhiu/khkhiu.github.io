@@ -1,6 +1,6 @@
 ---
 title: "Singapore Polytechnic - Centroid Counter"
-date: "04-09-2021"
+date: "06-09-2021"
 categories:
   - Project
 tags:
@@ -9,10 +9,6 @@ tags:
   - OpenCV
 
 ---
-
-**Engineering Academy(EA)** Engineering Academy is a programme taken along with our diplomas that aims to further educate us on aspects of engineering through practical experiences. 
-<cite><a href="https://www.sp.edu.sg/engineering-cluster/engineering-academy">SP - Engineering Academy</a></cite>  
-{: .notice--info}
 
 **Link to github:**
 https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counter
@@ -23,4 +19,38 @@ https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counter
 <strong>Introduction</strong>
 
 ***
+The aim of the project is to develop a simple algorithm to count the number of people in the room.
+
+***
+
+<strong>The team</strong>
+
+***
+The following are members of the team
+
+1. Khiu Kim Hong, Diploma in Electrical and Electronic Engineering
+2. Cheam Zhi Kai, Diploma in Engineering with Business
+3. Ang Yong En, Diploma in Computer Engineering
+4. Chan Qing Yi, Diploma in Mechanical Engineering
+5. Ngo Bing Han, Diploma in Electrical and Electronic Engineering
+
+***
+
+<strong>Solution</strong>
+
+***
+Using OpenCV and python, the team achieved the aim using OpenCV and python.
+
+**OpenCV** OpenCV is an open source computer vision and machine learning software library.
+<cite><a href="https://opencv.org/about/">opencv.org/about/</a></cite>
+{: .notice--info}
+
+<strong>notes on the program</strong>
+
+***
+
+<strong>Video demonstration</strong>
+
+***
+[To be added]
 ![WIP](/assets/images/common/WIP.png)
