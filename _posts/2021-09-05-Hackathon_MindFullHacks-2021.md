@@ -16,7 +16,7 @@ tags:
 ***
 MindfulHacks was founded as Singapore's first Mental Health-themed Student Hackathon. It is a 24-hour overnight hackathon where attendees work to build a software project that addresses mental health issues. Our mission is to encourage students to come together and innovate solutions to mental health issues and combat the stigma of mental illness. We welcome students from Universities, Polytechnics, ITEs, and Junior Colleges.
 
-Problem Statement: Create a tool that will address a specific or multiple mental health issues in your community, whether you want to design and develop an app, create a data visualisation or anything else you can think of!
+<strong>Problem Statement: Create a tool that will address a specific or multiple mental health issues in your community, whether you want to design and develop an app, create a data visualisation or anything else you can think of!</strong>
 
 ***
 
@@ -54,3 +54,11 @@ A user can speak directly to the chat-bot, thus giving it a more life-like feel 
 ***
 
 https://youtu.be/Qk_C7c5Wzqs
+
+
+***
+
+<strong>Closing thoughts:</strong>
+
+***
+While I am highly like going to continue with AWS and cloud computing, this and <a href="https://khkhiu.github.io/competition/Hackathon_SMU-LIT-Hackathon-2021/"> SMU-LIT Hackathon 2021. </a> will most likely be the only times that AWS Sumerian will be deployed for the time being as I focus on other fields. Although this makes me wonder if a similar solution can be deployed more effectively using Unreal Engine or Unity Engine.
