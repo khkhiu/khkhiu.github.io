@@ -11,11 +11,12 @@ tags:
 
 ***
 
-<strong>Introduction(verbatim)</strong>
+<strong>Introduction and problem statement(verbatim)</strong>
 
 ***
 MindfulHacks was founded as Singapore's first Mental Health-themed Student Hackathon. It is a 24-hour overnight hackathon where attendees work to build a software project that addresses mental health issues. Our mission is to encourage students to come together and innovate solutions to mental health issues and combat the stigma of mental illness. We welcome students from Universities, Polytechnics, ITEs, and Junior Colleges.
 
+Problem Statement: Create a tool that will address a specific or multiple mental health issues in your community, whether you want to design and develop an app, create a data visualisation or anything else you can think of!
 
 ***
 
