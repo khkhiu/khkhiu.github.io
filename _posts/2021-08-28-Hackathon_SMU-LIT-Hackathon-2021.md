@@ -9,6 +9,9 @@ tags:
 
 ---
 
+**Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
+{: .notice--info}
+
 ***
 
 <strong>Introduction</strong>

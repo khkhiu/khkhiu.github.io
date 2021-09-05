@@ -9,6 +9,9 @@ tags:
 
 ---
 
+**Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
+{: .notice--info}
+
 ***
 
 <strong>Introduction(verbatim)</strong>
@@ -18,6 +21,7 @@ MindfulHacks was founded as Singapore's first Mental Health-themed Student Hacka
 
 ***
 <strong>Problem Statement(verbatim)</strong>
+
 ***
 
  Create a tool that will address a specific or multiple mental health issues in your community, whether you want to design and develop an app, create a data visualisation or anything else you can think of!
@@ -27,6 +31,12 @@ MindfulHacks was founded as Singapore's first Mental Health-themed Student Hacka
 <strong>Function of application</strong>
 
 ***
+This chatbot is a cosmetically improved version of the one from 
+<a href="https://khkhiu.github.io/competition/Hackathon_SMU-LIT-Hackathon-2021/"> SMU - Legal Innovation & Technology (LIT) Hackathon, 2021 </a>. Firstly, a background that mimics a therapist's office was added to make it feel more authentic. Secondly, additional lighting sources were added to illuminate the scene better.
+
+|![Programming chatbot](/assets/images/Hackathon-MindFull/AWS_Sumerian.png)|
+|<em>Programming the chatbot, background clearly visible</em>|
+
 The idea is to create a virtual therapist that is available on demand. This would not only make mental health support more accessible by the general public, it can also reduce the stigma around mental health as people can try therapy for themselves without fear of judgement or any monetary or time commitments.
 
 The solution was created using the following core technologies
