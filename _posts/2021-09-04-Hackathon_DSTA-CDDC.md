@@ -15,8 +15,6 @@ tags:
 
 ***
 
-***
-
 <strong>Introduction</strong>
 
 ***
