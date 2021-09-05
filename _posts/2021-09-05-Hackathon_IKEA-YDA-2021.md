@@ -9,6 +9,9 @@ tags:
 
 ---
 
+**Note** No prototype was actually built as I did not advance to that stage of the competition. Furthermore
+{: .notice--warning}
+
 ***
 
 <strong>Introduction</strong>
@@ -60,6 +63,8 @@ The machine would integrate internet of things(IOT) functionality for monitoring
 
 Lastly, analytics would also give the user insight into the compost and how best to optimise for maximum yields.
 
+|![pitch](/assets/images/Hackathon-ikea-YDA/submit.png)|
+|<em>Pitch in required submission format</em>|
 
-**Note** No prototype was actually built as I did not advance to that stage of the competition
-{: .notice--warning}
+|![sketch](/assets/images/Hackathon-ikea-YDA/Design_sketch.jpg)|
+|<em>(Very)rough sketch of idea</em>|
