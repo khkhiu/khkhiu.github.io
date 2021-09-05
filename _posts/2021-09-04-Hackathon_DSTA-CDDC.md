@@ -1,5 +1,5 @@
 ---
-title: "DSTA - BrainHack, 2021"
+title: "DSTA - BrainHack, Cyber Defenders Discovery Camp (CDDC) 2021"
 date: "04-09-2021"
 categories:
   - Competition
