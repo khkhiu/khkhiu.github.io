@@ -42,8 +42,15 @@ Your challenge:
 
 ***
 
-<strong>Design</strong>
+<strong>Solution pitched</strong>
 
 ***
+An IOT composting machine was proposed as the solution. Firstly, there are elements of food, such as banana peels and eggshell, that are inevitably going to be wasted. As such, I feel that instead of trying to reduce waste, 'recycling' waste would be a more fitting solution.
 
-![WIP](/assets/images/common/WIP.png)
+Furthermore, the <a href="https://www.sfa.gov.sg/food-farming/food-farms">Singapore Food Association!<a> has an initiative called "30 by 30", which aims to produce 30% of all of Singapore's nutritional needs by 2030. 
+
+This further motivated me to pitch a composting idea to help bolster the yield of the farms of leafy vegetables and beansprouts, of which there are 77 farms(including 25 indoor and 2 rooftop farms) and 6 farms respectively(as of 2021).
+
+
+**Note** No prototype was actually built as I did not advance to that stage of the competition
+{: .notice--warning}
