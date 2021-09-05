@@ -1,6 +1,6 @@
 ---
 title: "IKEA - Southeast Asia's Young Designer Award, 2021"
-date: "04-09-2021"
+date: "05-09-2021"
 categories:
   - Competition
 tags:
@@ -47,9 +47,18 @@ Your challenge:
 ***
 An IOT composting machine was proposed as the solution. Firstly, there are elements of food, such as banana peels and eggshell, that are inevitably going to be wasted. As such, I feel that instead of trying to reduce waste, 'recycling' waste would be a more fitting solution.
 
-Furthermore, the <a href="https://www.sfa.gov.sg/food-farming/food-farms">Singapore Food Association!<a> has an initiative called "30 by 30", which aims to produce 30% of all of Singapore's nutritional needs by 2030. 
+Furthermore, the <a href="https://www.sfa.gov.sg/food-farming/food-farms">Singapore Food Association!</a> has an initiative called "30 by 30", which aims to produce 30% of all of Singapore's nutritional needs by 2030. 
 
 This further motivated me to pitch a composting idea to help bolster the yield of the farms of leafy vegetables and beansprouts, of which there are 77 farms(including 25 indoor and 2 rooftop farms) and 6 farms respectively(as of 2021).
+
+***
+
+<strong>Notes on the solution</strong>
+
+***
+The machine would integrate internet of things(IOT) functionality for monitoring and analysis. The monitoring would allow users to track the status of the compose and alert the user of any anomalies, such as the compost being too dry. The IOT functionality would also allow for the automation of composting, such as adding water when needed, hence the user only needs to feed the machine food waste and let it do it's magic.
+
+Lastly, analytics would also give the user insight into the compost and how best to optimise for maximum yields.
 
 
 **Note** No prototype was actually built as I did not advance to that stage of the competition
