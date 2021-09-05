@@ -1,6 +1,6 @@
 ---
 title: "Singapore Polytechnic - Centroid Counter"
-date: "06-09-2021"
+date: "07-09-2021"
 categories:
   - Project
 tags:
@@ -43,7 +43,7 @@ The following are members of the team
 <cite><a href="https://opencv.org/about/">opencv.org/about/</a></cite>
 {: .notice--info}
 
-Using OpenCV and python, the team achieved the aim using OpenCV and python. The way that the team achieved the aim and how the algorithm can be found within the source code in github.
+Using OpenCV and python, the team achieved the aim. How the algorithm works specifically can be found within the source code itself.
 
 ***
 
