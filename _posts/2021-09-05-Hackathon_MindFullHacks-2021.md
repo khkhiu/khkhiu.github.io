@@ -11,12 +11,16 @@ tags:
 
 ***
 
-<strong>Introduction and problem statement(verbatim)</strong>
+<strong>Introduction(verbatim)</strong>
 
 ***
 MindfulHacks was founded as Singapore's first Mental Health-themed Student Hackathon. It is a 24-hour overnight hackathon where attendees work to build a software project that addresses mental health issues. Our mission is to encourage students to come together and innovate solutions to mental health issues and combat the stigma of mental illness. We welcome students from Universities, Polytechnics, ITEs, and Junior Colleges.
 
-<strong>Problem Statement: Create a tool that will address a specific or multiple mental health issues in your community, whether you want to design and develop an app, create a data visualisation or anything else you can think of!</strong>
+***
+<strong>Problem Statement(verbatim)</strong>
+***
+
+ Create a tool that will address a specific or multiple mental health issues in your community, whether you want to design and develop an app, create a data visualisation or anything else you can think of!
 
 ***
 
@@ -30,9 +34,9 @@ The solution was created using the following core technologies
 2. AWS Polly, which turns text to speech
 3. AWS Lex, allows for building the response of the chatbot
 
-The chat is a proof of concept and hence has very little functionality as I do not have access to the data needed to implement any machine learning functions.
+The chat-bot is a proof of concept and hence has very little functionality. for it to be fully operational, mental health experts need to be involve as I do not have the needed domain expertise to execute the project on my own. Furthermore, data from the chat-bot would need to be analysed to improve the functionality of the chat-bot.
 
-A user can speak directly to the chat-bot, thus giving it a more life-like feel compared to text based chatbot.
+The main unique selling point of this chat-bot is that users can speak directly to it, thus giving it a more life-like feel compared to text based chatbot.
 
 ***
 
@@ -44,7 +48,7 @@ A user can speak directly to the chat-bot, thus giving it a more life-like feel 
 
 2. Programming the chat-bot to feel like natural speech was also another issue
 
-3. The chat-bot did not respond to speech using push-to-talk initially(incidentally, I am still not sure what the issue is as it started working out of the blue)
+3. The chat-bot did not respond to speech using push-to-talk initially(incidentally, I am still not sure what the issue is as it miraculously started working for seemingly no reason)
 
 
 ***
@@ -53,7 +57,15 @@ A user can speak directly to the chat-bot, thus giving it a more life-like feel 
 
 ***
 
-https://youtu.be/Qk_C7c5Wzqs
+<div class="embed-container">
+  <iframe
+      src="https://youtube.com/embed/Qk_C7c5Wzqs"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
 
 
 ***

@@ -66,14 +66,20 @@ After some discussion, the team opted to build an interactive chatbot using Amaz
 
 ***
 
-<strong>Implementing the solution</strong>
+<strong>Video demonstration of solution</strong>
 
 ***
-To be included:
-1. Setting up and testing chatbot - AWS lex
-2. Setting up and testing speech element 
-3. Building in AWS sumerian
-4. Testing in AWS sumerian
+<em>The video used will be the same as the one used in  <a href="https://khkhiu.github.io/competition/Hackathon_MindFullHacks-2021/"> MindfulHacks Hackathon, 2021. The chat-bot develop for MindfulHacks is an improved version and hence I feel can better showcase the concept</a>
+
+<div class="embed-container">
+  <iframe
+      src="https://youtube.com/embed/Qk_C7c5Wzqs"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
 
 
 ***
