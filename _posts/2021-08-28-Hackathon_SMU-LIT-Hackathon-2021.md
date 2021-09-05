@@ -69,7 +69,7 @@ After some discussion, the team opted to build an interactive chatbot using Amaz
 <strong>Video demonstration of solution</strong>
 
 ***
-<em>The video used will be the same as the one used in  <a href="https://khkhiu.github.io/competition/Hackathon_MindFullHacks-2021/"> MindfulHacks Hackathon, 2021. The chat-bot develop for MindfulHacks is an improved version and hence I feel can better showcase the concept</a>
+<em>The video used will be the same as the one used in  <a href="https://khkhiu.github.io/competition/Hackathon_MindFullHacks-2021/"> MindfulHacks Hackathon, 2021.</a> The chat-bot develop for MindfulHacks is an improved version and hence I feel can better showcase the concept
 
 <div class="embed-container">
   <iframe
