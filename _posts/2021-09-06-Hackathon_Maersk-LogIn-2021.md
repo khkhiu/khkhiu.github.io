@@ -1,6 +1,6 @@
 ---
 title: "Maersk, Sealand - Asia Log-In Challenge, 2021"
-date: "04-09-2021"
+date: "06-09-2021"
 categories:
   - Competition
 tags:
@@ -8,6 +8,9 @@ tags:
   - Amazon Web Services(AWS)
 
 ---
+
+**Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
+{: .notice--info}
 
 ***
 
@@ -34,4 +37,12 @@ With this scenario and what you may know of container shipping and logistics, we
 <strong>Solution</strong>
 
 ***
-![WIP](/assets/images/common/WIP.png)
+
+Using Amazon Web Services(AWS) blockchain, a track and trace system can be created that would streamline the logistics process.
+
+A key issue facing international shipping is the associated paperwork required at various ports. As such I propose a blockchain based systems where all parties involved can upload needed documents and all other parties can view said paperwork. 
+
+A blockchain is used to ensure data integrity and allow all parties involved can verify said integrity. The system can further be expanded to provide update on the location and status of goods being shipped. 
+
+ Unfortunately, I did not get footage of the system I built, but what I did is encapsulated in this video <a href="https://www.youtube.com/watch?v=x-AjS-WuF2Q">
+Build a Blockchain Track-and-Trace Application on AWS</a>. 

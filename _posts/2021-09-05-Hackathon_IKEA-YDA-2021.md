@@ -9,7 +9,7 @@ tags:
 
 ---
 
-**Note** No prototype was actually built as I did not advance to that stage of the competition. Furthermore
+**Note** No prototype was actually built as I did not advance to that stage of the competition. 
 {: .notice--warning}
 
 ***

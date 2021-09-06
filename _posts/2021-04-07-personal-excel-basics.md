@@ -23,7 +23,7 @@ Introductions
 Excel is a powerful tool that is used in almost every industry. As such. I believe it is appropriate that I learn a thing or 2 that I am almost guaranteed to be using sometime in the future. 
 
 For this brief introduction, I will be using the following video: <a href="https://www.youtube.com/watch?v=ZNGqeCcTu0Q">
-Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!<a> <a href ="https://www.youtube.com/channel/UC-3e3hAUhDV2lwcoQGD2grg">by the channel: Simon Sez IT </a>.  
+Microsoft Excel Tutorial: 3-Hour MS Excel 2019 Course for Beginners!</a> <a href ="https://www.youtube.com/channel/UC-3e3hAUhDV2lwcoQGD2grg">by the channel: Simon Sez IT </a>.  
 
 ***
 
