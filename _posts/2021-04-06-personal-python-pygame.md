@@ -1,5 +1,5 @@
 ---
-title: "Space shooter game in Python using Pygame"
+title: "Python Basics 2: Space shooter game in Python using Pygame"
 date: "07-04-2021"
 categories:
   - Learning process
