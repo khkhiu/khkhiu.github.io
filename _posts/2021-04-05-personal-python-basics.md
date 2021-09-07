@@ -126,4 +126,4 @@ We can import the uinittest function to verify specific aspects of a function is
 Even though I have covered the first half of the book, I still need a lot more practice to refine my abilities.
 
 
-For my first project, click here: <a href="https://khkhiu.github.io/personal/personal-python-pygame/">Space shooter game in Python using Pygame, part 1 </a>
+For my first project, click here: <a href="https://khkhiu.github.io/personal/personal-python-basics_2-pygame/">Space shooter game in Python using Pygame</a>
