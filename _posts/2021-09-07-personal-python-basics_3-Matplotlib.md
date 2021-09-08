@@ -67,6 +67,7 @@ Built in styles are now added to improve readability of the graph.
 <strong>Scatter plot</strong>
 
 ***
+
 Using ".scatter" a scatter plot can be created.
 
 |![scatter plot code](/assets/images/LP-python-basics3-Data/scatter_plot_code.png)|
@@ -82,12 +83,21 @@ Similar to the line graph, scatter plots can be customised to improve readabilit
 |<em>Customised scatter plot actual</em>|
 
 <strong>Calculation of data</strong>
+
 Here, i will use a loop to automatically calculate and plot points, colours were also added at this point
 
 |![calculated scatter plot code](/assets/images/LP-python-basics3-Data/cal_scatter_plot_code.png)|
 |<em>Code for calculated scatter plot</em>|
 |![calculated scatter plot actual](/assets/images/LP-python-basics3-Data/cal_scatter_plot_actual.png)|
 |<em>calculated scatter plot actual</em>|
+
+<strong>Colour maps</strong>
+Colour maps is a series of colours in a gradient that moves from a starting colour to another. Colour maps are used to display a pattern in the visualised data.
+
+|![colour map scatter plot code](/assets/images/LP-python-basics3-Data/ColMap_scatter_plot_code.png)|
+|<em>Code for scatter plot with colour map</em>|
+|![colour map scatter plot actual](/assets/images/LP-python-basics3-Data/ColMap_scatter_plot_actual.png)|
+|<em>Scatter plot with colour map actual</em>|
 
 
 
