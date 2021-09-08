@@ -144,6 +144,13 @@ Self explanatory, done by emphasizing the first and last generated points
 
 3. Cleaning axes and adding plot points
 
+The axes are now hidden to prevent them from distracting from the path of each walk, the number of steps are also increased to 50,000.
+
+|![Step3 random walk plot code](/assets/images/LP-python-basics3-Data/RandonWalk_plot_step3_code.png)|
+|<em>Code for cleaning axes and adding plot points on random walk plot</em>|
+|![Step3 random walk plot actual](/assets/images/LP-python-basics3-Data/RandonWalk_plot_step3_actual.png)|
+|<em>Random walk plot with green starting point and red ending point, cleaned axes and new plot points</em>|
+
 
 
 ![WIP](/assets/images/common/WIP.png)
