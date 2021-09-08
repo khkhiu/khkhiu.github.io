@@ -80,4 +80,6 @@ Similar to the line graph, scatter plots can be customised to improve readabilit
 |<em>Code for customised scatter plot</em>|
 |![custom scatter plot  actual](/assets/images/LP-python-basics3-Data/custom_scatter_plot_actual.png)|
 |<em>Customised scatter plot actual</em>|
+
+
 ![WIP](/assets/images/common/WIP.png)
