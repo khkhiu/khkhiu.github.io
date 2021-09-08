@@ -34,6 +34,17 @@ A simple graph can be generated using a list along with the functions: "fig", "a
 |![line graph actual](/assets/images/LP-python-basics3-Data/line_graph_actual.png)|
 |<em>Line graph actual</em>|
 
+***
+
+<strong>Changing the Label Type and Line Thickness</strong>
+
+***
+Next, the "linewidth" parameter, "set_" methods and "tick_params()" methods are used to customise the appearance of the graph.
+
+|![customise graph code](/assets/images/LP-python-basics3-Data/custom_graph_code.png)|
+|<em>Code for customising graph</em>|
+|![Customised graph actual](/assets/images/LP-python-basics3-Data/custom_graph_actual.png)|
+|<em>Customised graph actual</em>|
 
 
 ![WIP](/assets/images/common/WIP.png)
