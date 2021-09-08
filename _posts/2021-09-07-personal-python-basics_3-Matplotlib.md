@@ -67,5 +67,17 @@ Built in styles are now added to improve readability of the graph.
 <strong>Scatter plot</strong>
 
 ***
+Using ".scatter" a scatter plot can be created.
 
+|![scatter plot code](/assets/images/LP-python-basics3-Data/scatter_plot_code.png)|
+|<em>Code for scatter plot</em>|
+|![scatter plot  actual](/assets/images/LP-python-basics3-Data/scatter_plot_actual.png)|
+|<em>Scatter plot actual(only one point for now)</em>|
+
+Similar to the line graph, scatter plots can be customised to improve readability.
+
+|![custom scatter plot code](/assets/images/LP-python-basics3-Data/custom_scatter_plot_code.png)|
+|<em>Code for customised scatter plot</em>|
+|![custom scatter plot  actual](/assets/images/LP-python-basics3-Data/custom_scatter_plot_actual.png)|
+|<em>Customised scatter plot actual</em>|
 ![WIP](/assets/images/common/WIP.png)
