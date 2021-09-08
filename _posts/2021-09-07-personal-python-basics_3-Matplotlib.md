@@ -74,7 +74,7 @@ Using ".scatter" a scatter plot can be created.
 |![scatter plot  actual](/assets/images/LP-python-basics3-Data/scatter_plot_actual.png)|
 |<em>Scatter plot actual(only one point for now)</em>|
 
-Similar to the line graph, scatter plots can be customised to improve readability.
+Similar to the line graph, scatter plots can be customised to improve readability. More points were also added at this point
 
 |![custom scatter plot code](/assets/images/LP-python-basics3-Data/custom_scatter_plot_code.png)|
 |<em>Code for customised scatter plot</em>|
