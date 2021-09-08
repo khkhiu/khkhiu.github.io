@@ -115,4 +115,35 @@ For this exercise, the "random" module will be used to create data from random w
 
 <strong>Making multiple random walks and styling</strong>
 
+To make it so that the program does not have to be constantly restarted, code is added to generate multiple random walks.
+
+|![multi random walk plot code](/assets/images/LP-python-basics3-Data/RandonWalk_plot-multi.png)|
+|<em>Code for generating multiple random walk plots</em>|
+
+<strong>Styling plots</strong>
+
+Plots should be styled to emphasize important elements while de-emphasizing unimportant elements
+
+1. Colouring
+
+Colour maps are used to shown the order of points in the walk, while removing black outlines from each dot
+
+|![colour random walk plot code](/assets/images/LP-python-basics3-Data/RandonWalk_plot_-colour_code.png)|
+|<em>Code for colouring random walk plot</em>|
+|![colour random walk plot actual](/assets/images/LP-python-basics3-Data/RandonWalk_plot_-colour_actual.png)|
+|<em>Coloured random walk plot</em>|
+
+2. Specifying starting and ending point
+
+Self explanatory, done by emphasizing the first and last generated points
+
+|![StartEnd random walk plot code](/assets/images/LP-python-basics3-Data/RandonWalk_plot_-StartEnd_code.png)|
+|<em>Code for specifying starting and ending point on random walk plot</em>|
+|![StartEnd  random walk plot actual](/assets/images/LP-python-basics3-Data/RandonWalk_plot_-StartEnd_actual.png)|
+|<em>Random walk plot with green starting point and red ending point</em>|
+
+3. Cleaning axes and adding plot points
+
+
+
 ![WIP](/assets/images/common/WIP.png)
