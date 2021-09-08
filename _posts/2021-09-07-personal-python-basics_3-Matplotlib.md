@@ -59,7 +59,7 @@ Built in styles are now added to improve readability of the graph.
 
 |![Built-in Styles graph code](/assets/images/LP-python-basics3-Data/Built-in_graph_code.png)|
 |<em>Code for built-in styles</em>|
-|![Built-in Styles  graph actual](/assets/images/LP-python-basics3-Data/Built-in_graph_actual.png)|
+|![Built-in Styles graph actual](/assets/images/LP-python-basics3-Data/Built-in_graph_actual.png)|
 |<em>graph actual</em>|
 
 ***
@@ -71,15 +71,25 @@ Using ".scatter" a scatter plot can be created.
 
 |![scatter plot code](/assets/images/LP-python-basics3-Data/scatter_plot_code.png)|
 |<em>Code for scatter plot</em>|
-|![scatter plot  actual](/assets/images/LP-python-basics3-Data/scatter_plot_actual.png)|
+|![scatter plot actual](/assets/images/LP-python-basics3-Data/scatter_plot_actual.png)|
 |<em>Scatter plot actual(only one point for now)</em>|
 
 Similar to the line graph, scatter plots can be customised to improve readability. More points were also added at this point
 
 |![custom scatter plot code](/assets/images/LP-python-basics3-Data/custom_scatter_plot_code.png)|
 |<em>Code for customised scatter plot</em>|
-|![custom scatter plot  actual](/assets/images/LP-python-basics3-Data/custom_scatter_plot_actual.png)|
+|![custom scatter plot actual](/assets/images/LP-python-basics3-Data/custom_scatter_plot_actual.png)|
 |<em>Customised scatter plot actual</em>|
+
+<strong>Calculation of data</strong>
+Here, i will use a loop to automatically calculate and plot points, colours were also added at this point
+
+|![calculated scatter plot code](/assets/images/LP-python-basics3-Data/cal_scatter_plot_code.png)|
+|<em>Code for calculated scatter plot</em>|
+|![calculated scatter plot actual](/assets/images/LP-python-basics3-Data/cal_scatter_plot_actual.png)|
+|<em>calculated scatter plot actual</em>|
+
+
 
 
 ![WIP](/assets/images/common/WIP.png)
