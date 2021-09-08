@@ -24,7 +24,16 @@ This post covers part 2 "Data Visualisation with Matplotlib and Plotly" For part
 
 ***
 
-<strong></strong>
+<strong>Plotting a simple line graph</strong>
 
 ***
+A simple graph can be generated using a list along with the functions: "fig", "ax" and "subplot". Where "fig" is the entire figure or collection of plots that are generated, "ax" is a single plot in the figure and is the variable we’ll use most of the time, and "subplot" allows for generation one or more plots in the same figure. Lastly, the "plot()" method was used to plot the graph.
+
+|![line graph code](/assets/images/LP-python-basics3-Data/line_graph_code.png)|
+|<em>Code for simple line graph</em>|
+|![line graph actual](/assets/images/LP-python-basics3-Data/line_graph_actual.png)|
+|<em>Line graph actual</em>|
+
+
+
 ![WIP](/assets/images/common/WIP.png)
