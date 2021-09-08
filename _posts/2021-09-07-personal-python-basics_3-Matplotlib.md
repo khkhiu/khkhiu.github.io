@@ -99,7 +99,20 @@ Colour maps is a series of colours in a gradient that moves from a starting colo
 |![colour map scatter plot actual](/assets/images/LP-python-basics3-Data/ColMap_scatter_plot_actual.png)|
 |<em>Scatter plot with colour map actual</em>|
 
+***
 
+<strong>Random number generator</strong>
 
+***
+For this exercise, the "random" module will be used to create data from random walk and use a graph to represent the generated numbers.
+
+|![Random walk class code](/assets/images/LP-python-basics3-Data/RandonWalk_class.png)|
+|<em>Code for random walk class</em>|
+|![Random walk plot code](/assets/images/LP-python-basics3-Data/RandonWalk_plot.png)|
+|<em>Code for random walk plot</em>|
+|![Random walk plot actual](/assets/images/LP-python-basics3-Data/RandonWalk_actual.png)|
+|<em>Random walk with 5000 points</em>|
+
+<strong>Making multiple random walks and styling</strong>
 
 ![WIP](/assets/images/common/WIP.png)
