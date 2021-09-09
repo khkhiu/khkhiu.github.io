@@ -192,6 +192,14 @@ To roll dice of different size
 |![different size dice output](/assets/images/LP-python-basics3-Data/2d6_diff_output.png)|
 |<em>Output of rolling 2 dice of different size</em>|
 
-<!--Chpt 16 first page-->
+***
+
+<strong>Working with CSV files</strong>
+
+***
+
+For this exercise, I will be using the data provided here: <a href="https://ehmatthes.github.io/pcc_2e/regular_index/">Python Crash Course, Second Edition resources</a> to learn more about working with data in python.
+
+
 
 ![WIP](/assets/images/common/WIP.png)
