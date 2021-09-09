@@ -5,7 +5,7 @@ categories:
   - Learning process
 tags:
   - Python
-  - Pygame
+  - Matplotlib
   - Learning process
 
 ---
