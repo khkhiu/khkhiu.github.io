@@ -221,4 +221,12 @@ Next, dates will be added to the chart.
 |![ExtractRead chart output](/assets/images/LP-python-basics3-Data/ExRead_chart_date_output.png)|
 |<em>Output of code</em>|
 
+Next, low temperatures will be added to the chart along with shading of the chart.
+
+|![New chart code](/assets/images/LP-python-basics3-Data/ExRead_HighLow_date_code.png)|
+|<em>Code for new chart</em>|
+|![ExtractRead chart output](/assets/images/LP-python-basics3-Data/ExRead_HighLow_date_output.png)|
+|<em>Output of new code</em>|
+
+
 ![WIP](/assets/images/common/WIP.png)
