@@ -153,9 +153,26 @@ The axes are now hidden to prevent them from distracting from the path of each w
 
 ***
 
-<strong>Dice rolling</strong>
+<strong>Dice rolling with plotly</strong>
 
 ***
 
+Plotly can be used for visualisation purposes. The generated visualisation automatically scales and are interactive, in this exercise, I will practice using plotly by using rolling a dice.
+
+|![Dice class code](/assets/images/LP-python-basics3-Data/Dice_class.png)|
+|<em>Code for dice class</em>|
+|![Dice code](/assets/images/LP-python-basics3-Data/Dice_code.png)|
+|<em>Code for dice rolling</em>|
+|![Dice output](/assets/images/LP-python-basics3-Data/Dice_output.png)|
+|<em>Dice rolling output</em>|
+
+<strong>Analysing output and creating a histogram</strong>
+
+Self explanatory
+
+|![Histogram code](/assets/images/LP-python-basics3-Data/hist_code.png)|
+|<em>Code for histogram</em>|
+|![Histogram output](/assets/images/LP-python-basics3-Data/hist_output.png)|
+|<em>Histogram output</em>|
 
 ![WIP](/assets/images/common/WIP.png)
