@@ -175,4 +175,23 @@ Self explanatory
 |![Histogram output](/assets/images/LP-python-basics3-Data/hist_output.png)|
 |<em>Histogram output</em>|
 
+<strong>Rolling 2 dice and dice of different size</strong>
+
+To roll dice of 2 sizes
+
+|![2 dice code](/assets/images/LP-python-basics3-Data/2d6_code.png)|
+|<em>Code for rolling 2 dice</em>|
+|![2 dice output](/assets/images/LP-python-basics3-Data/2d6_output.png)|
+|<em>Output of rolling 2 dice</em>|
+
+
+To roll dice of different size
+
+|![different size dice code](/assets/images/LP-python-basics3-Data/2d6_diff_code.png)|
+|<em>Code for rolling 2 dice of different size</em>|
+|![different size dice output](/assets/images/LP-python-basics3-Data/2d6_diff_output.png)|
+|<em>Output of rolling 2 dice of different size</em>|
+
+<!--Chpt 16 first page-->
+
 ![WIP](/assets/images/common/WIP.png)
