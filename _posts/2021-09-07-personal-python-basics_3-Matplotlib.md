@@ -168,7 +168,7 @@ Plotly can be used for visualisation purposes. The generated visualisation autom
 
 <strong>Analysing output and creating a histogram</strong>
 
-Self explanatory
+Self explanatory.
 
 |![Histogram code](/assets/images/LP-python-basics3-Data/hist_code.png)|
 |<em>Code for histogram</em>|
@@ -177,7 +177,7 @@ Self explanatory
 
 <strong>Rolling 2 dice and dice of different size</strong>
 
-To roll dice of 2 sizes
+To roll dice of 2 sizes.
 
 |![2 dice code](/assets/images/LP-python-basics3-Data/2d6_code.png)|
 |<em>Code for rolling 2 dice</em>|
@@ -200,6 +200,25 @@ To roll dice of different size
 
 For this exercise, I will be using the data provided here: <a href="https://ehmatthes.github.io/pcc_2e/regular_index/">Python Crash Course, Second Edition resources</a> to learn more about working with data in python.
 
+The following is the code to extract and read data along with the accompanying output.
 
+|![extract and read data code](/assets/images/LP-python-basics3-Data/ExRead_code.png)|
+|<em>Code for extracting and read data</em>|
+|![extract and read data output](/assets/images/LP-python-basics3-Data/ExRead_output.png)|
+|<em>Output of code for extracting and read data</em>|
+
+Next, I will plot the extracted data into a temperature chart.
+
+|![ExtractRead chart code](/assets/images/LP-python-basics3-Data/ExRead_chart_code.png)|
+|<em>Code for a chart</em>|
+|![ExtractRead chart output](/assets/images/LP-python-basics3-Data/ExRead_chart_output.png)|
+|<em>Output the chart</em>|
+
+Next, dates will be added to the chart.
+
+|![ExtractRead chart code](/assets/images/LP-python-basics3-Data/ExRead_chart_date_code.png)|
+|<em>Code for adding date to chart</em>|
+|![ExtractRead chart output](/assets/images/LP-python-basics3-Data/ExRead_chart_date_output.png)|
+|<em>Output of code</em>|
 
 ![WIP](/assets/images/common/WIP.png)
