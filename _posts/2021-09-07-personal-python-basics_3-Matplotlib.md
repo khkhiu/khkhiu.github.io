@@ -151,6 +151,11 @@ The axes are now hidden to prevent them from distracting from the path of each w
 |![Step3 random walk plot actual](/assets/images/LP-python-basics3-Data/RandonWalk_plot_step3_actual.png)|
 |<em>Random walk plot with green starting point and red ending point, cleaned axes and new plot points</em>|
 
+***
+
+<strong>Dice rolling</strong>
+
+***
 
 
 ![WIP](/assets/images/common/WIP.png)
