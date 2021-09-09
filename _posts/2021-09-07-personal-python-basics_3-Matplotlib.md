@@ -228,5 +228,6 @@ Next, low temperatures will be added to the chart along with shading of the char
 |![ExtractRead chart output](/assets/images/LP-python-basics3-Data/ExRead_HighLow_date_output.png)|
 |<em>Output of new code</em>|
 
+<!--Cut off pg 343-->
 
 ![WIP](/assets/images/common/WIP.png)
