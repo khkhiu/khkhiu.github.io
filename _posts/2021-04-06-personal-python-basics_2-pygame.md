@@ -16,9 +16,9 @@ tags:
 
 Python Crash Course is split into 2 parts. The first part covers the basics of python , which can be found <a href="https://khkhiu.github.io/learning%20process/personal-python-basics/"> here </a>. The second part consist of 3 projects.
 
-1. Space shooter with pygame
-2. Data Visualisation with Matplotlib and Plotly
-3. Web Applications with Django
+- Space shooter with pygame
+- Data Visualisation with Matplotlib and Plotly
+- Web Applications with Django
 
 Even though I am unlikely to go into game development, I am embarking on this project because I think it will be interesting.
 
