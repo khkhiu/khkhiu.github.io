@@ -245,4 +245,25 @@ Code is added to identify rows with missing data, the program will skip over sai
 
 ***
 
+Plotly cab work with JSON to create visualisations and this is an exercise doing just that.
+
+|![JSON-01](/assets/images/LP-python-basics3-Data/JSON-01_code.png)|
+|<em>Data exploration with JSON code</em>|
+|![JSON-01 output](/assets/images/LP-python-basics3-Data/JSON-01_OP.png)|
+|<em>Code ouput</em>|
+
+Next, longitude, latitude and magnitude of each individual earthquakes are extracted.
+
+|![GeographicData code](/assets/images/LP-python-basics3-Data/GeoData_code.png)|
+|<em>Extracting Geographic data</em>|
+|![GeographicData code](/assets/images/LP-python-basics3-Data/GeoData_OP.png)|
+|<em>Geographic data output</em>|
+
+After extracting the geographic data, I proceed to physically generate the map.
+
+|![GeographicData map code](/assets/images/LP-python-basics3-Data/GeoData_map_code.png)|
+|<em>Code for earthquake map</em>|
+|![GeographicData map code](/assets/images/LP-python-basics3-Data/GeoData_map_OP.png)|
+|<em>earthquake map output</em>|
+
 ![WIP](/assets/images/common/WIP.png)
