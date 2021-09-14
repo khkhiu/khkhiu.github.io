@@ -266,4 +266,15 @@ After extracting the geographic data, I proceed to physically generate the map.
 |![GeographicData map code](/assets/images/LP-python-basics3-Data/GeoData_map_OP.png)|
 |<em>earthquake map output</em>|
 
-![WIP](/assets/images/common/WIP.png)
+<strong>Marker colours</strong>
+
+Lastly, code was added to change marker colours to make reading the map easier
+
+|![Map colour code](/assets/images/LP-python-basics3-Data/GeoData_map_color_code.png)|
+|<em>Code for changing marker colour</em>|
+|![Map colour code op](/assets/images/LP-python-basics3-Data/GeoData_map_color_OP.png)|
+|<em>code output</em>|
+
+This conclude the long delayed post on data visualisation with python. Stay tuned for more post in other subjects and technologies. 
+
+The original source code can be found here: <a href="https://ehmatthes.github.io/pcc_2e/regular_index/">Python Crash Course, Second Edition</a>
