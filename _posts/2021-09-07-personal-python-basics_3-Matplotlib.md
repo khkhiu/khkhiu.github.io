@@ -231,5 +231,5 @@ Next, low temperatures will be added to the chart along with shading of the char
 <!--Cut off pg 343-->
 <strong>Error checking</strong>
 
-
+Code is added to identify rows with missing data, the program will skip over said rows and continue to process the data and generate the chart.
 ![WIP](/assets/images/common/WIP.png)
