@@ -9,6 +9,9 @@ tags:
 
 ---
 
+**Note** The "Competition" post are not in chronological order, but rather the order which I updated the post.
+{: .notice--success}
+
 **Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
 {: .notice--info}
 
@@ -17,7 +20,7 @@ tags:
 <strong>Introduction</strong>
 
 ***
-The SMU LIT Hacakathon 2021 is organised by the SMU Legal Innovation & Technology (LIT ) club. Held from 13 to 15 August 2021 over zoom and discord, the event brings together students from all Singapore Institutes of Higher Learning to tackle legal-tech problems faced in law, business and community. 
+The SMU LIT Hacakathon 2021 is organised by the SMU Legal Innovation & Technology (LIT ) club. Held from <em>13 to 15 August 2021</em> over zoom and discord, the event brings together students from all Singapore Institutes of Higher Learning to tackle legal-tech problems faced in law, business and community. 
 
 In groups of three to five with at least one law student, the participants were tasked to develop technological solutions to real-world problem statements provided by industry partners. These included topics such as automating research, legal analytics and access to justice under the theme of “The Next Decade in Legal Tech in Singapore”.
 
