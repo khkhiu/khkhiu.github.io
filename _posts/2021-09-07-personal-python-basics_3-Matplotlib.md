@@ -16,11 +16,11 @@ tags:
 
 Python Crash Course is split into 2 parts. The first part covers the basics of python , which can be found <a href="https://khkhiu.github.io/learning%20process/personal-python-basics/"> here </a>. The second part consist of 3 projects.
 
-1. Space shooter with pygame
-2. Data Visualisation with Matplotlib and Plotly
-3. Web Applications with Django
+- Space shooter with pygame
+- Data Visualisation with Matplotlib and Plotly
+- Web Applications with Django
 
-This post covers part 2 "Data Visualisation with Matplotlib and Plotly" For part 1: Space shooter with pygame, click <a href="https://khkhiu.github.io/learning%20process/personal-python-basics_2-pygame/"> here </a>
+This post covers part 2 "Data Visualisation with Matplotlib and Plotly". For Part 1: "Space shooter with pygame", click <a href="https://khkhiu.github.io/learning%20process/personal-python-basics_2-pygame/"> here </a>
 
 ***
 
@@ -275,6 +275,6 @@ Lastly, code was added to change marker colours to make reading the map easier
 |![Map colour code op](/assets/images/LP-python-basics3-Data/GeoData_map_color_OP.png)|
 |<em>code output</em>|
 
-This conclude the long delayed post on data visualisation with python. Stay tuned for more post in other subjects and technologies. 
+This concludes the (long delayed) post on basic data visualisation with python. Stay tuned for more post in other subjects and technologies. 
 
 The original source code can be found here: <a href="https://ehmatthes.github.io/pcc_2e/regular_index/">Python Crash Course, Second Edition</a>
