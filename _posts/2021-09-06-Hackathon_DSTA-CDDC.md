@@ -26,5 +26,6 @@ Organised by the Defence Science and Technology Agency (DSTA), BrainHack is a un
 
 Cyber Defenders Discovery Camp (CDDC) is a jeopardy style Capture-the-flag competition that took place from 23 to 25 june 2021.
 
+<strong>I am still in the process of figuring out how to present what I learnt in a coherent process.</strong>
 
 ![WIP](/assets/images/common/WIP.png)
