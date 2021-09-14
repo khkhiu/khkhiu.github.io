@@ -26,7 +26,7 @@ The aim of the project is to develop a simple algorithm to count the number of p
 <strong>The team</strong>
 
 ***
-The following are members of the team
+The following are members of the team(As of 7 Sep 2021)
 
 1. Khiu Kim Hong, Diploma in Electrical and Electronic Engineering
 2. Cheam Zhi Kai, Diploma in Engineering with Business
