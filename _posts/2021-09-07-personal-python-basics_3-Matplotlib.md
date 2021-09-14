@@ -229,5 +229,7 @@ Next, low temperatures will be added to the chart along with shading of the char
 |<em>Output of new code</em>|
 
 <!--Cut off pg 343-->
+<strong>Error checking</strong>
+
 
 ![WIP](/assets/images/common/WIP.png)
