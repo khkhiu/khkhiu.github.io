@@ -9,6 +9,9 @@ tags:
 
 ---
 
+**Note** The "Competition" post are not in chronological order, but rather the order which I updated the post.
+{: .notice--success}
+
 **Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design proposal is included here.
 {: .notice--warning}
 

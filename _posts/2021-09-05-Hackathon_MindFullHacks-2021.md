@@ -9,6 +9,9 @@ tags:
 
 ---
 
+**Note** The "Competition" post are not in chronological order, but rather the order which I updated the post.
+{: .notice--success}
+
 **Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
 {: .notice--info}
 
@@ -17,7 +20,7 @@ tags:
 <strong>Introduction(verbatim)</strong>
 
 ***
-MindfulHacks was founded as Singapore's first Mental Health-themed Student Hackathon. It is a 24-hour overnight hackathon where attendees work to build a software project that addresses mental health issues. Our mission is to encourage students to come together and innovate solutions to mental health issues and combat the stigma of mental illness. We welcome students from Universities, Polytechnics, ITEs, and Junior Colleges.
+MindfulHacks was founded as Singapore's first Mental Health-themed Student Hackathon. It is a 24-hour overnight hackathon taking place between<em> 4 to 5 September 2021</em> where attendees work to build a software project that addresses mental health issues. Our mission is to encourage students to come together and innovate solutions to mental health issues and combat the stigma of mental illness. We welcome students from Universities, Polytechnics, ITEs, and Junior Colleges.
 
 ***
 <strong>Problem Statement(verbatim)</strong>

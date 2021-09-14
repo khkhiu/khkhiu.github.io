@@ -10,6 +10,9 @@ tags:
 
 ---
 
+**Note** The "Competition" post are not in chronological order, but rather the order which I updated the post.
+{: .notice--success}
+
 **Note** This post will be about my learning process instead of the event as I was unable to get footage of the event.
 {: .notice--warning}
 

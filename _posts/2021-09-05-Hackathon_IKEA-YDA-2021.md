@@ -9,6 +9,9 @@ tags:
 
 ---
 
+**Note** The "Competition" post are not in chronological order, but rather the order which I updated the post.
+{: .notice--success}
+
 **Note** No prototype was actually built as I did not advance to that stage of the competition. 
 {: .notice--warning}
 
