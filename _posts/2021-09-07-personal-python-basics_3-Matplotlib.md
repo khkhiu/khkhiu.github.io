@@ -228,8 +228,21 @@ Next, low temperatures will be added to the chart along with shading of the char
 |![ExtractRead chart output](/assets/images/LP-python-basics3-Data/ExRead_HighLow_date_output.png)|
 |<em>Output of new code</em>|
 
-<!--Cut off pg 343-->
 <strong>Error checking</strong>
 
-Code is added to identify rows with missing data, the program will skip over said rows and continue to process the data and generate the chart.
+Code is added to identify rows with missing data, the program will skip over said rows and continue to process the data and generate the chart accordingly. 
+
+|![Missing data code](/assets/images/LP-python-basics3-Data/Missing_Data.png)|
+|<em>Code for handling missing data</em>|
+|![Missing data ID](/assets/images/LP-python-basics3-Data/Missing_Data_ID.png)|
+|<em>Identification of missing data</em>|
+|![Missing data chart](/assets/images/LP-python-basics3-Data/Missing_Chart.png)|
+|<em>Chart output</em>|
+
+***
+
+<strong>Mapping global data sets with json format</strong>
+
+***
+
 ![WIP](/assets/images/common/WIP.png)
