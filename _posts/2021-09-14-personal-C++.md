@@ -1,5 +1,5 @@
 ---
-title: "C++, basic functions"
+title: "C++ basic functions"
 date: "14-09-2021"
 categories:
   - Learning process
