@@ -9,8 +9,8 @@ tags:
 
 ---
 
-**Note** The "Competition" post are not in chronological order, but rather the order which I updated the post.
-{: .notice--success}
+|![proof](/assets/images/Hackathon-SMU_LIT-2021/khiuKimHong_SMULIT_2021.pdf)|
+|<em>Proof of participation</em>|
 
 **Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
 {: .notice--info}
