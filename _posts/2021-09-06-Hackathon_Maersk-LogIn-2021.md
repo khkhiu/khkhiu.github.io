@@ -9,7 +9,7 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-SeaLand-2021/SeaLand_KhiuKimHong.pdf)|
+|![proof](/assets/images/Hackathon-SeaLand-2021/SeaLand-2021_cert.png)|
 |<em>Proof of participation</em>|
 
 **Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.

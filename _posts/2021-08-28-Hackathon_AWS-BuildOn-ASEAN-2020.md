@@ -9,7 +9,7 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-AWS-BO-2020/Khiu Kim Hong_BuildOn_Certificate.pdf)|
+|![proof](/assets/images/Hackathon-AWS-BO-2020/AWS_BO-2020_cert.png)|
 |<em>Proof of participation</em>|
 
 **Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design proposal is included here.

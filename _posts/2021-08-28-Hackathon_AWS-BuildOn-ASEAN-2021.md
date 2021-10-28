@@ -8,7 +8,7 @@ tags:
   - Amazon Web Services(AWS)
 
 ---
-|![proof](/assets/images/Hackathon-AWS-BO-2021/Cert_AWS_IDV_DESC_Khiu Kim Hong.pdf)|
+|![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2021_cert.png)|
 |<em>Proof of participation</em>|
 
 **Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design proposal is included here.

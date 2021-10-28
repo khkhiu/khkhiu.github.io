@@ -9,7 +9,7 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-MindFull-2021/MindfulHacks Certificates_110.pdf)|
+|![proof](/assets/images/Hackathon-MindFull-2021/MindFull-2021_cert.png)|
 |<em>Proof of participation</em>|
 
 **Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
