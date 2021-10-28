@@ -9,8 +9,8 @@ tags:
 
 ---
 
-**Note** The "Competition" post are not in chronological order, but rather the order which I updated the post.
-{: .notice--success}
+|![proof](/assets/images/Hackathon-ikea-YDA/submit_proof.jpg)|
+|<em>Proof of submission</em>|
 
 **Note** No prototype was actually built as I did not advance to that stage of the competition. 
 {: .notice--warning}
@@ -69,5 +69,3 @@ Lastly, analytics would also give the user insight into the compost and how best
 |![pitch](/assets/images/Hackathon-ikea-YDA/submit.png)|
 |<em>Pitch in required submission format</em>|
 
-|![sketch](/assets/images/Hackathon-ikea-YDA/submit_proof.jpg)|
-|<em>Proof of submission</em>|
