@@ -9,7 +9,7 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-ikea-YDA-2021/submit_proof.jpg)|
+|![proof](/assets/images/Hackathon-ikea-YDA-2021/submit_proof.png)|
 |<em>Proof of submission</em>|
 
 **Note** No prototype was actually built as I did not advance to that stage of the competition. 
