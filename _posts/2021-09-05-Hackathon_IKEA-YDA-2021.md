@@ -69,5 +69,5 @@ Lastly, analytics would also give the user insight into the compost and how best
 |![pitch](/assets/images/Hackathon-ikea-YDA/submit.png)|
 |<em>Pitch in required submission format</em>|
 
-|![sketch](/assets/images/Hackathon-ikea-YDA/Design_sketch.jpg)|
-|<em>(Very)rough sketch of idea</em>|
+|![sketch](/assets/images/Hackathon-ikea-YDA/submit_proof.jpg)|
+|<em>Proof of submission</em>|
