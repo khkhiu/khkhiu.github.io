@@ -1,6 +1,6 @@
 ---
 title: "Viper (Working title)"
-date: "04-09-2021"
+date: ""
 categories:
   - Learning process
 tags:

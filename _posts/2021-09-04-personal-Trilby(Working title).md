@@ -1,6 +1,6 @@
 ---
 title: "Trilby (Working title)"
-date: "04-09-2021"
+date: ""
 categories:
   - Learning process
 tags:
@@ -14,5 +14,5 @@ tags:
 <strong>Coming Soon</strong>
 
 ***
-<!--Fedora-->
+<!--Fedora/RedHat/CentOS-->
 ![WIP](/assets/images/common/WIP.png)
