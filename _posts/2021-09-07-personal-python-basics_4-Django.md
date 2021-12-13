@@ -1,6 +1,6 @@
 ---
 title: "Python Basics 4: Web Applications with Django"
-date: ""
+date: "13-12-2021"
 categories:
   - Learning process
 tags:
