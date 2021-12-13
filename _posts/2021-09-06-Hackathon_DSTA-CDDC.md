@@ -13,7 +13,7 @@ tags:
 |![proof](/assets/images/Hackathon-CDDC-2021/KhiuKimHong_DSTA_CDDC_2021.png)|
 |<em>Proof of participation</em>|
 
-**Note** This post will be about my learning process instead of the event as I was unable to get footage of the event.
+**Note** This post will act only as introduction to CDDC and a proof of participation
 {: .notice--warning}
 
 ***
@@ -26,6 +26,4 @@ Organised by the Defence Science and Technology Agency (DSTA), BrainHack is a un
 
 Cyber Defenders Discovery Camp (CDDC) is a jeopardy style Capture-the-flag competition that took place from 23 to 25 june 2021.
 
-<strong>I am still in the process of figuring out how to present what I learnt in a coherent process.</strong>
 
-![WIP](/assets/images/common/WIP.png)
