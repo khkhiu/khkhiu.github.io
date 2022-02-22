@@ -70,6 +70,9 @@ and a longing to further leverage it in the pursuit of justice.
 ***
 After some discussion, the team opted to build an interactive chatbot using Amazon Web Service(AWS) Sumerian. We intended to differentiate our chatbot by giving it a 3D model and by having users speak to it and have it respond in kind. The idea was to simulate speaking to a psychiatrist, thus giving it a more personal touch and making it more effective. The solution is also available on demand, making it more convenient than normal psychiatrist.
 
+|![Programming chatbot](/assets/images/Hackathon-SMU_LIT-2021/AWS_Sumerian.png)|
+|<em>Programming the chatbot, background clearly visible</em>|
+
 ***
 
 <strong>Video demonstration of solution</strong>
