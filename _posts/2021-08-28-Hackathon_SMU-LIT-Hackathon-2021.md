@@ -70,6 +70,11 @@ and a longing to further leverage it in the pursuit of justice.
 ***
 After some discussion, the team opted to build an interactive chatbot using Amazon Web Service(AWS) Sumerian. We intended to differentiate our chatbot by giving it a 3D model and by having users speak to it and have it respond in kind. The idea was to simulate speaking to a psychiatrist, thus giving it a more personal touch and making it more effective. The solution is also available on demand, making it more convenient than normal psychiatrist.
 
+The solution was created using the following core technologies
+1. AWS Sumerian, to create the virtual therapist and environment
+2. AWS Polly, which turns text to speech
+3. AWS Lex, allows for building the response of the chatbot
+
 |![Programming chatbot](/assets/images/Hackathon-SMU_LIT-2021/AWS_Sumerian.png)|
 |<em>Programming the chatbot, background clearly visible</em>|
 
@@ -98,6 +103,6 @@ After some discussion, the team opted to build an interactive chatbot using Amaz
 ***
 The most important area of improvement is the involvement of actual psychiatrist and domain experts. This is important as no one  in the team is an expert on mental health, as such we need input from domain experts to make our chatbot effective in addressing mental health concerns.
 
-Another are of improvement is the addition of machine learning to improve the performance of the chatbot. Machine learning can be used to learn the most effective response to any given scenario, thus making it more effective in addressing user needs.
+Another area of improvement is the addition of machine learning to improve the performance of the chatbot. Machine learning can be used to learn the most effective response to any given scenario, thus making it more effective in addressing user needs.
 
 lastly, the team still needed to find an effective way to package and deliver the chatbot into hands of users.
