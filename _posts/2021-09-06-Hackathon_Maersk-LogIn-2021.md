@@ -47,5 +47,28 @@ A key issue facing international shipping is the associated paperwork required a
 
 A blockchain is used to ensure data integrity and allow all parties involved can verify said integrity. The system can further be expanded to provide update on the location and status of goods being shipped. 
 
-<strong>Unfortunately, I did not get footage of the system I built, but what I did is encapsulated in this video <a href="https://www.youtube.com/watch?v=x-AjS-WuF2Q">
-Build a Blockchain Track-and-Trace Application on AWS</a>. </strong>
+The idea project was based on the following videos:
+
+<em>Build a Blockchain Track-and-Trace Application on AWS</em>
+<div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/watch?v=x-AjS-WuF2Q"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
+
+<em>IBM and Maersk demo: Cross-border supply chain solution on blockchain</em>
+<div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/watch?v=tdhpYQCWnCw"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>
+
+Unfortunately, I did not move on to the prototyping stage and did not get a chance to actually make the system a reality(for now...).
