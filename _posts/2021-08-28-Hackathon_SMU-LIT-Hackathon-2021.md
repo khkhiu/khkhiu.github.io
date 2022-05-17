@@ -76,14 +76,14 @@ The solution was created using the following core technologies
 3. AWS Lex, allows for building the response of the chatbot
 
 |![Programming chatbot](/assets/images/Hackathon-SMU_LIT-2021/AWS_Sumerian.png)|
-|<em>Programming the chatbot, background clearly visible</em>|
+|<em>Programming the chatbot</em>|
 
 ***
 
 <strong>Video demonstration of solution</strong>
 
 ***
-<em>The video is a reproduction of the solution after the event ended.
+<em>The video is a reproduction of the solution after the event ended.</em>
 
 <div class="embed-container">
   <iframe

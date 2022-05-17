@@ -12,7 +12,7 @@ tags:
 |![proof](/assets/images/Hackathon-AWS-BO-2020/AWS_BO-2020_cert.png)|
 |<em>Proof of participation</em>|
 
-**Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design proposal is included here.
+**Note** A video demonstration is added at the bottom of the page, at Appendix C.
 {: .notice--warning}
 
 ***
@@ -190,3 +190,21 @@ Amazon Web Services. 2019. How Slalom Created Personalized, Interactive Event Ex
 Realpython.com. n.d. Build a Recommendation Engine With Collaborative Filtering – Real Python. [online] Available at: <https://realpython.com/build-recommendation-engine-collaborative-filtering/> 
 
 Amazon Web Services. 2018. Call an Amazon SageMaker model endpoint using Amazon API Gateway and AWS Lambda - Amazon Web Services. [online] Available at: <https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/> 
+
+***
+
+<strong>Appendix B - Video demonstration </strong>
+
+***
+
+<em>BuildOnASEAN2020 Singapore Entry - Team SP_ABS_IDV - Fulfilling Silver Life! Website</em>
+
+<div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/watch?v=VnR2qTkpVGQ&list=LL&index=341"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="">
+  </iframe>
+</div>

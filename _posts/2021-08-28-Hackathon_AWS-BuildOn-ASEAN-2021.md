@@ -11,7 +11,7 @@ tags:
 |![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2021_cert.png)|
 |<em>Proof of participation</em>|
 
-**Note** The team's solution used components that I no longer have access to and cannot recreate. As such only the design proposal is included here.
+**Note** Unfortunately, the team did not move onto the prototyping stage. As such, only the proposal is available.
 {: .notice--warning}
 
 ***
