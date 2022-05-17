@@ -201,7 +201,7 @@ Amazon Web Services. 2018. Call an Amazon SageMaker model endpoint using Amazon 
 
 <div class="embed-container">
   <iframe
-      src="https://www.youtube.com/watch?v=VnR2qTkpVGQ&list=LL&index=341"
+      src="https://youtu.be/VnR2qTkpVGQ"
       width="700"
       height="480"
       frameborder="0"

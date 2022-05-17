@@ -49,10 +49,10 @@ A blockchain is used to ensure data integrity and allow all parties involved can
 
 The idea project was based on the following videos:
 
-<em>Build a Blockchain Track-and-Trace Application on AWS</em>
+<em>1. Build a Blockchain Track-and-Trace Application on AWS</em>
 <div class="embed-container">
   <iframe
-      src="https://www.youtube.com/watch?v=x-AjS-WuF2Q"
+      src="https://youtu.be/x-AjS-WuF2Q"
       width="700"
       height="480"
       frameborder="0"
@@ -60,10 +60,11 @@ The idea project was based on the following videos:
   </iframe>
 </div>
 
-<em>IBM and Maersk demo: Cross-border supply chain solution on blockchain</em>
+
+<em>2. IBM and Maersk demo: Cross-border supply chain solution on blockchain</em>
 <div class="embed-container">
   <iframe
-      src="https://www.youtube.com/watch?v=tdhpYQCWnCw"
+      src="https://youtu.be/tdhpYQCWnCw"
       width="700"
       height="480"
       frameborder="0"
