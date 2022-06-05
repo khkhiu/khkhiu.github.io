@@ -48,23 +48,23 @@ As such a start up was proposed to aid SFA in their goals by leveraging Google C
 
 Included below are the slides that were submitted as the deliverables for Stage 1.
 
-|<em>Slide 1</em>|
 |![Slide 1](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide1.png)|
+|<em>Slide 1</em>|
 
-|<em>Slide 2</em>|
 |![Slide 2](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide2.png)|
+|<em>Slide 2</em>|
 
-|<em>Slide 3</em>|
 |![Slide 3](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide3.png)|
+|<em>Slide 3</em>|
 
-|<em>Slide 4</em>|
 |![Slide 4](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide4.png)|
+|<em>Slide 4</em>|
 
-|<em>Slide 5</em>|
 |![Slide 5](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide5.png)|
+|<em>Slide 5</em>|
 
-|<em>Slide 6</em>|
 |![Slide 6](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide6.png)|
+|<em>Slide 6</em>|
 
 Unfortunately the proposal did not make it to Stage 2.
 
