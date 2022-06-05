@@ -54,8 +54,8 @@ Included below are the slides that were submitted as the deliverables for Stage 
 |![Slide 2](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide2.JPG)|
 |<em>Slide 2</em>|
 
-|![Slide 3](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide3.JPG)|
-|<em>Slide 3</em>|
+|![Slide 3](/assets/images/Hackathon-GoogleCloudHackathon-2022/flowchart.png)|
+|<em>Slide 3-Architectural Diagram</em>|
 
 |![Slide 4](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide4.JPG)|
 |<em>Slide 4</em>|
@@ -77,12 +77,3 @@ Unfortunately the proposal did not make it to Stage 2.
 
 ***
 Singapore Food Agency(SFA). (2022). Our Singapore Food Story. Retrieved from SFA: https://www.sfa.gov.sg/food-farming/sgfoodstory/grow-local
-
-***
-
-<strong>Appendix 1 - Architectural diagram</strong>
-
-***
-
-|<em>Flowchart</em>|
-|![Flowchart](/assets/images/Hackathon-GoogleCloudHackathon-2022/flowchart.png)|
