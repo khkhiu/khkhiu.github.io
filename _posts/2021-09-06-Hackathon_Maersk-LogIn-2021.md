@@ -49,6 +49,8 @@ A blockchain is used to ensure data integrity and allow all parties involved can
 
 The idea project was based on the following videos:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x-AjS-WuF2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <em>1. Build a Blockchain Track-and-Trace Application on AWS</em>
 <div class="embed-container">
   <iframe
