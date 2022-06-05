@@ -1,6 +1,6 @@
 ---
 title: "Google for Startups Cloud Hackathon 2022"
-date: "30-04-2022"
+date: "05-06-2022"
 categories:
   - Competition
 tags:
