@@ -54,12 +54,4 @@ If movement is detected near an existing centroid, that centroid is reused inste
 
 ***
 
-<div class="embed-container">
-  <iframe
-      src="https://youtube.com/embed/nILaMWWoH28"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nILaMWWoH28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

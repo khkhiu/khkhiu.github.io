@@ -83,17 +83,9 @@ The solution was created using the following core technologies
 <strong>Video demonstration of solution</strong>
 
 ***
-<em>The video is a reproduction of the solution after the event ended.</em>
+<em>The video is a recreation of the solution after the event ended.</em>
 
-<div class="embed-container">
-  <iframe
-      src="https://youtube.com/embed/Qk_C7c5Wzqs"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6stTxnD-ILc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ***
