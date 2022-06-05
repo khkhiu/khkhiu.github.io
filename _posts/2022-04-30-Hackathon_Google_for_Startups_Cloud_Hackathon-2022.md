@@ -65,6 +65,12 @@ Included below are the slides that were submitted as the deliverables for Stage 
 
 |<em>Slide 6</em>|
 |![Slide 6](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide6.png)|
+
+Unfortunately the proposal did not make it to Stage 2.
+
+|![Rejection](/assets/images/Hackathon-GoogleCloudHackathon-2022/Rejection_email.png)|
+|<em>Rejection</em>|
+
 ***
 
 <strong>References   </strong>
