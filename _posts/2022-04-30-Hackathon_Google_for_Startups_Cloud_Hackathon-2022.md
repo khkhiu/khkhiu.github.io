@@ -1,5 +1,5 @@
 ---
-title: "Google for Startups Cloud Hackathon 2022"
+title: "Google for Startups Cloud Hackathon Singapore 2022"
 date: "05-06-2022"
 categories:
   - Competition
@@ -11,6 +11,8 @@ tags:
 
 ***
 
-<strong>To be updated</strong>
+<strong>Introductions</strong>
 
 ***
+
+
