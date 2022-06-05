@@ -199,12 +199,4 @@ Amazon Web Services. 2018. Call an Amazon SageMaker model endpoint using Amazon 
 
 <em>BuildOnASEAN2020 Singapore Entry - Team SP_ABS_IDV - Fulfilling Silver Life! Website</em>
 
-<div class="embed-container">
-  <iframe
-      src="https://youtu.be/VnR2qTkpVGQ"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VnR2qTkpVGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

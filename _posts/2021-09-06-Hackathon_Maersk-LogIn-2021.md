@@ -49,29 +49,11 @@ A blockchain is used to ensure data integrity and allow all parties involved can
 
 The idea project was based on the following videos:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x-AjS-WuF2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <em>1. Build a Blockchain Track-and-Trace Application on AWS</em>
-<div class="embed-container">
-  <iframe
-      src="https://youtu.be/x-AjS-WuF2Q"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x-AjS-WuF2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <em>2. IBM and Maersk demo: Cross-border supply chain solution on blockchain</em>
-<div class="embed-container">
-  <iframe
-      src="https://youtu.be/tdhpYQCWnCw"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tdhpYQCWnCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Unfortunately, I did not move on to the prototyping stage and did not get a chance to actually make the system a reality(for now...).
