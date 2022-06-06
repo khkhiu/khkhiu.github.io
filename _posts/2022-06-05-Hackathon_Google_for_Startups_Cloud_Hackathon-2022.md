@@ -44,27 +44,29 @@ For Stage 1, participants are tasked with submission of a slide deck of up to 6 
 ***
 The Singapore Food Association(SFA) has a sustainability initiative called '30 by 30' which aims to increase domestic food production to 30% of overall food consumed in Singapore (Singapore Food Association(SFA), 2022).
 
-As such a start up was proposed to aid SFA in their goals by leveraging Google Cloud Platform(GCP) and Internet of Things(IOT) to optimize yields of farms in Singapore. It should be noted that the startup also chose to focus primarily on aquaculture farms as those are the furthest from reaching their targets(Singapore Food Association(SFA), 2022).
+As such a start up was proposed to aid SFA in their goals by leveraging Google Cloud Platform(GCP) and Internet of Things(IOT) to optimize yields of farms in Singapore. It should be noted that the startup also chose to focus primarily on aquaculture farms as those are the furthest from reaching their targets at about 10%(Singapore Food Association(SFA), 2022).
+
+The proposal was inspired by this <a href="https://aws.amazon.com/blogs/industries/livestock-health-and-quality-of-life-monitoring-on-aws-with-agriculture-leader-agco/"> solution made in AWS </a>, and is a direct translation of said solution from AWS into GCP.
 
 Included below are the slides that were submitted as the deliverables for Stage 1.
 
-|![Slide 1](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide1.JPG)|
 |<em>Slide 1</em>|
+|![Slide 1](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide1.JPG)|
 
-|![Slide 2](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide2.JPG)|
 |<em>Slide 2</em>|
+|![Slide 2](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide2.JPG)|
 
-|![Slide 3](/assets/images/Hackathon-GoogleCloudHackathon-2022/flowchart.png)|
 |<em>Slide 3-Architectural Diagram</em>|
+|![Slide 3](/assets/images/Hackathon-GoogleCloudHackathon-2022/flowchart.png)|
 
-|![Slide 4](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide4.JPG)|
 |<em>Slide 4</em>|
+|![Slide 4](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide4.JPG)|
 
-|![Slide 5](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide5.JPG)|
 |<em>Slide 5</em>|
+|![Slide 5](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide5.JPG)|
 
-|![Slide 6](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide6.JPG)|
 |<em>Slide 6</em>|
+|![Slide 6](/assets/images/Hackathon-GoogleCloudHackathon-2022/Slide6.JPG)|
 
 Unfortunately the proposal did not make it to Stage 2.
 
