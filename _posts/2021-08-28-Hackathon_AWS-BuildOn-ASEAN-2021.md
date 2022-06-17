@@ -8,6 +8,7 @@ tags:
   - Amazon Web Services(AWS)
 
 ---
+
 |![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2021_cert.png)|
 |<em>Proof of participation</em>|
 

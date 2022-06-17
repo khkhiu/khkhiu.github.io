@@ -6,6 +6,7 @@ categories:
 tags:
   - Hackathon
   - GovTech
+  - Amazon Web Services(AWS)
 
 ---
 
