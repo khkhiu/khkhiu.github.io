@@ -12,7 +12,7 @@ tags:
 |![proof](/assets/images/Hackathon-SMU_LIT-2021/SMU_LIT-2021_cert.png)|
 |<em>Proof of participation</em>|
 
-**Note** The AWS instances and its associated resources have been terminated to ensure that I am not billed unnecessarily.
+**Note** The AWS instances and its associated resources have been terminated to prevent unnecessary billing.
 {: .notice--info}
 
 ***
