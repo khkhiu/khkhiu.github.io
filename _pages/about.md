@@ -3,9 +3,9 @@ permalink: /about/
 title: "About"
 ---
 
-An information technology student turned electrical engineering student, trying to learn.
-This site is intended as a repository for my projects during my course and my free time. Through my projects, I hope to showcase my skills and abilities.
+An electrical & electronic engineering student, trying to learn.
 
-<strong>NOTE: The main focus of this site will be my personal projects as I want to showcase my work outside of my educational institutions. However, some of the projects from educational institution will still make an appearance</strong>
+The site is intended as a repository for both school projects and extra curricular activities. Through these post, I hope to showcase my skills and abilities.
 
-| ![Electrical engineering](/assets/images/about/EEE.png) |
+
+
