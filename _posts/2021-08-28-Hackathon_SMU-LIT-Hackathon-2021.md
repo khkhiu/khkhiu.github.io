@@ -87,6 +87,9 @@ The solution was created using the following core technologies
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6stTxnD-ILc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+|![Flowchart](/assets/images/Hackathon-SMU_LIT-2021/FlowChart.png)|
+|<em>Flowchart of program</em>|
+
 
 ***
 
