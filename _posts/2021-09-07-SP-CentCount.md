@@ -11,7 +11,7 @@ tags:
 ---
 
 **Link to github:**
-https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counter
+<cite><a href="https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counter">https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counter</a></cite>
 {: .notice--info}
 
 ***
