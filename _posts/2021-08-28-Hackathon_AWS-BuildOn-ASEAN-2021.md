@@ -9,9 +9,6 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2021_cert.png)|
-|<em>Proof of participation</em>|
-
 **Note** Unfortunately, the team did not move onto the prototyping stage. As such, only the proposal is available.
 {: .notice--warning}
 
@@ -159,4 +156,11 @@ Lastly, the solution is data driven and can easily be used to predict other issu
 
 [9] Enterprisesg.gov.sg. n.d. Grants - Enterprise Singapore. [online] Available at: <https://www.enterprisesg.gov.sg/financial-assistance/grants#for-startups> 
 
+***
 
+<strong>Appendix A - Proof of participation </strong>
+
+***
+
+|![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2021_cert.png)|
+|<em>Proof of participation</em>|

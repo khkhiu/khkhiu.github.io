@@ -9,9 +9,6 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-AWS-BO-2020/AWS_BO-2020_cert.png)|
-|<em>Proof of participation</em>|
-
 **Note** A video demonstration is added at the bottom of the page, at Appendix C.
 {: .notice--warning}
 
@@ -193,10 +190,19 @@ Amazon Web Services. 2018. Call an Amazon SageMaker model endpoint using Amazon 
 
 ***
 
-<strong>Appendix B - Video demonstration </strong>
+<strong>Appendix B - Video demonstration and proof of participation </strong>
 
 ***
 
 <em>BuildOnASEAN2020 Singapore Entry - Team SP_ABS_IDV - Fulfilling Silver Life! Website</em>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VnR2qTkpVGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+***
+
+<strong>Appendix C - Proof of participation </strong>
+
+***
+
+|![proof](/assets/images/Hackathon-AWS-BO-2020/AWS_BO-2020_cert.png)|
+|<em>Proof of participation</em>|

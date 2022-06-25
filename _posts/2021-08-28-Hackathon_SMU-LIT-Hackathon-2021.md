@@ -9,9 +9,6 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-SMU_LIT-2021/SMU_LIT-2021_cert.png)|
-|<em>Proof of participation</em>|
-
 **Note** The AWS instances and its associated resources have been terminated to prevent unnecessary billing.
 {: .notice--info}
 
@@ -101,3 +98,12 @@ The most important area of improvement is the involvement of actual psychiatrist
 Another area of improvement is the addition of machine learning to improve the performance of the chatbot. Machine learning can be used to learn the most effective response to any given scenario, thus making it more effective in addressing user needs.
 
 lastly, the team still needed to find an effective way to package and deliver the chatbot into hands of users.
+
+***
+
+<strong>Appendix A - Proof of participation </strong>
+
+***
+
+|![proof](/assets/images/Hackathon-SMU_LIT-2021/SMU_LIT-2021_cert.png)|
+|<em>Proof of participation</em>|

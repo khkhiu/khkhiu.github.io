@@ -9,9 +9,6 @@ tags:
 
 ---
 
-|![proof](/assets/images/Hackathon-SeaLand-2021/SeaLand-2021_cert.png)|
-|<em>Proof of participation</em>|
-
 **Note** The AWS instances and its associated resources have been terminated to prevent unnecessary billing.
 {: .notice--info}
 
@@ -57,3 +54,12 @@ The idea project was based on the following videos:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tdhpYQCWnCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Unfortunately, I did not move on to the prototyping stage and did not get a chance to actually make the system a reality(for now...).
+
+***
+
+<strong>Appendix A - Proof of participation </strong>
+
+***
+
+|![proof](/assets/images/Hackathon-SeaLand-2021/SeaLand-2021_cert.png)|
+|<em>Proof of participation</em>|
