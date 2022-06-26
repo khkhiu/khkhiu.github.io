@@ -10,9 +10,9 @@ tags:
 ---
 
 **Note** The AWS instances and its associated resources have been terminated to prevent unnecessary billing.
+{: .notice--info}
 
-A video demonstration is available at Appendix C.
-
+**Note** A video demonstration is available at Appendix C.
 {: .notice--info}
 
 ***
