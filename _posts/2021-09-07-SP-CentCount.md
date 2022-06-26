@@ -19,7 +19,7 @@ tags:
 <strong>Introduction</strong>
 
 ***
-The aim of the project is to develop a simple algorithm to count the number of people in the room. This algorithm was part of a bigger project, but his repository will only focus on the algorithm.
+The aim of the project is to develop a simple algorithm to count the number of people in the room. This algorithm was part of a bigger project, for <cite><a href="https://www.sp.edu.sg/engineering-cluster/eee/engineering-academy/the-programme">the Engineering Academy Programme</a></cite> but his post will only focus on the algorithm.
 
 ***
 
