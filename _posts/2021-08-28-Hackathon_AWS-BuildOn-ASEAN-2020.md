@@ -9,8 +9,11 @@ tags:
 
 ---
 
-**Note** A video demonstration is added at the bottom of the page, at Appendix C.
-{: .notice--warning}
+**Note** The AWS instances and its associated resources have been terminated to prevent unnecessary billing.
+
+A video demonstration is available at Appendix C.
+
+{: .notice--info}
 
 ***
 

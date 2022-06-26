@@ -9,8 +9,8 @@ tags:
 
 ---
 
-**Note** Unfortunately, the team did not move onto the prototyping stage. As such, only the proposal is available.
-{: .notice--warning}
+**Note** The AWS instances and its associated resources have been terminated to prevent unnecessary billing.
+{: .notice--info}
 
 ***
 
