@@ -16,4 +16,4 @@ tags:
 
 ***
 
-<strong>Coming soon</strong>
+<strong>To be updated</strong>
