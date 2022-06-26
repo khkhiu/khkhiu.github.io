@@ -1,6 +1,6 @@
 ---
 title: "AWS - BuildOn ASEAN, 2020"
-date: "28-08-2021"
+date: "14-09-2020"
 categories:
   - Competition
 tags:
