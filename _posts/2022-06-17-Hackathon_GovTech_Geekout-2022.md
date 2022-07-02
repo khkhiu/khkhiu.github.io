@@ -17,3 +17,27 @@ tags:
 ***
 
 <strong>To be updated</strong>
+
+***
+
+<strong>The event</strong>
+
+***
+
+<strong>To be updated</strong>
+
+***
+
+<strong>The hackathon actual</strong>
+
+***
+
+<strong>To be updated</strong>
+
+***
+
+<strong>Reflections</strong>
+
+***
+
+<strong>To be updated</strong>
