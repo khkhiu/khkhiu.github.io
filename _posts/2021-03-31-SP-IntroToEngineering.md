@@ -17,18 +17,6 @@ tags:
 
 'Engineering & Engineering Design Solutions' is a continuation of 'Introduction to Engineering'. This module aims to nurture students toward self-directed learners by giving them a more challenging environment to plan, manage, review and extend their learning outcomes using growth mind and meta-cognitive learning systems in achieving their electronic projects.
 
-
-***
-
-<strong>Task - Introduction to Engineering</strong>
-
-***
-
-***
-
-<strong>Solution - Introduction to Engineering</strong>
-
-***
 ***
 
 <strong>Task - Engineering Design Solutions</strong>
