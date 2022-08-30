@@ -35,6 +35,7 @@ Taking place from 13 to 17 June, a series of workshops were conducted before cul
 <strong>The hackathon</strong>
 
 ***
+
 |![problem statement](/assets/images/Hackathon-GovTech-GeekOut-2022/Problem.png)|
 |<em>problem statement</em>|
 
