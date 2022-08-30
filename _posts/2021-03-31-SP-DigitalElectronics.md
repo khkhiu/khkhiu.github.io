@@ -104,8 +104,8 @@ All CLR inputs are connected to Logic: High to remove them from the equation. Th
 ***
 
 I have learnt the following through this project:
-Firstly, I have learned the importance of building the circuit instead of relying on Multi-sim. The constructed board makes trouble shooting overall design of the circuit much easier as it allows me to physically verify each connection. This method was what allowed me to detect an error in multi-sim, which had not been working up to that point, as I did not realise that I was missing 2 crucial connections.
-Next, I have also learned to factor in defective components while trouble shooting. I initially struggled with the project as I did not realise that one of my IC chips was defective and was giving me erroneous results. I had another issue as both pushbuttons on the board were resetting the MOD counters to zero, even if no wires were connected to them. I overcame the defective IC chip by using another IC and worked around the pushbuttons by using my own buttons.
+Firstly, I have learned the importance of building the circuit instead of relying on Multi-sim. The constructed board makes trouble shooting overall design of the circuit much easier as it allows me to physically verify each connection. This method was what allowed me to detect an error in multi-sim, which had not been working up to that point, as I did not realize that I was missing 2 crucial connections.
+Next, I have also learned to factor in defective components while trouble shooting. I initially struggled with the project as I did not realize that one of my IC chips was defective and was giving me erroneous results. I had another issue as both push-buttons on the board were resetting the MOD counters to zero, even if no wires were connected to them. I overcame the defective IC chip by using another IC and worked around the push-buttons by using my own buttons.
 Lastly, I have learned that re-attaching broken IC pins, while doable, is not recommended as the re-attached pin break off very easily.
 
 The following improvements could have been made:
