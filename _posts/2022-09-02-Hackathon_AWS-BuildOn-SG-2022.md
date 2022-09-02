@@ -1,6 +1,6 @@
 ---
 title: "AWS - BuildOn Singapore, 2022"
-date: "30-08-2022"
+date: "02-09-2022"
 categories:
   - Competition
 tags:
