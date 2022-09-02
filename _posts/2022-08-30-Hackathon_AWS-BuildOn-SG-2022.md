@@ -18,6 +18,9 @@ Amazon Web Services (AWS) Build On is a competitive hackathon that challenges th
 
 As the finale was held in person at AWS Singapore, Build ON 2022 was ran at a much smaller scale compared to previous years.
 
+**Note**<cite><a href="https://aws-build-on-2022.devpost.com/">Click here for the AWS Build ON 2022, devpost page</a></cite>
+{: .notice--info}
+
 ***
 
 <strong>Problem Statements</strong>
