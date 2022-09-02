@@ -83,20 +83,24 @@ This will be operation sequence for the algorithm is as follows
 
 ***
 
-![Enable navigation](/assets/images/Hackathon-AWS-BO-2022/Slide8.PNG)
+|![Enable navigation](/assets/images/Hackathon-AWS-BO-2022/Slide8.PNG)|
+|<em>Impact of solution</em>|
 
 The most important impact is that the algorithm will allow the robot to navigate without colliding into other objects
 
-![Fleet deployment and management](/assets/images/Hackathon-AWS-BO-2022/Slide9.PNG)
+|![Fleet deployment and management](/assets/images/Hackathon-AWS-BO-2022/Slide9.PNG)|
+|<em>Fleet deployment and management</em>|
 
 AWS allows this solution to be deployed to the entire fleet of robots, thus making it easy for staff to administer and manage all robots. At the same time, the robots are able to use data from each other to improve object detection capabilities.
 
 
-![Comparison with current market solutions](/assets/images/Hackathon-AWS-BO-2022/Slide8.PNG)
+|![Comparison with current market solutions](/assets/images/Hackathon-AWS-BO-2022/Slide10.PNG)|
+|<em>Comparison with current market solutions</em>|
 
 There currently are a few medical robots on the market, one of which is shown here.I will only be comparing the software. Market solutions also provide similar fleet management functionality and collision avoidance capability. However, the majority of medical robots on the market utilize proprietary software. This prevents users from customizing the software to best suit their needs.Therefore, the key advantage of the proposed solution is the flexibility in software implementation through integration with other AWS services
 
-![Integration with other AWS services](/assets/images/Hackathon-AWS-BO-2022/Slide10.PNG)
+|![Integration with other AWS services](/assets/images/Hackathon-AWS-BO-2022/Slide11.PNG)|
+|<em>Integration with other AWS services</em>|
 
 Here are some examples of aforementioned flexibility of software implementation.
 
@@ -107,7 +111,6 @@ To improve functionality:
 
 To add new functions:
 Polly and Lex can be used to allow the robot to speak.
-
 
 |![References](/assets/images/Hackathon-AWS-BO-2022/Slide13.PNG)|
 |<em>References</em>|
