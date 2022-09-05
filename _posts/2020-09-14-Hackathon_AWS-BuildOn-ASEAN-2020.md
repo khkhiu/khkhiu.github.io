@@ -1,5 +1,5 @@
 ---
-title: "AWS - BuildOn ASEAN, 2020"
+title: "AWS - Build On ASEAN, 2020"
 date: "14-09-2020"
 categories:
   - Competition
