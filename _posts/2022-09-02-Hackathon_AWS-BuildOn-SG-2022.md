@@ -18,7 +18,7 @@ Amazon Web Services (AWS) Build On is a competitive hackathon that challenges th
 
 As the finale was held in person at AWS Singapore, Build ON 2022 was ran at a much smaller scale compared to previous years.
 
-**Note**<cite><a href="https://aws-build-on-2022.devpost.com/">Click here </a></cite>for the AWS Build ON 2022, devpost page
+**Note**<cite><a href="https://aws-build-on-2022.devpost.com/"> Click here </a></cite>for the AWS Build ON 2022, devpost page
 {: .notice--info}
 
 ***
@@ -122,3 +122,16 @@ Polly and Lex can be used to allow the robot to speak.
 ***
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BbHyT9OMDUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+***
+
+<strong>Results</strong>
+
+***
+
+To my surprise, I was actually shortlisted to build a prototype.
+
+|![Email](/assets/images/Hackathon-AWS-BO-2022/Shortlist.PNG)|
+|<em>Instructions for prototype development</em>|
+
+However, as I need to prioritize my internship, I will not be attending the finals and have opted to withdraw from the competition.
