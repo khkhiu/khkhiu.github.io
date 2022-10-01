@@ -131,7 +131,7 @@ Polly and Lex can be used to allow the robot to speak.
 
 To my surprise, I was actually shortlisted to build a prototype.
 
-|![Email](/assets/images/Hackathon-AWS-BO-2022/Shortlist.PNG)|
+|![Email](/assets/images/Hackathon-AWS-BO-2022/Shortlist.png)|
 |<em>Instructions for prototype development</em>|
 
 However, as I need to prioritize my internship, I will not be attending the finals and have opted to withdraw from the competition.
