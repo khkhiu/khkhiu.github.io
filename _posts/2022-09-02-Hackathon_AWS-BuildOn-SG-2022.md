@@ -135,3 +135,12 @@ To my surprise, I was actually shortlisted to build a prototype.
 |<em>Instructions for prototype development</em>|
 
 However, as I need to prioritize my internship, I will not be attending the finals and have opted to withdraw from the competition.
+
+***
+
+<strong>Appendix A - Proof of participation </strong>
+
+***
+
+|![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2021_cert.png)|
+|<em>Proof of participation</em>|
