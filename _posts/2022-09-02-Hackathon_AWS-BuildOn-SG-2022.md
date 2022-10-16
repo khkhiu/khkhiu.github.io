@@ -142,5 +142,5 @@ However, as I need to prioritize my internship, I will not be attending the fina
 
 ***
 
-|![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2021_cert.png)|
+|![proof](/assets/images/Hackathon-AWS-BO-2021/AWS_BO-2022_cert.png)|
 |<em>Proof of participation</em>|
