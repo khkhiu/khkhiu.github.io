@@ -1,5 +1,5 @@
 ---
-title: "Singapore Polytechnic - Digital Electronics"
+title: "Singapore Polytechnic - Digital Electronics Stop Watch"
 date: "31-03-2021"
 categories:
   - Project

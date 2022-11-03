@@ -1,5 +1,5 @@
 ---
-title: "Singapore Polytechnic - Centroid Counter"
+title: "Singapore Polytechnic - Centroid Counter using OpenCV in Python"
 date: "07-09-2021"
 categories:
   - Project
