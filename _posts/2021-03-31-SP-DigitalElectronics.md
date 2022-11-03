@@ -10,7 +10,7 @@ tags:
 ---
 
 **Link to github:**
-<cite><a href="https://github.com/khkhiu/Singapore_Polytechnic-Digital_Electronics">https://github.com/khkhiu/Singapore_Polytechnic-Digital_Electronics</a></cite>
+<cite><a href="https://github.com/khkhiu/Singapore_Polytechnic-Digital_Electronics_Stop_Watch">https://github.com/khkhiu/Singapore_Polytechnic-Digital_Electronics_Stop_Watch</a></cite>
 {: .notice--info}
 
 ***
