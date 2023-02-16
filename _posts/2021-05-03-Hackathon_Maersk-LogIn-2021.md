@@ -38,22 +38,7 @@ With this scenario and what you may know of container shipping and logistics, we
 
 ***
 
-Using Amazon Web Services(AWS) blockchain, a track and trace system can be created that would streamline the logistics process.
-
-A key issue facing international shipping is the associated paperwork required at various ports. As such I propose a blockchain based systems where all parties involved can upload needed documents and all other parties can view said paperwork. 
-
-A blockchain is used to ensure data integrity and allow all parties involved can verify said integrity. The system can further be expanded to provide update on the location and status of goods being shipped. 
-
-The idea project was based on the following videos:
-
-<em>1. Build a Blockchain Track-and-Trace Application on AWS</em>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x-AjS-WuF2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<em>2. IBM and Maersk demo: Cross-border supply chain solution on blockchain</em>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tdhpYQCWnCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Unfortunately, I did not move on to the prototyping stage and did not get a chance to actually make the system a reality(for now...).
+<strong>(To be updated)</strong>
 
 ***
 
