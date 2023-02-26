@@ -4,9 +4,8 @@ date: "07-09-2021"
 categories:
   - Project
 tags:
-  - Singapore Polytechnic
+  - Singapore Polytechnic projects
   - Python
-  - OpenCV
 
 ---
 

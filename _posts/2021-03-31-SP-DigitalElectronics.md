@@ -4,7 +4,7 @@ date: "31-03-2021"
 categories:
   - Project
 tags:
-  - Singapore Polytechnic
+  - Singapore Polytechnic projects
 
 ---
 
