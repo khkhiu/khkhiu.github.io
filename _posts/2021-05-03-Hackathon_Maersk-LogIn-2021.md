@@ -38,7 +38,14 @@ With this scenario and what you may know of container shipping and logistics, we
 
 ***
 
+<strong>A supply chain that incorporates both Industrial Internet of Things (IIoT) and blockchain</strong>
 
+Organizations operating in the Industrial Internet of Things (IIoT) domain require solutions that enable them to monitor and scrutinize their supply chains to ensure strict quality control and accurate product tracking. By utilizing AWS IoT, businesses can achieve operational efficiency at scale. IoT-enabled equipment installed on their production plant floors captures data from multiple sensors, such as load, pressure, temperature, humidity, and assembly metrics. This data can be transmitted in real-time directly to the cloud or through an on-premises AWS IoT gateway, such as any AWS IoT Greengrass compatible hardware, and stored and analyzed in AWS IoT. The devices or IoT gateway will then send MQTT messages to the AWS IoT Core endpoint.
+
+This approach provides a data ingestion pipeline powered by IoT, storing the data in a private blockchain network accessible only to member organizations, serving as the immutable single source of truth for future audits. The Hyperledger Fabric network deployed on Managed Blockchain includes two members, but it can be extended to additional organizations as required, forming a comprehensive solution for effective supply chain monitoring and auditing.
+
+|![Project architecture](/assets/images/Hackathon-SeaLand-2021/SeaLand-2021_cert.png)|
+|<em>Project architecture</em>|
 
 ***
 
