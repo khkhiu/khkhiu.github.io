@@ -44,7 +44,7 @@ Organizations operating in the Industrial Internet of Things (IIoT) domain requi
 
 This approach provides a data ingestion pipeline powered by IoT, storing the data in a private blockchain network accessible only to member organizations, serving as the immutable single source of truth for future audits. The Hyperledger Fabric network deployed on Managed Blockchain includes two members, but it can be extended to additional organizations as required, forming a comprehensive solution for effective supply chain monitoring and auditing.
 
-|![Project architecture](/assets/images/Hackathon-SeaLand-2021/SeaLand-2021_cert.png)|
+|![Project architecture](/assets/images/Hackathon-SeaLand-2021/Architecture.png)|
 |<em>Project architecture</em>|
 
 The following components are involved in the IoT-based supply chain solution:
