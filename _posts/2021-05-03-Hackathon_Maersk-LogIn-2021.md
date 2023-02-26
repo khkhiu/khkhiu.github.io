@@ -63,9 +63,9 @@ The following components are involved in the IoT-based supply chain solution:
 
 7. Managed Blockchain: This fully managed service creates and manages blockchain networks using open-source frameworks. In the solution, the Fabric Client interacts with the Hyperledger Fabric network on Managed Blockchain components that run within a customer's VPC.
 
-- Peer Nodes: These nodes endorse transactions and store the ledger. We recommend creating a second Peer Node in another Availability Zone for redundancy.
-        
 - Certificate Authority: Every user must register and enroll with their Certificate Authority before interacting with the blockchain.
+
+- Peer Nodes: These nodes endorse transactions and store the ledger. We recommend creating a second Peer Node in another Availability Zone for redundancy.
 
 ***
 
