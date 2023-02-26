@@ -47,6 +47,26 @@ This approach provides a data ingestion pipeline powered by IoT, storing the dat
 |![Project architecture](/assets/images/Hackathon-SeaLand-2021/SeaLand-2021_cert.png)|
 |<em>Project architecture</em>|
 
+The following components are involved in the IoT-based supply chain solution:
+
+1. IoT sensors: These sensors are mounted on each piece of equipment throughout the supply chain and transmit data to the IoT gateway. To simulate multiple devices, you can use the IoT Device Simulator.
+
+2. AWS IoT Greengrass: This gateway securely connects your edge devices to AWS services and enables local processing, messaging, and data management. It also includes pre-built components such as protocol conversion to MQTT.
+
+3. AWS IoT Core: This service subscribes to data published by the IoT devices or gateway and ingests it into the cloud for analysis and storage.
+
+4. AWS IoT rules: These rules allow your devices to interact with AWS services based on the MQTT topic stream. For example, you can trigger a Lambda function to extract and publish data to the Fabric Client or an HTTPS endpoint to access a private API Gateway.
+
+5. Amazon API Gateway: This service provides a REST interface to invoke Lambda functions that communicate with the Hyperledger Fabric network.
+
+6. AWS Lambda for the Fabric Client: With the Hyperledger Fabric SDK installed as a dependency, this function communicates with the Peer Nodes to read and write data from the blockchain. The Peer Nodes run smart contracts (chaincode) and store a local copy of the ledger.
+
+7. Managed Blockchain: This fully managed service creates and manages blockchain networks using open-source frameworks. In the solution, the Fabric Client interacts with the Hyperledger Fabric network on Managed Blockchain components that run within a customer's VPC.
+        
+Peer Nodes: These nodes endorse transactions and store the ledger. We recommend creating a second Peer Node in another Availability Zone for redundancy.
+        
+Certificate Authority: Every user must register and enroll with their Certificate Authority before interacting with the blockchain.
+
 ***
 
 <strong>Benefits of blockchain</strong>
