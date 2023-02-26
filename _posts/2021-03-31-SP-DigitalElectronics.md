@@ -5,7 +5,6 @@ categories:
   - Project
 tags:
   - Singapore Polytechnic
-  - Digital Electronics
 
 ---
 
