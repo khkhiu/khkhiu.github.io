@@ -62,10 +62,10 @@ The following components are involved in the IoT-based supply chain solution:
 6. AWS Lambda for the Fabric Client: With the Hyperledger Fabric SDK installed as a dependency, this function communicates with the Peer Nodes to read and write data from the blockchain. The Peer Nodes run smart contracts (chaincode) and store a local copy of the ledger.
 
 7. Managed Blockchain: This fully managed service creates and manages blockchain networks using open-source frameworks. In the solution, the Fabric Client interacts with the Hyperledger Fabric network on Managed Blockchain components that run within a customer's VPC.
+
+- Peer Nodes: These nodes endorse transactions and store the ledger. We recommend creating a second Peer Node in another Availability Zone for redundancy.
         
-Peer Nodes: These nodes endorse transactions and store the ledger. We recommend creating a second Peer Node in another Availability Zone for redundancy.
-        
-Certificate Authority: Every user must register and enroll with their Certificate Authority before interacting with the blockchain.
+- Certificate Authority: Every user must register and enroll with their Certificate Authority before interacting with the blockchain.
 
 ***
 
