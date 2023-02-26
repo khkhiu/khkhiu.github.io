@@ -50,7 +50,7 @@ This is the intended frontend of the proposed web application. Amplify allows de
 
 <strong>Backend</strong>
 
-|![Frontend](/assets/images/Hackathon-GovTech-GeekOut-2022/Frontend.png)|
+|![Backend](/assets/images/Hackathon-GovTech-GeekOut-2022/Backend.png)|
 
 Medical information is considered sensitive, and people would want assurance that their data is in good hands. Healthlake will be used to ensure compliance with medical regulations while performing data cleaning. Thus allowing us to use machine learning to generate data while respecting the user's privacy
 
