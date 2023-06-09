@@ -14,7 +14,7 @@ tags:
 
 ***
 
-<strong>Introductions</strong>
+<strong>Introduction</strong>
 
 ***
 'Digital Electronics 1' introduces students to the knowledge, understanding and design techniques necessary to enable them to design simple combinational circuits using commercial SSI and MSI integrated circuits. Additional topics covered include introduction to simple sequential logic circuits such as flipflops and mono-stables.
