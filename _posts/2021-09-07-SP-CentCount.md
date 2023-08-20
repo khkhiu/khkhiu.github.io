@@ -10,7 +10,7 @@ tags:
 ---
 
 **Link to github:**
-<cite><a href="https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counterusing_OpenCV_in_Python">https://github.com/khkhiu/Singapore_Polytechnic-Centroid_Counterusing_OpenCV_in_Python</a></cite>
+<cite><a href="https://github.com/khkhiu/Polytechnic_project_repository/tree/main/Centroid_Counter_using_OpenCV_in_Python">Github link</a></cite>
 {: .notice--info}
 
 ***
