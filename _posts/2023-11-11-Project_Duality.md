@@ -1,3 +1,15 @@
+---
+title: "Project: Duality"
+date: "11-11-2023"
+categories:
+  - Project
+tags:
+  - Science
+  - Humanities
+  - Coursera
+
+---
+
 # Project-Duality
 
 ## Contents
