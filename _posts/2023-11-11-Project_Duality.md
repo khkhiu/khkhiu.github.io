@@ -1,15 +1,3 @@
----
-title: "Project: Duality"
-date: "11-11-2023"
-categories:
-  - Project
-tags:
-  - Science
-  - Humanities
-  - Coursera
-
----
-
 # Project-Duality
 
 ## Contents
@@ -52,7 +40,7 @@ The study of math and logic combines the abstract science of numbers with quanti
 Specialization | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/specializations/discrete-mathematics) <br><br>Constituent Courses <br> 1.[Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof) <br><br> 2.[Combinatorics and Probability](https://www.coursera.org/learn/combinatorics) <br><br> 3.[Introduction to Graph Theory](https://www.coursera.org/learn/graphs) <br><br> 4.[Number Theory and Cryptography](https://www.coursera.org/learn/number-theory-cryptography)<br><br> 5.[Delivery Problem](https://www.coursera.org/learn/delivery-problem)| 2 Months | [University of California - San Diego](https://www.coursera.org/ucsd) | [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/UWJ8URFFSVSU) <br><br>Constituent Courses <br> 1.[Mathematical Thinking in Computer Science](https://www.coursera.org/account/accomplishments/certificate/MSBJMZ2LULAU) <br><br> 2.[Combinatorics and Probability](https://www.coursera.org/account/accomplishments/certificate/35WT8F4FAWL5) <br><br> 3.[Introduction to Graph Theory](https://www.coursera.org/account/accomplishments/certificate/47H3F82P7F3C) <br><br> 4.[Number Theory and Cryptography](https://www.coursera.org/account/accomplishments/certificate/8RZFMPN97478) <br><br> 5.[Delivery Problem](https://www.coursera.org/account/accomplishments/certificate/2R3A4TV22B58)
-[Differential Calculus through Data and Modeling Specialization](https://www.coursera.org/specializations/differential-calculus-data-modeling) <br><br>Constituent Courses <br> 1.[Calculus through Data & Modeling: Precalculus Review](https://www.coursera.org/learn/calculus-through-data-and-modelling-precalculus-review) <br><br> 2.[Calculus through Data & Modeling: Limits & Derivatives](https://www.coursera.org/learn/calculus-through-data-and-modelling-imits-derivatives) <br><br> 3.[Calculus through Data & Modeling: Differentiation Rules](https://www.coursera.org/learn/calculus-through-data-and-modelling-differentiation-rules?specialization=differential-calculus-data-modeling) <br><br> 4.[Calculus through Data & Modeling: Applying Differentiation](https://www.coursera.org/learn/calculus-through-data-and-modelling-applying-differentiation?specialization=differential-calculus-data-modeling)<br><br> | 2 Months | [Johns Hopkins University](https://www.coursera.org/jhu) | [Differential Calculus through Data and Modeling Specialization]() <br><br>Constituent Courses <br> 1.[Calculus through Data & Modeling: Precalculus Review](https://www.coursera.org/account/accomplishments/certificate/L235BVNNZNHR)
+[Differential Calculus through Data and Modeling Specialization](https://www.coursera.org/specializations/differential-calculus-data-modeling) <br><br>Constituent Courses <br> 1.[Calculus through Data & Modeling: Precalculus Review](https://www.coursera.org/learn/calculus-through-data-and-modelling-precalculus-review) <br><br> 2.[Calculus through Data & Modeling: Limits & Derivatives](https://www.coursera.org/learn/calculus-through-data-and-modelling-imits-derivatives) <br><br> 3.[Calculus through Data & Modeling: Differentiation Rules](https://www.coursera.org/learn/calculus-through-data-and-modelling-differentiation-rules?specialization=differential-calculus-data-modeling) <br><br> 4.[Calculus through Data & Modeling: Applying Differentiation](https://www.coursera.org/learn/calculus-through-data-and-modelling-applying-differentiation?specialization=differential-calculus-data-modeling)<br><br> | 2 Months | [Johns Hopkins University](https://www.coursera.org/jhu) | [Differential Calculus through Data and Modeling Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/CXQ9K6K4585L) <br><br>Constituent Courses <br> 1.[Calculus through Data & Modeling: Precalculus Review](https://www.coursera.org/account/accomplishments/certificate/L235BVNNZNHR) <br><br> 2.[Calculus through Data & Modeling: Limits & Derivatives](https://www.coursera.org/account/accomplishments/certificate/WYHZ4N7CPQ6D) <br><br> 3.[Calculus through Data & Modeling: Differentiation Rules](https://www.coursera.org/account/accomplishments/certificate/3YKMTSD8BUS8)<br><br> 4.[Calculus through Data & Modeling: Applying Differentiation](https://www.coursera.org/account/accomplishments/certificate/KM37N3CADA98)
 
 ### Other Science
 
@@ -72,6 +60,12 @@ Explore the field's eastern and western traditions, including specific schools o
 
 **Topics covered**:
 `Philosophy`
+`Logic`
+
+Specialization | Duration | Offered by | Link to certificate 
+:-- | :--: | :--: | :--: |
+[Introduction to Logic and Critical Thinking Specialization](https://www.coursera.org/specializations/logic-critical-thinking-duke) <br><br>Constituent Courses <br> 1.[Think Again I: How to Understand Arguments](https://www.coursera.org/learn/understanding-arguments) <br><br> 2.[Think Again II: How to Reason Deductively](https://www.coursera.org/learn/deductive-reasoning) <br><br> 3.[Think Again III: How to Reason Inductively](https://www.coursera.org/learn/inductive-reasoning)<br><br> 4.[Think Again IV: How to Avoid Fallacies](https://www.coursera.org/learn/logical-fallacies) | 2 months | [Duke University](https://www.coursera.org/duke) | [Introduction to Logic and Critical Thinking Specialization]() <br><br>Constituent Courses <br> 1.[Think Again I: How to Understand Arguments](https://www.coursera.org/account/accomplishments/certificate/UVEM5SBBB5UZ)
+
 
 Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
@@ -132,4 +126,5 @@ This section will contain courses that do not fall into the other humanities cat
 Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 [Introduction to Psychology](https://www.coursera.org/learn/introduction-psychology) | 6 weeks | [Yale University](https://www.coursera.org/yale) | [Introduction to Psychology](https://www.coursera.org/account/accomplishments/certificate/Y2SEVBZYGNBV)
-Introduction to Religions & Ecology <br> 1.[Introduction to Religions & Ecology](https://www.coursera.org/learn/intro-religions-ecology) | 8 weeks | [Yale University](https://www.coursera.org/yale) | [Introduction to Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/9MX75DJSTAFX)
+Introduction to Religions & Ecology <br> 1.[Introduction to Religions & Ecology](https://www.coursera.org/learn/intro-religions-ecology) <br><br> 2.[Indigenous Religions & Ecology](https://www.coursera.org/learn/indigenous-religions-ecology) <br><br> 3.[South Asian Religions & Ecology](https://www.coursera.org/learn/south-asian-religions-ecology)<br><br> 4.[East Asian Religions & Ecology](https://www.coursera.org/learn/east-asian-religions-ecology)| 8 weeks | [Yale University](https://www.coursera.org/yale) | 1.[Introduction to Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/9MX75DJSTAFX)<br><br> 2.[Indigenous Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/6XBYQACVE82D) <br><br> 3.[South Asian Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/FCTCTQ5KJWC6)<br><br> 4.[East Asian Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/R84YQGY6TUE3)
+Journey of the Universe <br> 1.[Journey of the Universe: The Unfolding of Life](https://www.coursera.org/learn/journey-of-the-universe/)<br><br>  2.[Journey Conversations: Weaving Knowledge and Action](https://www.coursera.org/learn/journey-knowledge-action)| 6 weeks<br><br>7 weeks | [Yale University](https://www.coursera.org/yale) | 1.[Journey of the Universe: The Unfolding of Life](https://www.coursera.org/account/accomplishments/certificate/6Y8NRFDEFEB5)<br><br>2.[Journey Conversations: Weaving Knowledge and Action](https://www.coursera.org/account/accomplishments/certificate/36QN75FB32NU)
