@@ -1,4 +1,4 @@
-# Project-Duality
+# Project Duality
 
 ## Contents
 - [Introduction](#introduction)
