@@ -1,4 +1,12 @@
-# Project-Duality
+---
+title: "Project: Duality"
+date: "11-11-2023"
+categories:
+  - Project
+tags:
+  - Miscellaneous
+
+---
 
 ## Contents
 - [Introduction](#introduction)
