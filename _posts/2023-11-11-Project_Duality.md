@@ -38,6 +38,8 @@ Courses | Duration | Offered by | Link to certificate
 [Space Safety](https://www.coursera.org/learn/spacesafety) | 9 weeks | [Technische Universität München (TUM)](https://www.coursera.org/tum) | [Space Safety](https://www.coursera.org/account/accomplishments/certificate/DW7QKABYM2GS)
 [Space Exploration](https://www.coursera.org/learn/space-exploration) | 9 weeks | [Technische Universität München (TUM)](https://www.coursera.org/tum) | [Space Exploration](https://www.coursera.org/account/accomplishments/certificate/15PQMG8TXEMG)
 [Rocket Science for Everyone](https://www.coursera.org/learn/rocket-science-for-everyone/) | 5 weeks | [Yale University](https://www.coursera.org/yale) | [Rocket Science for Everyone](https://www.coursera.org/account/accomplishments/certificate/HJ7B6C7Z4P3X)
+[Origins - Formation of the Universe, Solar System, Earth and Life](https://www.coursera.org/learn/origins-universe-solarsystem) | 12 Weeks | [University of Copenhagen](https://www.coursera.org/partners/ucph) | [Origins - Formation of the Universe, Solar System, Earth and Life](https://www.coursera.org/account/accomplishments/certificate/CACTCTMO8CSB)
+[The Discovery of the Higgs Boson](https://www.coursera.org/learn/the-discovery-of-the-higgs-boson) | 7 weeks | [The University of Edinburgh](https://www.coursera.org/edinburgh) | [The Discovery of the Higgs Boson](https://www.coursera.org/account/accomplishments/certificate/VDCNHBRVFMMK)
 
 ### Mathematics
 
@@ -45,7 +47,9 @@ The study of math and logic combines the abstract science of numbers with quanti
 
 **Topics covered**:
 `Mathematics`
-`Logic`
+`Discrete Mathematics`
+`Calculus`
+`Linear Algebra`
 
 Specialization | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
@@ -60,6 +64,9 @@ This section will contain courses that do not fall into the other science catego
 
 **Topics covered**:
 `Science`
+`Environmental Science`
+`Systems Engineering`
+`Public Health`
 
 Specialization | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
@@ -72,8 +79,8 @@ Courses | Duration | Offered by | Link to certificate
 [Sustainable Food Systems](https://www.coursera.org/learn/sustainable-food-systems) | 4 weeks |  [University of Illinois at Urbana-Champaign](https://www.coursera.org/illinois) | [Sustainable Food System](https://www.coursera.org/account/accomplishments/certificate/24AL1EPKQ2J4)
 [Deep Time: Discovering an Ancient Earth](https://www.coursera.org/learn/deep-time-discovering-an-ancient-earth) | 4 weeks | [University of Colorado Boulder](https://www.coursera.org/partners/boulder) | [Deep Time: Discovering an Ancient Earth](https://www.coursera.org/account/accomplishments/certificate/8K77W2ICK38C)
 [Oceanography: a key to better understand our world](https://www.coursera.org/learn/oceanography) | 7 weeks | [Universitat de Barcelona](https://www.coursera.org/partners/ub) | [Oceanography: a key to better understand our world](https://www.coursera.org/account/accomplishments/certificate/ZSJB5HMPXJYH)
-
-
+[Essentials of Global Health](https://www.coursera.org/learn/essentials-global-health) | 8 weeks | [Yale University](https://www.coursera.org/yale) | [Essentials of Global Health](https://www.coursera.org/account/accomplishments/certificate/TXP2C3O43KHT)
+[Epidemiology: The Basic Science of Public Health](https://www.coursera.org/learn/epidemiology) | 6 weeks | [University of North Carolina at Chapel Hill](https://www.coursera.org/partners/unc) | [Epidemiology: The Basic Science of Public Health](https://www.coursera.org/account/accomplishments/certificate/O0V1FUXMEKPO)
 
 ### Philosophy
 
@@ -83,17 +90,19 @@ Explore the field's eastern and western traditions, including specific schools o
 **Topics covered**:
 `Philosophy`
 `Logic`
+`Theology`
 
 Specialization | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
-[Introduction to Logic and Critical Thinking Specialization](https://www.coursera.org/specializations/logic-critical-thinking-duke) <br><br>Constituent Courses <br> 1.[Think Again I: How to Understand Arguments](https://www.coursera.org/learn/understanding-arguments) <br><br> 2.[Think Again II: How to Reason Deductively](https://www.coursera.org/learn/deductive-reasoning) <br><br> 3.[Think Again III: How to Reason Inductively](https://www.coursera.org/learn/inductive-reasoning)<br><br> 4.[Think Again IV: How to Avoid Fallacies](https://www.coursera.org/learn/logical-fallacies) | 2 months | [Duke University](https://www.coursera.org/duke) | [Introduction to Logic and Critical Thinking Specialization]() <br><br>Constituent Courses <br> 1.[Think Again I: How to Understand Arguments](https://www.coursera.org/account/accomplishments/certificate/UVEM5SBBB5UZ)
+[Introduction to Logic and Critical Thinking Specialization](https://www.coursera.org/specializations/logic-critical-thinking-duke) <br><br>Constituent Courses <br> 1.[Think Again I: How to Understand Arguments](https://www.coursera.org/learn/understanding-arguments) <br><br> 2.[Think Again II: How to Reason Deductively](https://www.coursera.org/learn/deductive-reasoning) <br><br> 3.[Think Again III: How to Reason Inductively](https://www.coursera.org/learn/inductive-reasoning)<br><br> 4.[Think Again IV: How to Avoid Fallacies](https://www.coursera.org/learn/logical-fallacies) | 2 months | [Duke University](https://www.coursera.org/duke) | [Introduction to Logic and Critical Thinking Specialization](https://www.coursera.org/account/accomplishments/specialization/certificate/TPLC5A6HZLIS) <br><br>Constituent Courses <br> 1.[Think Again I: How to Understand Arguments](https://www.coursera.org/account/accomplishments/certificate/UVEM5SBBB5UZ)<br><br> 2.[Think Again II: How to Reason Deductively](https://www.coursera.org/account/accomplishments/certificate/3LXTN8NZR87X)<br><br> 3.[Think Again III: How to Reason Inductively](https://www.coursera.org/account/accomplishments/certificate/I8MDDTOQ70LW)<br><br> 4.[Think Again IV: How to Avoid Fallacies](https://www.coursera.org/account/accomplishments/certificate/KNO9ATA41ENG)
 
 
 Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 [Introduction to Philosophy](https://www.coursera.org/learn/philosophy) | 5 weeks | [The University of Edinburgh](https://www.coursera.org/edinburgh) | [Introduction to Philosophy](https://www.coursera.org/account/accomplishments/certificate/ZMUHJ7JW6NQM)
 Philosophy and the Sciences <br> 1.[Introduction to the Philosophy of Physical Sciences](https://www.coursera.org/learn/philosophy-physical-sciences) <br><br>2.[Introduction to the Philosophy of Cognitive Sciences](https://www.coursera.org/learn/philosophy-cognitive-sciences) | 4 weeks<br><br> 4 weeks | [The University of Edinburgh](https://www.coursera.org/edinburgh) | [Introduction to the Philosophy of Physical Sciences](https://www.coursera.org/account/accomplishments/certificate/5HWVMV39XAHM) <br><br> [Introduction to the Philosophy of Cognitive Sciences](https://www.coursera.org/account/accomplishments/certificate/JTC93HZVQRFD)
-
+Introduction to Religions & Ecology <br> 1.[Introduction to Religions & Ecology](https://www.coursera.org/learn/intro-religions-ecology) <br><br> 2.[Indigenous Religions & Ecology](https://www.coursera.org/learn/indigenous-religions-ecology) <br><br> 3.[South Asian Religions & Ecology](https://www.coursera.org/learn/south-asian-religions-ecology)<br><br> 4.[East Asian Religions & Ecology](https://www.coursera.org/learn/east-asian-religions-ecology)<br><br> 5.[Western Religions & Ecology](https://www.coursera.org/learn/western-religions-ecology)| 8 weeks | [Yale University](https://www.coursera.org/yale) | 1.[Introduction to Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/9MX75DJSTAFX)<br><br> 2.[Indigenous Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/6XBYQACVE82D) <br><br> 3.[South Asian Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/FCTCTQ5KJWC6)<br><br> 4.[East Asian Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/R84YQGY6TUE3)<br><br> 5.[Western Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/7BTH26XFA7AY)
+Journey of the Universe <br> 1.[Journey of the Universe: The Unfolding of Life](https://www.coursera.org/learn/journey-of-the-universe/)<br><br>  2.[Journey Conversations: Weaving Knowledge and Action](https://www.coursera.org/learn/journey-knowledge-action)| 6 weeks<br><br>7 weeks | [Yale University](https://www.coursera.org/yale) | 1.[Journey of the Universe: The Unfolding of Life](https://www.coursera.org/account/accomplishments/certificate/6Y8NRFDEFEB5)<br><br>2.[Journey Conversations: Weaving Knowledge and Action](https://www.coursera.org/account/accomplishments/certificate/36QN75FB32NU)
 
 ### Politics (Governance and Society)
 
@@ -103,16 +112,21 @@ include international relations, policy, criminology, and racial and ethnic rela
 **Topics covered**:
 `Politics`
 `International Relations`
+`Diplomacy`
 
-Courses | Duration | Offered by | Link to certificate
+Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 [Global Politics](https://www.coursera.org/learn/global-politics) | 4 Weeks | [Università di Napoli Federico II](https://www.coursera.org/unina) | [Global Politics](https://www.coursera.org/account/accomplishments/certificate/ZHAVPCDCP5ZW)
 [Understanding Political Concepts](https://www.coursera.org/learn/understanding-political-concepts) | 4 Weeks | [Università di Napoli Federico II](https://www.coursera.org/unina) | [Understanding Political Concepts](https://www.coursera.org/account/accomplishments/certificate/YP9LCAWVH7E4)
 [Comparative Political Systems](https://www.coursera.org/learn/comparative-political-systems) | 4 Weeks | [Università di Napoli Federico II](https://www.coursera.org/unina) | [Comparative Political Systems](https://www.coursera.org/account/accomplishments/certificate/W5PRN8RRCPZU)
-[Politics and Economics of International Energy](https://www.coursera.org/learn/global-energy) | 8 Weeks | [Sciences Po](https://www.coursera.org/partners/sciencespo) | [Politics and Economics of International Energy](https://www.coursera.org/account/accomplishments/certificate/EJ30WLGNCHC3)
+[Global Diplomacy – Diplomacy in the Modern World](https://www.coursera.org/learn/global-diplomacy) | 5 Weeks | [University of London](https://www.coursera.org/partners/london) | [Global Diplomacy – Diplomacy in the Modern World](https://www.coursera.org/account/accomplishments/certificate/ZVR96VSQ2URR)
+[Global Diplomacy: the United Nations in the World](https://www.coursera.org/learn/global-diplomacy-un) | 7 Weeks | [University of London](https://www.coursera.org/partners/london) | [Global Diplomacy – Diplomacy in the Modern World](https://www.coursera.org/account/accomplishments/certificate/2JOHASXIWX09)
 [Water Resources Management and Policy](https://www.coursera.org/learn/water-management) | 5 Weeks | [University of Geneva](https://www.coursera.org/partners/unige) | [Water Resources Management and Policy](https://www.coursera.org/account/accomplishments/certificate/O9Z2SEX3IGGD)
 [Water Cooperation and Diplomacy](https://www.coursera.org/learn/water-cooperation-and-diplomacy) | 5 Weeks | [University of Geneva](https://www.coursera.org/partners/unige) | [Water Cooperation and Diplomacy](https://www.coursera.org/account/accomplishments/certificate/VXFI5W92QW9P)
 [International Water Law](https://www.coursera.org/learn/international-water-law) | 5 Weeks | [University of Geneva](https://www.coursera.org/partners/unige) | [International Water Law](https://www.coursera.org/account/accomplishments/certificate/7T0W1YPKEVGT)
+[International Security Management](https://www.coursera.org/learn/international-security-management) | 7 Weeks | [Erasmus University Rotterdam](https://www.coursera.org/erasmus) | [International Security Management](https://www.coursera.org/account/accomplishments/certificate/OIOEFEBG07NS)
+[Moral Foundations of Politics](https://www.coursera.org/learn/moral-politics) | 8 weeks | [Yale University](https://www.coursera.org/yale) | [Moral Foundations of Politics](https://www.coursera.org/account/accomplishments/certificate/C8WPU34IQNIH)
+[Citizenship and the Rule of Law](https://www.coursera.org/learn/citizenship-rule-of-law) | 6 Weeks | [University of London](https://www.coursera.org/partners/london) | [Citizenship and the Rule of Law](https://www.coursera.org/account/accomplishments/certificate/NMPKN80I18M5)
 
 ### Economics
 
@@ -122,7 +136,7 @@ international economics, and economic development.
 **Topics covered**:
 `Economics`
 
-Courses | Duration | Offered by | Link to certificate
+Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 [Introduction to Economic Theories](https://www.coursera.org/learn/intro-economic-theories) | 8 Weeks | [Erasmus University Rotterdam](https://www.coursera.org/erasmus) | [Introduction to Economic Theories](https://www.coursera.org/account/accomplishments/certificate/NGRR5R6JXTMV)
 Microeconomics <br> 1.[The Power of Markets](https://www.coursera.org/learn/microeconomics-part1) <br><br>2.[When Markets Fail](https://www.coursera.org/learn/microeconomics-part2) | 5 weeks<br><br> 5 weeks |  [University of Pennsylvania](https://www.coursera.org/penn) |  [Microeconomics: The Power of Markets](https://www.coursera.org/account/accomplishments/certificate/K4WTVQP8XFZ8) <br><br> [When Markets Fail](https://www.coursera.org/account/accomplishments/certificate/XQTZE9TE7FSB)
@@ -131,6 +145,9 @@ Country Level Economics <br> 1.[Macroeconomic Variables and Markets](https://www
 [Economics of Money and Banking](https://www.coursera.org/learn/money-banking) | 13 weeks | [Columbia University](https://www.coursera.org/columbia) | [Economics of Money and Banking](https://www.coursera.org/account/accomplishments/certificate/JSWHB8BYZTD9)
 [The Global Financial Crisis](https://www.coursera.org/learn/global-financial-crisis) | 13 weeks | [Yale University](https://www.coursera.org/yale) | [The Global Financial Crisis](https://www.coursera.org/account/accomplishments/certificate/LLAWLUM3DMKL)
 [Politics and Economics of International Energy](https://www.coursera.org/learn/global-energy) | 8 Weeks | [Sciences Po](https://www.coursera.org/partners/sciencespo) | [Politics and Economics of International Energy](https://www.coursera.org/account/accomplishments/certificate/EJ30WLGNCHC3)
+[Internet Giants: The Law and Economics of Media Platforms](https://www.coursera.org/learn/internetgiants) | 11 Weeks | [University of Chicago](https://www.coursera.org/partners/chicago) | [Internet Giants: The Law and Economics of Media Platforms](https://www.coursera.org/account/accomplishments/certificate/ER4AIDRH9UZY)
+[Principles of Sustainable Finance](https://www.coursera.org/learn/sustainable-finance) | 9 Weeks | [Erasmus University Rotterdam](https://www.coursera.org/erasmus) | [Principles of Sustainable Finance](https://www.coursera.org/account/accomplishments/certificate/NLTNESNP22MA)
+[Narrative Economics](https://www.coursera.org/learn/narrative-economics) | 4 weeks | [Yale University](https://www.coursera.org/yale) | [Narrative Economics](https://www.coursera.org/account/accomplishments/certificate/JOMMGE94TDV9)
 
 ### History
 
@@ -139,10 +156,13 @@ history of specific groups or time periods.
 
 **Topics covered**:
 `History`
+`Archaeology`
 
 Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 The Modern World <br> 1.[Part One: Global History from 1760 to 1910](https://www.coursera.org/learn/modern-world) <br><br>2.[Part Two: Global History since 1910](https://www.coursera.org/learn/modern-world-2) | 7 weeks<br><br> 7 weeks | [University of Virginia](https://www.coursera.org/uva) | [Part One: Global History from 1760 to 1910](https://www.coursera.org/account/accomplishments/certificate/XNKR9TF42U89) <br><br> [Part Two: Global History since 1910](https://www.coursera.org/account/accomplishments/certificate/VMJG9H6YEQQ)
+[Recovering the Humankind's Past and Saving the Universal Heritage](https://www.coursera.org/learn/classical-sociological-theory) | 8 Weeks | [Sapienza University of Rome](https://www.coursera.org/partners/sapienza) | [Recovering the Humankind's Past and Saving the Universal Heritage](https://www.coursera.org/account/accomplishments/certificate/UHZBU5UA4S1A)
+[Internet History, Technology, and Security](https://www.coursera.org/learn/internet-history) | 11 Weeks | [University of Michigan](https://www.coursera.org/partners/umich) | [Internet History, Technology, and Security](https://www.coursera.org/account/accomplishments/certificate/GBG9GDACODC4)
 
 ### Other Humanities
 
@@ -150,13 +170,13 @@ This section will contain courses that do not fall into the other humanities cat
 
 **Topics covered**:
 `Psychology`
-`Theology`
 `Sociology`
+`Sustainablility`
 
 Courses | Duration | Offered by | Link to certificate 
 :-- | :--: | :--: | :--: |
 [Introduction to Psychology](https://www.coursera.org/learn/introduction-psychology) | 6 weeks | [Yale University](https://www.coursera.org/yale) | [Introduction to Psychology](https://www.coursera.org/account/accomplishments/certificate/Y2SEVBZYGNBV)
-Introduction to Religions & Ecology <br> 1.[Introduction to Religions & Ecology](https://www.coursera.org/learn/intro-religions-ecology) <br><br> 2.[Indigenous Religions & Ecology](https://www.coursera.org/learn/indigenous-religions-ecology) <br><br> 3.[South Asian Religions & Ecology](https://www.coursera.org/learn/south-asian-religions-ecology)<br><br> 4.[East Asian Religions & Ecology](https://www.coursera.org/learn/east-asian-religions-ecology)<br><br> 5.[Western Religions & Ecology](https://www.coursera.org/learn/western-religions-ecology)| 8 weeks | [Yale University](https://www.coursera.org/yale) | 1.[Introduction to Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/9MX75DJSTAFX)<br><br> 2.[Indigenous Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/6XBYQACVE82D) <br><br> 3.[South Asian Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/FCTCTQ5KJWC6)<br><br> 4.[East Asian Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/R84YQGY6TUE3)<br><br> 5.[Western Religions & Ecology](https://www.coursera.org/account/accomplishments/certificate/7BTH26XFA7AY)
-Journey of the Universe <br> 1.[Journey of the Universe: The Unfolding of Life](https://www.coursera.org/learn/journey-of-the-universe/)<br><br>  2.[Journey Conversations: Weaving Knowledge and Action](https://www.coursera.org/learn/journey-knowledge-action)| 6 weeks<br><br>7 weeks | [Yale University](https://www.coursera.org/yale) | 1.[Journey of the Universe: The Unfolding of Life](https://www.coursera.org/account/accomplishments/certificate/6Y8NRFDEFEB5)<br><br>2.[Journey Conversations: Weaving Knowledge and Action](https://www.coursera.org/account/accomplishments/certificate/36QN75FB32NU)
 [Classical Sociological Theory](https://www.coursera.org/learn/classical-sociological-theory) | 9 Weeks | [University of Amsterdam](https://www.coursera.org/partners/amsterdam) | [Classical Sociological Theory](https://www.coursera.org/account/accomplishments/certificate/37W7AXYCY03N)
-
+[Sustainable Development - Ideas and Imaginaries](https://www.coursera.org/learn/sustainable-development-ideas-and-imaginaries) | 4 Weeks | [University of Copenhagen](https://www.coursera.org/partners/ucph) | [Sustainable Development - Ideas and Imaginaries](https://www.coursera.org/account/accomplishments/certificate/ISSB4C0O74U6)
+[The Sustainable Development Goals – A global, transdisciplinary vision for the future](https://www.coursera.org/learn/global-sustainable-development) | 3 Weeks | [University of Copenhagen](https://www.coursera.org/partners/ucph) | [The Sustainable Development Goals – A global, transdisciplinary vision for the future](https://www.coursera.org/account/accomplishments/certificate/KOO4F1QT1IT6)
+[Working for a sustainable future: concepts and approaches](https://www.coursera.org/learn/working-for-a-sustainable-future) | 5 Weeks | [Lund University](https://www.coursera.org/partners/lunduniversity) | [Working for a sustainable future: concepts and approaches](https://www.coursera.org/account/accomplishments/certificate/1R66UVV6FOUK)
