@@ -12,6 +12,7 @@ documentation for details.
 
 
 .. toctree::
+   posts/smt-off-numa-binding-occdrivaer
    :maxdepth: 2
    :caption: Contents:
 
