@@ -10,9 +10,10 @@ Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
 
-
 .. toctree::
-   posts/smt-off-numa-binding-occdrivaer
    :maxdepth: 2
    :caption: Contents:
 
+   posts/smt-off-numa-binding-occdrivaer
+   posts/occDrivAer-ohc1-optimization-notes
+   posts/vanda-decomposition-binding-study
