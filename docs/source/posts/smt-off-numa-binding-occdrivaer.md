@@ -4,6 +4,11 @@ date: 2026-08-18
 tags: [openfoam, hpc, cfd, slurm, decomposition, mpi]
 ---
 
+# Disabling SMT cut our OpenFOAM HPC Challenge runtime by 17%, on half the cores
+
+*Published: 2026-08-18*
+
+
 **TL;DR:** While benchmarking the [Open-closed cooling DrivAer variant with Static Mesh](https://develop.openfoam.com/committees/hpc/-/tree/develop/incompressible/simpleFoam/occDrivAerStaticMesh) using OpenFOAM v2512 on a Zen3 EPYC node, switching from 128 MPI ranks (one per hardware thread, SMT enabled) to 64 ranks (one per physical core, SMT disabled, explicit NUMA-aware binding) cut wall-clock time from **~43h12min to 36h04min**  **A ~17% reduction using half the rank count**, chaning only scheduling and memory placement did.
 
 ```{note}

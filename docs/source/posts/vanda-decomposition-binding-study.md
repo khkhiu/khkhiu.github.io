@@ -6,6 +6,9 @@ tags: [openfoam, hpc, vanda, pbs, decomposition, mpi]
 
 # occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study
 
+*Published: 2026-09-25*
+
+
 **Case:** occDrivAerStaticMesh (OpenFOAM HPC Challenge, OHC-1), 65M-cell coarse mesh
 **Cluster:** NUS Vanda (PBS Pro), Intel Xeon Platinum 8452Y (Sapphire Rapids), 72 physical cores / 512 GB per node
 **Build:** OpenFOAM v2512 (openfoam.com), Intel compilers 2024.2.0, Intel MPI 2021.13.0

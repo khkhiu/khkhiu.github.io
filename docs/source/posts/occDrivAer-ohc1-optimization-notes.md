@@ -7,6 +7,9 @@ tags: [hpc, openfoam, cfd, decomposition, mpi]
 
 # Optimizing OpenFOAM's occDrivAer Case for the APAC HPC-AI Competition
 
+*Published: 2026-09-25*
+
+
 *Working notes from preparing the OpenFOAM HPC task for the APAC HPC-AI 2026 Competition. This post covers the competition itself, the OHC-1 benchmark the task is derived from, the physical structure of the occDrivAer case, and the decomposition / renumbering / compiler / MPI settings we identified as worth testing.*
 
 ---
