@@ -17,3 +17,4 @@ documentation for details.
    posts/smt-off-numa-binding-occdrivaer
    posts/occDrivAer-ohc1-optimization-notes
    posts/vanda-decomposition-binding-study
+   posts/mpi-collective-tuning-numa-occdrivaer-vanda
