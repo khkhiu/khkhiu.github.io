@@ -1,0 +1,809 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes" href="mpi-collective-tuning-numa-occdrivaer-vanda.html"><link rel="prev" title="Optimizing OpenFOAM’s occDrivAer Case for the APAC HPC-AI Competition" href="occDrivAer-ohc1-optimization-notes.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study - khkhiu.github.io documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">khkhiu.github.io  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">khkhiu.github.io  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="smt-off-numa-binding-occdrivaer.html">Disabling SMT cut our OpenFOAM HPC Challenge runtime by 17%, on half the cores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occDrivAer-ohc1-optimization-notes.html">Optimizing OpenFOAM’s occDrivAer Case for the APAC HPC-AI Competition</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mpi-collective-tuning-numa-occdrivaer-vanda.html">Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occDrivAer-4node-scaling-notes.html">OpenFOAM HPC Challenge (OHC-1): Diagnosing a Silent 16% Performance Regression from Scheduler Node Placement</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/posts/vanda-decomposition-binding-study.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="occdrivaerstaticmesh-on-vanda-a-1-node-decomposition-and-mpi-binding-study">
+<h1>occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study<a class="headerlink" href="#occdrivaerstaticmesh-on-vanda-a-1-node-decomposition-and-mpi-binding-study" title="Link to this heading">¶</a></h1>
+<p><em>Published: 2026-09-25</em></p>
+<p><strong>Case:</strong> occDrivAerStaticMesh (OpenFOAM HPC Challenge, OHC-1), 65M-cell coarse mesh
+<strong>Cluster:</strong> NUS Vanda (PBS Pro), Intel Xeon Platinum 8452Y (Sapphire Rapids), 72 physical cores / 512 GB per node
+<strong>Build:</strong> OpenFOAM v2512 (openfoam.com), Intel compilers 2024.2.0, Intel MPI 2021.13.0
+<strong>Goal:</strong> identify the best single-node mesh-decomposition shape and MPI rank-binding setting before committing walltime to the scored 2- and 4-node runs on Vanda / Gadi / ASPIRE-2A.</p>
+<p>This write-up documents the full investigation, including the dead ends and a shared-cluster contention artifact that turned out to be a bigger factor than anything we deliberately tuned. It is written to be self-contained: every technical term is defined the first time it is used, so no prior HPC or OpenFOAM background is assumed.</p>
+<hr class="docutils" />
+<section id="background-what-problem-is-being-solved-and-what-the-vocabulary-means">
+<h2>0. Background: what problem is being solved, and what the vocabulary means<a class="headerlink" href="#background-what-problem-is-being-solved-and-what-the-vocabulary-means" title="Link to this heading">¶</a></h2>
+<section id="what-openfoam-and-this-case-are">
+<h3>0.1 What OpenFOAM and this case are<a class="headerlink" href="#what-openfoam-and-this-case-are" title="Link to this heading">¶</a></h3>
+<p><strong>OpenFOAM</strong> is an open-source software package for Computational Fluid Dynamics (CFD), simulating how fluids (air, water, etc.) move, using the Navier–Stokes equations solved numerically on a computer. A simulation is called a <strong>case</strong>, defined by a 3D geometry, a mesh (see below), physical parameters, and solver settings.</p>
+<p><strong>occDrivAerStaticMesh</strong> is a specific, standardized case: airflow around a realistic car body (the “DrivAer” generic vehicle shape used across the automotive-CFD research community) at highway speed (140 km/h), with the wheels held static (not rotating) and the mesh fixed (not adapting during the run). It is the reference workload for the <strong>OpenFOAM HPC Challenge (OHC-1)</strong>, a competition benchmark used to compare how efficiently different teams/clusters can run the same simulation.</p>
+<p><strong>simpleFoam</strong> is the specific OpenFOAM <em>solver</em> (the program that actually performs the iterative numerical calculation) used for this case. It solves the steady-state, incompressible form of the flow equations using an algorithm called SIMPLE (Semi-Implicit Method for Pressure-Linked Equations). “Steady-state” means the solver is not simulating time evolving forward in real seconds; instead it performs a sequence of numerical <strong>iterations</strong> (sometimes loosely called “steps” in the logs) that converge toward a final, unchanging flow solution. When this document refers to “iterations” or “time steps,” it means these solver iterations, not physical simulation time.</p>
+<p><strong>Mesh / cells:</strong> the 3D volume around the car is broken into millions of small volume elements called <strong>cells</strong>, this case uses a 65-million-cell mesh (the “coarse” resolution option; finer meshes with more cells also exist for this case but are not used here). Each cell holds numerical values (velocity, pressure, etc.) that get updated every iteration based on its neighboring cells.</p>
+</section>
+<section id="why-the-mesh-needs-to-be-split-up-parallel-computing-basics">
+<h3>0.2 Why the mesh needs to be split up: parallel computing basics<a class="headerlink" href="#why-the-mesh-needs-to-be-split-up-parallel-computing-basics" title="Link to this heading">¶</a></h3>
+<p>Running 65 million cells’ worth of calculation on a single CPU core would take an impractically long time. <strong>HPC (High-Performance Computing)</strong> clusters solve this by splitting the work across many <strong>CPU cores</strong> running simultaneously, this is called <strong>parallel computing</strong>.</p>
+<ul class="simple">
+<li><p>A <strong>CPU core</strong> is one independent processing unit capable of running one stream of instructions at a time. A modern server typically has many cores on a single physical chip; the machines in this study have 72 cores per node (see §0.4).</p></li>
+<li><p><strong>MPI (Message Passing Interface)</strong> is the standard software protocol used to run a program across many cores (and potentially many separate physical machines) at once, where each copy of the program, called a <strong>rank</strong>, works on its own portion of the problem and periodically sends data to other ranks over the network or shared memory. In this case, MPI is used to split the 65M-cell mesh into 72 pieces, one per CPU core, all running simpleFoam simultaneously and exchanging data at cell boundaries every iteration.</p></li>
+<li><p><strong>decomposePar</strong> is the OpenFOAM utility that performs this split, it partitions the full mesh into a number of smaller sub-meshes (one per intended MPI rank), each written to its own <code class="docutils literal notranslate"><span class="pre">processorN</span></code> directory (<code class="docutils literal notranslate"><span class="pre">processor0</span></code>, <code class="docutils literal notranslate"><span class="pre">processor1</span></code>, … <code class="docutils literal notranslate"><span class="pre">processor71</span></code> for a 72-way split). This process is called <strong>domain decomposition</strong>.</p></li>
+<li><p>Cells that sit at the boundary between two sub-meshes require the two ranks that own them to exchange information every iteration, these boundary connections are called <strong>processor faces</strong>, and their count is a rough proxy for how much communication overhead a given decomposition will incur (more processor faces generally means more data has to be exchanged per iteration, which costs time).</p></li>
+</ul>
+</section>
+<section id="how-the-mesh-gets-split-decomposition-methods-and-shapes">
+<h3>0.3 How the mesh gets split: decomposition methods and shapes<a class="headerlink" href="#how-the-mesh-gets-split-decomposition-methods-and-shapes" title="Link to this heading">¶</a></h3>
+<p>OpenFOAM offers several <strong>decomposition methods</strong> (algorithms for deciding which cells go to which rank):</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">hierarchical</span></code></strong>: splits the mesh along the x, y, and z spatial axes in a fixed number of cuts per axis, specified as a triplet <code class="docutils literal notranslate"><span class="pre">(Nx</span> <span class="pre">Ny</span> <span class="pre">Nz)</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code> means 18 cuts along x, 4 along y, and 1 (no cut) along z, giving 18 × 4 × 1 = 72 total sub-domains. This method is fully deterministic: the same triplet on the same mesh always produces exactly the same split, every time. In this document, “decomposition shape” always refers to this <code class="docutils literal notranslate"><span class="pre">(Nx</span> <span class="pre">Ny</span> <span class="pre">Nz)</span></code> triplet.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">scotch</span></code></strong>: a graph-based partitioning algorithm that analyzes the mesh’s connectivity and tries to produce a more communication-efficient split than a simple geometric cut, at the cost of being non-deterministic (small run-to-run randomness in the partitioning) unless a fixed random seed is explicitly set.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">multiLevel</span></code></strong>: a hybrid method used elsewhere in this project’s 4-node configuration, combining a <code class="docutils literal notranslate"><span class="pre">hierarchical</span></code> split across physical nodes with a <code class="docutils literal notranslate"><span class="pre">scotch</span></code> split within each node.</p></li>
+</ul>
+<p>This study uses <code class="docutils literal notranslate"><span class="pre">hierarchical</span></code> exclusively for its timing comparisons, specifically because its determinism means a competition judge can rerun the exact same job and get an identical mesh split, a reproducibility property <code class="docutils literal notranslate"><span class="pre">scotch</span></code> cannot guarantee without extra seeding.</p>
+<p><strong>Total rank count</strong> must always equal the total core count being used in a given run, e.g. an <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code> shape multiplies to 72, matching this study’s 72-core single-node runs.</p>
+</section>
+<section id="the-hardware-cores-sockets-and-numa">
+<h3>0.4 The hardware: cores, sockets, and NUMA<a class="headerlink" href="#the-hardware-cores-sockets-and-numa" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Each compute node used in this study has <strong>72 physical CPU cores</strong>, arranged as <strong>two CPU chips (“sockets”)</strong> on the motherboard, each socket containing 36 cores.</p></li>
+<li><p><strong>NUMA (Non-Uniform Memory Access)</strong> describes a hardware property of multi-socket servers: each socket has its own bank of directly-attached memory (RAM), and while any core can access any memory location, accessing memory attached to the <em>other</em> socket (“cross-socket” or “cross-NUMA” access) is slower than accessing memory on its own socket. This matters for MPI placement (§0.5): if two ranks that talk to each other constantly end up on different sockets, every exchange between them pays this cross-socket latency penalty.</p></li>
+<li><p>The Xeon Platinum 8452Y (the specific CPU model in these nodes, from Intel’s “Sapphire Rapids” generation) does not use simultaneous multithreading in this configuration, each of the 72 cores runs exactly one MPI rank in every experiment in this study (i.e., 72 ranks on 72 cores, no oversubscription).</p></li>
+</ul>
+</section>
+<section id="mpi-rank-placement-pinning">
+<h3>0.5 MPI rank placement / “pinning”<a class="headerlink" href="#mpi-rank-placement-pinning" title="Link to this heading">¶</a></h3>
+<p><strong>CPU pinning (or “binding”)</strong> is the practice of explicitly telling the operating system which physical core each MPI rank must run on for the duration of the program, rather than letting the OS scheduler decide freely. Pinning matters because:</p>
+<ol class="arabic simple">
+<li><p>It prevents the OS from migrating a rank to a different core mid-run, which can hurt CPU cache performance (a rank that stays on one core keeps reusing data already loaded into that core’s fast local cache memory).</p></li>
+<li><p>It lets you deliberately control which ranks end up sharing a socket (and therefore have fast, low-latency communication with each other) versus which ranks are split across sockets (slower, cross-NUMA communication).</p></li>
+</ol>
+<p>This study uses <strong>Intel MPI</strong> (the specific MPI software implementation installed on Vanda), whose pinning behavior is controlled by two environment variables:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_DOMAIN</span></code></strong>: sets the <em>unit</em> of pinning. <code class="docutils literal notranslate"><span class="pre">core</span></code> means “one MPI rank per physical core” (as opposed to, e.g., letting a rank roam across multiple cores).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_ORDER</span></code></strong>: sets the <em>order</em> in which rank numbers (rank 0, rank 1, rank 2, …) get assigned to core numbers. This is the specific setting swept in §4 below, with options including <code class="docutils literal notranslate"><span class="pre">compact</span></code>, <code class="docutils literal notranslate"><span class="pre">scatter</span></code>, <code class="docutils literal notranslate"><span class="pre">bunch</span></code>, <code class="docutils literal notranslate"><span class="pre">spread</span></code>, and disabling pinning entirely.</p></li>
+</ul>
+<p>Important distinction for anyone cross-referencing other HPC documentation: <strong>OpenMPI</strong> (a different, commonly-used MPI implementation) uses entirely different flags for the same concept (<code class="docutils literal notranslate"><span class="pre">--bind-to</span></code>, <code class="docutils literal notranslate"><span class="pre">--map-by</span></code>). Vanda’s PBS job template for this case uses Intel MPI, so <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_*</span></code> variables are the correct and only relevant controls here, OpenMPI’s flags would not work.</p>
+</section>
+<section id="the-measurement-what-s-step-means-and-how-it-s-obtained">
+<h3>0.6 The measurement: what “s/step” means and how it’s obtained<a class="headerlink" href="#the-measurement-what-s-step-means-and-how-it-s-obtained" title="Link to this heading">¶</a></h3>
+<p>simpleFoam’s log output prints, after each solver run completes, a line reading <code class="docutils literal notranslate"><span class="pre">Average</span> <span class="pre">wall-clock</span> <span class="pre">time</span> <span class="pre">per</span> <span class="pre">time</span> <span class="pre">step</span> <span class="pre">=</span> <span class="pre">X</span></code>, where X is in seconds. This is computed by the solver itself, averaging the real (wall-clock, i.e. actual elapsed) time taken per iteration across the run (excluding the very first iteration, which includes one-time setup overhead). This is the <strong>primary performance metric</strong> used throughout this study and in the underlying competition, lower is better, and it is what “s/step” refers to in every table below.</p>
+</section>
+<section id="the-scheduler-pbs-pro-jobs-and-nodes">
+<h3>0.7 The scheduler: PBS Pro, jobs, and nodes<a class="headerlink" href="#the-scheduler-pbs-pro-jobs-and-nodes" title="Link to this heading">¶</a></h3>
+<p>Vanda is a shared, multi-user cluster. Users do not run programs directly on the machines; instead they submit <strong>jobs</strong>, a script describing what to run and what resources (CPU cores, memory, time limit) it needs, to a <strong>scheduler</strong>, which queues jobs and assigns them to available physical machines (<strong>nodes</strong>) when resources free up. Vanda’s scheduler is <strong>PBS Pro</strong>, controlled via the <code class="docutils literal notranslate"><span class="pre">qsub</span></code> (submit a job), <code class="docutils literal notranslate"><span class="pre">qstat</span></code> (check job status), and <code class="docutils literal notranslate"><span class="pre">pbsnodes</span></code> (inspect a node’s hardware/occupancy) commands. Each node has a hostname such as <code class="docutils literal notranslate"><span class="pre">CN-099</span></code> or <code class="docutils literal notranslate"><span class="pre">GN-A40-078</span></code> (the latter being a node that also has a GPU installed, though this study used only its CPUs).</p>
+<p>A PBS request such as <code class="docutils literal notranslate"><span class="pre">select=1:ncpus=72:mpiprocs=72:mem=500gb</span></code> asks for 1 node, 72 CPU cores, 72 MPI processes, and 500 GB of memory. Critically for §3 below: by default (<code class="docutils literal notranslate"><span class="pre">place=free</span></code>), PBS does <strong>not</strong> guarantee that a job gets a node entirely to itself, other users’ jobs can be scheduled onto the same physical node simultaneously, sharing its remaining resources, unless exclusive access is explicitly requested and granted.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="setup">
+<h2>1. Setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Working directory: <code class="docutils literal notranslate"><span class="pre">/scratch/$USER/hpc-committee-test/incompressible/simpleFoam/occDrivAerStaticMesh_vanda_decomptest</span></code></p></li>
+<li><p>Pipeline followed the competition’s mandated Allrun sequence exactly: <code class="docutils literal notranslate"><span class="pre">decomposePar</span> <span class="pre">-constant</span></code> → <code class="docutils literal notranslate"><span class="pre">restore0Dir</span> <span class="pre">-processor</span></code> → <code class="docutils literal notranslate"><span class="pre">renumberMesh</span> <span class="pre">-constant</span> <span class="pre">-overwrite</span> <span class="pre">-parallel</span></code> → <code class="docutils literal notranslate"><span class="pre">potentialFoam</span> <span class="pre">-initialiseUBCs</span> <span class="pre">-parallel</span></code> → <code class="docutils literal notranslate"><span class="pre">applyBoundaryLayer</span> <span class="pre">-ybl</span> <span class="pre">0.0450244</span> <span class="pre">-parallel</span></code> → <code class="docutils literal notranslate"><span class="pre">simpleFoam</span> <span class="pre">-parallel</span></code>. (<code class="docutils literal notranslate"><span class="pre">renumberMesh</span></code> reorders cell numbering for better memory-access locality; <code class="docutils literal notranslate"><span class="pre">potentialFoam</span></code> and <code class="docutils literal notranslate"><span class="pre">applyBoundaryLayer</span></code> compute a fast approximate starting flow field so the main solver converges faster than starting from a blank/zero field; none of these steps may be skipped or altered under the competition rules.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fvSolution.fixedIter</span></code> (the “hardware track” solver-tolerance settings, fixed number of inner iterations per outer step, for consistent per-step timing) and <code class="docutils literal notranslate"><span class="pre">controlDict.noWrite</span></code> (a settings file that disables writing output data to disk during the run, so the measured time reflects solver computation only, not file I/O) were used for every timing run in this study.</p></li>
+<li><p>All single-node experiments ran at 72 ranks (<code class="docutils literal notranslate"><span class="pre">nCores</span> <span class="pre">72</span></code>), 40 iterations (<code class="docutils literal notranslate"><span class="pre">endTime</span> <span class="pre">40</span></code>), matching the competition’s official 1-node scaling rule (the competition specifies 40 iterations at 1 node, 80 at 2 nodes, 150 at 4 nodes, so that later-stage results are comparable across node counts).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">decompositionMethod</span> <span class="pre">hierarchical</span></code> was used throughout instead of <code class="docutils literal notranslate"><span class="pre">scotch</span></code>, see §0.3 for the reproducibility reasoning.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="decomposition-shape-sweep">
+<h2>2. Decomposition shape sweep<a class="headerlink" href="#decomposition-shape-sweep" title="Link to this heading">¶</a></h2>
+<section id="initial-sweep-later-found-to-be-on-a-contended-node">
+<h3>2.1 Initial sweep (later found to be on a contended node)<a class="headerlink" href="#initial-sweep-later-found-to-be-on-a-contended-node" title="Link to this heading">¶</a></h3>
+<p>The first sweep tested 8 decomposition shapes, all at <code class="docutils literal notranslate"><span class="pre">nCores</span> <span class="pre">72</span></code>, submitted as a single PBS job so all 8 ran back-to-back on the same physical node (later identified as <strong>CN-099</strong>):</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Shape <code class="docutils literal notranslate"><span class="pre">(Nx</span> <span class="pre">Ny</span> <span class="pre">Nz)</span></code></p></th>
+<th class="head"><p>Pin order</p></th>
+<th class="head text-right"><p>s / step</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">6</span> <span class="pre">1)</span></code></p></td>
+<td><p>default (no explicit pin)</p></td>
+<td class="text-right"><p>17.874</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">6</span> <span class="pre">1)</span></code></p></td>
+<td><p>compact</p></td>
+<td class="text-right"><p>17.678</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">6</span> <span class="pre">1)</span></code></p></td>
+<td><p>scatter</p></td>
+<td class="text-right"><p>17.679</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(24</span> <span class="pre">3</span> <span class="pre">1)</span></code></p></td>
+<td><p>compact</p></td>
+<td class="text-right"><p>17.765</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(36</span> <span class="pre">2</span> <span class="pre">1)</span></code></p></td>
+<td><p>compact</p></td>
+<td class="text-right"><p>17.788</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code></p></td>
+<td><p>compact</p></td>
+<td class="text-right"><p>17.411</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">3</span> <span class="pre">2)</span></code></p></td>
+<td><p>compact</p></td>
+<td class="text-right"><p><strong>17.272</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(6</span> <span class="pre">6</span> <span class="pre">2)</span></code></p></td>
+<td><p>compact</p></td>
+<td class="text-right"><p>17.507</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>At face value, <code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">3</span> <span class="pre">2)</span></code>, splitting into 12 pieces along x, 3 along y, and additionally 2 along z (the only shape in this batch to cut the vertical axis at all), looked like the fastest. This result did <strong>not</strong> survive re-testing on clean (uncontended) nodes, as shown next.</p>
+</section>
+<section id="re-verification-on-clean-nodes">
+<h3>2.2 Re-verification on clean nodes<a class="headerlink" href="#re-verification-on-clean-nodes" title="Link to this heading">¶</a></h3>
+<p>Once node-to-node contention was identified as a confound (full explanation in §3), the leading shapes were re-run on nodes subsequently confirmed to be free of interference from other users’ jobs.</p>
+<p>Two independent runs of <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code>, on two different physical nodes:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Shape</p></th>
+<th class="head"><p>Node</p></th>
+<th class="head text-right"><p>s / step</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code></p></td>
+<td><p>CN-090</p></td>
+<td class="text-right"><p>9.176</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code></p></td>
+<td><p>CN-108</p></td>
+<td class="text-right"><p>9.095</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Three other shapes, all run back-to-back within a single PBS job on one node (<code class="docutils literal notranslate"><span class="pre">GN-A40-078</span></code>, a GPU-equipped node used here purely for its CPUs, PBS scheduled a CPU-only request onto it):</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Shape</p></th>
+<th class="head"><p>Node</p></th>
+<th class="head text-right"><p>s / step</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">6</span> <span class="pre">1)</span></code></p></td>
+<td><p>GN-A40-078</p></td>
+<td class="text-right"><p>9.599</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">3</span> <span class="pre">2)</span></code></p></td>
+<td><p>GN-A40-078</p></td>
+<td class="text-right"><p>9.602</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(6</span> <span class="pre">6</span> <span class="pre">2)</span></code></p></td>
+<td><p>GN-A40-078</p></td>
+<td class="text-right"><p>9.735</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Finding:</strong> on clean nodes, <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code> is consistently fastest, confirmed independently on two separate nodes at roughly 9.1–9.2 s/step, about 4.5–6.5% faster than the other three shapes tested. <code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">3</span> <span class="pre">2)</span></code>’s apparent lead in the original CN-099 sweep is attributed to the contention artifact described in §3, which inflated all eight of that sweep’s timings by a similar factor, preserving <em>some</em> relative ordering by chance, but not reliably, since the true ranking flipped once contention was removed.</p>
+<p><strong>Honest caveat:</strong> <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code> has two independent clean-node confirmations that agree closely (9.176 and 9.095, within about 0.9% of each other). <code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">6</span> <span class="pre">1)</span></code>, <code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">3</span> <span class="pre">2)</span></code>, and <code class="docutils literal notranslate"><span class="pre">(6</span> <span class="pre">6</span> <span class="pre">2)</span></code> each have only a single clean-node data point, and all three came from the same job on the same node, so they have not been cross-checked against a second, independent node the way <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code> has. Given the walltime budget available for this exploratory phase, this level of confidence was judged acceptable to proceed on, but it is not exhaustive.</p>
+</section>
+<section id="selected-configuration">
+<h3>2.3 Selected configuration<a class="headerlink" href="#selected-configuration" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nCores</span>              <span class="mi">72</span><span class="p">;</span>
+<span class="n">decompositionMethod</span> <span class="n">hierarchical</span><span class="p">;</span>
+<span class="n">nHierarchical</span>       <span class="p">(</span><span class="mi">18</span> <span class="mi">4</span> <span class="mi">1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>No mechanistic explanation for <em>why</em> <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code> performs best was established during this study, the processor-face-count balance reported by <code class="docutils literal notranslate"><span class="pre">decomposePar</span></code> (see §0.2) did not cleanly predict the ranking across the shapes tested; shapes with objectively worse face-balance sometimes ran faster than shapes with better balance. This is reported here as an empirical finding, not a theoretically derived one, and is flagged as an open question for anyone extending this work.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="discovery-node-to-node-contention-on-a-shared-cluster">
+<h2>3. Discovery: node-to-node contention on a shared cluster<a class="headerlink" href="#discovery-node-to-node-contention-on-a-shared-cluster" title="Link to this heading">¶</a></h2>
+<section id="the-anomaly">
+<h3>3.1 The anomaly<a class="headerlink" href="#the-anomaly" title="Link to this heading">¶</a></h3>
+<p>To check how much a single configuration’s timing varies from run to run purely due to system noise (a “<strong>noise floor</strong>”, see the plain-language explanation below), the <code class="docutils literal notranslate"><span class="pre">(12</span> <span class="pre">3</span> <span class="pre">2)</span></code> configuration (72 ranks, <code class="docutils literal notranslate"><span class="pre">compact</span></code> pinning) was resubmitted as an identical repeat. It happened to land on a different physical node than the original sweep, and came back <strong>47% faster</strong>:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Run</p></th>
+<th class="head"><p>Node</p></th>
+<th class="head text-right"><p>s / step</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Original sweep</p></td>
+<td><p>CN-099</p></td>
+<td class="text-right"><p>17.272</p></td>
+</tr>
+<tr class="row-odd"><td><p>Repeat 1</p></td>
+<td><p>CN-142</p></td>
+<td class="text-right"><p>9.188</p></td>
+</tr>
+<tr class="row-even"><td><p>Repeat 2</p></td>
+<td><p>CN-142</p></td>
+<td class="text-right"><p>9.241</p></td>
+</tr>
+<tr class="row-odd"><td><p>Repeat 3</p></td>
+<td><p>CN-051</p></td>
+<td class="text-right"><p>9.256</p></td>
+</tr>
+<tr class="row-even"><td><p>Repeat 4</p></td>
+<td><p>CN-051</p></td>
+<td class="text-right"><p>9.167</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>(Plain-language aside on “noise floor”: if you weigh yourself twice in a row on the same scale without doing anything different in between, you might get two slightly different numbers just from measurement noise, not because your weight actually changed. The “noise floor” here is the equivalent idea: how much does the exact same OpenFOAM configuration vary in timing, run to run, with nothing intentionally changed? If a difference you’re investigating, like which decomposition shape is faster, is smaller than this noise floor, you can’t trust it as a real effect.)</em></p>
+<p>Four repeat runs across two different, independently-selected nodes clustered tightly together, 9.167 to 9.256 s/step, under a 1% spread. This is a normal, healthy noise floor. The original CN-099 result sat entirely outside that band, at roughly <strong>1.9× slower</strong> than the cluster of four clean repeats.</p>
+</section>
+<section id="diagnosis">
+<h3>3.2 Diagnosis<a class="headerlink" href="#diagnosis" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pbsnodes</span></code> (the PBS command that reports a node’s hardware specs and current job occupancy) reported <strong>identical</strong> resource specifications for CN-099 and the clean nodes, same 72 <code class="docutils literal notranslate"><span class="pre">ncpus</span></code>, same memory, same CPU architecture string. Nothing distinguished them as different hardware tiers.</p></li>
+<li><p>A stage-by-stage timing comparison isolated the slowdown specifically to the main <code class="docutils literal notranslate"><span class="pre">simpleFoam</span></code> solve, not the pipeline’s shorter preparation steps:</p></li>
+</ul>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Stage</p></th>
+<th class="head text-right"><p>CN-099</p></th>
+<th class="head text-right"><p>CN-142</p></th>
+<th class="head text-right"><p>Ratio</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>renumberMesh</p></td>
+<td class="text-right"><p>3.72 s</p></td>
+<td class="text-right"><p>4.20 s</p></td>
+<td class="text-right"><p>~1.1×</p></td>
+</tr>
+<tr class="row-odd"><td><p>potentialFoam</p></td>
+<td class="text-right"><p>31.59 s</p></td>
+<td class="text-right"><p>30.83 s</p></td>
+<td class="text-right"><p>~1.0×</p></td>
+</tr>
+<tr class="row-even"><td><p>applyBoundaryLayer</p></td>
+<td class="text-right"><p>5.26 s</p></td>
+<td class="text-right"><p>5.37 s</p></td>
+<td class="text-right"><p>~1.0×</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>simpleFoam (40 steps, avg/step)</strong></p></td>
+<td class="text-right"><p><strong>17.27 s</strong></p></td>
+<td class="text-right"><p><strong>9.19 s</strong></p></td>
+<td class="text-right"><p><strong>~1.9×</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The three short utility stages agreed to within roughly 10% on both nodes. Only the long, sustained <code class="docutils literal notranslate"><span class="pre">simpleFoam</span></code> solve, which runs for 12+ minutes and is known to be limited primarily by how fast data can be moved between CPU and memory (”<strong>memory bandwidth-bound</strong>,” meaning the CPU spends more time waiting on memory transfers than on raw arithmetic), showed the large gap. This pattern (short stages unaffected, long sustained stage badly affected) is exactly what would be expected from another job competing for the same node’s shared memory bandwidth, rather than from a genuine hardware or clock-speed difference between the two nodes (a real hardware difference would be expected to slow down every stage roughly proportionally, not just one).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pbsnodes</span> <span class="pre">CN-099</span></code> and <code class="docutils literal notranslate"><span class="pre">pbsnodes</span> <span class="pre">CN-142</span></code>, checked at the time these jobs were running, both showed <strong>other users’ array jobs actively co-resident</strong> on the same physical node. PBS’s default node-sharing policy (<code class="docutils literal notranslate"><span class="pre">place=free</span></code>, as opposed to <code class="docutils literal notranslate"><span class="pre">place=excl</span></code> for exclusive access) permits this: requesting <code class="docutils literal notranslate"><span class="pre">select=1:ncpus=72:mem=500gb</span></code> reserves that specific amount of CPU and memory for your job, but does not by itself prevent another job from simultaneously using whatever core/memory allocation remains free on the same physical machine, or in some scheduler configurations, sharing the same memory subsystem even if core allocation is kept separate.</p></li>
+</ul>
+<p><strong>Conclusion:</strong> the most consistent explanation, supported by the evidence above, is memory-bandwidth contention from co-located jobs belonging to other users, not a hardware or configuration difference specific to CN-099. This is a property of running on a shared, multi-tenant cluster, not a flaw in this case’s setup.</p>
+</section>
+<section id="practical-implication">
+<h3>3.3 Practical implication<a class="headerlink" href="#practical-implication" title="Link to this heading">¶</a></h3>
+<p>Because of this finding, single-run wall-clock numbers on Vanda cannot be trusted at face value without corroboration. Every decomposition and binding comparison in this study was structured to either (a) run all compared configurations back-to-back within one PBS job on one node, so that even if that node happened to be contended, all configurations in that comparison were penalized equally and their <em>relative</em> ranking is still meaningful, or (b) be explicitly cross-checked with repeats on multiple different nodes before drawing a conclusion.</p>
+<p>For the actual scored 4-node run (the one whose result counts for the competition), this means: budget for at least one full repeat of the final configuration rather than trusting a single measurement, and if the target contest supercomputer (Gadi or ASPIRE-2A) supports requesting exclusive node access (commonly <code class="docutils literal notranslate"><span class="pre">place=excl</span></code> in PBS, or an equivalent flag), requesting it would remove this specific confound entirely for the scored run.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mpi-rank-binding-sweep">
+<h2>4. MPI rank-binding sweep<a class="headerlink" href="#mpi-rank-binding-sweep" title="Link to this heading">¶</a></h2>
+<section id="method">
+<h3>4.1 Method<a class="headerlink" href="#method" title="Link to this heading">¶</a></h3>
+<p>As explained in §0.5, <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_DOMAIN</span> <span class="pre">core</span></code> fixes each MPI rank to exactly one physical core, and <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_ORDER</span></code> controls <em>which</em> core each rank number gets assigned to. Five named strategies (plus a same-setting repeat, for a noise check) were tested on the winning decomposition shape from §2 (<code class="docutils literal notranslate"><span class="pre">hierarchical</span> <span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code>), with all six experiments run back-to-back within a single PBS job on one node (<strong>CN-130</strong>), deliberately eliminating the node-to-node contention confound identified in §3, since every strategy in this comparison experienced identical conditions.</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Binding strategy</p></th>
+<th class="head text-right"><p>s / step</p></th>
+<th class="head text-right"><p>Δ vs. fastest</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bunch</span></code></p></td>
+<td class="text-right"><p>9.0889</p></td>
+<td class="text-right"><p>,</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">compact</span></code></p></td>
+<td class="text-right"><p>9.0923</p></td>
+<td class="text-right"><p>+0.04%</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">compact</span></code> (repeat)</p></td>
+<td class="text-right"><p>9.0951</p></td>
+<td class="text-right"><p>+0.07%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nopin</span></code> (<code class="docutils literal notranslate"><span class="pre">I_MPI_PIN</span> <span class="pre">disable</span></code>)</p></td>
+<td class="text-right"><p>9.1179</p></td>
+<td class="text-right"><p>+0.32%</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">scatter</span></code></p></td>
+<td class="text-right"><p>9.1515</p></td>
+<td class="text-right"><p>+0.69%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">spread</span></code></p></td>
+<td class="text-right"><p>9.1890</p></td>
+<td class="text-right"><p>+1.10%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="confirming-the-mechanism-directly-not-just-from-timing">
+<h3>4.2 Confirming the mechanism directly, not just from timing<a class="headerlink" href="#confirming-the-mechanism-directly-not-just-from-timing" title="Link to this heading">¶</a></h3>
+<p>Rather than guessing why the timings differ, the actual rank-to-core assignments were extracted directly from each run’s Intel MPI startup log (enabled via the <code class="docutils literal notranslate"><span class="pre">I_MPI_DEBUG=4</span></code> diagnostic setting, which prints a <code class="docutils literal notranslate"><span class="pre">=====</span> <span class="pre">CPU</span> <span class="pre">pinning</span> <span class="pre">=====</span></code> table listing every rank and the exact CPU core number it was bound to).</p>
+<p><strong>Result:</strong> on this specific 72-core, 2-socket topology, <code class="docutils literal notranslate"><span class="pre">compact</span></code>, <code class="docutils literal notranslate"><span class="pre">bunch</span></code>, and <code class="docutils literal notranslate"><span class="pre">spread</span></code> all produced the <strong>exact same</strong> rank-to-core mapping, rank 0 → core 0, rank 1 → core 2, rank 2 → core 4, … continuing to fill every core on socket 1 (ranks 0–35), then rank 36 → core 1, rank 37 → core 3, … filling socket 2 (ranks 36–71). This was confirmed with a direct line-by-line <code class="docutils literal notranslate"><span class="pre">diff</span></code> of the pinning tables: only the process ID numbers differed between runs (an unavoidable artifact of each run starting new processes); every single core assignment matched exactly.</p>
+<p><code class="docutils literal notranslate"><span class="pre">scatter</span></code> produced a genuinely different mapping, with no simple pattern, for example, rank 0 → core 0, rank 1 → core 25, rank 2 → core 48, rank 3 → core 49, deliberately avoiding placing consecutive rank numbers near each other.</p>
+<p><code class="docutils literal notranslate"><span class="pre">nopin</span></code> showed every rank’s CPU affinity (the set of cores the operating system is <em>allowed</em> to run that process on) listed as the full set of all 72 cores, rather than a single core, direct, in-log confirmation that no fixed pinning was applied at all under this setting. The OS scheduler remains free to run, and potentially move, each rank across any of the 72 cores for the entire duration of the job.</p>
+</section>
+<section id="interpretation">
+<h3>4.3 Interpretation<a class="headerlink" href="#interpretation" title="Link to this heading">¶</a></h3>
+<p>Because <code class="docutils literal notranslate"><span class="pre">compact</span></code>, <code class="docutils literal notranslate"><span class="pre">bunch</span></code>, and <code class="docutils literal notranslate"><span class="pre">spread</span></code> were shown to share an <strong>identical</strong> physical core mapping, the small timing differences between them (9.089 to 9.189 s/step, about 1.1% spread) cannot be explained by placement at all, since the placement was literally the same. This is therefore the cleanest possible direct evidence of this configuration’s true noise floor on a single, uncontended node: even with zero difference in where any rank physically ran, repeated measurements spread by about 1.1%. <code class="docutils literal notranslate"><span class="pre">scatter</span></code>’s result (9.152), despite its genuinely different rank placement, falls within that same 1.1% noise band and cannot be confidently distinguished from it.</p>
+<p><strong>Conclusion:</strong> for this workload, at 72 ranks on 72 cores, MPI pin <em>order</em> has no measurable effect on performance on this hardware, three of the four distinctly-named Intel MPI strategies turned out to be the same physical layout in disguise (confirmed directly from the logs, not inferred), and the one strategy that is genuinely different (<code class="docutils literal notranslate"><span class="pre">scatter</span></code>) performed statistically the same as the rest. <code class="docutils literal notranslate"><span class="pre">nopin</span></code> also performed within the same noise band over this 40-iteration test, but because its affinity mask allows migration for the entire run, and this test only ran 40 iterations (the scored 4-node run will run 150), it is not possible to rule out that unpinned ranks could drift to worse placements, or suffer cache-locality loss from migration, over a longer run. This risk was not tested and is flagged as open rather than dismissed.</p>
+</section>
+<section id="id1">
+<h3>4.4 Selected configuration<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I_MPI_PIN_DOMAIN</span><span class="o">=</span><span class="n">core</span>
+<span class="n">I_MPI_PIN_ORDER</span><span class="o">=</span><span class="n">compact</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">compact</span></code> is chosen over <code class="docutils literal notranslate"><span class="pre">bunch</span></code>/<code class="docutils literal notranslate"><span class="pre">spread</span></code> (statistically indistinguishable, and <code class="docutils literal notranslate"><span class="pre">compact</span></code> is the more conventional, widely-recognized name for this behavior) and over <code class="docutils literal notranslate"><span class="pre">nopin</span></code> (no measured advantage, and an unverified migration risk at longer run duration) primarily for reproducibility and conventionality, not because it demonstrated a measurable performance win over its closest alternatives, which it did not.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="a-note-on-openfoam-s-built-in-profiler">
+<h2>5. A note on OpenFOAM’s built-in profiler<a class="headerlink" href="#a-note-on-openfoam-s-built-in-profiler" title="Link to this heading">¶</a></h2>
+<p><strong>What was attempted:</strong> OpenFOAM v2512 includes a built-in <code class="docutils literal notranslate"><span class="pre">profiling</span></code> feature (enabled via a <code class="docutils literal notranslate"><span class="pre">profiling</span> <span class="pre">{</span> <span class="pre">active</span> <span class="pre">true;</span> <span class="pre">...</span> <span class="pre">}</span></code> block in <code class="docutils literal notranslate"><span class="pre">controlDict</span></code>) intended to record an internal breakdown of where solver time is spent, e.g. how much time goes to the pressure-solve step versus the momentum-solve step versus MPI communication waits, as opposed to only the single external “average time per step” number used throughout this study.</p>
+<p><strong>What went wrong:</strong> by reading the relevant OpenFOAM v2512 source code directly (<code class="docutils literal notranslate"><span class="pre">Time.C</span></code>’s <code class="docutils literal notranslate"><span class="pre">setMonitoring()</span></code> function and <code class="docutils literal notranslate"><span class="pre">profiling.C</span></code>’s <code class="docutils literal notranslate"><span class="pre">stop()</span></code> function), it was confirmed that the <code class="docutils literal notranslate"><span class="pre">profiling</span></code> object is registered with the <code class="docutils literal notranslate"><span class="pre">AUTO_WRITE</span></code> flag, OpenFOAM shorthand meaning “only save this data to disk during a normal output-writing event.” Every timing run in this study deliberately used <code class="docutils literal notranslate"><span class="pre">controlDict.noWrite</span></code> (see §1) specifically to exclude file I/O from the measured time, and one consequence of that file’s <code class="docutils literal notranslate"><span class="pre">writeInterval</span> <span class="pre">100000</span></code> setting is that, across a 40-iteration run, no output-writing event ever occurs. As a result, the profiler’s data was collected internally in memory the whole time, but silently discarded (never written to any file) when each run ended, confirmed directly: <code class="docutils literal notranslate"><span class="pre">profiling::stop()</span></code> in the source code simply discards the in-memory data object; it does not force a write regardless of <code class="docutils literal notranslate"><span class="pre">writeInterval</span></code>.</p>
+<p><strong>What would be needed to actually use it:</strong> OpenFOAM v2512 provides an alternate settings file, <code class="docutils literal notranslate"><span class="pre">controlDict.withWrite</span></code>, that does enable periodic output writes. Building a profiling run from that file instead would let the profiler’s data reach disk, but doing so introduces real file I/O time into the measured wall-clock result, making any such run <strong>incomparable</strong> to every number reported in this document, all of which were deliberately I/O-free. This was identified as a valuable follow-up but was not pursued within this study, specifically to avoid contaminating the timing comparisons already gathered.</p>
+</section>
+<hr class="docutils" />
+<section id="summary-and-recommended-configuration">
+<h2>6. Summary and recommended configuration<a class="headerlink" href="#summary-and-recommended-configuration" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Confidence</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Decomposition method</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">hierarchical</span></code></p></td>
+<td><p>High, chosen for determinism/reproducibility (§0.3), not only speed</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nHierarchical</span></code> (decomposition shape)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code></p></td>
+<td><p>Medium-high, confirmed fastest on two independent clean nodes (§2.2)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_DOMAIN</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">core</span></code></p></td>
+<td><p>High</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_ORDER</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">compact</span></code></p></td>
+<td><p>High, statistically tied with <code class="docutils literal notranslate"><span class="pre">bunch</span></code>/<code class="docutils literal notranslate"><span class="pre">nopin</span></code>, chosen for reproducibility and to avoid <code class="docutils literal notranslate"><span class="pre">nopin</span></code>’s unverified migration risk</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Headline finding:</strong> node-to-node contention on Vanda’s shared scheduler (§3) produced a wall-clock swing of roughly 90% between the slowest and fastest nodes measured, far larger than the effect of decomposition shape (at most ~6.5% between shapes tested) or MPI binding strategy (at most ~1.1%, indistinguishable from measurement noise). For anyone presenting or extending this work: tuning decomposition and binding is worthwhile and produces real, if modest, gains, but on a shared multi-tenant cluster, accounting for (and budgeting repeats around) contention matters considerably more.</p>
+</section>
+<hr class="docutils" />
+<section id="recommendations-for-the-scored-4-node-run">
+<h2>7. Recommendations for the scored 4-node run<a class="headerlink" href="#recommendations-for-the-scored-4-node-run" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Carry forward <code class="docutils literal notranslate"><span class="pre">hierarchical</span></code> decomposition with an <code class="docutils literal notranslate"><span class="pre">nHierarchical</span></code> triplet derived from the <code class="docutils literal notranslate"><span class="pre">(18</span> <span class="pre">4</span> <span class="pre">1)</span></code> per-node ratio established here, but re-validate it at actual 4-node scale rather than assuming it extrapolates linearly with node count.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_DOMAIN=core</span></code>, <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_ORDER=compact</span></code> for MPI rank placement.</p></li>
+<li><p>Budget for at least one full repeat of the final 4-node configuration before treating any single run’s number as the official reported result, given the contention risk directly demonstrated in §3.</p></li>
+<li><p>If the target contest supercomputer (Gadi or ASPIRE-2A) supports requesting exclusive-node scheduling, request it, this would remove the shared-tenancy confound entirely for the scored run, which Vanda’s default scheduling policy does not provide.</p></li>
+<li><p>If deeper internal (solver-stage / MPI-wait) profiling is wanted for a presentation’s technical-depth discussion, run it as a clearly separate, <code class="docutils literal notranslate"><span class="pre">controlDict.withWrite</span></code>-based diagnostic pass, kept apart from the I/O-free performance-comparison numbers reported in this document (§5).</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="appendix-glossary-quick-reference">
+<h2>Appendix: glossary quick-reference<a class="headerlink" href="#appendix-glossary-quick-reference" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Term</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cell</p></td>
+<td><p>A small 3D volume element making up the simulation mesh; this case has 65 million</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rank</p></td>
+<td><p>One copy of the solver program, assigned to one portion of the split-up mesh, running on one CPU core</p></td>
+</tr>
+<tr class="row-even"><td><p>MPI</p></td>
+<td><p>The standard protocol used to run many ranks in parallel and let them exchange data</p></td>
+</tr>
+<tr class="row-odd"><td><p>decomposePar</p></td>
+<td><p>The OpenFOAM utility that splits the mesh into per-rank pieces before a parallel run</p></td>
+</tr>
+<tr class="row-even"><td><p>Decomposition shape <code class="docutils literal notranslate"><span class="pre">(Nx</span> <span class="pre">Ny</span> <span class="pre">Nz)</span></code></p></td>
+<td><p>The number of mesh cuts along the x, y, and z axes under the <code class="docutils literal notranslate"><span class="pre">hierarchical</span></code> method</p></td>
+</tr>
+<tr class="row-odd"><td><p>Processor face</p></td>
+<td><p>A mesh face on the boundary between two ranks’ sub-domains, requiring data exchange every iteration</p></td>
+</tr>
+<tr class="row-even"><td><p>Node</p></td>
+<td><p>One physical server in the cluster, containing multiple CPU cores</p></td>
+</tr>
+<tr class="row-odd"><td><p>Socket</p></td>
+<td><p>One physical CPU chip; this study’s nodes have two sockets, 36 cores each</p></td>
+</tr>
+<tr class="row-even"><td><p>NUMA</p></td>
+<td><p>The property that memory attached to one socket is slower to access from the other socket</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pinning / binding</p></td>
+<td><p>Explicitly fixing which physical core each MPI rank runs on for the whole job</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_DOMAIN</span></code> / <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_ORDER</span></code></p></td>
+<td><p>Intel MPI’s environment variables controlling pinning unit and rank-to-core order</p></td>
+</tr>
+<tr class="row-odd"><td><p>s/step</p></td>
+<td><p>Seconds of wall-clock time per solver iteration, the primary metric used throughout</p></td>
+</tr>
+<tr class="row-even"><td><p>Noise floor</p></td>
+<td><p>How much an unchanged configuration’s timing varies purely from run-to-run system randomness</p></td>
+</tr>
+<tr class="row-odd"><td><p>PBS / <code class="docutils literal notranslate"><span class="pre">qsub</span></code> / <code class="docutils literal notranslate"><span class="pre">qstat</span></code> / <code class="docutils literal notranslate"><span class="pre">pbsnodes</span></code></p></td>
+<td><p>The job scheduler used on Vanda, and its job-submission, status-check, and node-inspection commands</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">place=free</span></code> vs <code class="docutils literal notranslate"><span class="pre">place=excl</span></code></p></td>
+<td><p>PBS scheduling policy controlling whether other users’ jobs may share your allocated node</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="mpi-collective-tuning-numa-occdrivaer-vanda.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="occDrivAer-ohc1-optimization-notes.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Optimizing OpenFOAM’s occDrivAer Case for the APAC HPC-AI Competition</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Khiu Kim Hong
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study</a><ul>
+<li><a class="reference internal" href="#background-what-problem-is-being-solved-and-what-the-vocabulary-means">0. Background: what problem is being solved, and what the vocabulary means</a><ul>
+<li><a class="reference internal" href="#what-openfoam-and-this-case-are">0.1 What OpenFOAM and this case are</a></li>
+<li><a class="reference internal" href="#why-the-mesh-needs-to-be-split-up-parallel-computing-basics">0.2 Why the mesh needs to be split up: parallel computing basics</a></li>
+<li><a class="reference internal" href="#how-the-mesh-gets-split-decomposition-methods-and-shapes">0.3 How the mesh gets split: decomposition methods and shapes</a></li>
+<li><a class="reference internal" href="#the-hardware-cores-sockets-and-numa">0.4 The hardware: cores, sockets, and NUMA</a></li>
+<li><a class="reference internal" href="#mpi-rank-placement-pinning">0.5 MPI rank placement / “pinning”</a></li>
+<li><a class="reference internal" href="#the-measurement-what-s-step-means-and-how-it-s-obtained">0.6 The measurement: what “s/step” means and how it’s obtained</a></li>
+<li><a class="reference internal" href="#the-scheduler-pbs-pro-jobs-and-nodes">0.7 The scheduler: PBS Pro, jobs, and nodes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#setup">1. Setup</a></li>
+<li><a class="reference internal" href="#decomposition-shape-sweep">2. Decomposition shape sweep</a><ul>
+<li><a class="reference internal" href="#initial-sweep-later-found-to-be-on-a-contended-node">2.1 Initial sweep (later found to be on a contended node)</a></li>
+<li><a class="reference internal" href="#re-verification-on-clean-nodes">2.2 Re-verification on clean nodes</a></li>
+<li><a class="reference internal" href="#selected-configuration">2.3 Selected configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#discovery-node-to-node-contention-on-a-shared-cluster">3. Discovery: node-to-node contention on a shared cluster</a><ul>
+<li><a class="reference internal" href="#the-anomaly">3.1 The anomaly</a></li>
+<li><a class="reference internal" href="#diagnosis">3.2 Diagnosis</a></li>
+<li><a class="reference internal" href="#practical-implication">3.3 Practical implication</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mpi-rank-binding-sweep">4. MPI rank-binding sweep</a><ul>
+<li><a class="reference internal" href="#method">4.1 Method</a></li>
+<li><a class="reference internal" href="#confirming-the-mechanism-directly-not-just-from-timing">4.2 Confirming the mechanism directly, not just from timing</a></li>
+<li><a class="reference internal" href="#interpretation">4.3 Interpretation</a></li>
+<li><a class="reference internal" href="#id1">4.4 Selected configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-note-on-openfoam-s-built-in-profiler">5. A note on OpenFOAM’s built-in profiler</a></li>
+<li><a class="reference internal" href="#summary-and-recommended-configuration">6. Summary and recommended configuration</a></li>
+<li><a class="reference internal" href="#recommendations-for-the-scored-4-node-run">7. Recommendations for the scored 4-node run</a></li>
+<li><a class="reference internal" href="#appendix-glossary-quick-reference">Appendix: glossary quick-reference</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    </body>
+</html>

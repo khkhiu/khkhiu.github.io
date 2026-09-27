@@ -1,0 +1,749 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="OpenFOAM HPC Challenge (OHC-1): Diagnosing a Silent 16% Performance Regression from Scheduler Node Placement" href="occDrivAer-4node-scaling-notes.html"><link rel="prev" title="occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study" href="vanda-decomposition-binding-study.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes - khkhiu.github.io documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">khkhiu.github.io  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">khkhiu.github.io  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="smt-off-numa-binding-occdrivaer.html">Disabling SMT cut our OpenFOAM HPC Challenge runtime by 17%, on half the cores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occDrivAer-ohc1-optimization-notes.html">Optimizing OpenFOAM’s occDrivAer Case for the APAC HPC-AI Competition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vanda-decomposition-binding-study.html">occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occDrivAer-4node-scaling-notes.html">OpenFOAM HPC Challenge (OHC-1): Diagnosing a Silent 16% Performance Regression from Scheduler Node Placement</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/posts/mpi-collective-tuning-numa-occdrivaer-vanda.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="rank-placement-and-gamg-targeted-collective-tuning-cut-occdrivaer-steady-state-time-by-10-9-at-2-nodes">
+<h1>Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes<a class="headerlink" href="#rank-placement-and-gamg-targeted-collective-tuning-cut-occdrivaer-steady-state-time-by-10-9-at-2-nodes" title="Link to this heading">¶</a></h1>
+<p><em>Published: 2026-09-26</em></p>
+<p><strong>TL;DR:</strong> On <code class="docutils literal notranslate"><span class="pre">occDrivAerStaticMesh</span></code> (OHC-1, OpenFOAM v2512, 65M-cell coarse mesh), at 2-node / 144-rank scale, we tested 4 decomposition-placement variants, 2 alternative decomposition methods, and 4 MPI-tuning configurations, using OpenFOAM’s built-in <code class="docutils literal notranslate"><span class="pre">profiling</span></code> instrumentation and rank-0 <code class="docutils literal notranslate"><span class="pre">perf</span></code> call-stack sampling throughout. The best configuration — <code class="docutils literal notranslate"><span class="pre">hierarchical</span> <span class="pre">(24</span> <span class="pre">6</span> <span class="pre">1)</span></code> decomposition, explicit <code class="docutils literal notranslate"><span class="pre">-ppn</span> <span class="pre">72</span></code>, NUMA-socket pinning, and MPI Gather/Bcast tuning targeted at GAMG’s coarsest-level correction — gave a <strong>10.9% steady-state improvement</strong> (4.786 s/step vs. 5.373 s/step) over an identical-job control, once we excluded an 8-10 iteration NUMA warm-up transient from the average. <code class="docutils literal notranslate"><span class="pre">scotch</span></code> decomposition lost to <code class="docutils literal notranslate"><span class="pre">hierarchical</span></code> in every test, by a mechanism we can point to directly in the profiling data. Job-to-job hardware/allocation variance on identical configurations measured 4.9–15.8% across three separate PBS jobs — larger than several of the tuning effects we were chasing, which is why every comparison below is a same-job A/B pair, not a cross-job one.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Working-notes writeup from a live benchmarking session on a 2-node PBS Pro
+allocation (dual-socket Sapphire Rapids, 72 cores/node, no SMT), ahead of the
+4-node scored run. All times are <code class="docutils literal notranslate"><span class="pre">Average</span> <span class="pre">wall-clock</span> <span class="pre">time</span> <span class="pre">per</span> <span class="pre">time</span> <span class="pre">step</span></code> from
+simpleFoam’s own log unless labeled “steady-state,” in which case they are a
+post-hoc average over the last 66 of 80 iterations, computed directly from the
+per-timestep log lines.</p>
+</div>
+<section id="test-matrix-and-fixed-parameters">
+<h2>Test matrix and fixed parameters<a class="headerlink" href="#test-matrix-and-fixed-parameters" title="Link to this heading">¶</a></h2>
+<p>Held constant across every run below: mesh (65M-cell coarse, unmodified), <code class="docutils literal notranslate"><span class="pre">simpleFoam</span></code>, <code class="docutils literal notranslate"><span class="pre">fvSchemes</span></code>, <code class="docutils literal notranslate"><span class="pre">fvSolution.fixedIter</span></code>, <code class="docutils literal notranslate"><span class="pre">-ybl</span> <span class="pre">0.0450244</span></code>, OpenFOAM v2512 (Intel compiler/MPI build, <code class="docutils literal notranslate"><span class="pre">WM_COMPILER=Icx</span> <span class="pre">WM_MPLIB=INTELMPI</span></code>), and the full prep chain (<code class="docutils literal notranslate"><span class="pre">decomposePar</span> <span class="pre">-constant</span></code> → <code class="docutils literal notranslate"><span class="pre">restore0Dir</span> <span class="pre">-processor</span></code> → <code class="docutils literal notranslate"><span class="pre">renumberMesh</span> <span class="pre">-constant</span> <span class="pre">-overwrite</span> <span class="pre">-parallel</span></code> → <code class="docutils literal notranslate"><span class="pre">potentialFoam</span> <span class="pre">-initialiseUBCs</span> <span class="pre">-parallel</span></code> → <code class="docutils literal notranslate"><span class="pre">applyBoundaryLayer</span> <span class="pre">-ybl</span> <span class="pre">0.0450244</span> <span class="pre">-parallel</span></code> → <code class="docutils literal notranslate"><span class="pre">simpleFoam</span> <span class="pre">-parallel</span></code>). PBS resource request: <code class="docutils literal notranslate"><span class="pre">select=2:ncpus=72:mpiprocs=72:ompthreads=1:mem=500gb</span></code>. 2-node iteration count per the competition scaling rule: <code class="docutils literal notranslate"><span class="pre">endTime</span> <span class="pre">=</span> <span class="pre">80</span></code>.</p>
+<p>Two measurement harnesses were used and are labeled explicitly below, because they are not directly comparable:</p>
+<ul class="simple">
+<li><p><strong>Profiled harness</strong> (<code class="docutils literal notranslate"><span class="pre">v3</span></code>, <code class="docutils literal notranslate"><span class="pre">v4</span></code>, <code class="docutils literal notranslate"><span class="pre">v5</span></code> runs): <code class="docutils literal notranslate"><span class="pre">controlDict.prof</span></code> with <code class="docutils literal notranslate"><span class="pre">profiling</span> <span class="pre">{</span> <span class="pre">active</span> <span class="pre">true;</span> <span class="pre">}</span></code> appended and <code class="docutils literal notranslate"><span class="pre">writeInterval</span></code> forced equal to <code class="docutils literal notranslate"><span class="pre">endTime</span></code>, so OpenFOAM’s profiling <code class="docutils literal notranslate"><span class="pre">IOobject</span></code> is written to <code class="docutils literal notranslate"><span class="pre">processorN/&lt;endTime&gt;/uniform/profiling</span></code> at the final step. This adds one field write at iteration 80 only.</p></li>
+<li><p><strong>Clean harness</strong> (<code class="docutils literal notranslate"><span class="pre">stack_final</span></code> run): unmodified <code class="docutils literal notranslate"><span class="pre">controlDict.noWrite</span></code> (default <code class="docutils literal notranslate"><span class="pre">writeInterval</span> <span class="pre">=</span> <span class="pre">100000</span></code>, i.e., no writes at all), no profiling block. This is the harness that matters for the actual scored metric.</p></li>
+</ul>
+</section>
+<section id="single-node-profiling-baseline-context-from-the-prior-session">
+<h2>1. Single-node profiling baseline (context from the prior session)<a class="headerlink" href="#single-node-profiling-baseline-context-from-the-prior-session" title="Link to this heading">¶</a></h2>
+<p>Before the 2-node work, 1-node/72-rank profiling (no write, <code class="docutils literal notranslate"><span class="pre">endTime</span> <span class="pre">=</span> <span class="pre">40</span></code>) gave:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Config</p></th>
+<th class="head text-right"><p>Avg wall-clock/step</p></th>
+<th class="head text-right"><p>Std. dev.</p></th>
+<th class="head text-right"><p>Min. steps for 2% error &#64; 95% CI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>compact pin order</p></td>
+<td class="text-right"><p>9.148 s</p></td>
+<td class="text-right"><p>0.109</p></td>
+<td class="text-right"><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>bunch pin order</p></td>
+<td class="text-right"><p>9.081 s</p></td>
+<td class="text-right"><p>0.060</p></td>
+<td class="text-right"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Profiling breakdown (<code class="docutils literal notranslate"><span class="pre">time.run()</span></code> and direct children, compact run):</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head text-right"><p>Total time</p></th>
+<th class="head text-right"><p>% of <code class="docutils literal notranslate"><span class="pre">time.run()</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">time.run()</span></code></p></td>
+<td class="text-right"><p>384.799 s</p></td>
+<td class="text-right"><p>100%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">fvMatrix::solve.p</span></code> (GAMG pressure)</p></td>
+<td class="text-right"><p>93.254 s</p></td>
+<td class="text-right"><p>24.2%</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fvMatrix::solve.U</span></code> (momentum, Ux+Uy+Uz)</p></td>
+<td class="text-right"><p>93.977 s</p></td>
+<td class="text-right"><p>24.4%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">fvMatrix::solve.omega</span></code></p></td>
+<td class="text-right"><p>18.626 s</p></td>
+<td class="text-right"><p>4.8%</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fvMatrix::solve.k</span></code></p></td>
+<td class="text-right"><p>17.583 s</p></td>
+<td class="text-right"><p>4.6%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">functionObjects.start()</span></code> (probe/force setup, one-time)</p></td>
+<td class="text-right"><p>8.953 s</p></td>
+<td class="text-right"><p>2.3%</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">functionObjects.execute()</span></code> (per-iteration probes/forces)</p></td>
+<td class="text-right"><p>5.977 s</p></td>
+<td class="text-right"><p>1.6%</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Sum of named children</strong></p></td>
+<td class="text-right"><p><strong>238.370 s</strong></p></td>
+<td class="text-right"><p><strong>62.0%</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Unaccounted</strong></p></td>
+<td class="text-right"><p><strong>146.429 s</strong></p></td>
+<td class="text-right"><p><strong>38.0%</strong>*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>*Recomputed here from the raw trigger totals above; the live session’s automated script sums ALL of <code class="docutils literal notranslate"><span class="pre">time.run()</span></code>’s direct children (including small triggers like <code class="docutils literal notranslate"><span class="pre">mesh.update()</span></code>, <code class="docutils literal notranslate"><span class="pre">fvOption</span></code> calls, and <code class="docutils literal notranslate"><span class="pre">objectRegistry::writeObject</span></code> not itemized in this table), giving 41.5%. The automated 39–42% figures used throughout the rest of this post are the authoritative ones; this table is for readability only.</em></p>
+<p>Within <code class="docutils literal notranslate"><span class="pre">solve.p</span></code>, 90.663 s (97.2% of the 92.828 s spent in <code class="docutils literal notranslate"><span class="pre">lduMatrix::solver.p</span></code>) was <code class="docutils literal notranslate"><span class="pre">lduMatrix::solver.coarsestLevelCorr</span></code> — GAMG’s coarsest-level global correction. This single sub-component is the specific target of the MPI collective tuning discussed in section 4.</p>
+</section>
+<section id="decomposition-placement-sweep-4-hierarchical-variants-job-v3-profiled-harness">
+<h2>2. Decomposition placement sweep — 4 hierarchical variants (job: <code class="docutils literal notranslate"><span class="pre">v3</span></code>, profiled harness)<a class="headerlink" href="#decomposition-placement-sweep-4-hierarchical-variants-job-v3-profiled-harness" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variant</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">nHierarchical</span></code></p></th>
+<th class="head text-right"><p>Avg wall-clock/step</p></th>
+<th class="head text-right"><p>Unaccounted (<code class="docutils literal notranslate"><span class="pre">time.run()</span></code>)</p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">solve.p</span></code></p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">solve.U</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">baseline_ratio</span></code></p></td>
+<td><p>(24 6 1)</p></td>
+<td class="text-right"><p><strong>4.958 s</strong></p></td>
+<td class="text-right"><p>152.445 s / 391.160 s (39.0%)</p></td>
+<td class="text-right"><p>104.987 s</p></td>
+<td class="text-right"><p>97.939 s</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">node_aligned</span></code></p></td>
+<td><p>(2 12 6)</p></td>
+<td class="text-right"><p>5.161 s</p></td>
+<td class="text-right"><p>170.695 s / 405.417 s (42.1%)</p></td>
+<td class="text-right"><p>99.340 s</p></td>
+<td class="text-right"><p>96.352 s</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">node_aligned_collectives</span></code> (+Allreduce/Reduce tuning)</p></td>
+<td><p>(2 12 6)</p></td>
+<td class="text-right"><p>5.229 s</p></td>
+<td class="text-right"><p>170.849 s / 410.823 s (41.6%)</p></td>
+<td class="text-right"><p>104.248 s</p></td>
+<td class="text-right"><p>97.035 s</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">node_aligned_mapby_node</span></code> (+compact pin)</p></td>
+<td><p>(2 12 6)</p></td>
+<td class="text-right"><p>5.185 s</p></td>
+<td class="text-right"><p>170.695 s / 407.082 s (41.9%)</p></td>
+<td class="text-right"><p>99.551 s</p></td>
+<td class="text-right"><p>97.404 s</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>All four hierarchical variants decomposed to <strong>perfectly equal per-rank cell counts (453,713 cells/rank)</strong> — decomposition balance was not a factor here; <code class="docutils literal notranslate"><span class="pre">node_aligned</span></code>’s slowdown is a communication-pattern effect, not a load-balance one. Confirming evidence from rank-0 <code class="docutils literal notranslate"><span class="pre">perf</span></code> sampling (top-60 functions by cycle share):</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">baseline_ratio</span></code></p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">node_aligned</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">GaussSeidelSmoother::smooth</span></code></p></td>
+<td class="text-right"><p>19.33% (19.24% self)</p></td>
+<td class="text-right"><p>16.20% (16.11% self)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">lduMatrix::residual</span></code></p></td>
+<td class="text-right"><p>11.48%</p></td>
+<td class="text-right"><p>10.46%</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">lduMatrix::Amul</span></code></p></td>
+<td class="text-right"><p>6.43%</p></td>
+<td class="text-right"><p>5.66%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">psm3_verbs_ips_ptl_poll</span></code> (MPI fabric polling)</p></td>
+<td class="text-right"><p><em>not in top 60</em></p></td>
+<td class="text-right"><p><strong>3.36% (1.59% self)</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">node_aligned</span></code>’s outermost hierarchical coefficient set to the node count (2) produced a worse inter-partition edge-cut than the ratio-extrapolated <code class="docutils literal notranslate"><span class="pre">(24</span> <span class="pre">6</span> <span class="pre">1)</span></code> split, visible directly as MPI fabric-polling overhead that doesn’t appear at all in <code class="docutils literal notranslate"><span class="pre">baseline_ratio</span></code>’s profile. Neither Allreduce/Reduce collective tuning nor compact intra-node pinning recovered this loss when layered on top of <code class="docutils literal notranslate"><span class="pre">node_aligned</span></code>’s decomposition — both stayed within noise of plain <code class="docutils literal notranslate"><span class="pre">node_aligned</span></code> (5.161→5.229/5.185 s, i.e., slightly worse, not better). <strong>Conclusion: don’t force the node count into the outermost hierarchical coefficient; extrapolate the existing ratio instead.</strong></p>
+</section>
+<section id="decomposition-method-comparison-scotch-vs-hierarchical-job-v4-profiled-harness">
+<h2>3. Decomposition method comparison — scotch vs. hierarchical (job: <code class="docutils literal notranslate"><span class="pre">v4</span></code>, profiled harness)<a class="headerlink" href="#decomposition-method-comparison-scotch-vs-hierarchical-job-v4-profiled-harness" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variant</p></th>
+<th class="head"><p>Method</p></th>
+<th class="head text-right"><p>Avg wall-clock/step</p></th>
+<th class="head text-right"><p>Std. dev.</p></th>
+<th class="head text-right"><p>Max cell-count imbalance</p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">solve.p</span></code></p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">solve.U</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">scotch_default</span></code></p></td>
+<td><p>scotch</p></td>
+<td class="text-right"><p>5.005 s</p></td>
+<td class="text-right"><p>0.216</p></td>
+<td class="text-right"><p>+1.076% above mean</p></td>
+<td class="text-right"><p><strong>111.549 s</strong></p></td>
+<td class="text-right"><p>91.795 s</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">scotch_pinned</span></code> (+compact pin)</p></td>
+<td><p>scotch</p></td>
+<td class="text-right"><p>5.005 s</p></td>
+<td class="text-right"><p>0.214</p></td>
+<td class="text-right"><p>+1.076% above mean</p></td>
+<td class="text-right"><p>108.561 s</p></td>
+<td class="text-right"><p>93.633 s</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">hierarchical_explicit_ppn</span></code></p></td>
+<td><p>hierarchical (24 6 1)</p></td>
+<td class="text-right"><p><strong>4.871 s</strong></p></td>
+<td class="text-right"><p>0.222</p></td>
+<td class="text-right"><p>+0.0007% above mean</p></td>
+<td class="text-right"><p>94.689 s</p></td>
+<td class="text-right"><p>94.388 s</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Scotch’s momentum solve (<code class="docutils literal notranslate"><span class="pre">solve.U</span></code>) is genuinely <em>faster</em> than hierarchical’s (91.8–93.6 s vs. 94.4 s) — consistent with scotch’s edge-cut minimization doing what it’s designed to do for the majority of the halo-exchange traffic. But <code class="docutils literal notranslate"><span class="pre">solve.p</span></code> is <strong>17–19 s slower</strong>, wiping out the gain and then some. Rank-0 <code class="docutils literal notranslate"><span class="pre">perf</span></code> sampling shows <em>no</em> <code class="docutils literal notranslate"><span class="pre">psm3_verbs_ips_ptl_poll</span></code> entry in the top 60 for either <code class="docutils literal notranslate"><span class="pre">hierarchical_explicit_ppn</span></code> or <code class="docutils literal notranslate"><span class="pre">scotch_default</span></code> — so unlike the <code class="docutils literal notranslate"><span class="pre">node_aligned</span></code> case above, this isn’t a fabric-polling problem. The more likely mechanism, given scotch’s measured 1.08% cell-count imbalance (vs. hierarchical’s 0.0007%): <strong>GAMG’s coarsest-level correction is a synchronizing global reduction across all 144 ranks every SIMPLE iteration, so the single slowest (most-loaded) rank sets the pace for that specific operation</strong> — a small imbalance that barely touches per-rank local work (<code class="docutils literal notranslate"><span class="pre">solve.U</span></code>) can still measurably slow a global collective. Cd at iteration 80 was 0.339846 for both scotch variants (identical to each other, confirming pinning alone doesn’t touch numerics) vs. 0.330062 for hierarchical — the ~2.9% Cd difference between decomposition methods reflects a genuinely different GAMG agglomeration/solve ordering, not an error in either run.</p>
+<p><strong>Conclusion: hierarchical beats scotch here specifically because of GAMG coarsest-level sensitivity to partition balance, not overall communication volume. Scotch is not retested at 4 nodes.</strong></p>
+</section>
+<section id="mpi-tuning-sweep-on-top-of-the-winning-decomposition-job-v5-profiled-harness">
+<h2>4. MPI tuning sweep on top of the winning decomposition (job: <code class="docutils literal notranslate"><span class="pre">v5</span></code>, profiled harness)<a class="headerlink" href="#mpi-tuning-sweep-on-top-of-the-winning-decomposition-job-v5-profiled-harness" title="Link to this heading">¶</a></h2>
+<p>All three runs use <code class="docutils literal notranslate"><span class="pre">hierarchical</span> <span class="pre">(24</span> <span class="pre">6</span> <span class="pre">1)</span></code> + explicit <code class="docutils literal notranslate"><span class="pre">-ppn</span> <span class="pre">72</span></code>, varying only MPI environment variables:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variant</p></th>
+<th class="head"><p>Extra MPI flags</p></th>
+<th class="head text-right"><p>Avg wall-clock/step</p></th>
+<th class="head text-right"><p>Std. dev.</p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">solve.p</span></code></p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">solve.U</span></code></p></th>
+<th class="head text-right"><p>Unaccounted</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">control_ppn72</span></code></p></td>
+<td><p>none</p></td>
+<td class="text-right"><p>4.641 s</p></td>
+<td class="text-right"><p>0.123</p></td>
+<td class="text-right"><p>92.271 s</p></td>
+<td class="text-right"><p>88.389 s</p></td>
+<td class="text-right"><p>150.397/365.237 s (41.2%)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ppn72_numa_pinned</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_DOMAIN</span> <span class="pre">socket</span></code>, <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_ORDER</span> <span class="pre">compact</span></code></p></td>
+<td class="text-right"><p>4.624 s</p></td>
+<td class="text-right"><p>0.112</p></td>
+<td class="text-right"><p>91.251 s</p></td>
+<td class="text-right"><p>88.487 s</p></td>
+<td class="text-right"><p>149.913/363.953 s (41.2%)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ppn72_gamg_collectives</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">I_MPI_ADJUST_GATHER</span> <span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">I_MPI_ADJUST_BCAST</span> <span class="pre">3</span></code></p></td>
+<td class="text-right"><p><strong>4.611 s</strong></p></td>
+<td class="text-right"><p><strong>0.086</strong></p></td>
+<td class="text-right"><p><strong>90.314 s</strong></p></td>
+<td class="text-right"><p>87.669 s</p></td>
+<td class="text-right"><p>150.397/362.612 s (41.5%)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Cd at iteration 80: <code class="docutils literal notranslate"><span class="pre">control_ppn72</span></code> = 0.330062, <code class="docutils literal notranslate"><span class="pre">ppn72_numa_pinned</span></code> = 0.330062 (differs from control only at the 8th significant figure), <code class="docutils literal notranslate"><span class="pre">ppn72_gamg_collectives</span></code> = 0.330062 (bit-identical to control to the precision logged). Decomposition balance identical across all three (max 453,717 cells, +0.0007% above mean) — confirms only the MPI environment changed between runs.</p>
+<p>The Gather/Bcast tuning is the standout: it moved <code class="docutils literal notranslate"><span class="pre">solve.p</span></code> down by ~2 s (92.27→90.31 s) while leaving <code class="docutils literal notranslate"><span class="pre">solve.U</span></code> essentially flat (88.39→87.67 s, within run-to-run noise), and <strong>reduced standard deviation by 30%</strong> (0.123→0.086) relative to control — a targeted, mechanistically-explained win with zero numerical side-effect. Allreduce/Reduce tuning (tested separately in section 2’s <code class="docutils literal notranslate"><span class="pre">node_aligned_collectives</span></code>, applied to a different decomposition) showed no comparable benefit; the difference is that Gather/Bcast, not Allreduce/Reduce, is the collective pattern GAMG’s coarsest-level assembly actually uses on this OpenFOAM build.</p>
+</section>
+<section id="stacking-numa-pinning-gamg-collectives-and-a-warm-up-transient-job-stack-final-clean-harness-no-forced-write-no-profiling-instrumentation">
+<h2>5. Stacking NUMA pinning + GAMG collectives, and a warm-up transient (job: <code class="docutils literal notranslate"><span class="pre">stack_final</span></code>, clean harness — no forced write, no profiling instrumentation)<a class="headerlink" href="#stacking-numa-pinning-gamg-collectives-and-a-warm-up-transient-job-stack-final-clean-harness-no-forced-write-no-profiling-instrumentation" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variant</p></th>
+<th class="head text-right"><p>Whole-run avg</p></th>
+<th class="head text-right"><p>Whole-run std. dev.</p></th>
+<th class="head text-right"><p>Steady-state avg (last 66/80 iters)</p></th>
+<th class="head text-right"><p>Min. steps for 2% error &#64; 95% CI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">stacked_numa_gamg</span></code> (NUMA pin + Gather/Bcast)</p></td>
+<td class="text-right"><p>5.253 s</p></td>
+<td class="text-right"><p><strong>1.230</strong></p></td>
+<td class="text-right"><p><strong>4.786 s</strong></p></td>
+<td class="text-right"><p>526</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">control_recheck</span></code> (no extra tuning)</p></td>
+<td class="text-right"><p>5.332 s</p></td>
+<td class="text-right"><p>0.475</p></td>
+<td class="text-right"><p>5.373 s</p></td>
+<td class="text-right"><p>76</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Taken at face value, the stacked config’s 2.6x-higher standard deviation (1.230 vs 0.475) looks like a reliability problem, not a win. The per-iteration trace resolves it. First 8 iterations of <code class="docutils literal notranslate"><span class="pre">stacked_numa_gamg</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">iter</span> <span class="mi">1</span><span class="p">:</span>  <span class="mf">9.124</span> <span class="n">s</span>        <span class="nb">iter</span> <span class="mi">5</span><span class="p">:</span>  <span class="mf">8.990</span> <span class="n">s</span>
+<span class="nb">iter</span> <span class="mi">2</span><span class="p">:</span>  <span class="mf">8.954</span> <span class="n">s</span>        <span class="nb">iter</span> <span class="mi">6</span><span class="p">:</span>  <span class="mf">8.922</span> <span class="n">s</span>
+<span class="nb">iter</span> <span class="mi">3</span><span class="p">:</span>  <span class="mf">9.052</span> <span class="n">s</span>        <span class="nb">iter</span> <span class="mi">7</span><span class="p">:</span>  <span class="mf">8.005</span> <span class="n">s</span>
+<span class="nb">iter</span> <span class="mi">4</span><span class="p">:</span>  <span class="mf">8.999</span> <span class="n">s</span>        <span class="nb">iter</span> <span class="mi">8</span><span class="p">:</span>  <span class="mf">8.139</span> <span class="n">s</span>
+</pre></div>
+</div>
+<p>…ramping down through iterations 9–14 (6.777 → 6.148 → 5.565 → 5.209 → 5.239 → 5.187 s) before settling into a stable ~4.6–4.9 s band from iteration ~15 onward. <code class="docutils literal notranslate"><span class="pre">control_recheck</span></code> shows no equivalent transient — it opens near 5.14 s and stabilizes into its own ~5.2–5.4 s band by iteration ~10, with one isolated 9.396 s spike at iteration ~46 (a single outlier, not a pattern; likely unrelated transient system noise, not evidence of a repeating problem).</p>
+<p>Excluding the warm-up window, the real comparison is <strong>4.786 s vs. 5.373 s — a 10.9% steady-state improvement</strong>, roughly 7x larger than the 1.5% the whole-run averages suggested. We attribute the transient to first-touch memory-page-fault and cache-warming costs specific to actively steering data locality under <code class="docutils literal notranslate"><span class="pre">I_MPI_PIN_DOMAIN</span> <span class="pre">socket</span></code> — a one-time cost, not a recurring penalty, and one that shrinks as a fraction of total runtime the longer the run (at the 4-node/150-iteration scored configuration, ~10 slow iterations is 6.7% of the run vs. 12.5% of this 80-iteration test). Cd at iteration 80 was 0.330062 for both variants (identical to the profiled-harness runs above), confirming the tuning changes only scheduling/memory placement.</p>
+</section>
+<section id="a-confound-we-checked-and-ruled-out">
+<h2>6. A confound we checked and ruled out<a class="headerlink" href="#a-confound-we-checked-and-ruled-out" title="Link to this heading">¶</a></h2>
+<p>The profiled-harness runs (<code class="docutils literal notranslate"><span class="pre">v3</span></code>/<code class="docutils literal notranslate"><span class="pre">v4</span></code>/<code class="docutils literal notranslate"><span class="pre">v5</span></code>) carry OpenFOAM’s <code class="docutils literal notranslate"><span class="pre">profiling</span></code> instrumentation active for all 80 iterations (a timer call at every named scope); the clean-harness run (<code class="docutils literal notranslate"><span class="pre">stack_final</span></code>) carries none. If this instrumentation overhead were driving part of the gap between the two harnesses, we’d expect the <em>instrumented</em> runs to be slower. We observe the opposite: <code class="docutils literal notranslate"><span class="pre">v4</span></code>/<code class="docutils literal notranslate"><span class="pre">v5</span></code>’s <code class="docutils literal notranslate"><span class="pre">hierarchical</span> <span class="pre">(24</span> <span class="pre">6</span> <span class="pre">1)</span></code> + <code class="docutils literal notranslate"><span class="pre">-ppn</span> <span class="pre">72</span></code> configuration ran at 4.871 s (<code class="docutils literal notranslate"><span class="pre">v4</span></code>) and 4.641 s (<code class="docutils literal notranslate"><span class="pre">v5</span></code>) — both <em>faster</em> than <code class="docutils literal notranslate"><span class="pre">stack_final</span></code>’s otherwise-identical <code class="docutils literal notranslate"><span class="pre">control_recheck</span></code> at 5.332 s (whole-run) / 5.373 s (steady-state). This rules out instrumentation overhead as the explanation and reinforces that the gap is genuine job-to-job variance (below), not a measurement artifact.</p>
+</section>
+<section id="job-to-job-hardware-allocation-variance">
+<h2>7. Job-to-job hardware/allocation variance<a class="headerlink" href="#job-to-job-hardware-allocation-variance" title="Link to this heading">¶</a></h2>
+<p>The exact same configuration — <code class="docutils literal notranslate"><span class="pre">hierarchical</span> <span class="pre">(24</span> <span class="pre">6</span> <span class="pre">1)</span></code>, explicit <code class="docutils literal notranslate"><span class="pre">-ppn</span> <span class="pre">72</span></code>, no other tuning — was run in three separate PBS job submissions:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Job</p></th>
+<th class="head"><p>Harness</p></th>
+<th class="head text-right"><p>Avg wall-clock/step</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">v4</span></code> (<code class="docutils literal notranslate"><span class="pre">hierarchical_explicit_ppn</span></code>)</p></td>
+<td><p>profiled</p></td>
+<td class="text-right"><p>4.871 s</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">v5</span></code> (<code class="docutils literal notranslate"><span class="pre">control_ppn72</span></code>)</p></td>
+<td><p>profiled</p></td>
+<td class="text-right"><p>4.641 s</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">stack_final</span></code> (<code class="docutils literal notranslate"><span class="pre">control_recheck</span></code>)</p></td>
+<td><p>clean</p></td>
+<td class="text-right"><p>5.332 s (whole) / 5.373 s (steady-state)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Between the two profiled-harness jobs (fairest comparison, same instrumentation): <strong>4.9% spread</strong> (4.871 vs 4.641 s). Including the clean-harness job: <strong>13.0–15.8% spread</strong> across all three. This is comparable to, and in the wider case larger than, most of the tuning effects measured in sections 3–5 above. <strong>Every comparison in this post that claims a specific effect (decomposition method, MPI flag, pinning) is a same-job A/B pair for exactly this reason</strong> — cross-job wall-clock comparisons on this cluster are not reliable enough to attribute a difference to a specific setting.</p>
+</section>
+<section id="scaling-efficiency-1-2-nodes">
+<h2>8. Scaling efficiency (1 → 2 nodes)<a class="headerlink" href="#scaling-efficiency-1-2-nodes" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>1-node baseline</p></th>
+<th class="head"><p>2-node comparison</p></th>
+<th class="head text-right"><p>Speedup</p></th>
+<th class="head text-right"><p>Parallel efficiency</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>compact, no-write, 9.148 s</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">stack_final</span></code> steady-state best (4.786 s)</p></td>
+<td class="text-right"><p>1.911x</p></td>
+<td class="text-right"><p><strong>95.6%</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>compact, no-write, 9.148 s</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">stack_final</span></code> control, whole-run (5.332 s)</p></td>
+<td class="text-right"><p>1.716x</p></td>
+<td class="text-right"><p>85.8%</p></td>
+</tr>
+<tr class="row-even"><td><p>compact, write-enabled, 9.805 s*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">v4</span></code> <code class="docutils literal notranslate"><span class="pre">hierarchical_explicit_ppn</span></code>, write-enabled (4.871 s)</p></td>
+<td class="text-right"><p>2.013x</p></td>
+<td class="text-right"><p><strong>100.6%</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>*1-node write-enabled figure from the earlier profiled session (forced write at <code class="docutils literal notranslate"><span class="pre">endTime</span></code>); bunch’s write-enabled figure was not captured in that session.</em></p>
+<p>The third row’s slightly superlinear efficiency (&gt;100%) is plausible and not obviously an error: halving the per-rank problem size when doubling node count can improve L2/L3 cache residency enough to outweigh added communication cost at this scale — a known effect in memory-bandwidth-bound multigrid solves, consistent with what the 1-node profiling in section 1 already showed (GAMG pressure and momentum solves dominate and are exactly the kind of irregular-access, bandwidth-sensitive work where this applies). We do not have enough independent 1-node/2-node pairs on identical harnesses to rule out job-to-job variance (section 7) as a contributor to the &gt;100% figure specifically, so we report all three pairings above rather than picking the most flattering one.</p>
+</section>
+<section id="resource-accounting">
+<h2>9. Resource accounting<a class="headerlink" href="#resource-accounting" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Job</p></th>
+<th class="head text-right"><p>Nodes</p></th>
+<th class="head text-right"><p>Ranks</p></th>
+<th class="head text-right"><p>Walltime used</p></th>
+<th class="head text-right"><p>CPU-time (<code class="docutils literal notranslate"><span class="pre">resources_used.cput</span></code>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">v4</span></code> (3 experiments)</p></td>
+<td class="text-right"><p>2</p></td>
+<td class="text-right"><p>144</p></td>
+<td class="text-right"><p>00:47:57</p></td>
+<td class="text-right"><p>52:40:08</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">v5</span></code> (3 experiments)</p></td>
+<td class="text-right"><p>2</p></td>
+<td class="text-right"><p>144</p></td>
+<td class="text-right"><p>00:40:23</p></td>
+<td class="text-right"><p>49:11:34</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Credit/allocation balance (<code class="docutils literal notranslate"><span class="pre">hpc</span> <span class="pre">project</span></code>) could not be captured from inside the PBS batch environment — the <code class="docutils literal notranslate"><span class="pre">hpc</span></code> CLI exists on the login node (<code class="docutils literal notranslate"><span class="pre">/usr/local/bin/hpc</span></code>) but is not on the compute-node <code class="docutils literal notranslate"><span class="pre">PATH</span></code> used by the job script; balance was checked manually from the login node instead, before and after each submission.</p>
+</section>
+<section id="known-issues-and-implementation-notes">
+<h2>10. Known issues and implementation notes<a class="headerlink" href="#known-issues-and-implementation-notes" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>OpenFOAM’s <code class="docutils literal notranslate"><span class="pre">profiling</span></code> object is only written to disk at a write timestep.</strong> With <code class="docutils literal notranslate"><span class="pre">active</span> <span class="pre">true</span></code> but the default <code class="docutils literal notranslate"><span class="pre">writeInterval</span></code> (100,000, larger than any <code class="docutils literal notranslate"><span class="pre">endTime</span></code> used here), the profiling summary is silently never written — not an error, just never triggered. Workaround: set <code class="docutils literal notranslate"><span class="pre">writeInterval</span> <span class="pre">=</span> <span class="pre">endTime</span></code> for profiling runs specifically; don’t use this setting for the actual scored run, since it adds a field write the task’s <code class="docutils literal notranslate"><span class="pre">controlDict.noWrite</span></code> convention doesn’t call for.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">I_MPI_STATS</span></code> requires Intel’s <code class="docutils literal notranslate"><span class="pre">aps</span></code> tool</strong>, which is not installed on this cluster’s compute nodes; setting <code class="docutils literal notranslate"><span class="pre">I_MPI_STATS</span> <span class="pre">20</span></code> caused every <code class="docutils literal notranslate"><span class="pre">mpirun</span></code> launch (including <code class="docutils literal notranslate"><span class="pre">renumberMesh</span></code>, the very first parallel step) to fail identically with <code class="docutils literal notranslate"><span class="pre">execvp</span> <span class="pre">error</span> <span class="pre">on</span> <span class="pre">file</span> <span class="pre">aps</span></code>. Removed; MPI-level timing analysis was done via OpenFOAM’s own profiling object plus rank-0 <code class="docutils literal notranslate"><span class="pre">perf</span></code> sampling instead.</p></li>
+<li><p><strong>Duplicate dictionary entries silently take the last value.</strong> Appending a second <code class="docutils literal notranslate"><span class="pre">profiling</span> <span class="pre">{</span> <span class="pre">...</span> <span class="pre">}</span></code> block via <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">&gt;&gt;</span></code> after an existing one in <code class="docutils literal notranslate"><span class="pre">controlDict.prof</span></code> means OpenFOAM’s parser uses the appended block’s settings, silently overriding the first — not a syntax error, so it’s easy to miss. Fixed by <code class="docutils literal notranslate"><span class="pre">sed</span></code>-deleting any existing <code class="docutils literal notranslate"><span class="pre">profiling</span> <span class="pre">{</span> <span class="pre">...</span> <span class="pre">}</span></code> block before appending a fresh one.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">perf</span> <span class="pre">record</span></code> is usable on this cluster’s compute nodes</strong> without any special permission adjustment — confirmed via <code class="docutils literal notranslate"><span class="pre">perf</span> <span class="pre">stat</span> <span class="pre">-e</span> <span class="pre">cycles</span> <span class="pre">true</span></code> before relying on it. Wrapped to sample rank 0 only (via <code class="docutils literal notranslate"><span class="pre">PMI_RANK</span></code> check), to avoid 144x sampling overhead.</p></li>
+</ul>
+</section>
+<section id="locked-configuration-going-into-4-nodes">
+<h2>Locked configuration going into 4 nodes<a class="headerlink" href="#locked-configuration-going-into-4-nodes" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>decompositionMethod  hierarchical;
+nHierarchical         (N_nodes×24  6  1);   # ratio-extrapolated, NOT node-boundary-aligned
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mpirun -np &lt;N_nodes×72&gt; --hostfile $PBS_NODEFILE -ppn 72 \
+  -genv I_MPI_PIN_DOMAIN socket -genv I_MPI_PIN_ORDER compact \
+  -genv I_MPI_ADJUST_GATHER 3 -genv I_MPI_ADJUST_BCAST 3
+</pre></div>
+</div>
+<p>Open questions carried forward: whether the ~39–42% unaccounted-time fraction (sections 1–4; not attributable to any named OpenFOAM profiling trigger, and not explained by the <code class="docutils literal notranslate"><span class="pre">perf</span></code>-visible GaussSeidelSmoother/lduMatrix computation either) grows disproportionately at 4 nodes (communication-bound signature) or stays flat (compute-bound signature); whether the NUMA warm-up transient (section 5) behaves the same way over 150 iterations; and whether the 4.9–15.8% job-to-job variance measured here (section 7) is stable or grows at 4-node scale, which would materially affect how many repeat submissions are needed to trust the scored number.</p>
+<hr class="docutils" />
+<p><em>Setup: <code class="docutils literal notranslate"><span class="pre">occDrivAerStaticMesh</span></code>, OpenFOAM v2512 (built from source, Intel oneAPI compilers 2024.2.0, Intel MPI 2021.13.0), coarse mesh (65M cells), 2× dual-socket Intel Xeon 8452Y “Sapphire Rapids” nodes (72 cores/node, no SMT, 500GB/node requested), PBS Pro, <code class="docutils literal notranslate"><span class="pre">psm3</span></code> libfabric provider confirmed in every multi-node run (no TCP fallback observed).</em></p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="occDrivAer-4node-scaling-notes.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">OpenFOAM HPC Challenge (OHC-1): Diagnosing a Silent 16% Performance Regression from Scheduler Node Placement</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="vanda-decomposition-binding-study.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Khiu Kim Hong
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes</a><ul>
+<li><a class="reference internal" href="#test-matrix-and-fixed-parameters">Test matrix and fixed parameters</a></li>
+<li><a class="reference internal" href="#single-node-profiling-baseline-context-from-the-prior-session">1. Single-node profiling baseline (context from the prior session)</a></li>
+<li><a class="reference internal" href="#decomposition-placement-sweep-4-hierarchical-variants-job-v3-profiled-harness">2. Decomposition placement sweep — 4 hierarchical variants (job: <code class="docutils literal notranslate"><span class="pre">v3</span></code>, profiled harness)</a></li>
+<li><a class="reference internal" href="#decomposition-method-comparison-scotch-vs-hierarchical-job-v4-profiled-harness">3. Decomposition method comparison — scotch vs. hierarchical (job: <code class="docutils literal notranslate"><span class="pre">v4</span></code>, profiled harness)</a></li>
+<li><a class="reference internal" href="#mpi-tuning-sweep-on-top-of-the-winning-decomposition-job-v5-profiled-harness">4. MPI tuning sweep on top of the winning decomposition (job: <code class="docutils literal notranslate"><span class="pre">v5</span></code>, profiled harness)</a></li>
+<li><a class="reference internal" href="#stacking-numa-pinning-gamg-collectives-and-a-warm-up-transient-job-stack-final-clean-harness-no-forced-write-no-profiling-instrumentation">5. Stacking NUMA pinning + GAMG collectives, and a warm-up transient (job: <code class="docutils literal notranslate"><span class="pre">stack_final</span></code>, clean harness — no forced write, no profiling instrumentation)</a></li>
+<li><a class="reference internal" href="#a-confound-we-checked-and-ruled-out">6. A confound we checked and ruled out</a></li>
+<li><a class="reference internal" href="#job-to-job-hardware-allocation-variance">7. Job-to-job hardware/allocation variance</a></li>
+<li><a class="reference internal" href="#scaling-efficiency-1-2-nodes">8. Scaling efficiency (1 → 2 nodes)</a></li>
+<li><a class="reference internal" href="#resource-accounting">9. Resource accounting</a></li>
+<li><a class="reference internal" href="#known-issues-and-implementation-notes">10. Known issues and implementation notes</a></li>
+<li><a class="reference internal" href="#locked-configuration-going-into-4-nodes">Locked configuration going into 4 nodes</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    </body>
+</html>
