@@ -1,0 +1,722 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="prev" title="khkhiu.github.io documentation" href="../index.html">
+
+    <!-- Generated with Sphinx 9.2.0 and Furo 2025.12.19 -->
+        <title>Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM - khkhiu.github.io documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">khkhiu.github.io  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">khkhiu.github.io  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Posts</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/posts/2026-11-27-apac-hpc-ai.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="fifteen-turning-points-what-apac-hpc-ai-2026-taught-us-about-tuning-openfoam">
+<h1>Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM<a class="headerlink" href="#fifteen-turning-points-what-apac-hpc-ai-2026-taught-us-about-tuning-openfoam" title="Link to this heading">¶</a></h1>
+<p><em>Published: 2026-11-27</em></p>
+<p><strong>TL;DR:</strong> Team Kent Ridge finished the 9th APAC HPC-AI Competition with a Merit award. That result came out of a long chain of experiments on the OpenFOAM task, and the chain bent at fifteen points. Those turning points share one pattern: almost every belief we started with was overturned by measurement. The beliefs that fell were big ones. We thought hierarchical decomposition would win, that allReduce was the 4-node bottleneck, and that the MPI library was breaking our core binding. All three were wrong. The biggest gains came from diagnosis rather than tuning. Fixing rank pinning and fusing two passes over the solver’s matrix each beat every MPI knob and compiler flag we tried, combined.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These are working notes reconstructed from our session logs, not a controlled
+study. They cover the OpenFOAM task only, which is the half I worked on. The
+Qwen3-235B inference task was run by my teammates, and it appears here only
+where it changed how the whole submission was framed. The fused-residual kernel
+in turning point 12 was written by a teammate; my part was testing, porting and
+profiling it.</p>
+</div>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">¶</a></h2>
+<p>The competition paired two workloads. One workload was Qwen3-235B inference on 16 GPUs. The other workload, the one these notes are about, was OpenFOAM’s <code class="docutils literal notranslate"><span class="pre">simpleFoam</span></code> solving airflow over the <code class="docutils literal notranslate"><span class="pre">occDrivAerStaticMesh</span></code> car: 65 million cells, at 140 km/h, on four CPU nodes. Those four nodes could sit on either of two national supercomputers: NSCC Singapore’s <strong>ASPIRE 2A</strong> or NCI Australia’s <strong>Gadi</strong>. Both machines were open to us, so we ran full studies on both and picked one for the scored entry.</p>
+<p>The scored entry is measured by one number: <strong>average wall-clock time per time step</strong>. That number has to come with a correct answer, which here means the drag coefficient (Cd) at the end of the run. Cd is checked in two ways, depending on which tier a change falls under:</p>
+<ul class="simple">
+<li><p><strong>Basic tier:</strong> runtime settings, rank counts, decomposition, MPI transport and site builds. Basic runs only need to pass a loose sanity check against the reference case.</p></li>
+<li><p><strong>Bonus tier:</strong> anything that changes code or floating-point behaviour. Bonus runs have to be compared against the team’s own Basic run, and Cd has to stay within ±0.5% of it.</p></li>
+</ul>
+<p>That tier boundary mattered more than we expected. It decided how two of our results were labelled, and it shaped what we presented.</p>
+<p>The case itself was not new. It comes from the <strong>first OpenFOAM HPC Challenge (OHC-1)</strong>, a community benchmark that collected 237 valid submissions from 12 organisations. That history gave us a head start, and as turning point 1 shows, it also gave us a wrong assumption.</p>
+</section>
+<hr class="docutils" />
+<section id="phase-0-practice-clusters-september-to-early-october">
+<h2>Phase 0: Practice clusters (September to early October)<a class="headerlink" href="#phase-0-practice-clusters-september-to-early-october" title="Link to this heading">¶</a></h2>
+<section id="hierarchical-beat-scotch-on-vanda-and-ohc-1-seemed-to-agree">
+<span id="1-hierarchical-beat-scotch-on-vanda-and-ohc-1-seemed-to-agree"></span><h3>1. Hierarchical beat scotch on Vanda, and OHC-1 seemed to agree<a class="headerlink" href="#hierarchical-beat-scotch-on-vanda-and-ohc-1-seemed-to-agree" title="Link to this heading">¶</a></h3>
+<p>Our first runs went onto Vanda, NUS’s Sapphire Rapids practice cluster. Vanda let us compare the two decomposition methods we cared about: <code class="docutils literal notranslate"><span class="pre">hierarchical</span></code> and <code class="docutils literal notranslate"><span class="pre">scotch</span></code>. Those two methods split the mesh in very different ways. Hierarchical cuts the mesh geometrically, slicing it into boxes along x, y and z. Scotch treats the mesh as a graph and cuts it where the fewest connections cross between pieces. Each piece goes to one MPI rank, and every face that crosses between ranks is data that has to be exchanged on every iteration. On paper, then, scotch should communicate less.</p>
+<p>Our early September numbers said the opposite:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>1 node</p></th>
+<th class="head"><p>2 nodes</p></th>
+<th class="head"><p>4 nodes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>hierarchical</p></td>
+<td><p>10.25 s/step</p></td>
+<td><p>4.89 s/step</p></td>
+<td><p>2.84 s/step</p></td>
+</tr>
+<tr class="row-odd"><td><p>scotch</p></td>
+<td><p>19.24 s/step</p></td>
+<td><p>5.31 s/step</p></td>
+<td><p>3.29 s/step</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The 1-node scotch figure looked suspicious. That suspicion came from the scaling it implied: 181% parallel efficiency from one node to two, which isn’t physically plausible here. A plausible explanation is that the single 1-node scotch run was simply bad, through cold caches, contention, or an unlucky partition. Even with that run set aside, hierarchical still led at 2 and 4 nodes. A later controlled 2-node test kept it ahead (4.871 vs 5.005 s/step). That test also offered a reason: scotch left about 1% cell imbalance between ranks, while hierarchical’s was essentially zero, and the solver’s global steps wait for the most loaded rank.</p>
+<p>That reason seemed to be backed by published data. The data came from the OHC-1 submission spreadsheets, which we read before spending any scored-cluster time. In those spreadsheets, every top hardware-track team that reported its method used hierarchical decomposition with RCM (reverse Cuthill–McKee) renumbering. RCM reorders cells so that neighbours sit close together in memory, which matters for a solver that spends most of its time waiting on memory. Nobody had won by switching to a graph partitioner.</p>
+<p><strong>Why it was a turning point:</strong> we concluded the method was settled and only the numbers needed tuning. That conclusion carried straight into our first plans for Gadi, which recommended a hierarchical <code class="docutils literal notranslate"><span class="pre">(52</span> <span class="pre">8</span> <span class="pre">1)</span></code> layout. Turning point 5 overturned it.</p>
+</section>
+<section id="shared-nodes-on-vanda-taught-us-to-measure-noise-first">
+<span id="2-shared-nodes-on-vanda-taught-us-to-measure-noise-first"></span><h3>2. Shared nodes on Vanda taught us to measure noise first<a class="headerlink" href="#shared-nodes-on-vanda-taught-us-to-measure-noise-first" title="Link to this heading">¶</a></h3>
+<p>Vanda’s scheduler allowed other users’ jobs onto the nodes we were using. Those shared nodes cost us about 16% on one run, which was larger than any optimisation we were testing at the time. That gap forced the question every later experiment had to answer first: how much does an unchanged configuration vary on its own?</p>
+<p>On its own, an unchanged configuration varied a lot. Repeating the same job under the same harness moved the result by about 5%. Moving between our two measurement harnesses widened that to 13–16%. A spread that wide made most single-run comparisons meaningless, because a typical tuning change was worth a few percent at best.</p>
+<p>A few percent also hid in the hardware we landed on. One job landed on a GPU node with a different CPU from the rest of the cluster. That node would have quietly produced a non-comparable number, so we added a CPU guard that aborted any job on the wrong processor within seconds.</p>
+<p><strong>Why it was a turning point:</strong> this is where our working rules came from. Those rules were: request dedicated nodes, record which nodes every job ran on, establish the noise floor before tuning, and only accept a change if it was faster by more than 1% across three repeats with Cd unchanged. Every later result in these notes was judged against those rules.</p>
+</section>
+<section id="profiling-on-the-soc-cluster-gave-us-a-method-not-just-numbers">
+<span id="3-profiling-on-the-soc-cluster-gave-us-a-method-not-just-numbers"></span><h3>3. Profiling on the SOC cluster gave us a method, not just numbers<a class="headerlink" href="#profiling-on-the-soc-cluster-gave-us-a-method-not-just-numbers" title="Link to this heading">¶</a></h3>
+<p>The method we used for the rest of the competition started on the School of Computing cluster. That cluster’s 10 GbE network couldn’t represent either scored machine’s interconnect, so we used it only for single-node behaviour. Single-node behaviour turned out to be the most important thing to understand. We ran STREAM to find the memory-bandwidth ceiling, swept rank counts, and collected hardware counters with <code class="docutils literal notranslate"><span class="pre">perf</span></code>.</p>
+<p>The counters told a consistent story. Above roughly 16 ranks, the solver was <strong>memory-bound</strong>: adding cores added little, because the cores were all waiting on the same memory bandwidth. That bandwidth limit explained a second finding: spreading ranks across the chip beat packing them together. Packed ranks crowd onto the same memory controllers, and spread ranks share the load.</p>
+<p>That load picture became a plan we could carry anywhere: run, profile, optimise, repeat, at 1, 2 and then 4 nodes, changing one thing at a time. We wrote it so that every cluster-specific detail lived in a single environment file, and moved it unchanged to ASPIRE 2A and Gadi.</p>
+<p><strong>Why it was a turning point:</strong> from here on, the competition was a loop instead of a guess. The loop is also what made the next twelve turning points visible, because each one started as a profile that disagreed with what we expected.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="phase-1-scored-clusters-and-the-basic-tier-7-to-14-october">
+<h2>Phase 1: Scored clusters and the Basic tier (7 to 14 October)<a class="headerlink" href="#phase-1-scored-clusters-and-the-basic-tier-7-to-14-october" title="Link to this heading">¶</a></h2>
+<section id="aspire-2a-ranks-were-losing-their-pinning">
+<span id="4-aspire-2a-ranks-were-losing-their-pinning"></span><h3>4. ASPIRE 2A: ranks were losing their pinning<a class="headerlink" href="#aspire-2a-ranks-were-losing-their-pinning" title="Link to this heading">¶</a></h3>
+<p>The loop’s first run on ASPIRE 2A produced numbers that wouldn’t sit still. Those numbers moved by 3–6% between identical runs, far more than ASPIRE’s dedicated nodes should allow. That much movement pointed at something inside the job rather than outside it.</p>
+<p>Inside the job, the ranks were wandering. ASPIRE’s nodes have two 64-core AMD EPYC 7713 processors with simultaneous multithreading (SMT), so each physical core appears to Linux as two logical CPUs: CPU <em>n</em> and CPU <em>n</em>+128. We launched one rank per physical core and pinned each one, which means telling the kernel which CPU a rank may run on. That pinning wasn’t holding. A sampling run found 96 of 387 sampled ranks sitting on CPUs numbered 128 or above, the SMT siblings of cores that already had a rank.</p>
+<p>A rank sitting on a sibling shares one physical core with another rank. That sharing roughly halves both ranks’ speed, and in this solver every iteration waits for the slowest rank. The slowest rank therefore set the pace for all of them. A small probe program printed each rank’s CPU mask before and after <code class="docutils literal notranslate"><span class="pre">MPI_Init</span></code>. Before <code class="docutils literal notranslate"><span class="pre">MPI_Init</span></code>, the masks were correct; after it, every rank’s mask had widened to all 256 logical CPUs.</p>
+<p>All 256 CPUs open meant the scheduler was free to move ranks anywhere, so we took that freedom away again. Our team’s script, <code class="docutils literal notranslate"><span class="pre">pin.sh</span></code>, re-applies each rank’s binding with <code class="docutils literal notranslate"><span class="pre">taskset</span></code> every 0.2 seconds for the first 60 seconds of the run. Sixty seconds is long enough to outlast whenever the mask gets reset. The fix touches no source code, no libraries and no preloaded code:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nodes</p></th>
+<th class="head"><p>Gain from re-pinning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>8.7% faster</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>7.2% faster</p></td>
+</tr>
+<tr class="row-even"><td><p>Run-to-run noise</p></td>
+<td><p>4.7% → 0.3%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>That noise drop mattered as much as the speed. Speed was the headline, but noise was the enabler: at 0.3%, a 1% difference was finally real. Real differences need correct answers too, and Cd came out bit-identical with and without the fix.</p>
+<p><strong>Why it was a turning point:</strong> this was the biggest single gain of the competition, and it came from diagnosis rather than tuning. Before it, most of our ASPIRE comparisons had been lost in the noise. (Turning point 10 corrects our first explanation of <em>why</em> the masks were reset.)</p>
+</section>
+<section id="scotch-overtook-hierarchical-on-both-scored-clusters">
+<span id="5-scotch-overtook-hierarchical-on-both-scored-clusters"></span><h3>5. Scotch overtook hierarchical on both scored clusters<a class="headerlink" href="#scotch-overtook-hierarchical-on-both-scored-clusters" title="Link to this heading">¶</a></h3>
+<p>The settled method from turning point 1 didn’t survive the scored clusters. Those clusters reversed it on both machines. On ASPIRE 2A, scotch tied hierarchical at one node, then pulled ahead by about 3% at two nodes and 2–3% at four. Gadi showed the same pattern, with scotch’s margin growing as node count rose.</p>
+<p>That growth had a clear source in the decomposition logs. The logs showed scotch producing <strong>40–50% fewer processor boundary faces</strong> than the best hierarchical shapes. Fewer boundary faces mean less data crossing between ranks on every iteration, and that saving grows as more of the traffic has to cross the network between nodes. On Vanda’s slower network the opposite effect, scotch’s small cell imbalance, had dominated. On ASPIRE’s and Gadi’s faster interconnects, the communication saving won.</p>
+<p>Winning communication was only half the configuration; rank count was the other half, and there the two machines disagreed:</p>
+<ul class="simple">
+<li><p><strong>ASPIRE 2A:</strong> 448 ranks (112 per node, 14 per memory domain) beat a fully loaded 512 by 1.5% across three repeats. Leaving a core idle in each memory domain gave the remaining ranks more bandwidth each.</p></li>
+<li><p><strong>Gadi:</strong> a full 104 ranks per node beat every reduced count. Gadi’s Sapphire Rapids nodes have more memory bandwidth per core, so every core could be used.</p></li>
+</ul>
+<p><strong>Why it was a turning point:</strong> it overturned the belief the whole plan was built on. It also taught us that “what wins” depends on the machine, which turned our two-cluster study from duplicated effort into a source of contrasts to explain.</p>
+</section>
+<section id="the-4-node-bottleneck-wasn-t-communication-it-was-the-car-s-surface">
+<span id="6-the-4-node-bottleneck-wasnt-communication-it-was-the-cars-surface"></span><h3>6. The 4-node bottleneck wasn’t communication; it was the car’s surface<a class="headerlink" href="#the-4-node-bottleneck-wasn-t-communication-it-was-the-car-s-surface" title="Link to this heading">¶</a></h3>
+<p>Communication looked like the obvious 4-node problem. That impression came from CrayPat, HPE’s profiler on ASPIRE 2A, which showed MPI time growing from 12% of each step at one node to 14% at two and 29% at four. Within that MPI time, <code class="docutils literal notranslate"><span class="pre">allReduce</span></code> dominated. allReduce is a collective in which every rank contributes a number and every rank waits for the combined result. Most of these calls come from the solver’s coarsest multigrid level, which runs a fixed number of iterations per step whatever the node count.</p>
+<p>That diagnosis predicted that MPI tuning would help, and it didn’t. We tested nine MPI-side settings at two nodes: collective algorithms, transports, polling, rank reordering, and others. All nine tied the baseline. Nine ties in a row suggested the time inside allReduce wasn’t the cost of communicating at all. It was the cost of waiting.</p>
+<p>Waiting at a collective means some ranks arrive late, so we looked at which ranks were late. Per-rank correlation answered it. Scotch balances <strong>cell counts</strong> almost perfectly, but cells aren’t equal. Ranks that held many <strong>wall faces</strong>, the faces on the car’s surface where boundary conditions add extra work, were consistently slower. Those slow ranks made everyone else wait at the next allReduce, so imbalance showed up in the profile disguised as communication time. Wall-face count correlated with MPI wait time at r = −0.61: the ranks with the most surface waited least, because everyone else was waiting for them.</p>
+<p>Waiting for them pointed to a fix, and the fix was out of reach. That fix would be a <strong>weighted decomposition</strong>, telling scotch to treat wall-adjacent cells as more expensive, so that surface-heavy ranks get fewer cells. We estimated a ceiling of about 5%. Our OpenFOAM build had no simple way to supply those weights, so it stayed future work.</p>
+<p><strong>Why it was a turning point:</strong> it corrected a conclusion already written into our documentation. It also became one of the questions we most expected the judges to ask, because it was the clearest gain we had left on the table.</p>
+</section>
+<section id="gadi-s-hidden-variables-wall-clock-time-stalls-and-node-draws">
+<span id="7-gadis-hidden-variables-wall-clock-time-stalls-and-node-draws"></span><h3>7. Gadi’s hidden variables: wall-clock time, stalls and node draws<a class="headerlink" href="#gadi-s-hidden-variables-wall-clock-time-stalls-and-node-draws" title="Link to this heading">¶</a></h3>
+<p>The table above says Gadi was more forgiving about rank count. Gadi was less forgiving about almost everything else, and the first surprise was in the metric itself. The scored metric uses <strong>wall-clock</strong> time, not CPU time. Wall-clock time includes anything that makes the job wait, even when the processors are idle.</p>
+<p>Idle processors showed up more often than we expected. On Gadi, occasional stalls in the shared Lustre filesystem added seconds to individual steps. Individual nodes also varied: one group of Sapphire Rapids nodes ran consistently slower than the rest, and node-to-node differences reached about 3%. Three percent is several times larger than some of the gains we were trying to measure.</p>
+<p>Trying to measure through that kind of variance needed a different strategy. Our strategy became <strong>submitting the best of several runs</strong> of the final configuration, since the rules allowed it and the variance was outside our control. We also checked whether filesystem tuning could help, and it couldn’t. Mesh reading at start-up is excluded from the score, and the solve phase writes almost nothing. So the stalls were a matter of luck, not a lever.</p>
+<p><strong>Why it was a turning point:</strong> it changed how we read every Gadi result. A rebuilt solver that looked no faster on average could still be faster, if it had drawn slower nodes. That problem set up the next turning point.</p>
+</section>
+<section id="the-gadi-rebuild-a-tiny-gain-with-a-big-lesson-about-fma">
+<span id="8-the-gadi-rebuild-a-tiny-gain-with-a-big-lesson-about-fma"></span><h3>8. The Gadi rebuild: a tiny gain with a big lesson about FMA<a class="headerlink" href="#the-gadi-rebuild-a-tiny-gain-with-a-big-lesson-about-fma" title="Link to this heading">¶</a></h3>
+<p>Gadi’s stock OpenFOAM was compiled for generic x86-64, so we rebuilt the solver for the actual hardware. The hardware is Sapphire Rapids, but Gadi’s system GCC 8.5 doesn’t recognise that target. That limitation pointed us to <code class="docutils literal notranslate"><span class="pre">-march=icelake-server</span></code>, which still enables the important instructions the generic build lacked: <strong>FMA</strong> (fused multiply-add) and AVX-512. Before the rebuild could even run, we had to work around missing build metadata in the stock install.</p>
+<p>That rebuild was worth only 0.6–0.9% at four nodes. Such a small gain sat well inside Gadi’s node-to-node variance, so raw averages of stock and rebuilt runs looked misleadingly equal. Equal-looking averages called for a controlled test: stock and rebuilt solvers run back to back on the same nodes inside one job, with hardware counters recording every pass.</p>
+<p>Every pass told the same story. Executed instructions fell, but cycles didn’t. Cycles stayed the same because the solver is memory-bound: it spends its time waiting for data, and fewer instructions don’t make the data arrive sooner. What changed was a slightly higher clock speed, since the processor did less work per cycle while it waited. That clock increase was almost the entire gain. AVX-512 contributed close to nothing, because about 87% of the floating-point work is scalar. Most of it is in the Gauss–Seidel smoother, whose data dependencies stop it from being vectorised.</p>
+<p>Those dependencies also explained something more worrying. FMA rounds once where a separate multiply and add round twice. Rounding once changes the last bits of each result, and in an iterative solver that small difference compounds. With FMA, Cd moved by 0.03% for scotch but 0.88% for hierarchical. A dedicated control build with FMA contraction switched off (<code class="docutils literal notranslate"><span class="pre">-ffp-contract=off</span></code>) confirmed that FMA alone caused both the speed gain and the Cd shift.</p>
+<p><strong>Why it was a turning point:</strong> it shaped the tier question. The rules put flags that change IEEE floating-point behaviour under Bonus, and FMA changes rounding. We eventually classified the rebuild as <strong>Bonus</strong>, which turned out to be the safer choice. It also left us with a precise answer for judges, “FMA, not vectorisation, and here is the proof”, in place of a vague “compiler flags helped”.</p>
+</section>
+<section id="both-bonus-ideas-came-up-empty-and-basic-was-locked">
+<span id="9-both-bonus-ideas-came-up-empty-and-basic-was-locked"></span><h3>9. Both Bonus ideas came up empty, and Basic was locked<a class="headerlink" href="#both-bonus-ideas-came-up-empty-and-basic-was-locked" title="Link to this heading">¶</a></h3>
+<p>Locking Basic first was a rule, not a choice. That rule says Bonus speedups must be measured against the team’s own Basic run, so our two Bonus ideas were tested against the configurations above.</p>
+<p>The first idea targeted the allReduce calls from turning point 6. <strong>GAMG processor agglomeration</strong> gathers the coarsest multigrid level onto fewer ranks, so the global reductions happen among fewer participants. On ASPIRE 2A it passed the correctness check and cut allReduce calls by 82%. The 82% saving vanished in practice: the waiting simply moved to the next synchronisation point, because the underlying imbalance hadn’t changed. On Gadi it was 3.2% slower, because funnelling coarse-level work onto one rank made the others wait for it.</p>
+<p>The second idea was <strong>multiLevel decomposition</strong>, which splits the mesh first by node and then within each node. On ASPIRE 2A it tied on speed but failed the Bonus correctness check: Cd shifted 4.9% at four nodes, ten times outside the allowed ±0.5%. On Gadi we stopped it after a cheap decomposition-only check suggested it wouldn’t beat scotch, saving most of a full run’s budget.</p>
+<p>That left the Basic results as our anchors:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cluster</p></th>
+<th class="head"><p>Configuration</p></th>
+<th class="head"><p>Result</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ASPIRE 2A</p></td>
+<td><p>scotch, 448 ranks, re-pinned</p></td>
+<td><p>2.92 s/step, 18.3% faster than the organisers’ reference</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gadi</p></td>
+<td><p>scotch, 416 ranks, FMA rebuild</p></td>
+<td><p>2.0538 s/step</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Why it was a turning point:</strong> it closed the “tune the configuration” phase of the competition. Everything after this point was about new code, better explanations, or presenting what we had honestly.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="phase-2-late-wins-and-framing-late-october-to-6-november">
+<h2>Phase 2: Late wins and framing (late October to 6 November)<a class="headerlink" href="#phase-2-late-wins-and-framing-late-october-to-6-november" title="Link to this heading">¶</a></h2>
+<section id="the-pinning-root-cause-was-the-kernel-not-the-mpi-library">
+<span id="10-the-pinning-root-cause-was-the-kernel-not-the-mpi-library"></span><h3>10. The pinning root cause was the kernel, not the MPI library<a class="headerlink" href="#the-pinning-root-cause-was-the-kernel-not-the-mpi-library" title="Link to this heading">¶</a></h3>
+<p>Our first explanation for turning point 4 blamed Cray MPICH. That explanation fit the evidence we had then: masks were correct before <code class="docutils literal notranslate"><span class="pre">MPI_Init</span></code> and wrong after it, so MPI looked responsible. It wasn’t. A teammate’s question about whether threads, not ranks, were being misplaced reopened the investigation. We followed it with <code class="docutils literal notranslate"><span class="pre">strace</span></code> and probe programs that recorded each rank’s CPU mask and control group at several points during start-up.</p>
+<p>Those records showed something no MPI setting could reach. The rank never called the system call that changes affinity. Instead, during the start-up handshake inside <code class="docutils literal notranslate"><span class="pre">MPI_Init</span></code>, the PBS scheduler moves each rank into the job’s <strong>cpuset control group (cgroup)</strong>, the kernel mechanism that fences a job onto its allocated CPUs. Under cgroup v1, that move <strong>resets the rank’s CPU mask to the whole node</strong>, silently undoing the launcher’s correct binding.</p>
+<p>Silently undoing it is why every MPI binding option we had tried had failed. Those options act before or during launch, and the reset happens afterwards, inside the kernel. So re-pinning after start-up, which is what <code class="docutils literal notranslate"><span class="pre">pin.sh</span></code> does, really was the right fix.</p>
+<p><strong>Why it was a turning point:</strong> the fix didn’t change, but the story did, and the story is what judges score. “The scheduler’s cgroup move resets affinity, so we re-pin after it” is precise, checkable, and doesn’t wrongly blame a vendor library. We also built a plain-language version for a non-specialist audience: cooks who keep being shuffled away from their own stoves.</p>
+</section>
+<section id="common-baselines-changed-how-results-were-framed">
+<span id="11-common-baselines-changed-how-results-were-framed"></span><h3>11. “Common baselines” changed how results were framed<a class="headerlink" href="#common-baselines-changed-how-results-were-framed" title="Link to this heading">¶</a></h3>
+<p>The organisers introduced common baselines for scoring partway through. Those baselines mattered most for the Qwen task, where submissions didn’t separate Basic from Bonus results. The team’s decision was to lead with the Basic result (2,794.52 goodput, +52.5% over the baseline) and show the Bonus result (3,341.2, +82.4%) on top of it, rather than presenting the larger number alone.</p>
+<p>That decision set the pattern for the whole deck. The pattern was: Basic first, Bonus measured against our own Basic, and both decomposition methods shown side by side on every OpenFOAM chart. Side-by-side charts cost us a cleaner headline, but they meant no judge could think we had hidden the method that lost.</p>
+<p><strong>Why it was a turning point:</strong> it made transparency the presentation strategy. That strategy paid off in turning point 13, when the tier labels had to be reconciled under time pressure.</p>
+</section>
+<section id="a-teammate-s-fused-kernel-became-the-late-game-changer">
+<span id="12-a-teammates-fused-kernel-became-the-late-game-changer"></span><h3>12. A teammate’s fused kernel became the late game-changer<a class="headerlink" href="#a-teammate-s-fused-kernel-became-the-late-game-changer" title="Link to this heading">¶</a></h3>
+<p>The largest late gain came from new code. That code was a teammate’s drop-in replacement for OpenFOAM’s <code class="docutils literal notranslate"><span class="pre">smoothSolver::solve</span></code>. It <strong>fuses the Gauss–Seidel sweep and the residual calculation into a single pass</strong> over the matrix, where the stock code makes two. The solver is memory-bound, so a pass saved is memory traffic saved. The teammate estimated about 37% less traffic in that routine. The kernel loads at run time through <code class="docutils literal notranslate"><span class="pre">LD_PRELOAD</span></code>, so OpenFOAM itself is untouched.</p>
+<p>Untouched source still needed proof of correctness, so the first job was checking that the change was legitimate. Legitimacy came down to one question: did it compute the same residuals the solver relies on, only in a different order? It did. We then built A/B infrastructure that ran baseline, fused, baseline, fused on the same nodes in one job, and used the kernel’s own verify mode to compare every solve.</p>
+<p>Every solve matched on ASPIRE 2A:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cluster</p></th>
+<th class="head"><p>Speedup at 1, 2 and 4 nodes</p></th>
+<th class="head"><p>Correctness</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ASPIRE 2A</p></td>
+<td><p>9.5% to 12.0% faster</p></td>
+<td><p>bit-identical Cd</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gadi (after fix)</p></td>
+<td><p>7.3% to 9.9% faster</p></td>
+<td><p>verify mode: 0 mismatches</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>That Gadi row hides a detour. On the first Gadi attempt, verify mode reported <strong>20,800 mismatched solves out of 20,800</strong>. Every mismatch traced back to one loop, and to the same FMA behaviour as turning point 8. ASPIRE’s Cray GCC 11.2 and Gadi’s GCC 8.5 rebuild contracted that loop’s arithmetic into FMA instructions differently. So the fused and stock versions rounded differently on Gadi only. A one-line change, writing that operation explicitly as <code class="docutils literal notranslate"><span class="pre">std::fma</span></code>, made both compilers produce the same arithmetic. After it, verify mode found zero mismatches across 312,000 solves at the scored four-node configuration.</p>
+<p>That configuration exposed one more Gadi quirk. Gadi runs weren’t bit-reproducible even with <em>no</em> change, probably because MPI reductions combine numbers in different orders from run to run. On Gadi, then, correctness rested on verify mode plus Cd tolerance rather than comparing output files.</p>
+<p>Output files and profiles together located the gain precisely. All of it came from the smoother calls for velocity and the two turbulence fields, about a third of each time step on both clusters. Within those calls, the speedup <em>grew</em> with node count: from 33% to 44% on ASPIRE 2A, and from 29% to 34% on Gadi, between one and four nodes. Why it grows remains unexplained.</p>
+<p><strong>Why it was a turning point:</strong> it was the only optimisation that carried across both clusters for a large gain, and it replaced the final numbers in our charts. It also produced our best story about teamwork. One person’s idea was verified, debugged and ported by another, and a compiler difference that should have been a disaster turned into a one-line fix.</p>
+</section>
+<section id="reconciling-the-deck-before-the-3-november-presentation">
+<span id="13-reconciling-the-deck-before-the-3-november-presentation"></span><h3>13. Reconciling the deck before the 3 November presentation<a class="headerlink" href="#reconciling-the-deck-before-the-3-november-presentation" title="Link to this heading">¶</a></h3>
+<p>The final presentation was on 3 November. That deadline arrived while the deck still carried three weeks of evolving labels. Those labels contradicted each other in places. Some slides called the rebuild Basic and others Bonus. Rebuild gains were quoted with different figures, and one appendix slide showed Gadi data under an ASPIRE 2A title.</p>
+<p>Titles were the easy part; the rules were the hard part. Rule F2 requires Bonus speedups to be measured against the team’s own Basic run, so every Bonus number had to be re-anchored. Re-anchoring settled the rebuild question from turning point 8: it went to Bonus, with the stock Gadi build as the Basic reference. Two appendix slides explained FMA from scratch. They showed that FMA’s effect on Cd was about 200 times smaller than the effect of switching decomposition method, and well inside the ±0.5% band.</p>
+<p>That band gave us confidence in our answers, but not in every question. We prepared for the judges’ most likely questions. The first was whether the fused kernel was valid. The second was why we hadn’t fixed the surface-driven load imbalance. A third we could answer only honestly: why the fused kernel’s gain grows with node count, which we didn’t know.</p>
+<p><strong>Why it was a turning point:</strong> consistency became part of the result. A judge who catches one mislabelled slide starts doubting the rest, so a coherent deck protected numbers we had spent weeks earning.</p>
+</section>
+<section id="closing-out-the-submission">
+<span id="14-closing-out-the-submission"></span><h3>14. Closing out the submission<a class="headerlink" href="#closing-out-the-submission" title="Link to this heading">¶</a></h3>
+<p>Closing out the submission meant packaging every result so that someone else could check it. Checking required a specific layout: build files, job scripts, dictionaries, results by node count, and a README for each cluster. That layout didn’t match how our files had grown, so both clusters’ packages were rebuilt around it, with the originals kept as a fallback.</p>
+<p>The fallback copies turned out to matter. Rebuilding the ASPIRE package exposed an old README that had labelled two runtime-only tests as Bonus. Under rule F1 those tests were Basic, and the new README corrected that. The final Read-me for the organisers then mapped every presented experiment to its job, script, log and Cd evidence. Where a slide’s percentage didn’t match the recomputed number, we removed the claim and wrote “no change beyond noise”.</p>
+<p>That wording was less impressive and more true. The OpenFOAM half was completed and checked against the shared folder the organisers received. The Qwen half went back to the Qwen team, the only people who could vouch for it. Everything was in before the 6 November noon deadline.</p>
+<p><strong>Why it was a turning point:</strong> it was the last chance to be wrong in public. Removing an unsupported number cost nothing, while leaving it in could have cost the credibility of everything around it.</p>
+</section>
+<section id="outcome-a-merit-award-and-an-isc27-application">
+<span id="15-outcome-a-merit-award-and-an-isc27-application"></span><h3>15. Outcome: a Merit award and an ISC27 application<a class="headerlink" href="#outcome-a-merit-award-and-an-isc27-application" title="Link to this heading">¶</a></h3>
+<p>The outcome was a <strong>Merit award</strong> at the 9th APAC HPC-AI Competition. That award puts Team Kent Ridge in the tier just below the podium, among 33 finalists from 48 teams across 13 regions. Those teams will be recognised at SupercomputingAsia 2027 in Singapore.</p>
+<p>Singapore is also where the next step starts. The next step is an application for the <strong>ISC27 Student Cluster Competition</strong>, whose candidate applications include ExaHyPE and ECsim. In that application, the stories we led with were the ones from this list: the cgroup pinning reset and the fused kernel.</p>
+<p><strong>Why it was a turning point:</strong> it turned a finished competition into a portfolio. The habits behind those two stories were profiling every change, repeating to measure noise and checking Cd before building on anything. Those habits carry over to new codes in a way that specific settings don’t.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="the-pattern-behind-the-turning-points">
+<h2>The pattern behind the turning points<a class="headerlink" href="#the-pattern-behind-the-turning-points" title="Link to this heading">¶</a></h2>
+<p>The turning points fall into two kinds. One kind overturned a belief: hierarchical wins (turning point 5), allReduce is the bottleneck (6), the MPI library breaks pinning (10). Each of those beliefs was reasonable when we held it. A reasonable belief that has never been measured is still just a guess, and on these machines the guesses were wrong more often than right.</p>
+<p>The other kind came from diagnosis. Re-pinning (4) and the fused kernel (12) were worth roughly 7–12% each. Every MPI setting we tried was worth roughly nothing, and the compiler rebuild was worth under 1%. Under 1% is still worth knowing, but the lesson is about where to look. On a memory-bound solver, the largest wins come from finding out where time is <em>really</em> going: ranks fighting over cores, extra passes over memory, ranks waiting on a slow neighbour. Turning knobs on the parts that look slow comes a long way second.</p>
+<p>Second place in that ranking also goes to the work that makes diagnosis possible. That work was measuring noise before tuning (2), keeping one loop across every cluster (3), and labelling results honestly when the rules got subtle (8, 11, 13, 14). None of it shows up as a speedup, and all of it is why the speedups were believable.</p>
+</section>
+<section id="known-issues-and-open-items">
+<h2>Known issues and open items<a class="headerlink" href="#known-issues-and-open-items" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>The fused kernel’s growing gain is unexplained.</strong> Its smoother-only speedup rises from one node to four on both clusters. One hypothesis is that each rank’s working set fits better in cache at higher node counts, which would make saved memory passes relatively more valuable. That hypothesis is untested.</p></li>
+<li><p><strong>Weighted decomposition was never tried.</strong> The ~5% ceiling from turning point 6 is an estimate. Testing it first means confirming whether OpenFOAM’s scotch interface can accept per-cell weights.</p></li>
+<li><p><strong>The superlinear-scaling explanation needs a hardware check.</strong> We attributed better-than-linear scaling to per-sweep working sets becoming cache-resident. The actual L3 sizes on the nodes we ran on should be confirmed before relying on that.</p></li>
+<li><p><strong>Gadi energy data was collected but not analysed.</strong> A run with per-second I/O, network and energy sampling is saved. The energy-per-step and DRAM-share numbers from it were never extracted.</p></li>
+</ul>
+</section>
+<section id="next-up">
+<h2>Next up<a class="headerlink" href="#next-up" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Finish the ISC27 application and size its hardware proposal around the candidate applications’ real GPU support.</p></li>
+<li><p>Read ExaHyPE 2 (built on the Peano framework) with the same loop: build cleanly, measure noise, profile, then change one thing.</p></li>
+<li><p>Revisit the fused kernel’s scaling behaviour, if cluster time becomes available, because an unexplained speedup is also an unexplained risk.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="appendix-glossary-quick-reference">
+<h2>Appendix: glossary quick reference<a class="headerlink" href="#appendix-glossary-quick-reference" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Term</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cell</p></td>
+<td><p>One small 3D volume in the simulation mesh; this case has 65 million</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rank</p></td>
+<td><p>One copy of the solver, owning one piece of the mesh and running on one core</p></td>
+</tr>
+<tr class="row-even"><td><p>Decomposition</p></td>
+<td><p>Splitting the mesh into one piece per rank before a parallel run</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hierarchical</span></code></p></td>
+<td><p>A geometric decomposition that slices the mesh into boxes along x, y and z</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">scotch</span></code></p></td>
+<td><p>A graph-based decomposition that cuts where the fewest faces cross between pieces</p></td>
+</tr>
+<tr class="row-odd"><td><p>Processor face</p></td>
+<td><p>A face shared by two ranks’ pieces; its data is exchanged every iteration</p></td>
+</tr>
+<tr class="row-even"><td><p>Wall face</p></td>
+<td><p>A face on the car’s surface, where boundary conditions add extra work</p></td>
+</tr>
+<tr class="row-odd"><td><p>RCM renumbering</p></td>
+<td><p>Reordering cells so neighbours sit close together in memory</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory-bound</p></td>
+<td><p>Limited by how fast data reaches the processor, not by arithmetic speed</p></td>
+</tr>
+<tr class="row-odd"><td><p>STREAM</p></td>
+<td><p>A benchmark that measures a machine’s achievable memory bandwidth</p></td>
+</tr>
+<tr class="row-even"><td><p>NUMA domain</p></td>
+<td><p>A group of cores sharing one set of memory controllers</p></td>
+</tr>
+<tr class="row-odd"><td><p>SMT</p></td>
+<td><p>Simultaneous multithreading; each physical core appears as two logical CPUs</p></td>
+</tr>
+<tr class="row-even"><td><p>Pinning</p></td>
+<td><p>Fixing which CPU each rank is allowed to run on</p></td>
+</tr>
+<tr class="row-odd"><td><p>cgroup (cpuset)</p></td>
+<td><p>The Linux kernel mechanism that fences a job onto its allocated CPUs</p></td>
+</tr>
+<tr class="row-even"><td><p>allReduce</p></td>
+<td><p>An MPI collective where every rank contributes a value and waits for the combined result</p></td>
+</tr>
+<tr class="row-odd"><td><p>GAMG</p></td>
+<td><p>OpenFOAM’s geometric-algebraic multigrid solver, which solves on coarser and coarser levels</p></td>
+</tr>
+<tr class="row-even"><td><p>Gauss–Seidel smoother</p></td>
+<td><p>The routine that repeatedly refines the solution; most of the solver’s floating-point work</p></td>
+</tr>
+<tr class="row-odd"><td><p>Residual</p></td>
+<td><p>A measure of how far the current solution is from satisfying the equations</p></td>
+</tr>
+<tr class="row-even"><td><p>FMA</p></td>
+<td><p>Fused multiply-add: one instruction, rounded once, instead of a multiply and an add rounded twice</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">LD_PRELOAD</span></code></p></td>
+<td><p>A way to load a replacement library at run time without changing the program</p></td>
+</tr>
+<tr class="row-even"><td><p>Cd</p></td>
+<td><p>Drag coefficient; the correctness check for every run</p></td>
+</tr>
+<tr class="row-odd"><td><p>Basic / Bonus</p></td>
+<td><p>The competition’s two tiers: settings and builds versus code and floating-point changes</p></td>
+</tr>
+<tr class="row-even"><td><p>s/step</p></td>
+<td><p>Wall-clock seconds per solver iteration; the scored metric</p></td>
+</tr>
+<tr class="row-odd"><td><p>Noise floor</p></td>
+<td><p>How much an unchanged configuration varies purely from run to run</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="appendix-numbers-at-a-glance">
+<h2>Appendix: numbers at a glance<a class="headerlink" href="#appendix-numbers-at-a-glance" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Turning point</p></th>
+<th class="head"><p>Key number</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2. Shared nodes</p></td>
+<td><p>~16% lost to co-tenancy; 5–16% run-to-run variance</p></td>
+</tr>
+<tr class="row-odd"><td><p>4. Re-pinning (ASPIRE 2A)</p></td>
+<td><p>8.7% faster at 1 node, 7.2% at 4; noise 4.7% → 0.3%</p></td>
+</tr>
+<tr class="row-even"><td><p>5. Scotch vs hierarchical</p></td>
+<td><p>40–50% fewer processor faces; 448 ranks beat 512 by 1.5% on ASPIRE 2A</p></td>
+</tr>
+<tr class="row-odd"><td><p>6. 4-node profile</p></td>
+<td><p>MPI share 12% → 14% → 29%; nine MPI settings all tied; r = −0.61</p></td>
+</tr>
+<tr class="row-even"><td><p>7. Gadi variance</p></td>
+<td><p>up to ~3% between nodes</p></td>
+</tr>
+<tr class="row-odd"><td><p>8. FMA rebuild (Gadi)</p></td>
+<td><p>0.6–0.9% faster; Cd shift 0.03% (scotch) vs 0.88% (hierarchical)</p></td>
+</tr>
+<tr class="row-even"><td><p>9. Bonus attempts</p></td>
+<td><p>agglomeration: 82% fewer allReduce calls, no gain (ASPIRE), 3.2% slower (Gadi); multiLevel: Cd off by 4.9%</p></td>
+</tr>
+<tr class="row-odd"><td><p>9. Basic anchors</p></td>
+<td><p>ASPIRE 2A 2.92 s/step (18.3% over reference); Gadi 2.0538 s/step</p></td>
+</tr>
+<tr class="row-even"><td><p>11. Qwen framing</p></td>
+<td><p>Basic 2,794.52 (+52.5%); Bonus 3,341.2 (+82.4%)</p></td>
+</tr>
+<tr class="row-odd"><td><p>12. Fused kernel</p></td>
+<td><p>9.5–12.0% faster (ASPIRE 2A), 7.3–9.9% (Gadi); 20,800/20,800 mismatches → 0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<p><em>Setup: <code class="docutils literal notranslate"><span class="pre">occDrivAerStaticMesh</span></code>, OpenFOAM v2512, 65M cells. Scored work on NSCC ASPIRE 2A (2× AMD EPYC 7713 per node, PBS Pro, Cray MPICH over OFI, site OpenFOAM build) and NCI Gadi (Intel Sapphire Rapids <code class="docutils literal notranslate"><span class="pre">normalsr</span></code> nodes, 104 cores per node, PBS Pro, Open MPI, stock and <code class="docutils literal notranslate"><span class="pre">-march=icelake-server</span></code> builds). Practice work on NUS Vanda (Intel Xeon 8452Y) and the NUS School of Computing cluster.</em></p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          <a class="prev-page" href="../index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Khiu Kim Hong
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM</a><ul>
+<li><a class="reference internal" href="#background">Background</a></li>
+<li><a class="reference internal" href="#phase-0-practice-clusters-september-to-early-october">Phase 0: Practice clusters (September to early October)</a><ul>
+<li><a class="reference internal" href="#hierarchical-beat-scotch-on-vanda-and-ohc-1-seemed-to-agree">1. Hierarchical beat scotch on Vanda, and OHC-1 seemed to agree</a></li>
+<li><a class="reference internal" href="#shared-nodes-on-vanda-taught-us-to-measure-noise-first">2. Shared nodes on Vanda taught us to measure noise first</a></li>
+<li><a class="reference internal" href="#profiling-on-the-soc-cluster-gave-us-a-method-not-just-numbers">3. Profiling on the SOC cluster gave us a method, not just numbers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#phase-1-scored-clusters-and-the-basic-tier-7-to-14-october">Phase 1: Scored clusters and the Basic tier (7 to 14 October)</a><ul>
+<li><a class="reference internal" href="#aspire-2a-ranks-were-losing-their-pinning">4. ASPIRE 2A: ranks were losing their pinning</a></li>
+<li><a class="reference internal" href="#scotch-overtook-hierarchical-on-both-scored-clusters">5. Scotch overtook hierarchical on both scored clusters</a></li>
+<li><a class="reference internal" href="#the-4-node-bottleneck-wasn-t-communication-it-was-the-car-s-surface">6. The 4-node bottleneck wasn’t communication; it was the car’s surface</a></li>
+<li><a class="reference internal" href="#gadi-s-hidden-variables-wall-clock-time-stalls-and-node-draws">7. Gadi’s hidden variables: wall-clock time, stalls and node draws</a></li>
+<li><a class="reference internal" href="#the-gadi-rebuild-a-tiny-gain-with-a-big-lesson-about-fma">8. The Gadi rebuild: a tiny gain with a big lesson about FMA</a></li>
+<li><a class="reference internal" href="#both-bonus-ideas-came-up-empty-and-basic-was-locked">9. Both Bonus ideas came up empty, and Basic was locked</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#phase-2-late-wins-and-framing-late-october-to-6-november">Phase 2: Late wins and framing (late October to 6 November)</a><ul>
+<li><a class="reference internal" href="#the-pinning-root-cause-was-the-kernel-not-the-mpi-library">10. The pinning root cause was the kernel, not the MPI library</a></li>
+<li><a class="reference internal" href="#common-baselines-changed-how-results-were-framed">11. “Common baselines” changed how results were framed</a></li>
+<li><a class="reference internal" href="#a-teammate-s-fused-kernel-became-the-late-game-changer">12. A teammate’s fused kernel became the late game-changer</a></li>
+<li><a class="reference internal" href="#reconciling-the-deck-before-the-3-november-presentation">13. Reconciling the deck before the 3 November presentation</a></li>
+<li><a class="reference internal" href="#closing-out-the-submission">14. Closing out the submission</a></li>
+<li><a class="reference internal" href="#outcome-a-merit-award-and-an-isc27-application">15. Outcome: a Merit award and an ISC27 application</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-pattern-behind-the-turning-points">The pattern behind the turning points</a></li>
+<li><a class="reference internal" href="#known-issues-and-open-items">Known issues and open items</a></li>
+<li><a class="reference internal" href="#next-up">Next up</a></li>
+<li><a class="reference internal" href="#appendix-glossary-quick-reference">Appendix: glossary quick reference</a></li>
+<li><a class="reference internal" href="#appendix-numbers-at-a-glance">Appendix: numbers at a glance</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    </body>
+</html>

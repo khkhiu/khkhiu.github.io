@@ -3,9 +3,9 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Disabling SMT cut our OpenFOAM HPC Challenge runtime by 17%, on half the cores" href="posts/smt-off-numa-binding-occdrivaer.html">
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM" href="posts/2026-11-27-apac-hpc-ai.html">
 
-    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+    <!-- Generated with Sphinx 9.2.0 and Furo 2025.12.19 -->
         <title>khkhiu.github.io documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
@@ -190,13 +190,9 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Posts</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html">Disabling SMT cut our OpenFOAM HPC Challenge runtime by 17%, on half the cores</a></li>
-<li class="toctree-l1"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html">Optimizing OpenFOAM’s occDrivAer Case for the APAC HPC-AI Competition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html">occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study</a></li>
-<li class="toctree-l1"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html">Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html">OpenFOAM HPC Challenge (OHC-1): Diagnosing a Silent 16% Performance Regression from Scheduler Node Placement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="posts/2026-11-27-apac-hpc-ai.html">Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM</a></li>
 </ul>
 
 </div>
@@ -241,70 +237,9 @@
 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
 documentation for details.</p>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Posts</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html">Disabling SMT cut our OpenFOAM HPC Challenge runtime by 17%, on half the cores</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html#background">Background</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html#the-experiment">The experiment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html#result">Result</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html#why-it-is-faster">Why it is faster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html#validating-that-the-physics-remained-consistent">Validating that the physics remained consistent</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html#known-issues-and-open-items">Known issues and open items</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/smt-off-numa-binding-occdrivaer.html#next-up">Next up</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html">Optimizing OpenFOAM’s occDrivAer Case for the APAC HPC-AI Competition</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#what-the-apac-hpc-ai-competition-is">1. What the APAC HPC-AI Competition is</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#what-ohc-1-is">2. What OHC-1 is</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#the-occdrivaer-case-itself">3. The occDrivAer case itself</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#decomposition-methods-what-they-are-and-how-they-differ">4. Decomposition methods, what they are and how they differ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#renumbering-what-rcm-means">5. Renumbering, what RCM means</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#what-every-top-ohc-1-hardware-track-submission-actually-used">6. What every top OHC-1 hardware-track submission actually used</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#rank-count-the-cells-core-sweet-spot">7. Rank count, the cells/core sweet spot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#settings-to-try-summary-checklist">8. Settings to try, summary checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#key-takeaways">9. Key takeaways</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-ohc1-optimization-notes.html#references">References</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html">occDrivAerStaticMesh on Vanda: A 1-Node Decomposition and MPI-Binding Study</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#background-what-problem-is-being-solved-and-what-the-vocabulary-means">0. Background: what problem is being solved, and what the vocabulary means</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#setup">1. Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#decomposition-shape-sweep">2. Decomposition shape sweep</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#discovery-node-to-node-contention-on-a-shared-cluster">3. Discovery: node-to-node contention on a shared cluster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#mpi-rank-binding-sweep">4. MPI rank-binding sweep</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#a-note-on-openfoam-s-built-in-profiler">5. A note on OpenFOAM’s built-in profiler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#summary-and-recommended-configuration">6. Summary and recommended configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#recommendations-for-the-scored-4-node-run">7. Recommendations for the scored 4-node run</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/vanda-decomposition-binding-study.html#appendix-glossary-quick-reference">Appendix: glossary quick-reference</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html">Rank placement and GAMG-targeted collective tuning cut occDrivAer steady-state time by 10.9% at 2 nodes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#test-matrix-and-fixed-parameters">Test matrix and fixed parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#single-node-profiling-baseline-context-from-the-prior-session">1. Single-node profiling baseline (context from the prior session)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#decomposition-placement-sweep-4-hierarchical-variants-job-v3-profiled-harness">2. Decomposition placement sweep — 4 hierarchical variants (job: <code class="docutils literal notranslate"><span class="pre">v3</span></code>, profiled harness)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#decomposition-method-comparison-scotch-vs-hierarchical-job-v4-profiled-harness">3. Decomposition method comparison — scotch vs. hierarchical (job: <code class="docutils literal notranslate"><span class="pre">v4</span></code>, profiled harness)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#mpi-tuning-sweep-on-top-of-the-winning-decomposition-job-v5-profiled-harness">4. MPI tuning sweep on top of the winning decomposition (job: <code class="docutils literal notranslate"><span class="pre">v5</span></code>, profiled harness)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#stacking-numa-pinning-gamg-collectives-and-a-warm-up-transient-job-stack-final-clean-harness-no-forced-write-no-profiling-instrumentation">5. Stacking NUMA pinning + GAMG collectives, and a warm-up transient (job: <code class="docutils literal notranslate"><span class="pre">stack_final</span></code>, clean harness — no forced write, no profiling instrumentation)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#a-confound-we-checked-and-ruled-out">6. A confound we checked and ruled out</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#job-to-job-hardware-allocation-variance">7. Job-to-job hardware/allocation variance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#scaling-efficiency-1-2-nodes">8. Scaling efficiency (1 → 2 nodes)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#resource-accounting">9. Resource accounting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#known-issues-and-implementation-notes">10. Known issues and implementation notes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/mpi-collective-tuning-numa-occdrivaer-vanda.html#locked-configuration-going-into-4-nodes">Locked configuration going into 4 nodes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html">OpenFOAM HPC Challenge (OHC-1): Diagnosing a Silent 16% Performance Regression from Scheduler Node Placement</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#summary">Summary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#background">Background</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#baseline-two-independent-correctly-pinned-cpu-runs">Baseline: Two Independent, Correctly-Pinned CPU Runs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#the-anomaly-a-run-that-passed-but-was-16-slower">The Anomaly: A Run That “Passed” but Was 16% Slower</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#root-cause-investigation">Root-Cause Investigation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#the-fix">The Fix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#results-table-final">Results Table (Final)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#a-secondary-fully-resolved-issue-i-mpi-stats-and-the-missing-aps-binary">A Secondary, Fully Resolved Issue: I_MPI_STATS and the Missing APS Binary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="posts/occDrivAer-4node-scaling-notes.html#lessons-learned">Lessons Learned</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="posts/2026-11-27-apac-hpc-ai.html">Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM</a></li>
 </ul>
 </div>
 </section>
@@ -314,12 +249,12 @@ documentation for details.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="posts/smt-off-numa-binding-occdrivaer.html">
+          <a class="next-page" href="posts/2026-11-27-apac-hpc-ai.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Disabling SMT cut our OpenFOAM HPC Challenge runtime by 17%, on half the cores</div>
+                <div class="title">Fifteen turning points: what APAC HPC-AI 2026 taught us about tuning OpenFOAM</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
